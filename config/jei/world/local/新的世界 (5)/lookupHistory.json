@@ -1,8 +1,0 @@
-[
-  {"version":1},
-  {"ingredient":{"id":"farmersdelight:cooked_rice","components":"{\"tfc:food\":{creation_date:144000L}}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"tfc:jar_lid","components":"{\"tfc:heat\":{}}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"kaleidoscope_cookery:sweet_and_sour_pork","components":"{\"tfc:food\":{creation_date:-2L}}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"kaleidoscope_cookery:sweet_and_sour_pork_rice_bowl","components":"{\"tfc:food\":{creation_date:144000L}}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"minecraft:bowl"},"type":"item_stack","bookmarkType":"INGREDIENT"}
-]

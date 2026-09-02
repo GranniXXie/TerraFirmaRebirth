@@ -28,3 +28,8 @@ Thumbs.db
 .DS_Store
 .idea/
 .vscode/
+
+# personal/runtime caches
+config/jei/world/
+config/friendship-cache/
+config/spark/activity.json
