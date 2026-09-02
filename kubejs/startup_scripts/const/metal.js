@@ -1,0 +1,35 @@
+const supplement_metals = [
+    {
+        name:"铋",
+        id:'bismuth',
+        tint:0x3f595d,
+        dust:true
+    },
+    {
+        name:"镍",
+        id:'nickel',
+        tint:0x676756
+    },
+    {
+        name:"锌",
+        id:'zinc',
+        tint:0x8c8c99,
+        dust:true
+    },
+    {
+        name:"银",
+        id:'silver',
+        tint:0xe1d6d6
+    },
+    {
+        name:"铝",
+        id:'aluminum',
+        tint:0xabb3b6
+    },
+    {
+        name:"铬",
+        id:'chromium',
+        tint:0xe6e5e2,
+        dust:true
+    }
+]

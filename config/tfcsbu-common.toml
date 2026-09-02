@@ -1,0 +1,30 @@
+# 
+#背包被占据超过了多少格物品槽才会超重
+#How many item slots occupied by a backpack will cause it to become overweight.
+#9
+# Default: 9
+# Range: > 0
+slotsCountToOverweight = 9
+# 
+#背包被占据了多少格升级槽开始超重
+#How many upgrade slots have been occupied in the backpack before it becomes overweight
+#1
+# Default: 1
+# Range: > 0
+upgradesCountToOverweight = 1
+# 
+#冰箱封存，食物的腐烂速度
+#Fridge Preserved, the decay modifier of food
+# Default: 0.4
+# Range: 0.0 ~ 1.7976931348623157E308
+fridgePreservedDecayModifier = 0.4
+# 
+#冰箱冷藏，食物的腐烂速度
+#Electricity Fridge Preserved, the decay modifier of food
+# Default: 0.25
+# Range: 0.0 ~ 1.7976931348623157E308
+electricityFridgePreservedDecayModifier = 0.25
+# 
+#移除怪物身上的背包
+#Remove backpack on monster
+removeBackpackOnMonster = true

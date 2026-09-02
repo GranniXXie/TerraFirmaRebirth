@@ -1,0 +1,3013 @@
+
+# #----------------------------------------------------------------------
+# CSC 配置版本。如果此值与当前 CSC 版本不同，旧配置会被归档，并生成新的默认配置。
+ConfigVersion = "2.27.43"
+
+# #----------------------------------------------------------------------
+#     欢迎您使用CSC，CSC（原名 Create:SchematicChecker | 机械动力：蓝图校验 ）
+# 是专为机械动力与全部机械动力附属而定制的蓝图扫描模组,它可以阻止任何已经记录在案的潜在/恶性漏洞。
+# 这些恶性漏洞包括但不限于：复制物品、卡顿服务器甚至崩溃服务器、获取创造物品、获取服务器控制权等。。
+# 而触发它们仅需上传固定修改参数的蓝图，这使得破坏服务器变得轻而易举，只要服务器不禁用蓝图炮，那么任何人都可以随意的
+# 以极低的成本和极少的时间破坏服务器、崩溃服务器、获取任意物品。
+#   此模组转为此问题而设计，永久解决机械动力蓝图的弊病！
+# CSC 允许用户自定义黑名单标签、方块，允许自定义剔除规则，允许对蓝图的校验结果进行详细的配置和自定义
+# 由于蓝图的通用性，这使得CSC可以检测包括机械动力和机械动力的所有附属mod！
+# 如果用户同意，CSC甚至可以选择联网更新自动同步规则到本地服务器，只要CSC团队发现了新的漏洞，
+# 那么就会自动更新配置文件，来实现不需要重启服务器即可自动剔除潜在的漏洞。
+# 选择默认的文件语言 zh_cn / zh_tw / ja_jp / en_us 
+Language = "zh_cn"
+
+UUID = "5322dc2c-edd0-4ad6-ad26-aa40b581fdb2"
+
+[core]
+    # #----------------------------------------------------------------------
+    # 是否启用 CSC （机械动力：蓝图检查）
+    Enable = true
+    # #----------------------------------------------------------------------
+    # 蓝图检查的超时时间
+    DelayTime = 10
+    # #----------------------------------------------------------------------
+    # 是否启动模组 id 白名单模式，推荐开启，可以直接根除不熟悉的mod导致的蓝图漏洞
+    WhiteListModEnable = true
+    # #----------------------------------------------------------------------
+    # 是否在启动后输出模组 id 白名单模式安全提示
+    ShowWhitelistModeNotice = true
+    # #----------------------------------------------------------------------
+    # 只有填入此列表的mod才会允许保留nbt，填入modid 比如minecraft:dirt 那就填入minecraft
+    WhiteListModList = [
+        "create",
+        "minecraft",
+        "createdieselgenerators",
+        "createrailwaysnavigator",
+        "createaddition",
+        "railways",
+        "copycats",
+        "createsifter",
+        "computercraft",
+        "mekanism",
+        "simulated",
+        "aeronautics",
+        "offroad",
+        "yuushya" ]
+    # #----------------------------------------------------------------------
+    # 被禁止的方块或物品，如果被填入，CSC将尝试剔除方块实体内的对应物品。
+    # 如果剔除失败，CSC会将该物品清除实体数据，方块仍然可以打印，但会失去nbt数据。
+    BanBlock = [
+        "create:creative_crate",
+        "create:creative_fluid_tank",
+        "create_integrated_farming:chicken_roost",
+        "create:creative_motor",
+        "create:creative_blaze_cake",
+        "create:handheld_worldshaper",
+        "minecraft:spawner",
+        "twilightforest:giant_obsidian",
+        "twilightforest:giant_leaves",
+        "twilightforest:giant_log",
+        "twilightforest:giant_cobblestone",
+        "twilightforest:huge_lily_pad",
+        "ae2:creative_item_cell",
+        "ae2:creative_fluid_cell",
+        "ae2:creative_energy_cell",
+        "appmek:creative_chemical_cell",
+        "vs_clockwork:creative_gravitron",
+        "createbigcannons:creative_autocannon_ammo_container",
+        "createaddition:creative_energy",
+        "create_connected:creative_fluid_vessel",
+        "destroy:creative_pump",
+        "immersiveengineering:capacitor_creative",
+        "mekanism:creative_bin",
+        "mekanism:creative_fluid_tank",
+        "mekanism:creative_energy_cube",
+        "mekanism:creative_chemical_tank",
+        "numismatics:creative_vendor",
+        "mekanism_extras:upgrade_creative",
+        "the_vmod:physgun",
+        "the_vmod:toolgun",
+        "Item.of('tacz:ammo_box', '{Creative:1b}')",
+        "Item.of('tacz:ammo_box', '{AllTypeCreative:1b}')",
+        "minecraft:command_block",
+        "minecraft:chain_command_block",
+        "minecraft:repeating_command_block",
+        "minecraft:structure_block",
+        "quark:grate",
+        "minecraft:kelp",
+        "firmalife:plant/basil",
+        "firmalife:plant/bay_laurel",
+        "firmalife:plant/cardamom",
+        "firmalife:plant/cilantro",
+        "firmalife:plant/cocoa_branch",
+        "firmalife:plant/cocoa_growing_branch",
+        "firmalife:plant/cocoa_leaves",
+        "firmalife:plant/cocoa_sapling",
+        "firmalife:plant/cumin",
+        "firmalife:plant/fig_branch",
+        "firmalife:plant/fig_growing_branch",
+        "firmalife:plant/fig_leaves",
+        "firmalife:plant/fig_sapling",
+        "firmalife:plant/nightshade_bush",
+        "firmalife:plant/oregano",
+        "firmalife:plant/pimento",
+        "firmalife:plant/pineapple_bush",
+        "firmalife:plant/vanilla",
+        "firmalife:plant/wild_red_grapes",
+        "firmalife:plant/wild_white_grapes",
+        "tfc:crop/alfalfa",
+        "tfc:crop/barley",
+        "tfc:crop/beet",
+        "tfc:crop/cabbage",
+        "tfc:crop/canola",
+        "tfc:crop/carrot",
+        "tfc:crop/cassava",
+        "tfc:crop/garlic",
+        "tfc:crop/green_bean",
+        "tfc:crop/jute",
+        "tfc:crop/lentil",
+        "tfc:crop/maize",
+        "tfc:crop/melon",
+        "tfc:crop/oat",
+        "tfc:crop/onion",
+        "tfc:crop/papyrus",
+        "tfc:crop/peanut",
+        "tfc:crop/potato",
+        "tfc:crop/pumpkin",
+        "tfc:crop/radish",
+        "tfc:crop/red_bell_pepper",
+        "tfc:crop/rice",
+        "tfc:crop/rye",
+        "tfc:crop/soybean",
+        "tfc:crop/squash",
+        "tfc:crop/sugarcane",
+        "tfc:crop/tomato",
+        "tfc:crop/wheat",
+        "tfc:crop/yellow_bell_pepper",
+        "tfc:plant/banana_plant",
+        "tfc:plant/banana_sapling",
+        "tfc:plant/blackberry_bush",
+        "tfc:plant/blackberry_bush_cane",
+        "tfc:plant/blueberry_bush",
+        "tfc:plant/blueberry_bush_cane",
+        "tfc:plant/bunchberry_bush",
+        "tfc:plant/cloudberry_bush",
+        "tfc:plant/cranberry_bush",
+        "tfc:plant/dead_banana_plant",
+        "tfc:plant/dead_berry_bush",
+        "tfc:plant/elderberry_bush",
+        "tfc:plant/elderberry_bush_cane",
+        "tfc:plant/gooseberry_bush",
+        "tfc:plant/raspberry_bush",
+        "tfc:plant/raspberry_bush_cane",
+        "tfc:plant/snowberry_bush",
+        "tfc:plant/strawberry_bush",
+        "tfc:plant/wintergreen_berry_bush",
+        "tfc:barrel_rack",
+        "tfc:bellows",
+        "tfc:blast_furnace",
+        "tfc:bloomery",
+        "tfc:burning_log_pile",
+        "tfc:ceramic/large_vessel",
+        "tfc:ceramic/large_vessel/black",
+        "tfc:ceramic/large_vessel/blue",
+        "tfc:ceramic/large_vessel/brown",
+        "tfc:ceramic/large_vessel/cyan",
+        "tfc:ceramic/large_vessel/gray",
+        "tfc:ceramic/large_vessel/green",
+        "tfc:ceramic/large_vessel/light_blue",
+        "tfc:ceramic/large_vessel/light_gray",
+        "tfc:ceramic/large_vessel/lime",
+        "tfc:ceramic/large_vessel/magenta",
+        "tfc:ceramic/large_vessel/orange",
+        "tfc:ceramic/large_vessel/pink",
+        "tfc:ceramic/large_vessel/purple",
+        "tfc:ceramic/large_vessel/red",
+        "tfc:ceramic/large_vessel/white",
+        "tfc:ceramic/large_vessel/yellow",
+        "tfc:charcoal_forge",
+        "tfc:charcoal_pile",
+        "tfc:composter",
+        "tfc:crucible",
+        "tfc:double_ingot_pile",
+        "tfc:firepit",
+        "tfc:grill",
+        "tfc:ingot_pile",
+        "tfc:jack_o_lantern",
+        "tfc:log_pile",
+        "tfc:metal/anvil/bismuth_bronze",
+        "tfc:metal/anvil/black_bronze",
+        "tfc:metal/anvil/black_steel",
+        "tfc:metal/anvil/blue_steel",
+        "tfc:metal/anvil/bronze",
+        "tfc:metal/anvil/copper",
+        "tfc:metal/anvil/red_steel",
+        "tfc:metal/anvil/steel",
+        "tfc:metal/anvil/wrought_iron",
+        "tfc:nest_box",
+        "tfc:pit_kiln",
+        "tfc:placed_item",
+        "tfc:plant/barrel_cactus",
+        "tfc:plant/grape_hyacinth",
+        "tfc:plant/potted/barrel_cactus",
+        "tfc:plant/potted/grape_hyacinth",
+        "tfc:pot",
+        "tfc:powderkeg",
+        "tfc:power_loom",
+        "tfc:quern",
+        "tfc:rock/anvil/andesite",
+        "tfc:rock/anvil/basalt",
+        "tfc:rock/anvil/dacite",
+        "tfc:rock/anvil/diorite",
+        "tfc:rock/anvil/gabbro",
+        "tfc:rock/anvil/granite",
+        "tfc:rock/anvil/rhyolite",
+        "tfc:stove_pot",
+        "tfc:thatch_bed",
+        "tfc:wood/barrel/acacia",
+        "tfc:wood/barrel/ash",
+        "tfc:wood/barrel/aspen",
+        "tfc:wood/barrel/birch",
+        "tfc:wood/barrel/blackwood",
+        "tfc:wood/barrel/chestnut",
+        "tfc:wood/barrel/douglas_fir",
+        "tfc:wood/barrel/hickory",
+        "tfc:wood/barrel/kapok",
+        "tfc:wood/barrel/mangrove",
+        "tfc:wood/barrel/maple",
+        "tfc:wood/barrel/oak",
+        "tfc:wood/barrel/palm",
+        "tfc:wood/barrel/pine",
+        "tfc:wood/barrel/rosewood",
+        "tfc:wood/barrel/sequoia",
+        "tfc:wood/barrel/spruce",
+        "tfc:wood/barrel/sycamore",
+        "tfc:wood/barrel/white_cedar",
+        "tfc:wood/barrel/willow",
+        "tfc:wood/loom/acacia",
+        "tfc:wood/loom/ash",
+        "tfc:wood/loom/aspen",
+        "tfc:wood/loom/birch",
+        "tfc:wood/loom/blackwood",
+        "tfc:wood/loom/chestnut",
+        "tfc:wood/loom/douglas_fir",
+        "tfc:wood/loom/hickory",
+        "tfc:wood/loom/kapok",
+        "tfc:wood/loom/mangrove",
+        "tfc:wood/loom/maple",
+        "tfc:wood/loom/oak",
+        "tfc:wood/loom/palm",
+        "tfc:wood/loom/pine",
+        "tfc:wood/loom/rosewood",
+        "tfc:wood/loom/sequoia",
+        "tfc:wood/loom/spruce",
+        "tfc:wood/loom/sycamore",
+        "tfc:wood/loom/white_cedar",
+        "tfc:wood/loom/willow",
+        "tfc:wood/sluice/acacia",
+        "tfc:wood/sluice/ash",
+        "tfc:wood/sluice/aspen",
+        "tfc:wood/sluice/birch",
+        "tfc:wood/sluice/blackwood",
+        "tfc:wood/sluice/chestnut",
+        "tfc:wood/sluice/douglas_fir",
+        "tfc:wood/sluice/hickory",
+        "tfc:wood/sluice/kapok",
+        "tfc:wood/sluice/mangrove",
+        "tfc:wood/sluice/maple",
+        "tfc:wood/sluice/oak",
+        "tfc:wood/sluice/palm",
+        "tfc:wood/sluice/pine",
+        "tfc:wood/sluice/rosewood",
+        "tfc:wood/sluice/sequoia",
+        "tfc:wood/sluice/spruce",
+        "tfc:wood/sluice/sycamore",
+        "tfc:wood/sluice/white_cedar",
+        "tfc:wood/sluice/willow",
+        "firmalife:beehive",
+        "firmalife:bonsai_planter",
+        "firmalife:climate_station",
+        "firmalife:drying_mat",
+        "firmalife:floor_sprinkler",
+        "firmalife:grape_fluff_red",
+        "firmalife:grape_fluff_white",
+        "firmalife:grape_string",
+        "firmalife:grape_string_plant_red",
+        "firmalife:grape_string_plant_white",
+        "firmalife:grape_string_red",
+        "firmalife:grape_string_white",
+        "firmalife:grape_trellis_post",
+        "firmalife:grape_trellis_post_red",
+        "firmalife:grape_trellis_post_white",
+        "firmalife:hanging_planter",
+        "firmalife:hydroponic_planter",
+        "firmalife:insulated_rustic_oven_bottom",
+        "firmalife:insulated_rustic_oven_top",
+        "firmalife:insulated_stone_oven_bottom",
+        "firmalife:insulated_stone_oven_top",
+        "firmalife:large_planter",
+        "firmalife:mixing_bowl",
+        "firmalife:quad_planter",
+        "firmalife:rustic_oven_bottom",
+        "firmalife:rustic_oven_chimney",
+        "firmalife:rustic_oven_hopper",
+        "firmalife:rustic_oven_top",
+        "firmalife:solar_drier",
+        "firmalife:sprinkler",
+        "firmalife:stone_oven_bottom",
+        "firmalife:stone_oven_chimney",
+        "firmalife:stone_oven_hopper",
+        "firmalife:stone_oven_top",
+        "firmalife:stovetop_grill",
+        "firmalife:stovetop_pot",
+        "firmalife:trellis_planter",
+        "firmalife:vat",
+        "firmalife:wild_beehive",
+        "firmalife:wood/barrel_press/acacia",
+        "firmalife:wood/barrel_press/ash",
+        "firmalife:wood/barrel_press/aspen",
+        "firmalife:wood/barrel_press/birch",
+        "firmalife:wood/barrel_press/blackwood",
+        "firmalife:wood/barrel_press/chestnut",
+        "firmalife:wood/barrel_press/douglas_fir",
+        "firmalife:wood/barrel_press/hickory",
+        "firmalife:wood/barrel_press/kapok",
+        "firmalife:wood/barrel_press/mangrove",
+        "firmalife:wood/barrel_press/maple",
+        "firmalife:wood/barrel_press/oak",
+        "firmalife:wood/barrel_press/palm",
+        "firmalife:wood/barrel_press/pine",
+        "firmalife:wood/barrel_press/rosewood",
+        "firmalife:wood/barrel_press/sequoia",
+        "firmalife:wood/barrel_press/spruce",
+        "firmalife:wood/barrel_press/sycamore",
+        "firmalife:wood/barrel_press/white_cedar",
+        "firmalife:wood/barrel_press/willow",
+        "firmalife:wood/hanger/acacia",
+        "firmalife:wood/hanger/ash",
+        "firmalife:wood/hanger/aspen",
+        "firmalife:wood/hanger/birch",
+        "firmalife:wood/hanger/blackwood",
+        "firmalife:wood/hanger/chestnut",
+        "firmalife:wood/hanger/douglas_fir",
+        "firmalife:wood/hanger/hickory",
+        "firmalife:wood/hanger/kapok",
+        "firmalife:wood/hanger/mangrove",
+        "firmalife:wood/hanger/maple",
+        "firmalife:wood/hanger/oak",
+        "firmalife:wood/hanger/palm",
+        "firmalife:wood/hanger/pine",
+        "firmalife:wood/hanger/rosewood",
+        "firmalife:wood/hanger/sequoia",
+        "firmalife:wood/hanger/spruce",
+        "firmalife:wood/hanger/sycamore",
+        "firmalife:wood/hanger/white_cedar",
+        "firmalife:wood/hanger/willow",
+        "firmalife:wood/stomping_barrel/acacia",
+        "firmalife:wood/stomping_barrel/ash",
+        "firmalife:wood/stomping_barrel/aspen",
+        "firmalife:wood/stomping_barrel/birch",
+        "firmalife:wood/stomping_barrel/blackwood",
+        "firmalife:wood/stomping_barrel/chestnut",
+        "firmalife:wood/stomping_barrel/douglas_fir",
+        "firmalife:wood/stomping_barrel/hickory",
+        "firmalife:wood/stomping_barrel/kapok",
+        "firmalife:wood/stomping_barrel/mangrove",
+        "firmalife:wood/stomping_barrel/maple",
+        "firmalife:wood/stomping_barrel/oak",
+        "firmalife:wood/stomping_barrel/palm",
+        "firmalife:wood/stomping_barrel/pine",
+        "firmalife:wood/stomping_barrel/rosewood",
+        "firmalife:wood/stomping_barrel/sequoia",
+        "firmalife:wood/stomping_barrel/spruce",
+        "firmalife:wood/stomping_barrel/sycamore",
+        "firmalife:wood/stomping_barrel/white_cedar",
+        "firmalife:wood/stomping_barrel/willow",
+        "tfc:rock/cobble/andesite",
+        "tfc:rock/cobble/basalt",
+        "tfc:rock/cobble/chalk",
+        "tfc:rock/cobble/chert",
+        "tfc:rock/cobble/claystone",
+        "tfc:rock/cobble/conglomerate",
+        "tfc:rock/cobble/dacite",
+        "tfc:rock/cobble/diorite",
+        "tfc:rock/cobble/dolomite",
+        "tfc:rock/cobble/gabbro",
+        "tfc:rock/cobble/gneiss",
+        "tfc:rock/cobble/granite",
+        "tfc:rock/cobble/limestone",
+        "tfc:rock/cobble/marble",
+        "tfc:rock/cobble/phyllite",
+        "tfc:rock/cobble/quartzite",
+        "tfc:rock/cobble/rhyolite",
+        "tfc:rock/cobble/schist",
+        "tfc:rock/cobble/shale",
+        "tfc:rock/cobble/slate",
+        "tfc:rock/cobble/tuff",
+        "tfc:rock/gravel/andesite",
+        "tfc:rock/gravel/basalt",
+        "tfc:rock/gravel/chalk",
+        "tfc:rock/gravel/chert",
+        "tfc:rock/gravel/claystone",
+        "tfc:rock/gravel/conglomerate",
+        "tfc:rock/gravel/dacite",
+        "tfc:rock/gravel/diorite",
+        "tfc:rock/gravel/dolomite",
+        "tfc:rock/gravel/gabbro",
+        "tfc:rock/gravel/gneiss",
+        "tfc:rock/gravel/granite",
+        "tfc:rock/gravel/limestone",
+        "tfc:rock/gravel/marble",
+        "tfc:rock/gravel/phyllite",
+        "tfc:rock/gravel/quartzite",
+        "tfc:rock/gravel/rhyolite",
+        "tfc:rock/gravel/schist",
+        "tfc:rock/gravel/shale",
+        "tfc:rock/gravel/slate",
+        "tfc:rock/gravel/tuff",
+        "tfc:rock/raw/andesite",
+        "tfc:rock/raw/basalt",
+        "tfc:rock/raw/chalk",
+        "tfc:rock/raw/chert",
+        "tfc:rock/raw/claystone",
+        "tfc:rock/raw/conglomerate",
+        "tfc:rock/raw/dacite",
+        "tfc:rock/raw/diorite",
+        "tfc:rock/raw/dolomite",
+        "tfc:rock/raw/gabbro",
+        "tfc:rock/raw/gneiss",
+        "tfc:rock/raw/granite",
+        "tfc:rock/raw/limestone",
+        "tfc:rock/raw/marble",
+        "tfc:rock/raw/phyllite",
+        "tfc:rock/raw/quartzite",
+        "tfc:rock/raw/rhyolite",
+        "tfc:rock/raw/schist",
+        "tfc:rock/raw/shale",
+        "tfc:rock/raw/slate",
+        "tfc:rock/raw/tuff",
+        "tfc:sand/black",
+        "tfc:sand/brown",
+        "tfc:sand/green",
+        "tfc:sand/pink",
+        "tfc:sand/red",
+        "tfc:sand/white",
+        "tfc:sand/yellow" ]
+    # #----------------------------------------------------------------------
+    # 禁止标签，任何方块如果内部包含此列表的标签，都会被清除！
+    BanTag = [
+        "AttributeModifiers",
+        "run_command",
+        "using_converts_to",
+        "bundle_contents",
+        "minecraft:container",
+        "minecraft:attribute_modifiers" ]
+    # #----------------------------------------------------------------------
+    # 是否清理实体，当设置为true后，蓝图内的实体会被清除，但不会清除填入白名单的实体。
+    # 此功能启用可以阻止所有潜在的实体nbt复制漏洞，也可以阻止盔甲架获取创造物品
+    # 此功能建议启用！
+    KillEntity = true
+    # #----------------------------------------------------------------------
+    # 当KillEntity功能为false时，此功能将会启用，任何填入此列表的实体都会在蓝图中被删除。
+    # 但不能删除白名单内的实体，因此不能同时与白名单填入相同的id
+    BanEntity = [
+        "minecraft:armor_stand",
+        "create:crafting_blueprint" ]
+    # #----------------------------------------------------------------------
+    # 白名单的实体，不能与黑名单冲突，填入后的实体会被保留，在killEntity功能为true时启动
+    # 注意，此功能只有下面的实体会被算法校验，其他实体都会保留nbt，使用默认匹配
+    # 可匹配的物品：强力胶。
+    whitelistEntity = [
+
+[online]
+    # 本服务器的 CSC 上报凭据，会自动生成一次。请勿泄露；删除后会将本服务器重新登记。
+    reportToken = "f8b7c12d-ad7f-4a7d-aefe-f8d4ccaea328392c7c6f-6707-4c63-980d-e76d3d61bb39"
+    # #----------------------------------------------------------------------
+    # 是否启用云端自动更新同步功能，转为服务器定制，注意，此功能需要联网！
+    # 启用此功能后，CSC将会自动从云端同步最新的漏洞剔除规则
+    # 但如果出现了异常蓝图或无法读取的蓝图，CSC会将这些蓝图上传至云端来加强云端规则
+    # 因为云端检查需要蓝图样本才能不断更新，上传的蓝图仅会用于漏洞检测，不会用于任何其他用途
+    # 启用此功能会收集部分蓝图数据，因此如果您使用此功能就代表允许CSC利用您的蓝图进行规则强化！
+    enableAutoUpdate = false
+    # #----------------------------------------------------------------------
+    # CSC v2 蓝图上报地址。除非自行部署兼容服务，否则请保留默认 HTTPS 地址。
+    reportEndpoint = "https://api.torqueflux.com/v2/uploadfile/"
+    # #----------------------------------------------------------------------
+    # 启动自动更新提醒，当设置为true，如果CSC有需要更新版本才能修复的漏洞，将会发出提醒
+    UpdateInfo = true
+    # #----------------------------------------------------------------------
+    # 是否启用用户配置规则，当启用后，用户的额外配置文件会作为规则处理蓝图
+    # id 是针对实体方块的剔除，用于banblock功能剔除不完全时的附加
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # 默认情况下的路径使用.来分割，如果遇到列表，需要在列表标签前加入$ 来辅助识别
+
+[debug]
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    problem = false
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # #----------------------------------------------------------------------
+    # 是否启用用户配置规则，当启用后，用户的额外配置文件会作为规则处理蓝图
+    # id 是针对实体方块的剔除，用于banblock功能剔除不完全时的附加
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # 默认情况下的路径使用.来分割，如果遇到列表，需要在列表标签前加入$ 来辅助识别
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 启动自动更新提醒，当设置为true，如果CSC有需要更新版本才能修复的漏洞，将会发出提醒
+    # #----------------------------------------------------------------------
+    # 是否启用用户配置规则，当启用后，用户的额外配置文件会作为规则处理蓝图
+    # id 是针对实体方块的剔除，用于banblock功能剔除不完全时的附加
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # 默认情况下的路径使用.来分割，如果遇到列表，需要在列表标签前加入$ 来辅助识别
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # id 是针对实体方块的剔除，用于banblock功能剔除不完全时的附加
+    # 每个对象需要两个元素，物品的ID 和位置，可以通过NBTExplorer 软件来查询 
+    # 默认情况下的路径使用.来分割，如果遇到列表，需要在列表标签前加入$ 来辅助识别
+    # operate 是针对nbt的剔除功能，用于操作任意方块的nbt结构，具有极高的自由度
+    # limit 当设置limit时，可以指定变量的上下限，需要使用 operate.limit$变量名$下限$上限  的格式
+    # clear 当设置为清除时，对应的nbt会被剔除，需要使用 operate.clear$变量名  的格式
+    # replace 当设置为替换时，对应的nbt标签会被替换 只能替换字符串，需要使用 operate.replace$变量名$结果 的格式
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # 但如果出现了异常蓝图或无法读取的蓝图，CSC会将这些蓝图上传至云端来加强云端规则
+    # 因为云端检查需要蓝图样本才能不断更新，上传的蓝图仅会用于漏洞检测，不会用于任何其他用途
+    # 启用此功能会收集部分蓝图数据，因此如果您使用此功能就代表允许CSC利用您的蓝图进行规则强化！
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # 但如果出现了异常蓝图或无法读取的蓝图，CSC会将这些蓝图上传至云端来加强云端规则
+    # 因为云端检查需要蓝图样本才能不断更新，上传的蓝图仅会用于漏洞检测，不会用于任何其他用途
+    # 启用此功能会收集部分蓝图数据，因此如果您使用此功能就代表允许CSC利用您的蓝图进行规则强化！
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许角度 原版默认为45° 任何大于此值都篡改了蓝图nbt，但此设置允许自定义
+    # #----------------------------------------------------------------------
+    # 传动轮的最大允许不匹配数量，当蓝图校验和不匹配的传动轮数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 如果校验和不匹配数量少于这个值，蓝图仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 链式传动轮的最大允许长度，机械动力默认为32 当蓝图内有超过这个距离的链式传动轮时，蓝图会被视为作弊蓝图
+    # 当链式传动轮的长度低于这个阈值时，仅会剔除有问题的传动轮
+    # #----------------------------------------------------------------------
+    # 传送带的最大允许不匹配数量，当蓝图内校验和不匹配的传送带数量超过这个阈值后，蓝图会被视为作弊蓝图
+    # 当蓝图内的不匹配数量少于这个值时，将会剔除有问题的传送带
+    # #----------------------------------------------------------------------
+    # 阻止机械动力径向扳手菜单发包提交方块旋转或状态变更。默认关闭；仅在需要该防护时开启。
+    # #----------------------------------------------------------------------
+    # 校验机械动力过滤器物品发包，只允许写入玩家背包中真实存在的同 NBT 物品。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 校验玩家在机械动力锁链传送带上的移动发包，防止伪造移动时间或位置。默认开启；关闭后恢复机械动力原始行为。
+    # #----------------------------------------------------------------------
+    # 修复机械动力管道从 Quark 岩浆流体覆盖方块抽取岩浆时的复制漏洞。建议保持开启。
+    # #----------------------------------------------------------------------
+    # 当流体储罐控制器数量不匹配时，是否剔除储罐并允许继续上传。
+    # 关闭后将恢复原逻辑：记录 mismatch 并判定作弊，阻止上传。
+    # #----------------------------------------------------------------------
+    # 当传送带被检测出不完整时，是否清除不完整的传送带而不是直接阻止蓝图
+    # 此功能还在Beta版本，这可以在传送带不完整时，正常打印蓝图，只是不完整的传送带不会打印
+    # #----------------------------------------------------------------------
+    # 是否检测蓝图内传送带的完整性，如果不完整则会被视为漏洞蓝图，因为上千格的传送带可以卡服
+    # 同时还会导致区块数据包含传送带实体，增加带宽，同时，不完整的传送带可以复制传动杆和传送带
+    # #----------------------------------------------------------------------
+    # 是否允许CSC对蓝图进行备份，此功能会在玩家每次上传后备份蓝图文件，以时间/玩家命名
+    # 此功能强烈推荐开启，这可以在新的漏洞被发现时，通过扫描历史的上传备份来回溯上传历史！
+    # 此功能会占用一些存储空间，因为会对每个上传蓝图进行储存。
+    # #----------------------------------------------------------------------
+    # 当CSC发现作弊蓝图时，是否广播作弊者和作弊蓝图
+    # #----------------------------------------------------------------------
+    # 是否在聊天界面输出检测蓝图的物品列表，这可能会刷屏，但是可以显示蓝图内的方块统计
+    # 白名单的实体，不能与黑名单冲突，填入后的实体会被保留，在killEntity功能为true时启动
+    # 注意，此功能只有下面的实体会被算法校验，其他实体都会保留nbt，使用默认匹配
+    # 可匹配的物品：强力胶。
+    # Matchable item: Super Glue.
+    # #----------------------------------------------------------------------
+    # Whether to output the list of detected blueprint items in the chat. This may flood the chat, but it shows block statistics within the blueprint.
+    # #----------------------------------------------------------------------
+    # Whether to broadcast cheaters and cheating blueprints when CSC detects a cheating blueprint
+    # #----------------------------------------------------------------------
+    # Whether to allow CSC to back up blueprints. This feature will back up the blueprint file after each upload, named by timestamp/player.
+    # This feature is highly recommended! When new exploits are discovered, it allows scanning historical uploads to trace back past activity.
+    # This feature will consume some storage space, as each uploaded blueprint will be saved.
+    # #----------------------------------------------------------------------
+    # enable debug mod
+    # #----------------------------------------------------------------------
+    # Whether to check the integrity of belts in the blueprint. If incomplete, the blueprint will be considered vulnerable, as belts spanning thousands of blocks can lag the server.
+    # It may also cause chunk data to include belt entities, increasing bandwidth usage. Additionally, incomplete belts can duplicate shafts and belts.
+    # #----------------------------------------------------------------------
+    # When incomplete belts are detected, whether to remove them instead of blocking the entire blueprint.
+    # This feature is still in Beta. It allows the blueprint to be printed normally, but incomplete belts will not be printed.
+    # #----------------------------------------------------------------------
+    # When a fluid tank controller/tank count mismatch is detected, remove mismatched fluid tanks instead of blocking the entire blueprint.
+    # If disabled, fluid tank mismatch keeps the original behavior: mark as cheat and block upload.
+    # #----------------------------------------------------------------------
+    # Fix Create pipe duplication of lava from Quark lava-logged blocks. Recommended to keep enabled.
+    # #----------------------------------------------------------------------
+    # Validate player chain-conveyor riding packets to prevent forged movement time or position. Enabled by default; disabling restores Create's original behavior.
+    # #----------------------------------------------------------------------
+    # Validate Create filter item packets so only an identical item truly present in the player's inventory may be stored as a filter sample. Enabled by default; disabling restores Create's original behavior.
+    # #----------------------------------------------------------------------
+    # Block Create's radial wrench menu packet that lets a client submit a block rotation or state change. Disabled by default; enable only when this protection is required.
+    # #----------------------------------------------------------------------
+    # Maximum allowed number of mismatched conveyor belts. If the number of conveyor belts with mismatched checksums in the schematic exceeds this threshold, the schematic will be deemed a cheat schematic
+    # If the number of mismatches in the schematic is less than this value, the problematic conveyor belts will be removed
+    # #----------------------------------------------------------------------
+    # Maximum allowed length of chain drive wheels (default is 32 in Create). If there are chain drive wheels in the schematic exceeding this distance, the schematic will be deemed a cheat schematic
+    # If the length of chain drive wheels is less than this threshold, only the problematic drive wheels will be removed
+    # #----------------------------------------------------------------------
+    # Maximum allowed number of mismatched drive wheels. If the number of drive wheels with mismatched checksums in the schematic exceeds this threshold, the schematic will be deemed a cheat schematic
+    # If the number of checksum mismatches is less than this value, the schematic will only remove the problematic drive wheels
+    # #----------------------------------------------------------------------
+    # Conveyor's max degree, Can't get more than 45degree in Create. Only change nbt can.
+    # #----------------------------------------------------------------------
+    # Whether to enable cloud-based automatic update synchronization. Note: This feature requires an internet connection!
+    # After enabling this feature, CSC will automatically synchronize the latest vulnerability exclusion rules from the cloud
+    # However, if abnormal schematics or unreadable schematics are detected, CSC will upload these schematics to the cloud to enhance cloud rules
+    # Since cloud checks require schematic samples for continuous updates, the uploaded schematics will only be used for vulnerability detection and no other purposes
+    # Enabling this feature will collect partial schematic data. Therefore, using this feature means you allow CSC to use your schematics for rule enhancement!
+    # #----------------------------------------------------------------------
+    # Whether to enable user-configured rules. When enabled, the user's additional configuration file will be used as rules to process schematics
+    # ID is for the exclusion of entity blocks, used as a supplement when the banblock function fails to completely exclude targets
+    # Each object requires two elements: the item's ID and its position. You can query this using the NBTExplorer software
+    # By default, paths are separated by dots (.). If encountering a list, you need to add a $ before the list tag to assist in identification
+    # Operate is for NBT exclusion, used to manipulate the NBT structure of any block with a high degree of flexibility
+    # Limit: When setting Limit, you can specify the upper and lower bounds of a variable. The format required is operate.limit$VariableName$LowerBound$UpperBound
+    # Clear: When set to Clear, the corresponding NBT will be removed. The format required is operate.clear$VariableName
+    # Replace: When set to Replace, the corresponding NBT tag will be replaced (only strings can be replaced). The format required is operate.replace$VariableName$Result
+    # #----------------------------------------------------------------------
+    # Enable automatic update reminders. When set to true, if CSC has vulnerabilities that require a version update to fix, a reminder will be sent
+    # #----------------------------------------------------------------------
+    # Upload samples classified as CannotCheck, Problem, Cheat, or modified by mod whitelist filtering. Default is true; samples are used only to improve CSC detection rules.
+    # #----------------------------------------------------------------------
+    # CSC v2 report endpoint. Keep the default HTTPS address unless you operate a compatible private ingress.
+    # Per-installation CSC report credential. Generated once; keep it private. Removing it registers this installation as new.
+    # #----------------------------------------------------------------------
+    # 启动调试模式，这会打印更多的报错输出，但会导致控制台变得混乱，绝大多数情况下不需要开启

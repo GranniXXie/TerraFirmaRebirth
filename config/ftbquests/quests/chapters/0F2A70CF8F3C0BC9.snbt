@@ -1,0 +1,220 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0F2A70CF8F3C0BC9"
+	group: "47652EC60BA7B927"
+	hide_quest_details_until_startable: true
+	id: "0F2A70CF8F3C0BC9"
+	images: [ ]
+	order_index: 3
+	quest_enhance_chapter_background: "farmersdelight:block/spruce_cabinet_top"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1B29C064B62C5CCE"]
+			id: "36635352EDEFED02"
+			rewards: [{
+				id: "7FD433819254CE3A"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "662C4C98C1A4FD34"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(tfc:axles)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7346528C14F14C00"]
+			id: "1B29C064B62C5CCE"
+			rewards: [{
+				id: "74AA667A222D32BE"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "0377ED28C89ADDBF"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(tfc:water_wheels)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2AD94E48DAB96EAF"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(tfc:windmill_blades)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "73EF8418ECA67624"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["36635352EDEFED02"]
+			id: "5BB99D08032A6CD3"
+			rewards: [{
+				id: "7FEBD4AA00F6B240"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "6C9DD46DFC2AB990"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1AB737C31EDC08D5"]
+			icon: {
+				id: "tfc:steel_pump"
+			}
+			id: "4C915E1A95A2EB1A"
+			rewards: [{
+				id: "617D12F57DF226DC"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "1F9B9C92A52A49E1"
+					item: { count: 1, id: "tfc:steel_pump" }
+					type: "item"
+				}
+				{
+					id: "4C56B5572DDC7DAF"
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:steel_pipe" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["36635352EDEFED02"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:crankshaft"
+			}
+			id: "1AB737C31EDC08D5"
+			rewards: [{
+				id: "7CE60090E3801F1F"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "4C1455A25930FD4B"
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:crankshaft" }
+					type: "item"
+				}
+				{
+					id: "02D6E8CBECF1A6CD"
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/rod/steel" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"40DF0E9B77C38D92"
+				"3270EADED45FCD0F"
+			]
+			dependency_requirement: "one_completed"
+			hide_details_until_startable: false
+			icon: {
+				id: "afc:wood/water_wheel/eucalyptus"
+			}
+			id: "7346528C14F14C00"
+			rewards: [{
+				id: "54B1414D9BB4BE1F"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "20AA412A7EB06B77"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["36635352EDEFED02"]
+			id: "1920E4FABD8DC5AD"
+			rewards: [{
+				id: "27E5713D7A659FA7"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "3CDE44BFA6AEBFBB"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(tfc:gear_boxes)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1920E4FABD8DC5AD"]
+			id: "3DBEC5FDBDA6531C"
+			rewards: [{
+				id: "2757CB28731C903D"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "70B893D38E421281"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(tfc:clutches)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["36635352EDEFED02"]
+			id: "1597FFAC1D8851E8"
+			rewards: [{
+				id: "7F168EA594D91064"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "5C25431AB9C977E8"
+				item: { count: 1, id: "firmalife:compost_tumbler" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1AB737C31EDC08D5"]
+			icon: {
+				id: "tfc:bellows"
+			}
+			id: "16C867DD567F1FBB"
+			rewards: [{
+				id: "512F77F580D40936"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "4DD2778AD5D36CBC"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 1.5d
+		}
+	]
+}

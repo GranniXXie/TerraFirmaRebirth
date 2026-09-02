@@ -1,0 +1,9 @@
+{
+    "ingredient": {
+        "fluid": "firmalife:chocolate"
+    },
+    "water": 10.0,
+    "saturation": 1.0,
+    "dairy": 1.0,
+    "consume_chance": 0.2
+}

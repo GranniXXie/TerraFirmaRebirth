@@ -1,0 +1,12 @@
+{
+  "tooltip.kubejs.unknown_ingot.0": "Происхождение: штрафной продукт переплавки слитков низкого качества в промышленной сплавочной печи",
+  "tooltip.kubejs.unknown_ingot.1": "Партия испорчена — годится только на 20 мБ металлолома",
+  "item.kubejs.unfinished_collector_upgrade": "Незавершённое улучшение сборщика",
+  "item.kubejs.unfinished_puller_upgrade": "Незавершённое улучшение тягового механизма",
+  "item.kubejs.unfinished_pusher_upgrade": "Незавершённое улучшение толкателя",
+  "item.kubejs.unfinished_paper": "Незавершённая бумага",
+  "item.kubejs.unfinished_raw_kaolin_clay": "Незавершённая сырая каолиновая глина",
+  "item.kubejs.unfinished_steel": "Незавершённый стальной слиток",
+  "item.kubejs.unfinished_wrought_iron": "Незавершённый кованый железный слиток",
+  "item.kubejs.unfinished_pulp": "Незавершённая масса"
+}

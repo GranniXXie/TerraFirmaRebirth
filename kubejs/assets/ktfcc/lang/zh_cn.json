@@ -1,0 +1,9 @@
+{
+  "config.jade.plugin_ktfcc.decaying": "萎凋中",
+  "config.jade.plugin_ktfcc.mugwort": "艾草",
+  "config.jade.plugin_ktfcc.stove": "炉灶",
+  "config.jade.plugin_ktfcc.tea_tree": "茶树",
+  "tfc.recipe.barrel.ktfcc.barrel_sealed.black": "红茶",
+  "tfc.recipe.barrel.ktfcc.barrel_sealed.oolong": "乌龙茶",
+  "tfc.recipe.barrel.ktfcc.barrel_sealed.zongzi_leaves": "粽叶"
+}

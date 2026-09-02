@@ -1,0 +1,19 @@
+{
+  "block.rocketnautics.titanium_ore": "钛矿石",
+  "block.rocketnautics.titanium_ore.prospected": "钛矿石",
+  "block.rocketnautics.separator_charge": "级间分离装药",
+  "block.rocketnautics.separator_charge.funny": "本质上是一次_更强劲的可控爆炸_。但愿只有_该掉的_部分会掉下来。",
+  "block.rocketnautics.separator_charge.summary": "爆炸螺栓与_小型聚能装药_，专为_级间分离_设计。在上升过程中_抛弃_死重的关键。由_红石脉冲_触发。",
+  "block.rocketnautics.separator_shaft": "级间分离传动杆",
+  "block.rocketnautics.separator_shaft.funny": "本质上是一次_可控爆炸_。但愿只有_该掉的_部分会掉下来。",
+  "block.rocketnautics.separator_shaft.summary": "爆炸螺栓与_安山传动杆_，专为_级间分离_设计。在上升过程中_抛弃_死重的关键。由_红石脉冲_触发。",
+  "gui.rocketnautics.hud.altitude": "高度",
+  "gui.rocketnautics.hud.eccentricity": "偏心率",
+  "gui.rocketnautics.hud.escape": "逃逸",
+  "gui.rocketnautics.hud.orbiting": "轨道",
+  "gui.rocketnautics.hud.speed": "速度",
+  "gui.rocketnautics.planet_shape": "行星形状",
+  "gui.rocketnautics.planet_shape.cube": "立方体",
+  "gui.rocketnautics.planet_shape.sphere": "球体",
+  "key.rocketnautics.toggle_alignment": "开关宇航头盔轨道对准辅助"
+}

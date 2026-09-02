@@ -1,0 +1,22 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "type": "tfc:and",
+      "children": [
+        {
+          "tag": "c:ingots/iron"
+        },
+        {
+          "type": "tfc:heat",
+          "max": 0.001
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "create:iron_sheet"
+    }
+  ]
+}

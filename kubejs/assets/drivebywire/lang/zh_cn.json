@@ -1,0 +1,6 @@
+{
+  "drivebywire.configuration.shouldConsumeWires": "消耗线缆",
+  "drivebywire.configuration.shouldConsumeWires.tooltip": "在生存模式下使用线缆时是否消耗。",
+  "subtitle.drivebywire.plug.in": "线缆已连接",
+  "subtitle.drivebywire.plug.out": "线缆已断开"
+}

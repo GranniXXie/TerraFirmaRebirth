@@ -1,0 +1,5 @@
+[rendering]
+	#Subdivisions per water quad edge when clipping against complex ship occlusion masks. Higher values reduce angled-edge gaps but emit more vertices. Recommended: 8-24.
+	# Default: 16
+	# Range: 4 ~ 32
+	waterOcclusionEdgeSubdivisions = 16

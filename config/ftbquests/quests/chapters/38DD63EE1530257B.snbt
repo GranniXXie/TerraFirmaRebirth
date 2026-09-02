@@ -1,0 +1,248 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "38DD63EE1530257B"
+	group: "47652EC60BA7B927"
+	hide_quest_details_until_startable: true
+	icon: {
+		components: {
+			"ftbquests:icon": "minecraft:block/nether_portal"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "38DD63EE1530257B"
+	images: [ ]
+	order_index: 0
+	quest_enhance_chapter_background: "kaleidoscope_cookery:stockpot/lava_cooking"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2968899F318BFF88"]
+			hide_details_until_startable: false
+			icon: {
+				components: {
+					"ftbquests:icon": "minecraft:block/nether_portal"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "4D00107C01892548"
+			rewards: [{
+				id: "4CB7CC8A6F38FE10"
+				type: "xp"
+				xp: 20
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "4AD1EA05D258B07B"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D00107C01892548"]
+			id: "2D159EE393AECF97"
+			rewards: [{
+				id: "34CE49B2F3BB404E"
+				type: "xp"
+				xp: 20
+			}]
+			size: 1.5d
+			tasks: [{
+				icon: {
+					components: {
+						"tfc:heat": { }
+					}
+					id: "tfc:metal/scythe/wrought_iron"
+				}
+				id: "69D8B9DBE3724505"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:tools/scythe)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 2.25d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D159EE393AECF97"]
+			icon: {
+				components: {
+					"tfc:food": {
+						creation_date: -2L
+					}
+				}
+				id: "cold_sweat:soul_sprout"
+			}
+			id: "0F97AEAD57E3CC06"
+			rewards: [{
+				id: "1F2B2FC08451BE03"
+				type: "xp"
+				xp: 20
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "53B4002C158C45EC"
+				type: "checkmark"
+			}]
+			x: 2.25d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2D159EE393AECF97"]
+			id: "4E1DA53A0BC4CEF5"
+			rewards: [{
+				id: "38F4190241ADCF21"
+				type: "xp"
+				xp: 20
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "766209C3DADE384B"
+				item: { count: 1, id: "beneath:juicer" }
+				type: "item"
+			}]
+			x: 2.25d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2D159EE393AECF97"]
+			icon: {
+				components: {
+					"ftbquests:icon": "ldlib2:textures/gui/icon/information.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "7543C21A5ED4064D"
+			rewards: [{
+				id: "1D36608BB87265AF"
+				type: "xp"
+				xp: 20
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "1CBE8B9C3CB0F60B"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7543C21A5ED4064D"]
+			icon: {
+				id: "beneath:cursecoal"
+			}
+			id: "2F5F3B7D868CD534"
+			rewards: [{
+				id: "4FF544FAF9A36451"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "44299BAC382EC5E0"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7543C21A5ED4064D"]
+			id: "0BDCE830FD82089F"
+			rewards: [{
+				id: "03A38960E46925AA"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "050141C346059352"
+				item: { count: 1, id: "beneath:burpflower" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7543C21A5ED4064D"]
+			icon: {
+				id: "beneath:lost_page"
+			}
+			id: "37121B8A35C25813"
+			rewards: [{
+				id: "6336E768FA2B03D7"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "205D8B1A4EBEB519"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7543C21A5ED4064D"]
+			icon: {
+				components: {
+					"tfc:food": {
+						creation_date: -2L
+					}
+				}
+				id: "beneath:ghost_pepper"
+			}
+			id: "2ECCA5AE179FFA0C"
+			rewards: [{
+				id: "2413E5CC19EA2438"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "6EA6D1EA7D1A05AE"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0BDCE830FD82089F"]
+			id: "5B63FF0A83E0373D"
+			rewards: [{
+				id: "3CEA3E0603408F45"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "540DE8520259C438"
+				item: { count: 1, id: "beneath:cursecoal" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["37121B8A35C25813"]
+			icon: {
+				id: "beneath:ancient_altar"
+			}
+			id: "43DF7C319557F1D5"
+			rewards: [{
+				id: "3718D39D21959032"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "3EA62D03CA381EC6"
+					item: { count: 1, id: "beneath:ancient_altar" }
+					type: "item"
+				}
+				{
+					id: "0E79F218E14EBC55"
+					item: { count: 1, id: "beneath:lost_page" }
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.5d
+		}
+	]
+}

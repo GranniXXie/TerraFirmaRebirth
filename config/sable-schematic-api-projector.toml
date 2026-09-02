@@ -1,0 +1,23 @@
+[projector]
+	# Default: 256
+	# Range: 1 ~ 1024
+	maxRayDistance = 256
+	# Default: 4096
+	# Range: 1 ~ 65536
+	maxScreenBlocks = 4096
+	#Whole-server budget shared fairly by all active projector scans.
+	# Default: 4096
+	# Range: 1 ~ 1048576
+	terrainChecksPerTick = 4096
+	# Default: 8.0
+	# Range: 0.01 ~ 1024.0
+	frontierSpeedBlocksPerSecond = 8.0
+	# Default: 0.25
+	# Range: 0.0 ~ 64.0
+	anchorTranslationThreshold = 0.25
+	# Default: 2.0
+	# Range: 0.0 ~ 180.0
+	anchorRotationThresholdDegrees = 2.0
+	# Default: 45.0
+	# Range: 1.0 ~ 89.9
+	halfConeAngleDegrees = 45.0

@@ -1,0 +1,79 @@
+{
+  "item": "kaleidoscopetfctavern:rye_whiskey",
+  "effects": [
+    [
+      {
+        "effect": "minecraft:nausea",
+        "duration": 35,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:nausea",
+        "duration": 10,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:strength",
+        "duration": 60,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:strength",
+        "duration": 120,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:strength",
+        "duration": 180,
+        "amplifier": 1,
+        "probability": 1.0
+      },
+      {
+        "effect": "kaleidoscope_tavern:slightly_tipsy",
+        "duration": 180,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:strength",
+        "duration": 270,
+        "amplifier": 1,
+        "probability": 1.0
+      },
+      {
+        "effect": "kaleidoscope_tavern:slightly_tipsy",
+        "duration": 270,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:strength",
+        "duration": 360,
+        "amplifier": 2,
+        "probability": 1.0
+      },
+      {
+        "effect": "kaleidoscope_tavern:slightly_tipsy",
+        "duration": 360,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ]
+  ]
+}

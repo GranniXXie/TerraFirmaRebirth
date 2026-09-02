@@ -1,0 +1,12 @@
+{
+  "type": "armor",
+  "insulation": {
+    "cold": 60,
+    "heat": 0
+  },
+  "item": {
+    "items": [
+      "rocketnautics:space_helmet"
+    ]
+  }
+}

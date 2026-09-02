@@ -1,0 +1,6 @@
+{
+  "selector": "#tfc:natural_regrowing_plants",
+  "properties": {
+    "sable:mass": 0.25
+  }
+}

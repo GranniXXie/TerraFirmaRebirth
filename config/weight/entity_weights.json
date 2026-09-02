@@ -1,0 +1,19 @@
+// Weight — exact entity masses.
+//
+// By default a creature's mass comes from its hitbox volume, calibrated so a
+// player-sized body equals playerMass. Anything listed here replaces that.
+// Values are in Sable block-mass units: 1.0 = one stone block, a player = 0.75.
+//
+//   "namespace:entity"  an exact entity type
+//   "#namespace:tag"    every entity in a tag (an exact id wins over a tag)
+//
+// The entityMaxMass cap still applies on top, so raise it too if you pin
+// something very heavy here.
+//
+// Reload after editing with:  /weight reload
+{
+  // "minecraft:iron_golem": 10.0,
+  // "minecraft:slime": 0.3,
+  // "minecraft:ravager": 8.0,
+  // "minecraft:bat": 0.02
+}

@@ -1,0 +1,8 @@
+{
+  "tag.block.blockrunner.quick_blocks": "快速方块",
+  "tag.block.blockrunner.slightly_quick_blocks": "略微加速方块",
+  "tag.block.blockrunner.slightly_slow_blocks": "略微减速方块",
+  "tag.block.blockrunner.slow_blocks": "慢速方块",
+  "tag.block.blockrunner.very_quick_blocks": "极快方块",
+  "tag.block.blockrunner.very_slow_blocks": "极慢方块"
+}

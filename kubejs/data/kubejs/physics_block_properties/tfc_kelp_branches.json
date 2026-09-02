@@ -1,0 +1,6 @@
+{
+  "selector": "#tfc:kelp_branches",
+  "properties": {
+    "sable:mass": 0.25
+  }
+}

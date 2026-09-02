@@ -1,0 +1,58 @@
+{
+  "name": "What the Pack Changes",
+  "category": "tfc:tfcr",
+  "icon": "create:cogwheel",
+  "sortnum": 2,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "TerraFirma: Rebirth keeps each mod's native gameplay while wiring its systems together. This entry is a global tour of how the pack differs from \"vanilla TFC plus default mods\" — not a changelog, but a system map that mirrors the Quest Book's chapters.$(br2)Exact recipes live in JEI and the Quest Book."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "World & Survival",
+      "text": "$(li)World curvature (Eratosthenes): the world is round and terrain bends with distance. To prevent teleport crashes, return trips from the Nether are clamped to $(thing)±19,500$()$()$(br)$(li)Temperature (Cold Sweat): $(thing)0–40°C$() is the safe band; outside it you take damage. New players get a 20-minute grace period$()$(br)$(li)Death leaves a corpse (Corpse) with an automatic death waypoint$()$(br)$(li)Bees neither consume honey nor die in winter (kept Firmalife behavior)$()$(br)$(li)$(thing)Astikor Carts$() (with TFC compat) for land hauling and travel$()$(br)$(li)$(thing)Voxy$() distant-terrain rendering supported — see the whole curved world$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Ore Processing",
+      "text": "$(li)TFC's native prospecting and surface-nugget gameplay stays intact$()$(br)$(li)The crushing → grinding → washing beneficiation chain is fully mechanised: quern, millstone, crushing wheels and crushers take over tier by tier$()$(br)$(li)Sluices and mechanised washing coexist, yielding both ore nuggets and gems$()$(br)$(li)The Immersive Engineering $(thing)Mineral Drill$() covers the TFC vein system — deep veins can be automated late-game$()$(br)$(li)Processed ores feed the arc furnace and Electro Energetics machines — ore processing is the pack's resource backbone$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Metals & Smithing",
+      "text": "$(li)Expanded alloying: $(thing)andesite alloy$() is a true alloy that must be mixed to ratio and cast$()$(br)$(li)The arc furnace handles industrial alloying; off-ratio melts with a dominant metal ≥75% yield $(thing)inferior alloy$() — usable for marked tools, but barred from industrial alloy furnaces$()$(br)$(li)Create's basic drivetrain parts are folded into TFC smithing, with anvil tiers lowered across the board — the $(thing)cast-iron age$() can go mechanical$()$(br)$(li)Industrial consumables like graphite electrodes are pressed directly from powders, skipping intermediate ingots$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Energy Progression",
+      "text": "$(li)Three energy eras: $(thing)rotational power$() (Create) → $(thing)biodiesel$() (Immersive Engineering) → $(thing)electricity$() (Electro Energetics)$()$(br)$(li)Portable engines burn biodiesel; super engines drink the high-power blend$()$(br)$(li)Electric heaters replace fuel — even superheated alloying runs on pure electricity$()$(br)$(li)Electro Energetics provides full generation, transmission and electric machinery — the industrial backbone after the steel age$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Create Integration",
+      "text": "$(li)The millstone succeeds the quern — fully automatic once powered$()$(br)$(li)Sequenced-assembly by-products become $(thing)TFC scrap metal$(), so failures still pay back$()$(br)$(li)The Mechanical Crafter runs on an oak workbench — buildable early$()$(br)$(li)Encased Fans handle batch processes like mud-brick drying, rain or shine$()$(br)$(li)Trains and logistics networks haul across TFC-scale distances$()$(br)$(li)The Contraptions chapter covers hoisting, ropes and moving assemblies$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Aeronautics & Space",
+      "text": "$(li)$(thing)Aeronautics$() begins in the cast-iron age: balloons, airships, then planes$()$(br)$(li)TFC Aeronautics makes TFC materials and airframes fully interoperable; rivers genuinely push hulls$()$(br)$(li)Gravity blocks (dirt, gravel…) $(thing)cannot be physicised$() or placed on flying structures — you'll get a notice$()$(br)$(li)$(thing)Cosmonautics$() is the endgame: titanium spawns as rare TFC-style veins and its alloy needs netherite — the goal is the Moon$()$(br)$(li)Levitite follows the $(thing)moon-rock route$(), unlocked after landing$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Farming & Food Keeping",
+      "text": "$(li)Cellars and greenhouses self-detect — $(thing)no climate station$(); three insulation tiers give ≤16°C / ≤8°C / ≤0°C preservation$()$(br)$(li)Greenhouses offset seasons for off-season growing; cheese wheels age on their own in cellars$()$(br)$(li)The keeping chain: sealed vessels → salting & smoking → cellar → fridge upgrades$()$(br)$(li)Rotten food can no longer be cooked or sliced$()$(br)$(li)Cuisine Delight brings a full Chinese stir-fry cuisine$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Husbandry, Bees & Brewing",
+      "text": "$(li)Firmalife beekeeping: hives, combs and honey processing$()$(br)$(li)The Husbandry chapter covers breeding, care and animal produce$()$(br)$(li)Tree taps collect sap: maple syrup and latex$()$(br)$(li)$(thing)Kaleidoscope Tavern compat$() (self-made): four grape varieties, trellis growing and a full winemaking chain — stomping, fermenting, pressing, bottling and aging$()$(br)$(li)The Brewing chapter covers both native TFC drinks and tavern wines$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Content & Convenience",
+      "text": "$(li)$(thing)AFC$(): a full set of TFC-style trees and woodwork$()$(br)$(li)$(thing)The Beneath$(): a TFC-ified nether for expeditions$()$(br)$(li)Sophisticated Backpacks, Storage Drawers and other QoL mods are all TFC-adapted$()$(br)$(li)FTB Teams & claims, the \"$(thing)TerraFirma 360 Guard$()\" item sweeper, and automatic FTB Backups$()$(br)$(li)$(thing)28 original soundtrack tracks$() and a community-made localization$()$(br)$(li)Starter kit on first join: quest book, field guide, thermometer, backpack and wool leggings$()"
+    }
+  ]
+}

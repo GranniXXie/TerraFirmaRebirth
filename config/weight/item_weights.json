@@ -1,0 +1,23 @@
+// Weight — exact item weights.
+//
+// Anything listed here overrides the weight this mod would compute on its own,
+// for items carried, items stored in containers, and armor worn.
+// Values are in Sable block-mass units: 1.0 = one stone block, a player = 0.75.
+//
+//   "namespace:item"  an exact item
+//   "#namespace:tag"  every item in a tag (an exact item id wins over a tag)
+//
+// Empty by default: without entries the mod uses baseItemWeight and the
+// #weight:light_item / #weight:heavy_item tags for carried items, and armor
+// points for worn armor.
+//
+// Reload after editing with:  /weight reload
+{
+  // "minecraft:iron_block": 0.10,
+  // "minecraft:iron_ingot": 0.012,
+  // "minecraft:feather": 0.0001,
+  // "minecraft:netherite_chestplate": 0.30,
+
+  // "#c:ores": 0.08,
+  // "#c:ingots": 0.010
+}

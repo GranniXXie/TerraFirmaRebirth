@@ -1,0 +1,6 @@
+{
+  "selector": "#minecraft:sand",
+  "properties": {
+    "sable:mass": 1.0
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "selector": "#tfc:clay_indicators",
+  "properties": {
+    "sable:mass": 0.25
+  }
+}

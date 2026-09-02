@@ -1,0 +1,6 @@
+{
+    "fluid": "immersiveengineering:biodiesel",
+    "burnTime": 24,
+    "superHeat": true,
+    "amountConsumedPerTick" : 1
+  }

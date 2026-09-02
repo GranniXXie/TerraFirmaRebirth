@@ -1,0 +1,21 @@
+[GridColors]
+	#Normal pipe color. (Hex RGB)
+	#Default: A5A5A5
+	normal_pipe_color = "A5A5A5"
+	#Perforated pipe color. (Hex RGB)
+	#Default: 54FF54
+	perforated_pipe_color = "54FF54"
+	#Perforated pipe color. (Hex RGB)
+	#Default: FF515A
+	fixed_perforated_pipe_color = "FF515A"
+
+[DerrickConsole]
+	#Use the old text style.
+	#Default: false
+	old_school = false
+	#Normal Text Color. (Hex RGB)
+	#Default: FF9900
+	text_color_normal = "FF9900"
+	#Error Text Color. (Hex RGB)
+	#Default: EF0000
+	text_color_error = "EF0000"

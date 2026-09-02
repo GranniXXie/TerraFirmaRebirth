@@ -1,0 +1,41 @@
+{
+  "name": "Команда и благодарности",
+  "category": "tfc:tfcr",
+  "icon": "minecraft:name_tag",
+  "sortnum": 4,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Команда",
+      "text": "TerraFirma: Rebirth создана и поддерживается $(thing)Minecraft-клубом Чжэцзянского университета водных ресурсов и электроэнергетики$() при участии Minecraft-клубов других вузов.$(br2)От эпохи 1.x на 1.18 через 3.x на 1.20.1 к сегодняшней 4.x на 1.21.1 — сборка растёт вместе с игроками уже много лет. Спасибо, что вы с нами."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Благодарности",
+      "text": "$(li)Поддержка кода: $(thing)XinZhi$() (Bilibili), $(thing)Coin0804$() (CurseForge)$()$(br)$(li)Ценные идеи: $(thing)zombie_boy$()$()$(br)$(li)Тестировщики: shiro, 墨乘风-, Lincoln, EchoesTFM, mingyue2024, ChiDeXing, 一只小白给a, MPC托马斯_official, 蒋鸽咕咕咕, me107107$()$(br)$(li)Особая благодарность: 猪人喜欢朋友$()$(br2)И каждому, кто присылал отчёты об ошибках и предложения — всех имён эта страница не вместит."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Уведомление о саундтреке",
+      "text": "В сборку включены $(thing)28 оригинальных треков TFCR$(), изданных эксклюзивно на $(thing)NetEase Cloud Music$().$(br2)Без разрешения нельзя использовать, распространять или перезаливать саундтрек вне контента TerraFirma: Rebirth.$(br2)Играть и творить можно свободно: стримы, видео и некоммерческие переводы приветствуются."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Спасибо авторам модов",
+      "text": "Благодарим авторов TerraFirmaCraft, Create, Immersive Engineering, Firmalife, AFC, Create: Aeronautics / Cosmonautics и всех 200+ модов и прослоек совместимости в сборке.$(br2)Полный список модов — на страницах релиза сборки.$(br2)И спасибо, что дочитали — а теперь идите и срубите своё первое дерево."
+    },
+    {
+      "type": "patchouli:link",
+      "url": "https://discord.gg/Fc7v5EXmkK",
+      "link_text": "Официальный Discord",
+      "text": "Международное сообщество, анонсы и отчёты об ошибках."
+    },
+    {
+      "type": "patchouli:link",
+      "url": "https://www.curseforge.com/minecraft/modpacks/terrafirma-rebirth",
+      "link_text": "Страница на CurseForge",
+      "text": "Файлы и список изменений."
+    }
+  ]
+}

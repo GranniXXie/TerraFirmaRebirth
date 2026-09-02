@@ -1,0 +1,9 @@
+[moderation_coloring]
+	#A sub-level's row in the /sablecleanup list turns orange once it has existed for at least this many days.
+	# Default: 7.0
+	# Range: 0.0 ~ 3650.0
+	longLifeDays = 7.0
+	#On top of longLifeDays, a sub-level's row turns red once it has also gone at least this many days without moving. Movement is only checked when the list is opened, not continuously.
+	# Default: 7.0
+	# Range: 0.0 ~ 3650.0
+	noMovementDays = 7.0

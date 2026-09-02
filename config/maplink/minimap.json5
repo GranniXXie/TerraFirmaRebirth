@@ -1,0 +1,23 @@
+{
+	"showPlayerWaypoints": "ALWAYS",
+	"showMarkerWaypoints": "ALWAYS",
+	"hidePlayersInRange": false,
+	"outOfBoundsPlayerWaypoints": true,
+	"outOfBoundsMarkerWaypoints": true,
+	"playerTextScale": 100,
+	"playerIconScale": 100,
+	"markerTextScale": 100,
+	"markerIconScale": 100,
+	"minPlayerDistance": 0,
+	"maxPlayerDistance": 100000,
+	"maxPlayerWaypoints": 40,
+	"minPlayerIconDistance": 0,
+	"maxPlayerIconDistance": 100000,
+	"maxPlayerIconWaypoints": 40,
+	"minMarkerDistance": 0,
+	"maxMarkerDistance": 100000,
+	"maxMarkerWaypoints": 40,
+	"minMarkerIconDistance": 0,
+	"maxMarkerIconDistance": 100000,
+	"maxMarkerIconWaypoints": 40
+}

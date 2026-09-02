@@ -1,0 +1,5 @@
+{
+  "jm.waypoint.settings.override": "覆盖",
+  "jm.waypoint.settings.override.tooltip": "将此组在该行的设置强制应用到组内所有路径点。",
+  "jm.waypoint.settings.row_icon_color": "图标颜色"
+}

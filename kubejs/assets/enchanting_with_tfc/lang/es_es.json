@@ -1,0 +1,12 @@
+{
+  "enchantment.enchanting_with_tfc.piercing_protection": "Protección contra perforación",
+  "enchantment.enchanting_with_tfc.piercing_protection.desc": "Reduce el daño perforante.",
+  "enchantment.enchanting_with_tfc.crushing_protection": "Protección contra aplastamiento",
+  "enchantment.enchanting_with_tfc.crushing_protection.desc": "Reduce el daño aplastante.",
+  "enchantment.enchanting_with_tfc.slashing_protection": "Protección contra corte",
+  "enchantment.enchanting_with_tfc.slashing_protection.desc": "Reduce el daño cortante.",
+  "enchantment.enchanting_with_tfc.slow_aspect": "Aspecto ralentizador",
+  "enchantment.enchanting_with_tfc.slow_aspect.desc": "Ralentiza al objetivo al golpearlo.",
+  "enchantment.enchanting_with_tfc.hunting": "Caza",
+  "enchantment.enchanting_with_tfc.hunting.desc": "Aumenta el daño contra depredadores."
+}

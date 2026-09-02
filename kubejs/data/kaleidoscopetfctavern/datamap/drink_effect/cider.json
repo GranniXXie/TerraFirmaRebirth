@@ -1,0 +1,61 @@
+{
+  "item": "kaleidoscopetfctavern:cider",
+  "effects": [
+    [
+      {
+        "effect": "minecraft:absorption",
+        "duration": 30,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:absorption",
+        "duration": 120,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:absorption",
+        "duration": 180,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:absorption",
+        "duration": 180,
+        "amplifier": 1,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:absorption",
+        "duration": 240,
+        "amplifier": 1,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:absorption",
+        "duration": 240,
+        "amplifier": 2,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:absorption",
+        "duration": 320,
+        "amplifier": 2,
+        "probability": 1.0
+      }
+    ]
+  ]
+}

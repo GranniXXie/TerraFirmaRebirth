@@ -1,0 +1,335 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "30D400559258E039"
+	group: "787619235D44E5B6"
+	hide_quest_details_until_startable: true
+	icon: {
+		components: {
+			"ftbquests:icon": "electroenergetics:block/fluid/transformer_oil_flow"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "30D400559258E039"
+	images: [ ]
+	order_index: 3
+	quest_enhance_chapter_background: "electroenergetics:block/fluid/transformer_oil_flow"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["27AD50F2899C636A"]
+			id: "1005BE3C28B3739A"
+			rewards: [{
+				id: "5D07960BCCA3BD59"
+				type: "xp"
+				xp: 20
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "42AE366F842D3F8A"
+				item: { count: 1, id: "create:copper_casing" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C85EA3C2F146C7D"]
+			id: "73BBB17D0DB1E4FC"
+			rewards: [{
+				id: "16253AA123280FD0"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "5521ACCF06F11FE9"
+				item: { count: 1, id: "create:mechanical_pump" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1005BE3C28B3739A"]
+			id: "6ACB2CD1D0982CA2"
+			rewards: [{
+				id: "70240CB00FCABDBF"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "11AAAFB9C33B2599"
+				item: { count: 1, id: "create:spout" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1005BE3C28B3739A"]
+			id: "5B08E6A714006B4D"
+			rewards: [{
+				id: "401C4D197C0ACAA4"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "01D4EC8E7F9BF7E2"
+				item: { count: 1, id: "create:item_drain" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1005BE3C28B3739A"]
+			id: "1FD35953ED9DE026"
+			rewards: [{
+				id: "155E2BB56BF25ED0"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "3C081DC7EBA09F9F"
+				item: { count: 1, id: "create:hose_pulley" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1005BE3C28B3739A"]
+			id: "5AA66C0488CCD153"
+			rewards: [{
+				id: "40C6B1BE0D2A45B5"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "165A118A7747889D"
+				item: { count: 1, id: "create:steam_engine" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5AA66C0488CCD153"]
+			id: "44B6DA3984A355EC"
+			rewards: [{
+				id: "5328AC6210B65C5B"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				advancement: "create:steam_engine"
+				criterion: ""
+				id: "16D594359423B6A8"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C85EA3C2F146C7D"]
+			id: "7B0CE0C43D0C5FA7"
+			rewards: [{
+				id: "13AC14DE8AFC2833"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "4D84B4FACA74BD05"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3C85EA3C2F146C7D"]
+			hide_dependency_lines: false
+			id: "408992F05F89C9EC"
+			rewards: [{
+				id: "055717FA49E50C86"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "5BFF30BF2B63BF19"
+				item: { count: 1, id: "create:smart_fluid_pipe" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["44B6DA3984A355EC"]
+			icon: {
+				id: "createoreexcavation:drilling_machine"
+			}
+			id: "2EFC30C54F4F811C"
+			rewards: [{
+				id: "625823F6EE05EAB6"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "3AFECCE3174B3515"
+					item: { count: 1, id: "createoreexcavation:drilling_machine" }
+					type: "item"
+				}
+				{
+					id: "2F3C581A6173C8A4"
+					item: { count: 1, id: "createoreexcavation:vein_finder" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1FD35953ED9DE026"]
+			id: "2643DF4CC466346D"
+			rewards: [{
+				id: "41913BAC7E3B3810"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				advancement: "create:hose_pulley_lava"
+				criterion: ""
+				id: "3E372A639F946F00"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3C85EA3C2F146C7D"]
+			id: "3606AB504297B1DA"
+			rewards: [{
+				id: "51D53D9CDA8CBE0B"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "4EE2F583D8D6C3F0"
+				item: { count: 1, id: "create:fluid_valve" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6ACB2CD1D0982CA2"]
+			id: "57E5109A0CB2FC03"
+			rewards: [{
+				id: "03D23FCE7F389E89"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "0CA13AA0A07BDA6D"
+					item: { count: 1, id: "create:blaze_cake_base" }
+					type: "item"
+				}
+				{
+					id: "51A16CD317EB0358"
+					item: { count: 1, id: "create:blaze_cake" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["27AD50F2899C636A"]
+			id: "684FD1CC8061A1BA"
+			rewards: [{
+				id: "35476A822C69096A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "7DC1576C995742AE"
+				item: { count: 1, id: "create:fluid_tank" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4C395797A48CBFFF"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/ingot/copper"
+			}
+			id: "27AD50F2899C636A"
+			rewards: [{
+				id: "5EAE21AF11ACC644"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "71F6F78F9A8074AB"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["27AD50F2899C636A"]
+			id: "3C85EA3C2F146C7D"
+			rewards: [{
+				id: "06BE66755E2605D7"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "37A89062537D561B"
+				item: { count: 1, id: "create:fluid_pipe" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1005BE3C28B3739A"]
+			id: "20B02062076B307A"
+			rewards: [{
+				id: "735F7E360677357A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "1F6A1C90D85045EB"
+				item: { count: 1, id: "create:portable_fluid_interface" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["27AD50F2899C636A"]
+			id: "33AA8BC85792D78B"
+			rewards: [{
+				id: "137579E7A9686C92"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "034F8783778E3B66"
+				item: { count: 1, id: "create:steam_whistle" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+	]
+}

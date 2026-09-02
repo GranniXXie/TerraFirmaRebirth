@@ -1,0 +1,537 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1310690AC5EB6412"
+	group: "7230BCDFA3557B8C"
+	hide_quest_details_until_startable: true
+	icon: {
+		components: {
+			"tfc:heat": { }
+		}
+		id: "tfc:metal/ingot/wrought_iron"
+	}
+	id: "1310690AC5EB6412"
+	images: [ ]
+	order_index: 4
+	quest_enhance_chapter_background: "dynamic_fps:textures/battery/toast/background.png"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["224F7F841626C5E1"]
+			hide_dependency_lines: false
+			id: "0D35BFD32CAB74BD"
+			rewards: [
+				{
+					id: "1702552A9BE7FBD1"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "73288C47A0036BC5"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "6EFC471A02C62BB4"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/anvil/wrought_iron" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["34CF2CC505369BDE"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: false
+			icon: {
+				components: {
+					"ftbquests:icon": "journeymap:textures/waypoint/icon/00_markers/jwi00circle_empty.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "224F7F841626C5E1"
+			progression_mode: "linear"
+			require_sequential_tasks: false
+			rewards: [{
+				id: "05F8798CFD999EE5"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "19BFE74D67CEAA8C"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D35BFD32CAB74BD"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/sheet/wrought_iron"
+			}
+			id: "6B782E8668D1B1DC"
+			rewards: [{
+				id: "445362E5B2DC27AA"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					count: 20L
+					id: "639B4BBFAC295FA3"
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/sheet/wrought_iron" }
+					type: "item"
+				}
+				{
+					id: "14114CB3536C88E2"
+					item: { count: 1, id: "tfcbetterbf:insulation" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1059656A3A30BD26"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:kaolin_clay"
+			}
+			id: "1CFD2728D3CFCDA4"
+			rewards: [{
+				id: "7FDF8C1B93A5B934"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "46F399FFFA36715A"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:kaolin_clay" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"7E2FC20911AAC17A"
+				"484748376883382B"
+			]
+			id: "008E955FDCA4F0CB"
+			rewards: [{
+				id: "53DDAEABBDB999FF"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "164360A935118135"
+				item: { count: 1, id: "tfc:fire_clay" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6B782E8668D1B1DC"]
+			id: "2323C0FFE654EBC9"
+			rewards: [{
+				id: "17BDE485CF2244B8"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "54ED1E62796460A4"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/tuyere/wrought_iron" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["008E955FDCA4F0CB"]
+			id: "0AD32C7C666A7387"
+			rewards: [{
+				id: "6E16C5CD6D1AA750"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "1DAB0F05FC819E22"
+				item: { count: 1, id: "tfc:crucible" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2323C0FFE654EBC9"
+				"0AD32C7C666A7387"
+				"7BF9BE06D63A303D"
+			]
+			id: "3384CC87F75CE3D8"
+			rewards: [{
+				id: "5AF4C47130454348"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "650653BD36B2D1EF"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:blast_furnace" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["008E955FDCA4F0CB"]
+			id: "7BF9BE06D63A303D"
+			rewards: [{
+				id: "26DC4D066A42CEAB"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "1F128650EE5B7E0C"
+				item: { count: 1, id: "tfc:fire_bricks" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3384CC87F75CE3D8"]
+			icon: {
+				components: {
+					"ftbquests:icon": "minecraft:block/blast_furnace_front_on"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "5B6105124524CE66"
+			rewards: [{
+				id: "5298B0F453C8F509"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "63CA236DC28B74AA"
+				type: "checkmark"
+			}]
+			x: 14.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["32DDD057F12B1AC5"]
+			id: "46DF54D6E0F92F32"
+			rewards: [
+				{
+					id: "0E6E37E2A8FEB08B"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "2DFC0FABC97EECA9"
+					item: {
+						count: 1
+						id: "tfc:gem/ruby"
+					}
+					type: "item"
+				}
+				{
+					id: "758B2CDA328205F5"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 8
+					id: "08BA1CF6FAC7B9C9"
+					item: {
+						components: {
+							"tfc:heat": { }
+						}
+						count: 1
+						id: "tfc:metal/ingot/steel"
+					}
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			tasks: [{
+				id: "01BBF615B75A6353"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/steel" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: 0.0d
+		}
+		{
+			hide_dependency_lines: false
+			hide_until_deps_visible: false
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/ingot/wrought_iron"
+			}
+			id: "34CF2CC505369BDE"
+			rewards: [{
+				id: "49D98D01E291827B"
+				type: "xp"
+				xp: 25
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "77AF81055CFC48B9"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/wrought_iron" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["34CF2CC505369BDE"]
+			icon: {
+				components: {
+					"ftbquests:icon": "create:textures/gui/logo.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "5ED9F15870E8BD9F"
+			rewards: [{
+				id: "2008AAC8BBBC6A13"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6E8D98794CB3E83B"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["34CF2CC505369BDE"]
+			icon: {
+				components: {
+					"ftbquests:icon": "immersiveengineering:block/conveyor/vertical"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "6A6AEEC2EE72BF27"
+			rewards: [{
+				id: "0AD108A3B844736D"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7A8BD7FDCD39834F"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["34CF2CC505369BDE"]
+			icon: {
+				components: {
+					"ftbquests:icon": "minecraft:block/nether_portal"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "2968899F318BFF88"
+			rewards: [{
+				id: "0BB4D9F7D5C5724A"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "35BA1423AC764111"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["224F7F841626C5E1"]
+			icon: {
+				components: {
+					"ftbquests:icon": "tfc:textures/gui/book/biomes/rolling_hills_with_river.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "14B141E51322E51E"
+			rewards: [{
+				id: "6E51930198264604"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "75CC1846D1069291"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1B4D5C533AA2E5AF"]
+			id: "795D9C428C6E5193"
+			rewards: [{
+				id: "13CB4C0D517A90A9"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "41549EFF004E7792"
+				item: { count: 1, id: "tfc:ore/graphite" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1CFD2728D3CFCDA4"]
+			id: "7E2FC20911AAC17A"
+			rewards: [
+				{
+					id: "14799ED612FC528C"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "13B036B331FC9802"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "5880FFB8D827E529"
+				item: { count: 1, id: "tfc:powder/kaolinite" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["795D9C428C6E5193"]
+			id: "484748376883382B"
+			rewards: [
+				{
+					id: "47E39B82EB4AA714"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "0EAA4C69B5191A7C"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "38BB649F41548EA8"
+				item: { count: 1, id: "tfc:ore/graphite" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["14B141E51322E51E"]
+			icon: {
+				components: {
+					"ftbquests:icon": "kubejs:textures/quests/kaolin.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "1059656A3A30BD26"
+			rewards: [{
+				id: "44DD6C5D1D7ACF27"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "5754C70ABE6B49AD"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["14B141E51322E51E"]
+			icon: {
+				components: {
+					"ftbquests:icon": "tfc:block/ore/graphite"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "1B4D5C533AA2E5AF"
+			rewards: [{
+				id: "4FE720F1150FCB45"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "47BE43F4D9CE7CB1"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B6105124524CE66"]
+			id: "32DDD057F12B1AC5"
+			rewards: [{
+				id: "16093FFB7C7DF203"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "06607F5B9B2587E7"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/pig_iron" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["224F7F841626C5E1"]
+			icon: {
+				components: {
+					"ftbquests:icon": "minecraft:textures/gui/sprites/icon/info.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "7499A6AE4621A389"
+			rewards: [{
+				id: "48B2BC25F799B06D"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1C249F35E8AD6D52"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+	]
+}

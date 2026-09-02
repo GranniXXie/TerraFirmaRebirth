@@ -1,0 +1,8 @@
+# 
+#Whether to enable 5x5 giant mode of the super hammer.
+#是否开启超级锤子的5x5巨型模式
+enableSuperHammerGiantMode = false
+# 
+#Whether to enable 5x5 giant mode of the super shovel.
+#是否开启超级铲子的5x5巨型模式
+enableSuperShovelGiantMode = false

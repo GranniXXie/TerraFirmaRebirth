@@ -1,0 +1,94 @@
+[force_overlay]
+	#Max distance, in chunks, the goggles raycast will search for a sublevel to inspect.
+	# Default: 4
+	# Range: 1 ~ 32
+	targetingChunks = 4
+	#Length of the gravity arrow as a fraction of the sublevel's bbox height (Y extent).
+	#Forces ≤ gravity scale linearly from there: length = magnitude * (gravityLength /
+	#gravityMagnitude). Forces > gravity soft-saturate (see arrowSaturation). Anchoring
+	#to gravity + bbox-height keeps a stable visual ruler per sublevel — small
+	#contraptions get small arrows, large ones get large arrows — without snap-to-max.
+	# Default: 0.3
+	# Range: 0.05 ~ 4.0
+	gravityArrowFraction = 0.3
+	#Soft cap (in units of the gravity arrow length) that arrows above gravity
+	#asymptote toward. Formula: visualRatio = cap * r / (cap + r - 1) for r > 1, where
+	#r = magnitude / gravityMagnitude. Order is preserved (bigger forces still draw
+	#longer arrows) but runaway is killed. With the default cap = 2: r=2 → ~1.33x,
+	#r=5 → ~1.67x, r=10 → ~1.82x; asymptotes to 2x regardless of how huge r gets.
+	# Default: 2.0
+	# Range: 1.1 ~ 100.0
+	arrowSaturation = 2.0
+	#Absolute minimum arrow length in blocks so the shaft stays visible past the cone
+	#tip + tail bead. Tiny forces (drag, residuals) won't collapse to a sphere-with-cone.
+	# Default: 0.3
+	# Range: 0.0 ~ 64.0
+	minArrowLength = 0.3
+	#Minimum on-screen size (in framebuffer pixels) for the CoM cube's edge length.
+	#When the cube would render smaller than this — typically because the sublevel is
+	#far from the camera — the entire overlay (cube + arrow shafts/cones/tail beads, and
+	#their application-point offsets from the CoM) is uniformly scaled around the CoM so
+	#the cube hits this floor. Large sublevels viewed from far away stay legible; close-up
+	#sublevels where the cube is already bigger than the floor are untouched (scale = 1).
+	#Set to 0 to disable.
+	# Default: 8.0
+	# Range: 0.0 ~ 256.0
+	minOverlayPixelSize = 8.0
+	#Forces within this angular threshold (radians) are merged into one cluster arrow
+	#for groups listed in clusteredForceGroups. Mirrors Simulated's Contraption Diagram
+	#default (~0.4 rad).
+	# Default: 0.4
+	# Range: 0.0 ~ 3.141592653589793
+	clusterAngleRadians = 0.4
+	#Force-group IDs whose forces are merged into direction clusters. Groups not listed
+	#here render one arrow per applied force, mirroring the Contraption Diagram's default
+	#(mergeForces = false). Add e.g. "sable:drag" to dampen jittery groups.
+	#Known force-group IDs (from Sable): sable:gravity, sable:drag, sable:levitation,
+	#sable:balloon_lift, sable:propulsion, sable:lift, sable:magnetic_force.
+	clusteredForceGroups = []
+	#Exponential-moving-average factor applied to clustered arrows across snapshots.
+	#1.0 = no smoothing (snap to each tick); lower = more smoothing.
+	#0.25 ≈ 70% catch-up over 5 ticks; drag in particular jitters less.
+	# Default: 0.25
+	# Range: 0.01 ~ 1.0
+	smoothingFactor = 0.25
+
+[force_tooltip]
+	#Show the per-sublevel HUD readout (mass + net force per group) while the goggles
+	#are active and a sublevel is targeted. Toggle at runtime with
+	#/schematician tooltip toggle.
+	forceTooltipEnabled = true
+	#When false, force/mass values render with two decimal places (e.g. 1,234.56 pN).
+	#When true (default), values round to integer precision by default and apply
+	#sig-fig rounding above `forceTooltipSigFigs` digits when that value is > 0.
+	#Set at runtime with /schematician tooltip sigfigs on|off.
+	forceTooltipSigFigsEnabled = true
+	#Sig-fig count used while sig-fig rounding is enabled. 0 = integer precision
+	#(values render as exact integers with thousands separators, e.g. 1,234,567 pN).
+	#When > 0, values whose integer length exceeds this count round to this many
+	#leading digits — 3 gives 2610 → 2,610, 12345 → 12,300, 1,234,567 → 1,230,000.
+	#Ignored entirely when sig-fig rounding is off. Set at runtime with
+	#/schematician tooltip sigfigs <n>.
+	# Default: 0
+	# Range: 0 ~ 12
+	forceTooltipSigFigs = 0
+
+[drafting_view]
+	#Horizontal lookup offset (0..1) into the palette texture used for tonal mapping.
+	#Each row in the palette PNG is a different colorway; tweak to recolor the view.
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	paletteOffset = 0.25
+	#Toggle the low-res pixelate pass that snaps the screen to a coarser virtual grid.
+	pixelate = true
+	#Pixelate intensity: each virtual pixel covers this many screen pixels per axis.
+	#1.0 ≈ off, 4.0 = default, higher = chunkier blueprint look.
+	# Default: 4.0
+	# Range: 1.0 ~ 16.0
+	pixelScale = 4.0
+	#Edge ink color as a 6-digit hex RGB (with or without leading '#').
+	#Default 2E3032 is a dark graphite for blueprint outlines.
+	lineColor = "2E3032"
+	#Edge shadow color as a 6-digit hex RGB; sits between ink and paper so doubled lines
+	#read as paper-on-paper. Default 696965 is a warm grey.
+	lineShadowColor = "696965"

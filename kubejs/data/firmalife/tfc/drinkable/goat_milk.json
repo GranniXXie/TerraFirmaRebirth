@@ -1,0 +1,8 @@
+{
+    "ingredient": {
+        "fluid": "firmalife:goat_milk"
+    },
+    "water": 10.0,
+    "dairy": 1.0,
+    "consume_chance": 0.2
+}

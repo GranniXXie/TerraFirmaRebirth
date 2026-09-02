@@ -1,0 +1,23 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "tfcorewashing:dirty_dust_bauxite"
+    }
+  ],
+  "results": [
+    {
+      "id": "tfc_ie_addon:powder/bauxite"
+    },
+    {
+      "id": "tfcorewashing:pile_pink_sand"
+    }
+  ],
+  "processingTime": 1200,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

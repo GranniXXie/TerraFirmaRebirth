@@ -1,0 +1,34 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"result": {
+		"id": "farmersdelight:pie_crust",
+		"count": 1
+	},
+	"pattern": [
+		"aba",
+		" c "
+	],
+	"key": {
+		"a": {
+			"item": "minecraft:sugar"
+		},
+		"b": {
+			"children": [
+				{
+					"type": "tfc:not_rotten"
+				},
+				{
+					"tag": "c:foods/dough"
+				}
+			],
+			"type": "neoforge:intersection"
+		},
+		"c": {
+			"fluid": {
+				"tag": "kubejs:milks",
+				"amount": 100
+			},
+			"type": "tfc:fluid_content"
+		}
+	}
+}

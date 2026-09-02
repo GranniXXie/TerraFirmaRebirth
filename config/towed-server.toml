@@ -1,0 +1,7 @@
+#Server-side settings for Create: Towed
+[server]
+	#Maximum number of tow-ropes that can be attached to a single entity (animal/mob) at once.
+	#Default: 2  |  Min: 1  |  Max: 64
+	# Default: 2
+	# Range: 1 ~ 64
+	max_ropes_per_entity = 2

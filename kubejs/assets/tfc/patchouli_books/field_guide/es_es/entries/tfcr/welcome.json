@@ -1,0 +1,42 @@
+{
+  "name": "Bienvenido a TerraFirma: Rebirth",
+  "category": "tfc:tfcr",
+  "icon": "ftbquests:book",
+  "sortnum": 0,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "¡Bienvenido a $(thing)TerraFirma: Rebirth$() (TFCR)!$(br2)Un modpack ligero construido alrededor de $(thing)TerraFirmaCraft: TNG$(), entrelazado con Create, Immersive Engineering, Aeronautics y Cosmonautics. Respetamos el estilo original de cada mod y lo integramos de verdad en el mundo de TFC. Las partidas son largas: tómatelo con calma y disfruta el camino desde la Edad de Piedra hasta la Luna."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Información de versión",
+      "text": "$(li)Versión del pack: $(thing)4.1.21 Release$()$()$(br)$(li)Juego: Minecraft 1.21.1 (NeoForge)$()$(br)$(li)TerraFirmaCraft: TNG 4.2.8$()$(br2)Una versión estable, recomendada para mundos de supervivencia largos. ¿Algo raro? Avísanos en la comunidad: cada reporte mejora el pack."
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["kubejs:textures/fieldguide/welcome.png"],
+      "title": "TerraFirma te espera",
+      "border": true,
+      "text": "De la primera piedra tallada a un pequeño paso en la Luna."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Encuéntranos",
+      "text": "$(li)Comunidad internacional y servidores: Discord (enlace abajo)$()$(br)$(li)Comunidad china (QQ): $(thing)807756188$() / $(thing)454488438$()$()$(br)$(li)Guías y descargas: busca $(thing)TFCR$() en mcmod.cn o en CurseForge$()"
+    },
+    {
+      "type": "patchouli:link",
+      "url": "https://discord.gg/Fc7v5EXmkK",
+      "link_text": "Únete al Discord oficial",
+      "text": "Anuncios, servidores internacionales y reportes de errores."
+    },
+    {
+      "type": "patchouli:link",
+      "url": "https://www.curseforge.com/minecraft/modpacks/terrafirma-rebirth",
+      "link_text": "Página de CurseForge",
+      "text": "Archivos y registro de cambios."
+    }
+  ]
+}

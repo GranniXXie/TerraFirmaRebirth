@@ -1,0 +1,46 @@
+{
+	icon: {
+		components: {
+			"tfc:heat": { }
+		}
+		id: "tfc:metal/ingot/bronze"
+	}
+	id: "54FB40241C7729BA"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{
+			count: 8
+			id: "51905C8E05F625F5"
+			item: {
+				components: {
+					"tfc:heat": { }
+				}
+				count: 1
+				id: "tfc:metal/ingot/bronze"
+			}
+		}
+		{
+			count: 8
+			id: "0435EECCC18252D9"
+			item: {
+				components: {
+					"tfc:heat": { }
+				}
+				count: 1
+				id: "tfc:metal/ingot/bismuth_bronze"
+			}
+		}
+		{
+			count: 8
+			id: "2738C26D13EBDC11"
+			item: {
+				components: {
+					"tfc:heat": { }
+				}
+				count: 1
+				id: "tfc:metal/ingot/black_bronze"
+			}
+		}
+	]
+}

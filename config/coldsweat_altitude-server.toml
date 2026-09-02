@@ -1,0 +1,353 @@
+# Cold Sweat: Altitude server config
+# Temperature values are applied through Cold Sweat's WORLD temperature modifiers.
+# Band id is a user-defined stable name used by commands, logs, messages, and runtime state.
+# Leave maxY unset to make a band open-ended upward.
+# These defaults are intended for a mostly vanilla-style overworld height range.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Enable extra diagnostic log entries for altitude and shelter transitions.
+debugLogging = false
+
+# Controls how temperature changes between altitude bands.
+# NONE=abrupt; LINEAR=across the whole band; BOUNDARY=only near each band edge.
+bandGradientMode = "BOUNDARY"
+
+# Aeronautics heat-source tuning applies to both normal world blocks and Sable ship interiors.
+# Performance guard: shelterCheckRadius and Aeronautics heat ranges above 16 are rewritten to 16 when loaded.
+
+aeronauticsBurnerHeat = 0.14
+aeronauticsBurnerRange = 7.0
+aeronauticsSteamVentHeat = 0.12
+aeronauticsSteamVentRange = 8.0
+
+[[bands]]
+id = "deep_caves"
+enabled = true
+dimensions = ["minecraft:overworld"]
+dimensionMode = "WHITELIST"
+minY = -64
+maxY = 0
+temperatureModifier = 0.08
+modifierMode = "ADD"
+priority = 10
+# Use plain text:
+# Use a translation key instead:
+actionbarMessage = ""
+actionbarDisplayTicks = 100
+protectionTag = ""
+requiredPieces = 0
+protectionReductionPerPiece = 0.0
+fullProtectionPieces = 4
+enableShelterCheck = false
+shelterCheckRadius = 4
+shelterReduction = 0.0
+
+[[bands]]
+id = "underground"
+enabled = true
+dimensions = ["minecraft:overworld"]
+dimensionMode = "WHITELIST"
+minY = 1
+maxY = 63
+temperatureModifier = 0.03
+modifierMode = "ADD"
+priority = 5
+# Use plain text:
+# Use a translation key instead:
+actionbarMessage = ""
+actionbarDisplayTicks = 100
+protectionTag = ""
+requiredPieces = 0
+protectionReductionPerPiece = 0.0
+fullProtectionPieces = 4
+enableShelterCheck = false
+shelterCheckRadius = 4
+shelterReduction = 0.0
+
+[[bands]]
+id = "surface"
+enabled = true
+dimensions = ["minecraft:overworld"]
+dimensionMode = "WHITELIST"
+minY = 64
+maxY = 191
+temperatureModifier = 0.0
+modifierMode = "ADD"
+priority = 0
+# Use plain text:
+# Use a translation key instead:
+actionbarMessage = ""
+actionbarDisplayTicks = 100
+protectionTag = ""
+requiredPieces = 0
+protectionReductionPerPiece = 0.0
+fullProtectionPieces = 4
+enableShelterCheck = false
+shelterCheckRadius = 4
+shelterReduction = 0.0
+
+[[bands]]
+id = "high_peaks"
+enabled = true
+dimensions = ["minecraft:overworld"]
+dimensionMode = "WHITELIST"
+minY = 192
+maxY = 255
+temperatureModifier = -0.08
+modifierMode = "ADD"
+priority = 15
+# Use plain text:
+# Use a translation key instead:
+actionbarMessage = ""
+actionbarDisplayTicks = 100
+protectionTag = ""
+requiredPieces = 0
+protectionReductionPerPiece = 0.0
+fullProtectionPieces = 4
+enableShelterCheck = true
+shelterCheckRadius = 4
+shelterReduction = 0.35
+
+[[bands]]
+id = "low_sky"
+enabled = true
+dimensions = ["minecraft:overworld"]
+dimensionMode = "WHITELIST"
+minY = 256
+maxY = 320
+temperatureModifier = -0.20
+modifierMode = "ADD"
+priority = 20
+# Use plain text:
+# actionbarMessage = "Altitude chill"
+# Use a translation key instead:
+# actionbarMessage = "coldsweat_altitude.band.low_sky.actionbar"
+actionbarMessage = "Altitude chill"
+actionbarDisplayTicks = 100
+protectionTag = ""
+requiredPieces = 0
+protectionReductionPerPiece = 0.0
+fullProtectionPieces = 4
+enableShelterCheck = true
+shelterCheckRadius = 4
+shelterReduction = 0.50
+
+[[bands]]
+id = "extreme_sky"
+enabled = true
+dimensions = ["minecraft:overworld"]
+dimensionMode = "WHITELIST"
+minY = 321
+maxY = 4096
+temperatureModifier = -0.45
+modifierMode = "ADD"
+priority = 30
+# Use plain text:
+# actionbarMessage = "Extreme altitude exposure"
+# Use a translation key instead:
+# actionbarMessage = "coldsweat_altitude.band.extreme_sky.actionbar"
+actionbarMessage = "Extreme altitude exposure"
+actionbarDisplayTicks = 100
+protectionTag = ""
+requiredPieces = 0
+protectionReductionPerPiece = 0.0
+fullProtectionPieces = 4
+enableShelterCheck = true
+shelterCheckRadius = 4
+shelterReduction = 0.75

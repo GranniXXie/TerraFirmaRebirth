@@ -1,0 +1,846 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "558CA78B43A1AB58"
+	group: "7230BCDFA3557B8C"
+	hide_quest_details_until_startable: true
+	icon: {
+		components: {
+			"ftbquests:icon": "kubejs:block/andesite_cobblestone_generator"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "558CA78B43A1AB58"
+	images: [ ]
+	order_index: 0
+	quest_enhance_chapter_background: "dynamic_fps:textures/battery/toast/background.png"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4525DB7844975EC1"]
+			hide_until_deps_visible: true
+			icon: {
+				components: {
+					"ftbquests:icon": "fancymenu:textures/menubar/icons/fancymenu_logo.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "4C42A21E7B59CC9F"
+			rewards: [{
+				id: "4E4EDE65A9B507A8"
+				type: "xp"
+				xp: 5
+			}]
+			shape: "octagon"
+			size: 1.0d
+			tasks: [{
+				id: "67F864B0F62BC21A"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4C42A21E7B59CC9F"]
+			icon: {
+				components: {
+					"patchouli:book": "tfc:field_guide"
+				}
+				id: "patchouli:guide_book"
+			}
+			id: "099A619313B81629"
+			rewards: [{
+				id: "60F874FA674391BE"
+				item: {
+					components: {
+						"patchouli:book": "tfc:field_guide"
+					}
+					count: 1
+					id: "patchouli:guide_book"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "36828EDC2A283439"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4C42A21E7B59CC9F"]
+			icon: {
+				components: {
+					"ftbquests:icon": "dynamic_fps:textures/battery/toast/background_icon.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "56EF78C5DC998A39"
+			rewards: [{
+				id: "6672B9BE2F6CA458"
+				type: "xp"
+				xp: 5
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "540B38B19E536445"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["56EF78C5DC998A39"]
+			icon: {
+				components: {
+					"ftbquests:icon": "journeymap:textures/waypoint/icon/02_natural/jwi54cave_empty.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "380699080752117C"
+			rewards: [{
+				id: "6716FCD2A5A27638"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "4A51A424FAE09DEE"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["56EF78C5DC998A39"]
+			icon: {
+				components: {
+					"ftbquests:icon": "minecraft:textures/mob_effect/instant_health.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "4621165AE02945E7"
+			rewards: [{
+				id: "640D80C750C8A321"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "46AB669E62397A1B"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4621165AE02945E7"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/anvil/wrought_iron"
+			}
+			id: "1768230458B173BE"
+			rewards: [{
+				id: "7EBBB95226ECB27A"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "6988C582398EFD59"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["56EF78C5DC998A39"]
+			icon: {
+				components: {
+					"ftbquests:icon": "tfc:item/calendar_clock"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "1F58485DED80F718"
+			rewards: [{
+				id: "47A928D0933E83BA"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "16E0C62DEE2BACB9"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["56EF78C5DC998A39"]
+			icon: {
+				components: {
+					"ftbquests:icon": "journeymap:textures/waypoint/icon/02_natural/jwi75forest.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "61A70898D44DA38E"
+			rewards: [{
+				id: "5343AE1B5C18171D"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "0AAA30746E7B46DE"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4C42A21E7B59CC9F"]
+			icon: {
+				components: {
+					"ftbquests:icon": "tfc:textures/gui/book/tutorial/wattle_add_stick.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "0405DAAE5B61A651"
+			rewards: [{
+				id: "7119444C0E9B1970"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "02327BFB5830D779"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4621165AE02945E7"]
+			icon: {
+				components: {
+					"ftbquests:icon": "cold_sweat:item/thermometer/thermometer"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "5B2FCE4917369975"
+			rewards: [{
+				id: "5C444D48B3942299"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "4B8D91115159149A"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4C42A21E7B59CC9F"]
+			icon: {
+				components: {
+					"ftbquests:icon": "ftbquests:item/book"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "1AE74184E202E553"
+			rewards: [{
+				id: "0B748D3C781C5101"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "25EADB75BE7FD89E"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1AE74184E202E553"]
+			icon: {
+				components: {
+					"ftbquests:icon": "journeymap:textures/waypoint/icon/00_markers/jwi00circle_empty.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "486E1B9CF4D2EFB9"
+			rewards: [{
+				id: "62751AC980008C81"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "51EE79E0AB317BCF"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["486E1B9CF4D2EFB9"]
+			id: "5AC7E0544016909D"
+			rewards: [{
+				id: "7BE96B774E193BFB"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [
+				{
+					id: "647457E224B50784"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(tfc:rock_knapping)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					icon: {
+						components: {
+							"tfc:heat": { }
+						}
+						id: "tfc:wood/twig/oak"
+					}
+					id: "2BD52BB6D11D27AE"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(tfc:twigs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["52E9D69037FA9CC6"]
+			id: "31854FA6B7ED3C26"
+			rewards: [{
+				id: "48452F629D1E7A49"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "1D1D67A5499C168B"
+				item: { components: { "ftbfiltersystem:filter": "or(item(tfc:stone/knife_head/igneous_extrusive) item(tfc:stone/knife_head/igneous_intrusive) item(tfc:stone/knife_head/metamorphic) item(tfc:stone/knife_head/sedimentary))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4621165AE02945E7"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/sword/red_steel"
+			}
+			id: "1DAD44FCD6E74DC0"
+			rewards: [{
+				id: "4F49D8A5FE1FA841"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "67ABA1B365889974"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["4621165AE02945E7"]
+			icon: {
+				components: {
+					"tfc:food": {
+						creation_date: -2L
+					}
+				}
+				id: "farmersdelight:hamburger"
+			}
+			id: "7F29BD740D749BDB"
+			rewards: [{
+				id: "465062300E382A17"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "342B5BE24EC10BCB"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4621165AE02945E7"]
+			icon: {
+				components: {
+					"ftbquests:icon": "tfc:textures/gui/player_nutrition.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "50C66853953ED13E"
+			rewards: [{
+				id: "066142861CD76EC1"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "7868EBF36AD384B1"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["31854FA6B7ED3C26"]
+			id: "51B901F8B8D878AC"
+			rewards: [{
+				id: "236058FECC4CCA50"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				icon: {
+					id: "tfc:stone/knife/igneous_intrusive"
+				}
+				id: "6713D9944D780EDB"
+				item: { components: { "ftbfiltersystem:filter": "or(item(tfc:stone/knife/igneous_intrusive) item(tfc:stone/knife/metamorphic) item(tfc:stone/knife/igneous_extrusive) item(tfc:stone/knife/sedimentary))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["56EF78C5DC998A39"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/propick/red_steel"
+			}
+			id: "1AA27925AD62B190"
+			rewards: [{
+				id: "68DA7A2EE7A6A754"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "270F5CE14B6A7CA7"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["486E1B9CF4D2EFB9"]
+			id: "559339871A4A7287"
+			rewards: [
+				{
+					id: "01660497B1DA07C8"
+					type: "xp"
+					xp: 5
+				}
+				{
+					count: 5
+					id: "207A04C93D4C63F9"
+					item: {
+						count: 1
+						id: "minecraft:flint"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2BAD9F284B21E713"
+				item: { count: 1, id: "minecraft:flint" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5AC7E0544016909D"]
+			icon: {
+				components: {
+					"ftbquests:icon": "tfc:textures/gui/book/gui/clay_knapping.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "52E9D69037FA9CC6"
+			rewards: [{
+				id: "67D6F251E3081FE4"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "1EB81DAF4D5D9E86"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4621165AE02945E7"]
+			icon: {
+				components: {
+					"ftbquests:icon": "ftbchunks:textures/waypoint_death.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "61EB56B64769566A"
+			rewards: [{
+				id: "0D83417425E1D6DB"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "22EF4996E4045BCD"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4621165AE02945E7"]
+			icon: {
+				components: {
+					"ftbquests:icon": "ftbchunks:textures/minimap_info.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "489B226BA26DF7F0"
+			rewards: [{
+				id: "2B326C9F3FCDC5A0"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "1754BC03BF2E794E"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["56EF78C5DC998A39"]
+			icon: {
+				components: {
+					"ftbquests:icon": "minecraft:textures/painting/void.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "308C74C2017D7D52"
+			rewards: [{
+				id: "3E56583C723FC5CC"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "5EFC4438AADDCB1E"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6095779F2D508420"]
+			id: "7125F7DE94A46FA7"
+			rewards: [{
+				id: "6E51F5A443271CC1"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				icon: {
+					id: "tfc:stone/axe/igneous_intrusive"
+				}
+				id: "2DE1EB171B656897"
+				item: { components: { "ftbfiltersystem:filter": "or(item(tfc:stone/axe/igneous_extrusive) item(tfc:stone/axe/metamorphic) item(tfc:stone/axe/igneous_intrusive) item(tfc:stone/axe/sedimentary))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6095779F2D508420"]
+			id: "3D512BAC43861997"
+			rewards: [{
+				id: "542B88AD21DE0FB1"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				icon: {
+					id: "tfc:stone/javelin/igneous_intrusive"
+				}
+				id: "3F8E96FE10D84D70"
+				item: { components: { "ftbfiltersystem:filter": "or(item(tfc:stone/javelin/igneous_extrusive) item(tfc:stone/javelin/igneous_intrusive) item(tfc:stone/javelin/metamorphic) item(tfc:stone/javelin/sedimentary))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3D512BAC43861997"]
+			id: "288B45ED152DEEB8"
+			rewards: [
+				{
+					id: "39A48C6075FF38A9"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "6BC93969A054C551"
+					item: {
+						count: 1
+						id: "tfc:large_raw_hide"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "tfc:world/hunter"
+				criterion: ""
+				id: "2CFDE0D5CF8F1E25"
+				type: "advancement"
+			}]
+			x: 12.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7125F7DE94A46FA7"]
+			id: "51463A1030EFCD0D"
+			rewards: [{
+				id: "307F8850F5938220"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "41CD490C2271BED5"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(tfc:log_pile_logs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1AE74184E202E553"]
+			icon: {
+				components: {
+					"ftbquests:icon": "ftbquests:textures/gui/settings.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "4097F05E5EEADD26"
+			rewards: [{
+				id: "07923767F64FB3AE"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "6C1783FD7340862E"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["51463A1030EFCD0D"]
+			id: "31DC9CC3F6C92B9A"
+			rewards: [{
+				id: "429B5A5E9DD2BD3E"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [
+				{
+					advancement: "tfc:story/firepit"
+					criterion: ""
+					id: "0425C13CE6065615"
+					type: "advancement"
+				}
+				{
+					id: "4F953D0B25816BEF"
+					item: { count: 1, id: "tfc:firestarter" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["288B45ED152DEEB8"]
+			icon: {
+				components: {
+					"ftbquests:icon": "minecraft:block/hay_block_side"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "6DFB6BDC60580B5E"
+			progression_mode: "linear"
+			require_sequential_tasks: false
+			rewards: [{
+				id: "38E16F1C671082ED"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "318FFC3DB2DC6DD9"
+				observation_type: "block_entity"
+				observe_type: 3
+				timer: 1L
+				to_observe: "tfc:thatch_bed"
+				type: "observation"
+			}]
+			x: 12.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"6DFB6BDC60580B5E"
+				"31DC9CC3F6C92B9A"
+			]
+			icon: {
+				components: {
+					"ftbquests:icon": "journeymap:textures/waypoint/icon/01_structures/jwi30house_empty.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "703BA870985FA0C5"
+			rewards: [
+				{
+					id: "31D29BA833ECECF0"
+					type: "xp"
+					xp: 20
+				}
+				{
+					id: "33406D3C1DA6E366"
+					type: "xp"
+					xp: 30
+				}
+			]
+			shape: "octagon"
+			tasks: [{
+				id: "28F691C7DB7E97B4"
+				type: "checkmark"
+			}]
+			x: 11.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["56EF78C5DC998A39"]
+			icon: {
+				components: {
+					"ftbquests:icon": "journeymaptfcintegration:textures/gui/overlay_precipitation.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "6641709BEA5CB4AB"
+			rewards: [{
+				id: "5FCA47796F733D56"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "619F1AA51D649079"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5B932369EEB60656"]
+			icon: {
+				id: "tfc:ceramic/vessel"
+			}
+			id: "6095779F2D508420"
+			rewards: [
+				{
+					id: "2DE0C110A10B292C"
+					type: "xp"
+					xp: 20
+				}
+				{
+					id: "7853309F312E6F79"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [{
+				id: "21EBA3ED89E27690"
+				type: "checkmark"
+			}]
+			x: 11.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["56EF78C5DC998A39"]
+			icon: {
+				components: {
+					"ftbquests:icon": "electroenergetics:block/fluid/transformer_oil_flow"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "4D519734EF3819FC"
+			rewards: [{
+				id: "7995204E585490B5"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "737097A551E26389"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["51B901F8B8D878AC"]
+			id: "5B932369EEB60656"
+			rewards: [
+				{
+					id: "4E0F04DD5FBEB1D5"
+					type: "xp"
+					xp: 5
+				}
+				{
+					count: 16
+					id: "3A28E91BD8879277"
+					item: {
+						count: 1
+						id: "tfc:straw"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1F52FB7F92CA5756"
+				item: { count: 1, id: "tfc:straw" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4097F05E5EEADD26"]
+			icon: {
+				components: {
+					"ftbquests:icon": "kubejs:textures/quest/voxypic.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "3BE8BA6DBF8C0672"
+			rewards: [{
+				id: "586A79E5DDDBE53A"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "04ADED9DF1688EAF"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+	]
+}

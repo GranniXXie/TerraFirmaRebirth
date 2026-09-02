@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "tfc:sand/black",
+    "tfc:sand/brown",
+    "tfc:sand/green",
+    "tfc:sand/pink",
+    "tfc:sand/red",
+    "tfc:sand/yellow",
+    "minecraft:sand",
+    "minecraft:red_sand"
+  ]
+}

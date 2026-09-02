@@ -1,0 +1,6 @@
+{
+  "selector": "#tfc:cacti",
+  "properties": {
+    "sable:mass": 0.25
+  }
+}

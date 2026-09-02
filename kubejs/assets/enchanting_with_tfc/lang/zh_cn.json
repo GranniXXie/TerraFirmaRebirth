@@ -1,0 +1,12 @@
+{
+  "enchantment.enchanting_with_tfc.piercing_protection": "穿刺保护",
+  "enchantment.enchanting_with_tfc.piercing_protection.desc": "减少受到的穿刺伤害。",
+  "enchantment.enchanting_with_tfc.crushing_protection": "粉碎保护",
+  "enchantment.enchanting_with_tfc.crushing_protection.desc": "减少受到的粉碎伤害。",
+  "enchantment.enchanting_with_tfc.slashing_protection": "切割保护",
+  "enchantment.enchanting_with_tfc.slashing_protection.desc": "减少受到的切割伤害。",
+  "enchantment.enchanting_with_tfc.slow_aspect": "迟缓",
+  "enchantment.enchanting_with_tfc.slow_aspect.desc": "攻击使目标迟缓。",
+  "enchantment.enchanting_with_tfc.hunting": "狩猎",
+  "enchantment.enchanting_with_tfc.hunting.desc": "对掠食者造成更高伤害。"
+}

@@ -1,0 +1,147 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0655694423AEC222"
+	group: "47652EC60BA7B927"
+	hide_quest_details_until_startable: true
+	icon: {
+		id: "tfccanes:refined_walking_cane"
+	}
+	id: "0655694423AEC222"
+	images: [ ]
+	order_index: 12
+	quest_enhance_chapter_background: "simulated:block/symmetric_sail/side_light_blue"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["322DA724CB100A09"]
+			id: "5E38466ECBAE7D75"
+			rewards: [{
+				id: "7EDFCBD791A5CFFF"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "258F10B99B04775E"
+				item: { count: 1, id: "tfccanes:walking_cane" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6DD8702EF10DC5C2"]
+			hide_details_until_startable: false
+			icon: {
+				id: "tfccanes:refined_walking_cane"
+			}
+			id: "4569D647280858BE"
+			rewards: [{
+				id: "5CF24ACF286F6537"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "06690E6398821D18"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4569D647280858BE"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/boots/wrought_iron"
+			}
+			id: "322DA724CB100A09"
+			rewards: [{
+				id: "71014A1B9035660F"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "657C2459AC32C02F"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["322DA724CB100A09"]
+			id: "48F4F67F7CE0B7A9"
+			rewards: [{
+				id: "26558F3EE32E2EFD"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "368B7539FC3840F0"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4569D647280858BE"]
+			icon: {
+				id: "minecraft:rail"
+			}
+			id: "0F17A8D9D2F281E7"
+			rewards: [{
+				id: "261060E6D18679E5"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "622B687BC9B66A3D"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0F17A8D9D2F281E7"]
+			icon: {
+				id: "create:cart_assembler"
+			}
+			id: "15D5737B671A7F2A"
+			rewards: [{
+				id: "3B3B15C42920B226"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "7D8EF3EFE779F09C"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0F17A8D9D2F281E7"]
+			icon: {
+				components: {
+					"ftbquests:icon": "create_aeronautics_automated_logistics:textures/gui/train.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "3C5CA88FF94EE6F0"
+			rewards: [{
+				id: "537853EF25E9DAD5"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "2BCBAD0D5D69BADA"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+	]
+}

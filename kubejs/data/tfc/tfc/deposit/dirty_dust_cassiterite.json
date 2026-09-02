@@ -1,0 +1,7 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": {
+    "item": "tfcorewashing:dirty_dust_cassiterite"
+  },
+  "loot_table": "tfc:sluicing/deposits/dirty_dust_cassiterite"
+}

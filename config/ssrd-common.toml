@@ -1,0 +1,4 @@
+#The render distance for physics objects (SubLevels) in chunks.
+# Default: 32
+# Range: 2 ~ 4096
+physicsRenderDistance = 32

@@ -1,0 +1,13 @@
+{
+  "itemGroup.waterflasks": "水壶",
+  "waterflasks.config.damageFactor": "耐久系数",
+  "waterflasks.config.damageFactor.tooltip": "水壶耐久 = 容量 ÷ 此数值。0 = 无限使用次数。",
+  "waterflasks.config.ironCapacity": "铁水壶容量",
+  "waterflasks.config.ironCapacity.tooltip": "铁水壶的液体容量（mB）。1000 = 可饮 10 口。最小值：100",
+  "waterflasks.config.leatherCapacity": "皮水壶容量",
+  "waterflasks.config.leatherCapacity.tooltip": "皮水壶的液体容量（mB）。500 = 可饮 5 口。最小值：100",
+  "waterflasks.config.shiftClickToEmpty": "Shift+点击清空",
+  "waterflasks.config.shiftClickToEmpty.tooltip": "启用后，Shift+右键点击水壶可将其清空。",
+  "waterflasks.config.thirstyDrinking": "允许不渴时饮水",
+  "waterflasks.config.thirstyDrinking.tooltip": "启用后，即使玩家不渴也可以使用水壶。"
+}

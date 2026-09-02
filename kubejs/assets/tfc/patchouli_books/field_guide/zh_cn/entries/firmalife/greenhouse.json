@@ -1,0 +1,18 @@
+{
+  "name": "温室",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:sealed_bricks",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)【本条目的旧版机制已失效】$()$(br2)本整合包中，温室系统已被$(thing)群峦生活硬核版$()完全重写：不再需要气象站，也没有温室等级之分。$(br2)封闭空间的屋顶中，能看到天空的玻璃比例达到 $(thing)50%$() 即被自动判定为温室。温室温度由玻璃比例与墙体热阻共同决定（基准 4°C + 40 × 玻璃比例）。$(br2)完整的建造与温度说明请查阅硬核版分类下的$(l:firmalifehardcore/greenhouse)《温室（新版）》$()。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "速查",
+      "text": "$(li)水平跨度不超过 15 格，竖直不超过 5 格。$()$(br)$(li)墙体热阻越高越保温：密封砖、泥砖为高；石头、原木为中；玻璃、金属块为低。$()$(br)$(li)温室内放置$(l:firmalife/planters)种植盆$()即可全年种植。$()$(br)$(li)站在温室内输入 $(thing)/flhc cellar info$() 可查看判定详情。$()"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 7
+}

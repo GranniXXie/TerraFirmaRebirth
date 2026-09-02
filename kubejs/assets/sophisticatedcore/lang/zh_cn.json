@@ -1,0 +1,5 @@
+{
+  "gui.sophisticatedcore.settings.buttons.z_offset": "深度",
+  "gui.sophisticatedcore.settings.buttons.z_offset_detail": "向外 = 左键\n向内 = 右键",
+  "item.sophisticatedcore.stack_upgrade_conversion.tooltip": "右键点击已安装的堆叠升级以转换"
+}

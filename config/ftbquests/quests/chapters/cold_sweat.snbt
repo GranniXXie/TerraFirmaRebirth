@@ -1,0 +1,338 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "cold_sweat"
+	group: "47652EC60BA7B927"
+	hide_quest_details_until_startable: true
+	icon: {
+		components: {
+			"ftbquests:icon": "tfc:item/thermometer"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "02A13B679E524809"
+	images: [ ]
+	order_index: 1
+	quest_enhance_chapter_background: "dynamic_fps:textures/battery/toast/background.png"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["00EBCE85242695EF"]
+			hide_details_until_startable: false
+			icon: {
+				components: {
+					"ftbquests:icon": "tfc:textures/gui/sprites/container/thermometer.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "79336C37B1AB604C"
+			rewards: [{
+				id: "0A122EE96471CEE7"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "32D6E1227EB18AB2"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["47D557DEACB82596"]
+			icon: {
+				components: {
+					"ftbquests:icon": "minecraft:block/campfire_fire"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "6FD979AE52D97E48"
+			rewards: [{
+				id: "7673BAA459884259"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "54B97F7ABE8225AD"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6FD979AE52D97E48"]
+			icon: {
+				components: {
+					"ftbquests:icon": "minecraft:block/lava_flow"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "59B8A8468EEC484D"
+			rewards: [{
+				id: "748AF7A2135AD8F6"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "24C2B2C6C3BB9855"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"119CEDE0A8B2E7F2"
+				"59B8A8468EEC484D"
+			]
+			dependency_requirement: "one_completed"
+			id: "57768FB38825611D"
+			rewards: [{
+				id: "0C7B7FB5491A946B"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "circle"
+			tasks: [
+				{
+					id: "783B9FFC2E8A2F22"
+					item: { count: 1, id: "cold_sweat:boiler" }
+					type: "item"
+				}
+				{
+					id: "7AD2DD500C0E966D"
+					item: { count: 1, id: "cold_sweat:icebox" }
+					type: "item"
+				}
+				{
+					id: "1986B81DDFC7AC99"
+					item: { count: 1, id: "cold_sweat:smokestack" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["57768FB38825611D"]
+			id: "220E00DDC712BD11"
+			rewards: [{
+				id: "3AF3C68D563EF8DB"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "399EFA9EFB675FA4"
+				item: { count: 1, id: "cold_sweat:waterskin" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["79336C37B1AB604C"]
+			id: "61730A756764E281"
+			rewards: [{
+				id: "680A6AF99CAF0D4A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "7BF43B9DA40F9FB8"
+				item: { count: 1, id: "cold_sweat:thermometer" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["57768FB38825611D"]
+			icon: {
+				id: "cold_sweat:hearth"
+			}
+			id: "7B60B2649CFF790C"
+			rewards: [{
+				id: "19E185A30811317C"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "5C00634304203B8E"
+				item: { count: 1, id: "cold_sweat:hearth" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B60B2649CFF790C"]
+			id: "0E650687F02D8523"
+			rewards: [
+				{
+					id: "510ABE8B04A15A48"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 8
+					id: "08F184A953E079D0"
+					item: {
+						components: {
+							"tfc:food": {
+								creation_date: -2L
+							}
+						}
+						count: 1
+						id: "cold_sweat:soul_sprout"
+					}
+					type: "item"
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				id: "188777CC5A4AE716"
+				item: { count: 1, id: "cold_sweat:soulspring_lamp" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["79336C37B1AB604C"]
+			icon: {
+				components: {
+					"ftbquests:icon": "tfc:textures/gui/book/icons/heating.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "47D557DEACB82596"
+			rewards: [{
+				id: "63A608A4B78310D8"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "68D236B861B2424A"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["79336C37B1AB604C"]
+			icon: {
+				id: "minecraft:leather_helmet"
+			}
+			id: "4841F51E141440D5"
+			rewards: [{
+				id: "12D22BE3577BAFF1"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "5E7C50E161269BF7"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["77D3DFE790706C4E"]
+			id: "08C79C6017BF4193"
+			rewards: [{
+				id: "38C2533A6DB9AE7E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "4DD1A00DBDF57F87"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(c:furs/goat) item(cold_sweat:goat_fur))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["08C79C6017BF4193"]
+			dependency_requirement: "one_completed"
+			id: "3C199CD2E93E3A39"
+			rewards: [{
+				id: "53EB858895B93E05"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "384C892A6C659D46"
+				item: { count: 1, id: "cold_sweat:sewing_table" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["47D557DEACB82596"]
+			icon: {
+				components: {
+					"ftbquests:icon": "tfc:textures/painting/hot_spring.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "1DFF940337685C7D"
+			rewards: [{
+				id: "0BB68BAEB37B7359"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "1D21CFBA90714566"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1DFF940337685C7D"]
+			icon: {
+				components: {
+					"ftbquests:icon": "minecraft:block/blue_ice"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "119CEDE0A8B2E7F2"
+			rewards: [{
+				id: "5C609859916A2457"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "50AFDD032DAA44BB"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4841F51E141440D5"]
+			id: "77D3DFE790706C4E"
+			rewards: [{
+				id: "144AB031E506B769"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "6AA62F26098A9C60"
+				item: { count: 1, id: "cold_sweat:goat_fur_chestplate" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+	]
+}

@@ -1,0 +1,1214 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6B17A41CA8B64EFB"
+	group: "47652EC60BA7B927"
+	hide_quest_details_until_startable: true
+	id: "6B17A41CA8B64EFB"
+	images: [ ]
+	order_index: 9
+	quest_enhance_chapter_background: "simulated:block/symmetric_sail/side_green"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["597A3BAD284A1B8F"]
+			id: "793F53C4B462F2C6"
+			rewards: [{
+				id: "16AF0908DB8B7567"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "1E8E85CA2D288EB6"
+					item: { count: 1, id: "firmalife:clay_oven_bottom" }
+					type: "item"
+				}
+				{
+					id: "14A9E3527F757EF3"
+					item: { count: 1, id: "firmalife:clay_oven_top" }
+					type: "item"
+				}
+				{
+					id: "510B01D60D5815CA"
+					item: { count: 1, id: "firmalife:clay_oven_chimney" }
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["597A3BAD284A1B8F"]
+			icon: {
+				components: {
+					"tfc:food": {
+						creation_date: -2L
+					}
+				}
+				id: "tfc:food/barley_grain"
+			}
+			id: "02ED753941A99D46"
+			rewards: [{
+				id: "52B6B59B5E5894E8"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "731CD690BCF11DBB"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:foods/grain)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["02ED753941A99D46"]
+			icon: {
+				components: {
+					"tfc:food": {
+						creation_date: -2L
+					}
+				}
+				id: "firmalife:food/barley_flatbread"
+			}
+			id: "75A6E4F55999EF2B"
+			rewards: [{
+				id: "327F25A69D7EA88B"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				icon: {
+					components: {
+						"tfc:food": {
+							creation_date: -2L
+						}
+					}
+					id: "firmalife:food/barley_flatbread"
+				}
+				id: "3C6071E63010B287"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(firmalife:foods/flatbreads)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["793F53C4B462F2C6"]
+			icon: {
+				id: "firmalife:tile_oven_hopper"
+			}
+			id: "5897ED90F5479263"
+			rewards: [{
+				id: "4D3F12A702BA23C0"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "44BB5A909B3EA5A7"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["02ED753941A99D46"]
+			id: "54DE12BD51525A1F"
+			rewards: [{
+				id: "5D24510FD0E5B48E"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "745A51E4DA8B3D32"
+				item: { components: { "tfc:fluid": { amount: 1000, id: "firmalife:yeast_starter" } }, count: 1, id: "tfc:wooden_bucket" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["54DE12BD51525A1F"]
+			icon: {
+				components: {
+					"tfc:food": {
+						creation_date: -2L
+					}
+					"tfc:heat": { }
+				}
+				id: "tfc:food/barley_bread"
+			}
+			id: "43C440FC3D7E1296"
+			rewards: [{
+				id: "49B846F5E5E3EB76"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				icon: {
+					components: {
+						"tfc:food": {
+							creation_date: -2L
+						}
+						"tfc:heat": { }
+					}
+					id: "tfc:food/barley_bread"
+				}
+				id: "17692347054FBAEA"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:foods/bread)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["597A3BAD284A1B8F"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "castirongrill:cast_iron_grill"
+			}
+			id: "5EDC9490C9358F90"
+			rewards: [{
+				id: "7087DD713BEF8FB2"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "704F2F2A190E1D78"
+					item: { components: { "tfc:heat": { } }, count: 1, id: "castirongrill:cast_iron_grill" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7DAB20543B19C892"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
+			x: -5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["597A3BAD284A1B8F"]
+			icon: {
+				components: {
+					"tfc:food": {
+						creation_date: -2L
+					}
+				}
+				id: "tfc:jar/red_apple"
+			}
+			id: "52B6A3277A603A50"
+			rewards: [{
+				id: "562030281A6DAF21"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "58E95D258FC31C07"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(tfc:foods/sealed_preserves)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["597A3BAD284A1B8F"]
+			dependency_requirement: "all_started"
+			id: "4C0F061FE6239576"
+			rewards: [{
+				id: "5531EA4DC939A803"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "12D8CC0CA669C8C8"
+				item: { count: 1, id: "firmalife:drying_mat" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5EDC9490C9358F90"]
+			id: "35761A414FD15CF7"
+			rewards: [{
+				id: "6DF731814C1D8D53"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "0B1E78FF0079E2D6"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:wrought_iron_grill" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["35761A414FD15CF7"]
+			id: "183EEF139E3C4BCC"
+			rewards: [{
+				id: "60A052A9BA2C323A"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "1E4487729C03D6A2"
+				item: { count: 1, id: "farmersdelight:stove" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["183EEF139E3C4BCC"]
+			id: "76D47D6D1E129FDA"
+			rewards: [{
+				id: "6B7FC67EB9C8A22E"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "27CF0EF23E936624"
+				item: { count: 1, id: "farmersdelight:cooking_pot" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["02ED753941A99D46"]
+			hide_dependency_lines: false
+			icon: {
+				components: {
+					"tfc:fluid": {
+						amount: 1000
+						id: "tfcagedalcohol:aged_beer"
+					}
+				}
+				id: "tfc:wooden_bucket"
+			}
+			id: "3C5338C73A49C6E7"
+			rewards: [{
+				id: "6C4738F0CDBEFA5A"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "22B1443B38F4B14C"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3C5338C73A49C6E7"]
+			icon: {
+				components: {
+					"tfc:fluid": {
+						amount: 1000
+						id: "tfcagedalcohol:aged_beer"
+					}
+				}
+				id: "tfc:wooden_bucket"
+			}
+			id: "0B3408BA5F50B009"
+			rewards: [{
+				id: "18E1BFEA0F420CB4"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "3EE94BC77489BC62"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2D90F91942AE919A"]
+			hide_dependent_lines: true
+			hide_details_until_startable: false
+			icon: {
+				components: {
+					"ftbquests:icon": "kaleidoscope_cookery:item/suspicious_stir_fry"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "597A3BAD284A1B8F"
+			rewards: [{
+				id: "6D9876F65E910514"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "1C80932918CCBA7C"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["43C440FC3D7E1296"]
+			icon: {
+				components: {
+					"tfc:food": {
+						creation_date: -2L
+					}
+				}
+				id: "tfc:food/barley_bread_sandwich"
+			}
+			id: "568E34E1A29A4085"
+			rewards: [{
+				id: "361E0D763A675EF9"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "5808DCDEEB279D90"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["5897ED90F5479263"]
+			icon: {
+				id: "firmalife:ashtray"
+			}
+			id: "5AACBBDDE7A39F4C"
+			rewards: [{
+				id: "24D17302CFA558CA"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "4B31CAB513F2C930"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5AACBBDDE7A39F4C"]
+			id: "081423E323406D0D"
+			rewards: [{
+				id: "0C0AC4D9037A9B7C"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "4D3815BB9004351D"
+				item: { count: 1, id: "firmalife:vat" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["597A3BAD284A1B8F"]
+			icon: {
+				components: {
+					"tfc:food": {
+						creation_date: -2L
+					}
+				}
+				id: "tfc:food/fruit_salad"
+			}
+			id: "4459F03597D66E94"
+			rewards: [{
+				id: "434269775668705B"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "41301B5AEF2EA9F1"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["20CAEFF29E12B9CC"]
+			id: "70513B8852F6B525"
+			rewards: [{
+				id: "3D639A894D70B335"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				icon: {
+					components: {
+						"tfc:food": {
+							creation_date: -2L
+						}
+					}
+					id: "firmalife:food/milk_chocolate"
+				}
+				id: "34DC788010195E24"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(firmalife:foods/chocolate)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["597A3BAD284A1B8F"]
+			id: "0658304215058402"
+			rewards: [{
+				id: "792F08E05C8DBAEF"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "01E7A56D17CE85EA"
+					item: { count: 1, id: "firmalife:mixing_bowl" }
+					type: "item"
+				}
+				{
+					id: "2F4E0B0884E359B9"
+					item: { count: 1, id: "firmalife:spoon" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["55CD54B87E4D036C"]
+			id: "39DE2E8BC467A29A"
+			rewards: [{
+				id: "594EC9AEDDD5F4CF"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "011D1004456BD38B"
+				item: { components: { "tfc:food": { creation_date: -2L } }, count: 1, id: "firmalife:food/tofu" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["597A3BAD284A1B8F"]
+			icon: {
+				id: "tfc:firepit"
+			}
+			id: "140CA6C75C16C942"
+			rewards: [{
+				id: "4838DAA1EB9FC395"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "0F3001E4F874D271"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["597A3BAD284A1B8F"]
+			icon: {
+				id: "tfc:pot"
+			}
+			id: "5DB20464EE18F00B"
+			rewards: [{
+				id: "73C3955D1E412C0B"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "1828D00E65452082"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0B94A6058F1333A5"]
+			id: "6DFA1AB53E305B80"
+			rewards: [{
+				id: "2CD6D68CEA5626D4"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "3DB5F3BE3690CE9B"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(firmalife:foods/cheese_wheels)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["36A613F0590DA6C6"]
+			id: "20CAEFF29E12B9CC"
+			rewards: [{
+				id: "3C6527F2B6E0ADDA"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				icon: {
+					components: {
+						"tfc:food": {
+							creation_date: -2L
+						}
+					}
+					id: "firmalife:food/milk_chocolate_blend"
+				}
+				id: "22E8A65EDCA8A705"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(firmalife:foods/chocolate_blends)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0658304215058402"]
+			icon: {
+				components: {
+					"tfc:food": {
+						creation_date: -2L
+					}
+				}
+				id: "firmalife:food/chocolate_chip_cookie"
+			}
+			id: "553B6BDFE376C572"
+			rewards: [{
+				id: "71028D7A2C03EE1B"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				icon: {
+					components: {
+						"tfc:food": {
+							creation_date: -2L
+						}
+					}
+					id: "firmalife:food/chocolate_chip_cookie"
+				}
+				id: "2BCC339127E80058"
+				item: { components: { "ftbfiltersystem:filter": "or(item(firmalife:food/hardtack) item(firmalife:food/sugar_cookie) item(firmalife:food/chocolate_chip_cookie))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0658304215058402"]
+			id: "2523764808A716D2"
+			rewards: [{
+				id: "3F38F1619D1050D2"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				icon: {
+					components: {
+						"tfc:food": {
+							creation_date: -2L
+						}
+					}
+					id: "minecraft:pumpkin_pie"
+				}
+				id: "28012B4C6BC7C725"
+				item: { components: { "ftbfiltersystem:filter": "or(item(minecraft:pumpkin_pie) item(firmalife:food/cooked_pie))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0658304215058402"]
+			id: "66407ACF80A57EDE"
+			rewards: [{
+				id: "363022BFD9AE2CAA"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "7BC4CD919F76F5F3"
+				item: { components: { "tfc:food": { creation_date: -2L } }, count: 1, id: "firmalife:food/cooked_pizza" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0658304215058402"]
+			icon: {
+				components: {
+					"tfc:food": {
+						creation_date: -2L
+					}
+				}
+				id: "firmalife:food/vanilla_ice_cream"
+			}
+			id: "7462F6172057CEDB"
+			rewards: [{
+				id: "6AFFFFA372DFBD67"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				icon: {
+					components: {
+						"tfc:food": {
+							creation_date: -2L
+						}
+					}
+					id: "firmalife:food/vanilla_ice_cream"
+				}
+				id: "490491A151D75BBE"
+				item: { components: { "ftbfiltersystem:filter": "or(item(firmalife:food/vanilla_ice_cream) item(firmalife:food/strawberry_ice_cream) item(firmalife:food/chocolate_ice_cream))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["597A3BAD284A1B8F"]
+			id: "706A3B314141D990"
+			rewards: [{
+				id: "690B8BC23C0399DF"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "5621F98C3C14C93E"
+				item: { components: { "tfc:food": { creation_date: -2L }, "tfc:heat": { } }, count: 1, id: "firmalife:food/cocoa_beans" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["597A3BAD284A1B8F"]
+			id: "1BEFEAB3F8B3817A"
+			rewards: [{
+				id: "635C756EA9E95138"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "0444B78B894D21DE"
+				item: { components: { "tfc:food": { creation_date: -2L } }, count: 1, id: "tfc:food/tomato" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["706A3B314141D990"]
+			id: "2A25AFA7C429656D"
+			rewards: [{
+				id: "2788B45A7205A4C9"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "3C90365852401B06"
+				item: { components: { "tfc:food": { creation_date: -2L } }, count: 1, id: "firmalife:food/roasted_cocoa_beans" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["2A25AFA7C429656D"]
+			icon: {
+				components: {
+					"tfc:food": {
+						creation_date: -2L
+					}
+				}
+				id: "firmalife:food/cocoa_powder"
+			}
+			id: "36A613F0590DA6C6"
+			rewards: [{
+				id: "058D2498EED02D20"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "768109BC1B11492B"
+					item: { components: { "tfc:food": { creation_date: -2L } }, count: 1, id: "firmalife:food/cocoa_powder" }
+					type: "item"
+				}
+				{
+					id: "766220BA3320F052"
+					item: { components: { "tfc:food": { creation_date: -2L } }, count: 1, id: "firmalife:food/cocoa_butter" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["1BEFEAB3F8B3817A"]
+			id: "6F70765067E7AAF1"
+			rewards: [{
+				id: "37D74364D6DA46CD"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "65FE6A00AFE2CCE7"
+				item: { components: { "tfc:food": { creation_date: -2L } }, count: 1, id: "firmalife:food/tomato_sauce" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"1BEFEAB3F8B3817A"
+				"597A3BAD284A1B8F"
+			]
+			id: "2E714780F701D299"
+			rewards: [{
+				id: "3487DBDB2557AF6D"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "0DBF561DBA3940EA"
+				item: { components: { "tfc:food": { creation_date: -2L } }, count: 1, id: "firmalife:food/salsa" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0658304215058402"]
+			id: "04CBBF61E5ACDAD5"
+			rewards: [{
+				id: "591CA354302946ED"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "7E8258EE0B31BA83"
+					item: { components: { "tfc:food": { creation_date: -2L } }, count: 1, id: "firmalife:food/raw_egg_noodles" }
+					type: "item"
+				}
+				{
+					id: "0B9EBBBF1658DD09"
+					item: { components: { "tfc:food": { creation_date: -2L } }, count: 1, id: "firmalife:food/raw_rice_noodles" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0658304215058402"]
+			id: "52DA99CB3706297B"
+			rewards: [{
+				id: "769705206E6028BB"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "5CE066B1079E84C2"
+				item: { components: { "tfc:food": { creation_date: -2L } }, count: 1, id: "firmalife:food/butter" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["597A3BAD284A1B8F"]
+			id: "21B43782428F07D8"
+			rewards: [{
+				id: "6A1AD335D82FBF7D"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "21A4A1DA06C83394"
+				item: { components: { "tfc:food": { creation_date: -2L } }, count: 1, id: "tfc:food/soybean" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["21B43782428F07D8"]
+			id: "55CD54B87E4D036C"
+			rewards: [{
+				id: "37E810079F5E5F96"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "5F542AED4DEEB6E6"
+				item: { components: { "tfc:food": { creation_date: -2L } }, count: 1, id: "firmalife:food/soy_mixture" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["21B43782428F07D8"]
+			id: "61AE320791B6E084"
+			rewards: [{
+				id: "0271DC280287E7B4"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "6B3D140B5B233268"
+				item: { components: { "tfc:food": { creation_date: -2L } }, count: 1, id: "firmalife:food/soybean_paste" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["597A3BAD284A1B8F"]
+			icon: {
+				components: {
+					"tfc:food": {
+						creation_date: -2L
+					}
+				}
+				id: "firmalife:food/red_grapes"
+			}
+			id: "61145C1D390AB6BB"
+			rewards: [{
+				id: "7A7195F80723D196"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "5B1BA8F123873830"
+					item: { components: { "tfc:food": { creation_date: -2L } }, count: 1, id: "firmalife:food/red_grapes" }
+					type: "item"
+				}
+				{
+					id: "20B333C71650A694"
+					item: { components: { "tfc:food": { creation_date: -2L } }, count: 1, id: "firmalife:food/white_grapes" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["08E78907ED01EFB3"]
+			id: "3384B5B44F4B831F"
+			rewards: [{
+				id: "0100BC7FB09E6244"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "5DB6B6297663947C"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(firmalife:stomping_barrels)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3384B5B44F4B831F"]
+			id: "3C5CE18D51751BCE"
+			rewards: [{
+				id: "14CF6770C8369A3C"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "47371DDAB4810D4F"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(firmalife:barrel_presses)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["597A3BAD284A1B8F"]
+			id: "5BB4AB2A25BFA739"
+			rewards: [{
+				id: "5CA42334A3283772"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "5374C1AEDF304D1F"
+				item: { components: { "tfc:food": { creation_date: -2L } }, count: 1, id: "tfc:food/maize_grain" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3C5CE18D51751BCE"]
+			id: "497C472062AAA77F"
+			rewards: [{
+				id: "5AE8FA307D520812"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				icon: {
+					id: "firmalife:hematitic_wine_bottle"
+				}
+				id: "64F6531BACB75ABD"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(firmalife:foods/filled_wine_bottles)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["497C472062AAA77F"]
+			id: "71B0E775AAEE1B13"
+			rewards: [{
+				id: "30873E3320792BB9"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "1DA5FE394B8C0D74"
+					item: { components: { "ftbfiltersystem:filter": "item(firmalife:vat)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "652DEAE7AF654660"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(firmalife:wine_shelves)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5BB4AB2A25BFA739"]
+			id: "6FC10036FFFE31D7"
+			rewards: [{
+				id: "49A56E700585DDA1"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "676B0D14B057DD32"
+				item: { components: { "tfc:food": { creation_date: -2L } }, count: 1, id: "firmalife:food/nixtamal" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["6FC10036FFFE31D7"]
+			id: "1AF92C46694147BF"
+			rewards: [{
+				id: "20F67DD291348622"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "515AF5FE8BA6AB40"
+				item: { components: { "tfc:food": { creation_date: -2L }, "tfc:heat": { } }, count: 1, id: "firmalife:food/masa" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1AF92C46694147BF"]
+			id: "783269DF5A7A2183"
+			rewards: [{
+				id: "3C2112630FBD97F9"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "151A6A1C33863341"
+				item: { components: { "tfc:food": { creation_date: -2L }, "tfc:heat": { } }, count: 1, id: "firmalife:food/corn_tortilla" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["783269DF5A7A2183"]
+			id: "6D1264B9FF3D4E23"
+			rewards: [{
+				id: "32300A7E5EC97312"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "371BABF575759CF2"
+				item: { components: { "tfc:food": { creation_date: -2L } }, count: 1, id: "firmalife:food/nachos" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["783269DF5A7A2183"]
+			id: "1654D34A7C0C9198"
+			rewards: [{
+				id: "5D948B82E806C5D4"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "576B4609DE7A2F9E"
+				item: { components: { "tfc:food": { creation_date: -2L } }, count: 1, id: "firmalife:food/taco" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["783269DF5A7A2183"]
+			id: "129AB7613941AE8B"
+			rewards: [{
+				id: "57EF50B78463DBF9"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "53917C03525FF216"
+				item: { components: { "tfc:food": { creation_date: -2L } }, count: 1, id: "firmalife:food/burrito" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["597A3BAD284A1B8F"]
+			id: "363CEADA6EDB2674"
+			rewards: [{
+				id: "72F329A17865D8D7"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "27A77FFE5B8548FC"
+				item: { components: { "tfc:food": { creation_date: -2L } }, count: 1, id: "tfc:food/olive" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["363CEADA6EDB2674"]
+			id: "0B60FB437AD62D0B"
+			rewards: [{
+				id: "6F427F0CEBCEDC8C"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "7003779E656D1255"
+				item: { components: { "tfc:fluid": { amount: 1000, id: "tfc:olive_oil_water" } }, count: 1, id: "tfc:wooden_bucket" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0B60FB437AD62D0B"]
+			id: "3A6ECF3BC2695612"
+			rewards: [{
+				id: "3EA9B93BC817217F"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "3D4885E6097CFF8C"
+				item: { components: { "tfc:fluid": { amount: 1000, id: "tfc:olive_oil" } }, count: 1, id: "tfc:wooden_bucket" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["61AE320791B6E084"]
+			id: "4A2459F2548324B8"
+			rewards: [{
+				id: "081C52D23594F678"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "44A068493FB55673"
+				item: { components: { "tfc:fluid": { amount: 1000, id: "firmalife:soybean_oil" } }, count: 1, id: "tfc:wooden_bucket" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["597A3BAD284A1B8F"]
+			icon: {
+				id: "minecraft:milk_bucket"
+			}
+			id: "0B94A6058F1333A5"
+			rewards: [{
+				id: "14F30A12A2F809E6"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "089B8FCAA5312E3A"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["081423E323406D0D"]
+			id: "7FEDA6C95FF9F710"
+			rewards: [{
+				id: "04CB6431D4BC8057"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "2A7404EBE5232E7E"
+				item: { count: 1, id: "firmalife:jarring_station" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["61145C1D390AB6BB"]
+			id: "08E78907ED01EFB3"
+			rewards: [{
+				id: "5E5B27A776FF04AB"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "2099F1BEB8EECA49"
+				item: { count: 1, id: "firmalife:grape_trellis_post" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+	]
+}

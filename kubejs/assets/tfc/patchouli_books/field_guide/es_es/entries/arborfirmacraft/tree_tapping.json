@@ -1,0 +1,32 @@
+{
+	"name": "Extracción de savia y látex",
+	"category": "tfc:arborfirmacraft",
+	"icon": "afc:tree_tap",
+	"pages": [
+	{
+		"type": "patchouli:text",
+		"text": "Algunos árboles pueden sangrarse para obtener fluidos útiles. Los arces y abedules producen savias azucaradas, mientras que las higueras de caucho, las heveas y los kapoks producen látex. Las savias pueden concentrarse en sirope como edulcorante, y el látex puede cocerse con polvo de azufre en una olla para fabricar barras de caucho."
+	},
+	{
+		"type": "patchouli:image",
+		"title": "Sangrando un arce",
+		"images": [
+        "afc:textures/gui/book/maple_tapping.png"
+      ],
+		"border": true
+	},
+	{
+		"type": "patchouli:text",
+		"text": "Se necesitan tres cosas para sangrar un árbol: el árbol en sí; un grifo para árboles, que debe forjarse en hierro forjado y colocarse en medio de un tronco de al menos tres bloques de altura; y un barril colocado directamente debajo del grifo, mirando hacia arriba. Si las condiciones son adecuadas, el barril empezará a llenarse de inmediato.$(br2)En este pack, los grifos también funcionan en árboles plantados por el jugador: no se requieren troncos naturales."
+	},
+	{
+		"type": "patchouli:text",
+		"text": "No todos los árboles producen todo el tiempo. Los arces y abedules producen savia en primavera, entre -4°C y 6°C, cuando la nieve empieza a derretirse. Las higueras de caucho producen látex a partir de 6°C. Las heveas y los kapoks necesitan 14°C o más, y la hevea rinde el doble que las demás. La latitud, la altitud, la estación y la hora del día afectan a la temperatura y, por tanto, al flujo de savia."
+	}
+	],
+	"read_by_default": true,
+	"sortnum": 1,
+    "extra_recipe_mappings": {
+      "afc:tree_tap": 0
+    }
+}

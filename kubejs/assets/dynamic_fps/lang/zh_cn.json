@@ -1,0 +1,16 @@
+{
+  "config.dynamic_fps.battery_critical_level": "电量告急阈值",
+  "config.dynamic_fps.battery_critical_level_tooltip": "设置被视为告急的电量水平。",
+  "config.dynamic_fps.battery_indicator_debug": "随调试界面（F3）显示",
+  "config.dynamic_fps.battery_indicator_debug_tooltip": "调试界面打开时是否显示电量指示。",
+  "config.dynamic_fps.feature.battery": "电池集成",
+  "config.dynamic_fps.feature.idle": "闲置",
+  "config.dynamic_fps.feature.misc": "杂项",
+  "config.dynamic_fps.feature.volume_transition": "音量过渡",
+  "config.dynamic_fps.ignore_initial_click": "忽略首次点击",
+  "config.dynamic_fps.ignore_initial_click_constant": "总是",
+  "config.dynamic_fps.ignore_initial_click_disabled": "禁用",
+  "config.dynamic_fps.ignore_initial_click_in_world": "仅在世界中",
+  "config.dynamic_fps.ignore_initial_click_tooltip": "点击未聚焦的游戏窗口时忽略误触输入。",
+  "toast.dynamic_fps.http_error": "运行库下载失败"
+}

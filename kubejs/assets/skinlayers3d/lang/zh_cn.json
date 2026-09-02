@@ -1,0 +1,6 @@
+{
+  "text.skinlayers.applySodiumWorkaround.enable": "Sodium 兼容方案",
+  "text.skinlayers.applySodiumWorkaround.enable.tooltip": "针对部分版本 Sodium 立方体面翻转的兼容方案。仅在使用 Sodium 且发现皮肤层侧面缺失时启用。",
+  "text.skinlayers.irisCompatibilityMode.enable": "Iris 兼容模式",
+  "text.skinlayers.irisCompatibilityMode.enable.tooltip": "使用替代方式渲染皮肤层，修复使用 Iris 光影时的阴影/颜色异常。仅在需要时开启，会破坏拐角连接。"
+}

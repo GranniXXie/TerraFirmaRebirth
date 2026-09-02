@@ -1,0 +1,42 @@
+#How much lift a balloon provides per unit of hot air. Higher = floatier.
+# Default: 1.0
+# Range: 0.1 ~ 10.0
+balloonLiftMultiplier = 1.0
+#How quickly fuel is consumed in a hot air balloon furnace (ticks per fuel item).
+# Default: 200
+# Range: 20 ~ 72000
+hotAirBurnRate = 200
+#Multiplier applied to glider durability loss. 1.0 = vanilla rate.
+# Default: 1.0
+# Range: 0.0 ~ 10.0
+gliderDecayModifier = 1.0
+#Whether touching a bare spinning shaft or cogwheel hurts. Encased ones are always safe.
+shaftDamageEnabled = true
+#Minimum rotation speed (RPM) at which a bare shaft starts dealing damage.
+# Default: 128.0
+# Range: 0.0 ~ 1024.0
+shaftDamageStartRpm = 128.0
+#Rotation speed (RPM) at which a bare shaft deals shaftDamageLethal. Damage keeps growing above this.
+# Default: 256.0
+# Range: 1.0 ~ 1024.0
+shaftDamageLethalRpm = 256.0
+#Damage in HP dealt at shaftDamageLethalRpm. ~6.67 is roughly a third of an unarmoured player's HP.
+# Default: 6.67
+# Range: 0.0 ~ 1000.0
+shaftDamageLethal = 6.67
+#Multiplier applied to the whole shaft damage curve. 1.0 = as configured above.
+# Default: 1.0
+# Range: 0.0 ~ 100.0
+shaftDamageMultiplier = 1.0
+#Base sideways impulse applied when a shaft hits you.
+# Default: 0.15
+# Range: 0.0 ~ 2.0
+shaftKnockbackBase = 0.15
+#Extra knockback impulse per RPM above shaftDamageStartRpm.
+# Default: 0.0025
+# Range: 0.0 ~ 0.1
+shaftKnockbackPerRpm = 0.0025
+#Volume of the sound played when a shaft hits an entity. 0.0 = silent.
+# Default: 0.5
+# Range: 0.0 ~ 1.0
+shaftSoundVolume = 0.5

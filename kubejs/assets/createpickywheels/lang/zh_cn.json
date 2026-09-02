@@ -1,0 +1,38 @@
+{
+  "create.hint.waterwheel_infinite.title": "水量不足",
+  "create.hint.waterwheel_infinite": "目标水体太小了。",
+
+  "create.hint.waterwheel_source.title": "缺少动力水源",
+  "create.hint.waterwheel_source": "驱动这台水车的水源太多或太少了。",
+
+  "create.hint.windmill_flow.title": "气流不足",
+  "create.hint.windmill_flow": "风车周围的开阔空间不够——没有足够的空档，风从哪儿来呢？",
+
+  "create.hint.windmill_biome.title": "无效群系",
+  "create.hint.windmill_biome": "风车对摆放的群系很挑剔。",
+
+  "create.hint.picky_efficiency_pre": "当前效率为",
+  "create.hint.picky_efficiency": "",
+
+  "create.hint.picky_biome_boost": "来自群系加成",
+  "create.hint.picky_height_boost": "来自架设高度加成",
+  "create.hint.picky_optimal_boost": "来自动力水源条件",
+
+  "create.hint.picky_biome_error": "所在群系无效，无法工作",
+  "create.hint.picky_biome_warn": "所在群系效果一般",
+  "create.hint.picky_biome_notice": "所在群系效果最佳",
+
+  "create.hint.picky_source_error": "动力水源无效，无法工作",
+  "create.hint.picky_source_warn": "动力水源条件一般",
+  "create.hint.picky_source_notice": "动力水源条件最佳",
+
+  "create.ponder.water_wheel.text_4": "只要水体足够大，水车就能从相邻的水源中汲取动力。在河流群系中效率更高",
+  "create.ponder.water_wheel.text_5": "遮住更多的侧面，或者把它完全浸没，都会让水车停止输出动力",
+  "create.ponder.water_wheel.text_6": "可以对轮子使用木板来改变外观",
+
+  "create.ponder.large_water_wheel.text_6": "只要水体足够大，大水车就能从相邻的水源中汲取动力。在河流群系中效率更高",
+  "create.ponder.large_water_wheel.text_7": "遮住更多的侧面，或者把它完全浸没，都会让水车停止输出动力",
+  "create.ponder.large_water_wheel.text_8": "大水车的转速只有普通水车的一半……",
+  "create.ponder.large_water_wheel.text_9": "……但能输出高得多的应力",
+  "create.ponder.large_water_wheel.text_10": "可以对轮子使用木板来改变外观"
+}

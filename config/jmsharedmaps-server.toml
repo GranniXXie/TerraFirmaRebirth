@@ -1,0 +1,9 @@
+#When true and FTB Teams is installed, share map data only within the same FTB team
+#(party if the player is in one, otherwise their personal team).
+#When FTB Teams is missing or unreadable, sharing stays global regardless of this value.
+ftbTeamsOnly = true
+#Max map chunks sent to each player per server tick during join catch-up and bulk transfers.
+#Lower values reduce join hitching and packet spikes; map fill takes longer.
+# Default: 8
+# Range: 1 ~ 64
+joinSyncTilesPerTick = 1

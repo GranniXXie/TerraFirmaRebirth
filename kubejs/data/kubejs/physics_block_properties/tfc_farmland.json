@@ -1,0 +1,6 @@
+{
+  "selector": "#tfc:farmlands",
+  "properties": {
+    "sable:mass": 1.0
+  }
+}

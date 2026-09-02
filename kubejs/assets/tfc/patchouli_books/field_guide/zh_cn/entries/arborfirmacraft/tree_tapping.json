@@ -1,0 +1,32 @@
+{
+	"name": "割胶与树液",
+	"category": "tfc:arborfirmacraft",
+	"icon": "afc:tree_tap",
+	"pages": [
+	{
+		"type": "patchouli:text",
+		"text": "一些树木可以割取有用的流体。糖槭和白桦能割取甜味树液，橡胶榕、橡胶树与木棉能割取乳胶。树液可以浓缩成糖浆用作甜味剂，乳胶则可以加硫磺粉在小锅里煮成橡胶锭。"
+	},
+	{
+		"type": "patchouli:image",
+		"title": "给糖槭割胶",
+		"images": [
+        "afc:textures/gui/book/maple_tapping.png"
+      ],
+		"border": true
+	},
+	{
+		"type": "patchouli:text",
+		"text": "割胶需要三样东西：树本身；一把树液采集器，需要用锻铁锻造，装在至少三格高的树干中段；以及一只木桶，开口朝上紧贴在采集器正下方。条件合适时，木桶会立刻开始积攒树液。$(br2)本整合包中，采集器对人工种植的树同样有效，不要求天然生成的原木。"
+	},
+	{
+		"type": "patchouli:text",
+		"text": "不同树的产液条件不同：糖槭和白桦只在春季、气温介于 -4°C 到 6°C（积雪将融时）出产树液；橡胶榕在 6°C 以上出产乳胶；橡胶树和木棉则需要 14°C 以上，橡胶树的出胶量是橡胶榕的两倍。纬度、海拔、季节与昼夜都会影响气温，从而影响树液的流动。"
+	}
+	],
+	"read_by_default": true,
+	"sortnum": 1,
+    "extra_recipe_mappings": {
+      "afc:tree_tap": 0
+    }
+}

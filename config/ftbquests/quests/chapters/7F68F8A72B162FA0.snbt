@@ -1,0 +1,374 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7F68F8A72B162FA0"
+	group: "787619235D44E5B6"
+	icon: {
+		components: {
+			"ftbquests:icon": "rocketnautics:textures/gui/sprites/banner.png"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "7F68F8A72B162FA0"
+	images: [ ]
+	order_index: 8
+	quest_enhance_chapter_background: "dynamic_fps:textures/battery/toast/background.png"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7C09A11E0000ED01"]
+			hide_dependency_lines: true
+			icon: {
+				id: "rocketnautics:rocket_thruster"
+			}
+			id: "00572026F4A12262"
+			rewards: [{
+				id: "612F57E0A5A54ADF"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "6D82346057D6C7D0"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"00572026F4A12262"
+				"3BE8BA6DBF8C0672"
+			]
+			id: "34FFDE76B445328D"
+			rewards: [{
+				id: "5575AAE5615BC450"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "4C8976DBABBBEC5D"
+				item: { count: 1, id: "rocketnautics:titanium_ingot" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["34FFDE76B445328D"]
+			id: "27042E3F6BBBCAD8"
+			rewards: [{
+				id: "1DD7624EDDC37808"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "2BAFF72F0EE697E6"
+					item: { count: 1, id: "rocketnautics:titanium_alloy" }
+					type: "item"
+				}
+				{
+					id: "0E95554A7B097A00"
+					item: { count: 1, id: "rocketnautics:titanium_sheet" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["27042E3F6BBBCAD8"]
+			id: "269CABDFE57142E2"
+			rewards: [{
+				id: "5729416937B8C020"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "13417CA063ACC3BB"
+					item: { count: 1, id: "rocketnautics:rocket_thruster" }
+					type: "item"
+				}
+				{
+					id: "33ED456B60A7A5CB"
+					item: { count: 1, id: "rocketnautics:titanium_nozzle" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["269CABDFE57142E2"]
+			id: "5EC0DE11FE000002"
+			rewards: [{
+				id: "5EC0DE11FE000012"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "5EC0DE11FE000022"
+					item: { count: 1, id: "rocketnautics:booster_thruster" }
+					type: "item"
+				}
+				{
+					id: "5EC0DE11FE000032"
+					item: { count: 1, id: "rocketnautics:thruster_mount" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["269CABDFE57142E2"]
+			icon: {
+				id: "immersiveengineering:high_power_biodiesel_bucket"
+			}
+			id: "791B4E8780BEA31C"
+			rewards: [{
+				id: "4B33B9ACFE676A92"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "06BFC851C57409F2"
+				item: { count: 1, id: "rocketnautics:hose_anchor" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["791B4E8780BEA31C"]
+			id: "58B6D43ABBD7C9FD"
+			rewards: [{
+				id: "1E3A75A6C2B807A8"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "3AC9A284D993C13D"
+					item: { count: 1, id: "rocketnautics:vector_thruster" }
+					type: "item"
+				}
+				{
+					id: "40034C10235D0B50"
+					item: { count: 1, id: "rocketnautics:rcs_thruster" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["58B6D43ABBD7C9FD"]
+			id: "29A4B21CB648052D"
+			rewards: [{
+				id: "0C85E51E700A24F4"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "097B69F0FDB1C9DB"
+					item: { count: 1, id: "rocketnautics:separator" }
+					type: "item"
+				}
+				{
+					id: "062D8F5F63DFF89B"
+					item: { count: 1, id: "rocketnautics:separator_charge" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["29A4B21CB648052D"]
+			id: "7D4CB2C7344BFAAC"
+			rewards: [{
+				id: "6E3B4D5E232157C9"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "0A21E566CCD136B4"
+					item: { count: 1, id: "rocketnautics:magnetic_stabilizer" }
+					type: "item"
+				}
+				{
+					id: "25A1F7B5173AD0C7"
+					item: { count: 1, id: "rocketnautics:hologram_block" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			id: "2199434138EE8F2D"
+			rewards: [{
+				id: "00D125A620D9AD79"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "3E2042B45F331C48"
+					item: { count: 1, id: "rocketnautics:space_helmet" }
+					type: "item"
+				}
+				{
+					id: "0332F2FA287F7727"
+					item: { count: 1, id: "rocketnautics:jetpack" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["269CABDFE57142E2"]
+			id: "7F3BD13A6D3468CF"
+			rewards: [{
+				id: "54EED6430467E1AF"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "2A2C3F45B09DFC80"
+				item: { count: 1, id: "rocketnautics:sputnik" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["29A4B21CB648052D"]
+			icon: {
+				id: "rocketnautics:sputnik"
+			}
+			id: "5D95BC05FB558E94"
+			rewards: [{
+				id: "2CE543A8ECBA310F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "25FB27DDF4B8848B"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["58B6D43ABBD7C9FD"]
+			id: "4BADFA04EF810F23"
+			rewards: [{
+				id: "05B396D0D4AA8328"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "0207930F5E23C99A"
+					item: { count: 1, id: "rocketnautics:engine_pipes" }
+					type: "item"
+				}
+				{
+					id: "37340CFF379D62F5"
+					item: { count: 1, id: "rocketnautics:engine_nozzle" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2199434138EE8F2D"]
+			id: "19908A9AD562B70D"
+			rewards: [{
+				id: "72E396EDB2961B84"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "7ACA531B147B5226"
+					item: { count: 1, id: "rocketnautics:copper_leg_thrusters" }
+					type: "item"
+				}
+				{
+					id: "5466BD5AB7F3F446"
+					item: { count: 1, id: "rocketnautics:copper_anchor_boots" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5D95BC05FB558E94"]
+			icon: {
+				id: "rocketnautics:lunar_regolith"
+			}
+			id: "6C30EA272020B7E0"
+			rewards: [
+				{
+					id: "218D2E60B917B4F7"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+				{
+					count: 16
+					id: "2C2F94C013237809"
+					item: {
+						count: 1
+						id: "minecraft:firework_rocket"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4CB838477651EAFC"
+				item: { count: 1, id: "rocketnautics:lunar_regolith" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["58B6D43ABBD7C9FD"]
+			icon: {
+				id: "computercraft:computer_advanced"
+			}
+			id: "7B2E000000000051"
+			rewards: [{
+				id: "7B2E000000000251"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "7B2E000000000151"
+					item: { count: 1, id: "computercraft:computer_normal" }
+					type: "item"
+				}
+				{
+					id: "7B2E000000000152"
+					type: "checkmark"
+				}
+			]
+			x: 2.5d
+			y: 4.0d
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+  "argument.entity.options.bleeding.description": "按实体是否处于流血状态进行筛选",
+  "config.playerrevive.bleeding.bleedingMessageTrackingOnly.comment": "只有处于伤员渲染距离内的玩家才会收到流血消息。",
+  "playerrevive.gui.give_up.hold": "等待救援，或按住“%s”%s 秒以放弃",
+  "playerrevive.gui.self_revive.hold": "使用 %s 个“%s”来自救",
+  "playerrevive.revive.other_team": "你们不在同一个队伍中。"
+}

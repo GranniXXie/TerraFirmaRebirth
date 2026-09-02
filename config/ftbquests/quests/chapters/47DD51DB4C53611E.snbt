@@ -1,0 +1,603 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "47DD51DB4C53611E"
+	group: "47652EC60BA7B927"
+	hide_quest_details_until_startable: true
+	icon: {
+		components: {
+			"tfc:heat": { }
+		}
+		id: "tfc:metal/hoe/wrought_iron"
+	}
+	id: "47DD51DB4C53611E"
+	images: [ ]
+	order_index: 8
+	quest_enhance_chapter_background: "simulated:block/symmetric_sail/side_gray"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["617276B60F099919"]
+			id: "2422EF40DDF3F28F"
+			rewards: [{
+				id: "2F4ABADC62BCA85D"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "2BBB859CA0D24550"
+				item: { count: 1, id: "tfc:composter" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["012786034E6351BF"]
+			id: "6683F85B13BEC586"
+			rewards: [{
+				id: "71F11E01407242B6"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "767940DCC8D552A8"
+				item: { count: 1, id: "firmalife:beehive" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["67E943030D84B61C"]
+			id: "60DC564F1749B35A"
+			rewards: [{
+				id: "0BAAB5D5E1FCAABB"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "3677854702B8FBB3"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(tfc:aqueducts)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7EDA53565EA26940"]
+			id: "26E91EAA9E4DB9EF"
+			rewards: [{
+				id: "4E8303A791AF2899"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "52442C3D4BBDF33E"
+					item: { count: 1, id: "farmersdelight:organic_compost" }
+					type: "item"
+				}
+				{
+					id: "3B13561A5C5761AB"
+					item: { count: 1, id: "farmersdelight:rich_soil" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1DD8C59B7FC94A8A"
+				"7089417845BA2E11"
+			]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "firmalife:copper_pipe"
+			}
+			id: "2949C7D752F14BA5"
+			rewards: [{
+				id: "2834B4167A7B11CA"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "6A953DF810B6ACD3"
+					item: { components: { "tfc:heat": { } }, count: 1, id: "firmalife:copper_pipe" }
+					type: "item"
+				}
+				{
+					id: "4164CE30FA69BBB0"
+					item: { count: 1, id: "firmalife:pumping_station" }
+					type: "item"
+				}
+				{
+					id: "4EB1405B6E84ABA8"
+					item: { count: 1, id: "firmalife:sprinkler" }
+					type: "item"
+				}
+				{
+					id: "0A125733AD4D1393"
+					item: { count: 1, id: "firmalife:irrigation_tank" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["35EDA0570B25B5B7"]
+			id: "1DD8C59B7FC94A8A"
+			rewards: [{
+				id: "23062609692CA229"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "04A8F55393114157"
+					item: { count: 1, id: "firmalife:large_planter" }
+					type: "item"
+				}
+				{
+					id: "57C94BE7AB6AC36E"
+					item: { count: 1, id: "firmalife:quad_planter" }
+					type: "item"
+				}
+				{
+					id: "55A49E204F72B1F5"
+					item: { count: 1, id: "firmalife:bonsai_planter" }
+					type: "item"
+				}
+				{
+					id: "58CC0D2622BDA666"
+					item: { count: 1, id: "firmalife:hanging_planter" }
+					type: "item"
+				}
+				{
+					id: "5FF879D095C67182"
+					item: { count: 1, id: "firmalife:trellis_planter" }
+					type: "item"
+				}
+				{
+					id: "25D1A2E9278C5D91"
+					item: { count: 1, id: "firmalife:watering_can" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2422EF40DDF3F28F"]
+			hide_dependency_lines: false
+			id: "048A9394DA1A65F2"
+			rewards: [{
+				id: "6125E760B7B0DACB"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "5A332A6F3F5B5A49"
+				item: { count: 1, id: "firmalife:compost_tumbler" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["683B5321229074F6"]
+			hide_details_until_startable: false
+			icon: {
+				id: "minecraft:netherite_hoe"
+			}
+			id: "012786034E6351BF"
+			rewards: [{
+				id: "5B59E2DE7DE55646"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "6D7C358815857617"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["012786034E6351BF"]
+			icon: {
+				id: "minecraft:wheat_seeds"
+			}
+			id: "3F1BA95908C2732B"
+			rewards: [{
+				id: "6C5541D8700D4B7F"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "46DD9587F9C895E1"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["012786034E6351BF"]
+			icon: {
+				id: "firmalife:iron_greenhouse_wall"
+			}
+			id: "746A9E679F0E48FA"
+			rewards: [{
+				id: "0FAA6FCBA07586BB"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "12F41795D24CD322"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["012786034E6351BF"]
+			icon: {
+				id: "tfc:plant/green_apple_sapling"
+			}
+			id: "7EDA53565EA26940"
+			rewards: [{
+				id: "43E12D7539BE22E6"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "3394A79412506BCB"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1D31CA89AF9F2910"]
+			id: "45BA1D7C95494A6A"
+			rewards: [{
+				id: "5065FA1BA5D1672F"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "0B1D267229904C51"
+				item: { components: { "ftbfiltersystem:filter": "or(item(firmalife:plant/cocoa_sapling) item(tfc:plant/orange_sapling) item(tfc:plant/red_apple_sapling) item(tfc:plant/plum_sapling) item(tfc:plant/banana_sapling) item(firmalife:plant/fig_sapling) item(tfc:plant/cherry_sapling) item(tfc:plant/green_apple_sapling) item(tfc:plant/lemon_sapling) item(tfc:plant/olive_sapling) item(tfc:plant/peach_sapling))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["012786034E6351BF"]
+			id: "29CA2AC0C401C889"
+			rewards: [{
+				id: "377517E72280AAA7"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "7755EE68DCFD0C03"
+				item: { components: { "ftbfiltersystem:filter": "or(item(tfc:plant/cloudberry_bush) item(tfc:plant/strawberry_bush) item(tfc:plant/wintergreen_berry_bush) item(tfc:plant/cranberry_bush) item(tfc:plant/gooseberry_bush) item(firmalife:plant/pineapple_bush) item(firmalife:plant/nightshade_bush) item(tfc:plant/blackberry_bush) item(tfc:plant/raspberry_bush) item(tfc:plant/blueberry_bush) item(tfc:plant/elderberry_bush) item(tfc:plant/snowberry_bush) item(tfc:plant/bunchberry_bush))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3F1BA95908C2732B"]
+			icon: {
+				id: "firmalife:watering_can"
+			}
+			id: "67E943030D84B61C"
+			rewards: [{
+				id: "7D8D06F10C63D660"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "7C797D35D6034CF4"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3F1BA95908C2732B"]
+			icon: {
+				id: "create:tree_fertilizer"
+			}
+			id: "617276B60F099919"
+			rewards: [{
+				id: "6D8BD4E0597F7F45"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "6FC59A9221880769"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3F1BA95908C2732B"]
+			icon: {
+				components: {
+					"tfc:food": {
+						creation_date: -2L
+					}
+				}
+				id: "tfc:food/sugarcane"
+			}
+			id: "33F3478160739D5C"
+			rewards: [{
+				id: "42EA96519832839C"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "229BDFD08D689653"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["012786034E6351BF"]
+			icon: {
+				id: "firmalife:fruit_leaf"
+			}
+			id: "1D31CA89AF9F2910"
+			rewards: [{
+				id: "0EF0CA168FF652DA"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "74046FBD161116F7"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["746A9E679F0E48FA"]
+			id: "35EDA0570B25B5B7"
+			rewards: [{
+				id: "31A75AB7E157B8C7"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "7BB82F7E0D41A852"
+					item: { components: { "ftbfiltersystem:filter": "or(item_tag(firmalife:greenhouse/copper) item_tag(firmalife:greenhouse/exposed_copper) item_tag(firmalife:greenhouse/iron) item_tag(firmalife:greenhouse/oxidized_copper) item_tag(firmalife:greenhouse/rusted_iron) item_tag(firmalife:greenhouse/stainless_steel) item_tag(firmalife:greenhouse/treated_wood) item_tag(firmalife:greenhouse/weathered_copper) item_tag(firmalife:greenhouse/weathered_treated_wood))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "4C40F7FE7CDD6B06"
+					item: { count: 1, id: "minecraft:glass" }
+					type: "item"
+				}
+				{
+					id: "6A2E4C1F0B9D3E71"
+					item: { components: { "ftbfiltersystem:filter": "or(item(firmalife:quad_planter) item(firmalife:large_planter) item(firmalife:bonsai_planter) item(firmalife:trellis_planter) item(firmalife:hanging_planter) item(firmalife:hydroponic_planter))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["33F3478160739D5C"]
+			icon: {
+				components: {
+					"tfc:food": {
+						creation_date: -2L
+					}
+				}
+				id: "tfc:food/tomato"
+			}
+			id: "75513C79E446A03F"
+			rewards: [{
+				id: "51CE167613CAF404"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "60665E84AA9ECFC4"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2422EF40DDF3F28F"]
+			id: "5EDC59121C7C0BE5"
+			rewards: [{
+				id: "6E13D4FD397CAAF0"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "7A00D810CC89EA86"
+				item: { count: 1, id: "tfc:compost" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2422EF40DDF3F28F"]
+			id: "1E66BAB348387E16"
+			rewards: [{
+				id: "401F03DECDD6189B"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "6ECD2A564BF5E2C6"
+				item: { count: 1, id: "tfc:rotten_compost" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["45BA1D7C95494A6A"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/knife/wrought_iron"
+			}
+			id: "3719F7703554F320"
+			rewards: [{
+				id: "0502852581E61929"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "43EA69504A9711D4"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3719F7703554F320"]
+			id: "1BFBC2F00C7974E8"
+			rewards: [{
+				id: "20398E6709D34EA5"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "276CD7245E72DFB5"
+				item: { count: 1, id: "firmalife:fruit_leaf" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7EDA53565EA26940"]
+			id: "7AC9CE65945FF732"
+			rewards: [{
+				id: "77383DCE27653062"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "7CFF0B585F46B118"
+				item: { count: 1, id: "afc:tree_tap" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6683F85B13BEC586"]
+			id: "045DD6FE26295735"
+			rewards: [{
+				id: "4137B89B6B8C69D8"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "0302D01883B8E655"
+				item: { count: 1, id: "firmalife:wild_honeycomb" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6683F85B13BEC586"]
+			id: "1CCF818F5DA33242"
+			rewards: [{
+				id: "381B52094F79610E"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "657F8AE8B7A6F08A"
+				item: { count: 1, id: "firmalife:beeswax" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7EDA53565EA26940"]
+			icon: {
+				id: "tfc:plant/red_apple_sapling"
+			}
+			id: "49E9A981425AB2FC"
+			rewards: [{
+				id: "7F51A779CE7C574B"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "16DCEDA92C372676"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6683F85B13BEC586"]
+			icon: {
+				components: {
+					"minecraft:custom_data": {
+						quest_enhance_entity_model: "minecraft:bee"
+					}
+				}
+				id: "minecraft:bee_spawn_egg"
+			}
+			id: "79677EAC27182F25"
+			rewards: [{
+				id: "1B011E12D3EECC5F"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "755BE53D46803F34"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2422EF40DDF3F28F"]
+			id: "540385BF2750046C"
+			rewards: [{
+				id: "4B9C1EFBD2DC7C7F"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "2E864EEC1C3AAB90"
+				item: { count: 1, id: "firmalife:beehive" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.5d
+		}
+	]
+}

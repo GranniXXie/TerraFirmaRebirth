@@ -1,0 +1,92 @@
+[
+ {
+  "matchItems": [
+   "minecraft:iron_ingot"
+  ],
+  "resultItems": "tfc:metal/ingot/wrought_iron"
+ },
+ {
+  "matchItems": [
+   "minecraft:iron_block"
+  ],
+  "resultItems": "tfc:metal/block/wrought_iron"
+ },
+ {
+  "matchItems": [
+   "minecraft:gold_ingot"
+  ],
+  "resultItems": "tfc:metal/ingot/gold"
+ },
+ {
+  "matchItems": [
+   "minecraft:gold_block"
+  ],
+  "resultItems": "tfc:metal/block/gold"
+ },
+ {
+  "matchItems": [
+   "minecraft:copper_ingot"
+  ],
+  "resultItems": "tfc:metal/ingot/copper"
+ },
+ {
+  "matchItems": [
+   "minecraft:copper_block"
+  ],
+  "resultItems": "tfc:metal/block/copper"
+ },
+ {
+  "matchItems": [
+   "minecraft:diamond"
+  ],
+  "resultItems": "tfc:gem/diamond"
+ },
+ {
+  "matchItems": [
+   "minecraft:emerald"
+  ],
+  "resultItems": "tfc:gem/emerald"
+ },
+ {
+  "matchItems": [
+   "minecraft:lapis_lazuli"
+  ],
+  "resultItems": "tfc:gem/lapis_lazuli"
+ },
+ {
+  "matchItems": [
+   "minecraft:amethyst_shard"
+  ],
+  "resultItems": "tfc:gem/amethyst"
+ },
+ {
+  "matchItems": [
+   "minecraft:coal"
+  ],
+  "resultItems": "tfc:ore/bituminous_coal"
+ },
+ {
+  "matchItems": [
+   "minecraft:bucket"
+  ],
+  "resultItems": "tfc:wooden_bucket"
+ },
+ {
+  "matchItems": [
+   "minecraft:shears"
+  ],
+  "resultItems": "tfc:metal/shears/wrought_iron"
+ },
+ {
+  "matchItems": [
+   "minecraft:iron_bars"
+  ],
+  "resultItems": "tfc:metal/bars/wrought_iron"
+ },
+ {
+  "matchItems": [
+   "minecraft:iron_trapdoor"
+  ],
+  "resultItems": "tfc:metal/trapdoor/wrought_iron"
+ }
+]

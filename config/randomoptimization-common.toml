@@ -1,0 +1,10 @@
+#Whether to make item drop locations predictable
+predictable_item_drops = true
+#Whether to reject impossible structure chunks before reading them from disk
+structure_locate_speedup = true
+#Whether to optimize resource looking up in compressed and path-based packs (GAME RESTART REQUIRED). Automatically disables the overlapping ModernFix and Quick Pack optimizations
+optimize_pack_lookup = true
+#Whether to fix boat fall damage. When enabled, Boat Break Fix's overlapping boat mixin is disabled
+fix_boat_fall_damage = true
+#Whether to delay the load of DFU
+lazy_dfu = true

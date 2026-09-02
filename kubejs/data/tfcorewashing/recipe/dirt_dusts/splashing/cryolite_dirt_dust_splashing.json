@@ -1,0 +1,23 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "tfcorewashing:dirty_dust_cryolite"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:redstone"
+    },
+    {
+      "id": "tfcorewashing:pile_white_sand"
+    }
+  ],
+  "processingTime": 1200,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

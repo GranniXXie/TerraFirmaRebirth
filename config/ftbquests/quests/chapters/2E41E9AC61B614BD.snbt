@@ -1,0 +1,110 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2E41E9AC61B614BD"
+	group: "47652EC60BA7B927"
+	hide_quest_details_until_startable: true
+	icon: {
+		components: {
+			"tfc:heat": { }
+		}
+		id: "tfc:metal/hammer/wrought_iron"
+	}
+	id: "2E41E9AC61B614BD"
+	images: [ ]
+	order_index: 6
+	quest_enhance_chapter_background: "simulated:block/symmetric_sail/side_brown"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6BA53B79C2386CC4"]
+			hide_details_until_startable: false
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/hammer/wrought_iron"
+			}
+			id: "00E9E6C8653D0E65"
+			rewards: [{
+				id: "10C998DA69FFB546"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "5D292CBA277F49C6"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6151CB58369CF50C"
+				"534302DF25F41154"
+			]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/hammer/copper"
+			}
+			id: "6BA53B79C2386CC4"
+			rewards: [{
+				id: "58EE9C4FD2A93E7C"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "58419615DEB38F55"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00E9E6C8653D0E65"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/hammer/red_steel"
+			}
+			id: "23024DC07BA44C91"
+			rewards: [{
+				id: "6FA6E79464205F01"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "22F5B31C88E3E0E1"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00E9E6C8653D0E65"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:powder/flux"
+			}
+			id: "67FD3D45D45E06CB"
+			rewards: [{
+				id: "212E0CCDFF352D41"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "1DFE9D4A49264660"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+	]
+}

@@ -1,0 +1,61 @@
+{
+  "item": "kaleidoscopetfctavern:flower_purple_wine",
+  "effects": [
+    [
+      {
+        "effect": "minecraft:night_vision",
+        "duration": 60,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:night_vision",
+        "duration": 120,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:night_vision",
+        "duration": 180,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:night_vision",
+        "duration": 240,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:night_vision",
+        "duration": 300,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:night_vision",
+        "duration": 360,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:night_vision",
+        "duration": 420,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ]
+  ]
+}

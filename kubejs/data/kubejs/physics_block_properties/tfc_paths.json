@@ -1,0 +1,6 @@
+{
+  "selector": "#tfc:paths",
+  "properties": {
+    "sable:mass": 1.0
+  }
+}

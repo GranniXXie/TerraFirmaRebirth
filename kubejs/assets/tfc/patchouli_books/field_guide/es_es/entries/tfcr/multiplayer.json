@@ -1,0 +1,34 @@
+{
+  "name": "Notas de multijugador",
+  "category": "tfc:tfcr",
+  "icon": "minecraft:player_head",
+  "sortnum": 3,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Servidores oficiales",
+      "text": "El equipo mantiene $(thing)dos servidores oficiales, en China y Norteamérica$(), siempre con la última versión del pack.$(br2)Las direcciones se publican en los anuncios de los grupos de QQ (807756188 / 454488438) y en el Discord oficial.$(br2)Trae a tus amigos: el mundo de TFC es lo bastante grande para el pueblo de cada uno."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Equipos y reclamaciones",
+      "text": "$(li)Pulsa $(k:ftbteams.open_gui) para crear o unirte a un equipo de FTB Teams; los miembros comparten progreso de misiones y permisos de terreno$()$(br)$(li)Abre el mapa de chunks desde $(thing)el mapa completo de JourneyMap$() o el botón de reclamación $(thing)arriba a la izquierda$() del inventario: $(thing)clic izquierdo$() reclama, $(thing)Mayús+clic izquierdo$() fuerza la carga$()$(br)$(li)Los chunks forzados tienen límite: resérvalos para máquinas y granjas que deban funcionar siempre$()$(br2)Cualquiera puede tocar lo no reclamado. Reclama tus construcciones importantes."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Normas del servidor",
+      "text": "$(li)Los objetos del suelo se limpian cada $(thing)30 minutos$() (el «Guardián 360 de TerraFirma»), con avisos 60 y 30 segundos antes$()$(br)$(li)Los artilugios de minería automática con ruedas trituradoras están prohibidos; las brocas de la perforadora se limitan a $(thing)32$()$(br)$(li)Las pérdidas por sabotaje fuera de terreno reclamado no se reponen: reclama tu base$()$(br2)Las normas completas están en los anuncios del servidor."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Consejos en línea",
+      "text": "$(li)Es normal que el cliente tenga mods extra solo visuales (shaders, sonido); no afectan al juego en línea$()$(br)$(li)Al volver del Nether más allá de $(thing)±19 500$() serás reposicionado en el límite: no construyas tu base ahí fuera$()$(br)$(li)Las colmenas tampoco consumen miel en invierno en el servidor: tranquilo$()$(br)$(li)¿Sospechas de un error? Reprodúcelo primero en un jugador y repórtalo con registros en la comunidad$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Patrocinador: Wabbanode",
+      "text": "Nuestro servidor oficial de $(thing)Norteamérica$() está orgullosamente alojado por $(thing)Wabbanode$().$(br2)¿Quieres tu propio servidor para jugar TFCR con amigos? Usa el código $(thing)TFCR$() y obtén un $(thing)20% de DESCUENTO$() en cualquier plan:$(br2)$(l:https://wabbanode.com/affiliate/terrafirmarebirth)wabbanode.com/affiliate/terrafirmarebirth$()"
+    }
+  ]
+}

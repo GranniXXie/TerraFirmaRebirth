@@ -1,0 +1,51 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"group": "fd_chocolate_pie",
+	"key": {
+		"a": {
+			"fluid": {
+				"tag": "kubejs:milks",
+				"amount": 100
+			},
+			"type": "tfc:fluid_content"
+		},
+		"b": {
+			"children": [
+				{
+					"type": "tfc:not_rotten"
+				},
+				{
+					"item": "firmalife:food/cocoa_powder"
+				}
+			],
+			"type": "neoforge:intersection"
+		},
+		"c": {
+			"children": [
+				{
+					"type": "tfc:not_rotten"
+				},
+				{
+					"item": "farmersdelight:pie_crust"
+				}
+			],
+			"type": "neoforge:intersection"
+		}
+	},
+	"pattern": [
+		"a",
+		"b",
+		"c"
+	],
+	"result": {
+		"count": 1,
+		"id": "farmersdelight:chocolate_pie"
+	},
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "firmalife"
+		}
+	]
+}

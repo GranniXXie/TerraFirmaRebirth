@@ -1,0 +1,31 @@
+{
+  "type": "tfc:advanced_shaped_crafting",
+  "key": {
+    "S": [
+      {
+        "tag": "c:rods/wooden"
+      },
+      {
+        "item": "minecraft:bone"
+      }
+    ],
+    "X": {
+      "item": "tfc:stone/knife_head/metamorphic"
+    }
+  },
+  "pattern": [
+    "X",
+    "S"
+  ],
+  "result": {
+    "modifiers": [
+      {
+        "type": "tfc:copy_forging_bonus"
+      }
+    ],
+    "stack": {
+      "count": 1,
+      "id": "tfc:stone/knife/metamorphic"
+    }
+  }
+}

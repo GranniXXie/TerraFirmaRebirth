@@ -1,0 +1,20 @@
+[crucible]
+	#Multiplier for how much fluid (in mB) the crucible transfers per tick when pouring into molds or output slots.
+	#Default TFC: 1mB/tick. Setting this to 4 means 4mB/tick, filling a 100mB ingot in ~1.25s instead of ~5s (fast pour) or ~20s (normal).
+	# Default: 4
+	# Range: 1 ~ 100
+	pourSpeedMultiplier = 4
+
+[alloy]
+	#Minimum fraction of the dominant metal in a crucible mix required to produce an inferior alloy instead of Unknown.
+	#Range: 0.50 (50%) to 1.00 (100%). Default: 0.75 (75%).
+	#Lower values = more forgiving (more inferior alloys, less waste).
+	#Higher values = stricter (less inferior alloys, more Unknown/waste).
+	# Default: 0.75
+	# Range: 0.5 ~ 1.0
+	inferiorAlloyThreshold = 0.75
+	#Enable the iron inferior alloy system.
+	#When true, wrought_iron in an impure crucible mix produces cast_iron as the inferior output.
+	#No new fluids/items are registered; uses existing TFC cast_iron and wrought_iron.
+	#Default: false (disabled).
+	enableIronInferiorSystem = false

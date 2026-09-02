@@ -1,0 +1,11 @@
+{
+  "jammies.generic.lid": "罐盖",
+  "jammies.tfc.jar_lid": "锡制罐盖",
+  "jammies.tooltip.hold_shift_for_lid_info": "按住（Shift）查看盖子信息",
+  "jammies.tooltip.hold_shift_for_more_info": "按住（Shift）查看更多信息",
+  "tag.item.jammies.lids": "盖子",
+  "tooltip.jammies.lid.normal": "§e盖子：%s",
+  "tooltip.jammies.lid.return_chance": "§e返还概率：%s",
+  "tooltip.jammies.lid.same_line": "§e盖子：%s，§e返还概率：%s",
+  "tooltip.jammies.lid.short": "%s - %s"
+}

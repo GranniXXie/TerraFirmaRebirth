@@ -1,0 +1,19 @@
+#Sable 物理结构组装与还原过程中的通用复制修复。
+[duplicationFixes]
+	#在方块实体 NBT 保存后清空原位置的容器及物品能力，防止库存同时出现在原位置和物理结构中。
+	#关闭后只保留 Sable 原本的 Clearable.tryClear 行为。
+	inventoryDuplication = true
+	#Sable 复制完全部方块状态后跳过多余的形状传播。
+	#用于修复红石粉、铁轨、火把、按钮等附着方块产生重复掉落物的问题。
+	attachedBlockDuplication = true
+	#在方块搬运期间阻止源位置和目标位置生成额外的方块掉落物。
+	#用于修复农作物及其他通过 Block.popResource 路径掉落的方块复制问题。
+	assemblyBlockDrops = true
+
+#针对特定模组的兼容修复。
+[compatibility]
+	#清空机械动力桌布内部单独保存的物品列表，防止物品复制。
+	createTableCloth = true
+	#保留精妙背包存放在世界 SavedData 中的真实库存。
+	#关闭后，通用库存复制修复也会清空精妙背包的物品能力。
+	sophisticatedBackpacks = true

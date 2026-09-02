@@ -1,0 +1,12 @@
+{
+  "itemGroup.sableexplosionfix": "示例模组标签页",
+  "block.sableexplosionfix.example_block": "示例方块",
+  "item.sableexplosionfix.example_item": "示例物品",
+  "sableexplosionfix.configuration.title": "Sable 爆炸修复配置",
+  "sableexplosionfix.configuration.section.sableexplosionfix.common.toml": "Sable 爆炸修复配置",
+  "sableexplosionfix.configuration.section.sableexplosionfix.common.toml.title": "Sable 爆炸修复配置",
+  "sableexplosionfix.configuration.items": "物品列表",
+  "sableexplosionfix.configuration.logDirtBlock": "记录泥土方块",
+  "sableexplosionfix.configuration.magicNumberIntroduction": "魔法数字文本",
+  "sableexplosionfix.configuration.magicNumber": "魔法数字"
+}

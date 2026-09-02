@@ -1,0 +1,230 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tavern"
+	group: "47652EC60BA7B927"
+	hide_quest_details_until_startable: true
+	id: "7B2E000000000100"
+	images: [ ]
+	order_index: 11
+	quest_enhance_chapter_background: "dynamic_fps:textures/battery/toast/background.png"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7B2E000000000001"
+			rewards: [{
+				id: "00007B2E20000001"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "00007B2E10000001"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(kaleidoscopetfctavern:grapevine)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B2E000000000001"]
+			id: "7B2E00000000000B"
+			rewards: [{
+				id: "00007B2E2000000B"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "00007B2E1000000B"
+				item: { components: { "ftbfiltersystem:filter": "item(kaleidoscopetfctavern:grapevine_locator)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7B2E000000000001"]
+			id: "7B2E000000000002"
+			rewards: [{
+				id: "00007B2E20000002"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "00007B2E10000002"
+				item: { components: { "ftbfiltersystem:filter": "item(kaleidoscope_tavern:trellis)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B2E000000000002"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "kaleidoscopetfctavern:grape_purple"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "7B2E000000000003"
+			rewards: [{
+				id: "00007B2E20000003"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "00007B2E10000003"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B2E000000000003"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "kaleidoscopetfctavern:grape_red"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "7B2E000000000004"
+			rewards: [{
+				id: "00007B2E20000004"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "00007B2E10000004"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(kaleidoscopetfctavern:grape)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B2E000000000002"]
+			id: "7B2E000000000005"
+			rewards: [{
+				id: "00007B2E20000005"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "00007B2E10000005"
+				item: { components: { "ftbfiltersystem:filter": "item(kaleidoscope_tavern:pressing_tub)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7B2E000000000005"]
+			id: "7B2E000000000006"
+			rewards: [{
+				id: "00007B2E20000006"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "00007B2E10000006"
+				item: { components: { "ftbfiltersystem:filter": "or(and(item(tfc:wooden_bucket) component(fuzzy:{\\\\\\\\\\\\\\\"tfc:fluid\\\\\\\\\\\\\\\":{id:\\\\\\\\\\\\\\\"kaleidoscopetfctavern:purple_grape_juice\\\\\\\\\\\\\\\",amount:1000}})) and(item(tfc:wooden_bucket) component(fuzzy:{\\\\\\\\\\\\\\\"tfc:fluid\\\\\\\\\\\\\\\":{id:\\\\\\\\\\\\\\\"kaleidoscopetfctavern:red_grape_juice\\\\\\\\\\\\\\\",amount:1000}})) and(item(tfc:wooden_bucket) component(fuzzy:{\\\\\\\\\\\\\\\"tfc:fluid\\\\\\\\\\\\\\\":{id:\\\\\\\\\\\\\\\"kaleidoscopetfctavern:white_grape_juice\\\\\\\\\\\\\\\",amount:1000}})) and(item(tfc:wooden_bucket) component(fuzzy:{\\\\\\\\\\\\\\\"tfc:fluid\\\\\\\\\\\\\\\":{id:\\\\\\\\\\\\\\\"kaleidoscopetfctavern:green_grape_juice\\\\\\\\\\\\\\\",amount:1000}})))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7B2E000000000005"]
+			id: "7B2E000000000007"
+			rewards: [{
+				id: "00007B2E20000007"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "00007B2E10000007"
+				item: { components: { "ftbfiltersystem:filter": "item(kaleidoscope_tavern:empty_bottle)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7B2E000000000004"
+				"7B2E000000000006"
+				"7B2E000000000007"
+			]
+			id: "7B2E000000000008"
+			rewards: [{
+				id: "00007B2E20000008"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "00007B2E10000008"
+				item: { components: { "ftbfiltersystem:filter": "item(kaleidoscope_tavern:barrel)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B2E000000000008"]
+			id: "7B2E000000000009"
+			rewards: [{
+				id: "00007B2E20000009"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				id: "00007B2E10000009"
+				item: { components: { "ftbfiltersystem:filter": "or(item(kaleidoscopetfctavern:purple_wine) item(kaleidoscopetfctavern:red_wine) item(kaleidoscopetfctavern:white_wine))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B2E000000000009"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "kaleidoscopetfctavern:flower_purple_wine"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "7B2E00000000000A"
+			rewards: [{
+				id: "00007B2E2000000A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "00007B2E1000000A"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B2E000000000009"]
+			icon: {
+				id: "kaleidoscope_tavern:bar_counter"
+			}
+			id: "7B2E00000000000C"
+			rewards: [{
+				id: "00007B2E2000000C"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "05E2150B32AAF426"
+				item: { count: 1, id: "kaleidoscope_tavern:bar_counter" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.5d
+		}
+	]
+}

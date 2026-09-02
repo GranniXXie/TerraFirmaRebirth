@@ -1,0 +1,41 @@
+{
+  "name": "制作组与鸣谢",
+  "category": "tfc:tfcr",
+  "icon": "minecraft:name_tag",
+  "sortnum": 4,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "制作组",
+      "text": "群峦：重生（TerraFirma: Rebirth）由$(thing)浙江水利水电学院 Minecraft 社$()主创并维护，联合多所高校 Minecraft 社团共同打磨。$(br2)从 1.18 的 1.x 时代，到 1.20.1 的 3.x 时代，再到今天 1.21.1 的 4.x 时代，这个包已经陪伴玩家走过了数年。感谢每一位留下来的人。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "鸣谢名单",
+      "text": "$(li)代码开发支持：$(thing)心知$()（B 站）、$(thing)Coin0804$()（CurseForge）$()$(br)$(li)宝贵修改意见：$(thing)zombie_boy$()$()$(br)$(li)测试者：shiro、墨乘风-、Lincoln、EchoesTFM、mingyue2024、ChiDeXing、一只小白给a、MPC托马斯_official、蒋鸽咕咕咕、me107107$()$(br)$(li)特别鸣谢：猪人喜欢朋友$()$(br2)以及每一位在群里反馈 bug、提交建议的玩家——名单写不下你们所有人。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "原声带声明",
+      "text": "整合包内置 $(thing)28 首 TFCR 原创音乐$()，仅在$(thing)网易云音乐$()平台独家发布。$(br2)未经授权，不得在与群峦：重生无关的内容中使用、二次分发或转载原声带音乐包。$(br2)游戏与视频创作不受影响：你可以用本整合包直播、录视频，也可以提取高校定制汉化用于非商业用途。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "致谢模组作者",
+      "text": "感谢 TerraFirmaCraft、Create、Immersive Engineering、Firmalife、AFC、Create: Aeronautics / Cosmonautics 以及全部 200 余个模组与兼容层作者的开源贡献。$(br2)完整模组列表见整合包发布页。$(br2)也感谢你读到这里——现在，去砍你的第一棵树吧。"
+    },
+    {
+      "type": "patchouli:link",
+      "url": "https://discord.gg/Fc7v5EXmkK",
+      "link_text": "官方 Discord",
+      "text": "海外玩家社区、更新公告与 bug 反馈。"
+    },
+    {
+      "type": "patchouli:link",
+      "url": "https://www.mcmod.cn/modpack/809.html",
+      "link_text": "mcmod 百科主页",
+      "text": "整合包资料、下载与更新日志。"
+    }
+  ]
+}

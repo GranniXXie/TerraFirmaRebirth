@@ -1,0 +1,12 @@
+{
+  "type": "armor",
+  "insulation": {
+    "cold": 0,
+    "heat": 12
+  },
+  "item": {
+    "items": [
+      "tfc:metal/boots/red_steel"
+    ]
+  }
+}

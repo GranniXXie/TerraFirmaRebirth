@@ -1,0 +1,46 @@
+{
+  "name": "新手上路",
+  "category": "tfc:tfcr",
+  "icon": "minecraft:stone_axe",
+  "sortnum": 1,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "开局",
+      "text": "进入世界后，你会收到一份新手礼包：$(thing)任务书$()、$(thing)群峦手册$()（就是本书）、$(thing)工程师手册$()、$(thing)温度计$()、一只可穿在身上的$(thing)精妙背包$()，以及一条保暖的$(thing)羊毛护腿$()。$(br2)落地后前 20 分钟处于$(thing)适应期$()，温度不会伤害你——抓紧时间熟悉周围。第一步：打开任务书，从「石器时代」开始。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "真实世界",
+      "text": "本整合包搭载 $(thing)TFC: Real World$()：世界不是随机生成，而是一颗真实的地球——大陆、海洋、海拔与柯本气候带全部来自真实地理数据（等积地球投影）。$(br2)默认情况下，你会出生在$(thing)中国北京$()对应的经纬度附近（北纬 39.9°、东经 116.4°）。温度与降水随纬度真实变化：向北寒凉，近赤暑热，季节长短也与纬度挂钩。$(br2)地球是圆的——一路向北，真的能走到北极。远行前记得用 JourneyMap 标记路径点。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "常用键位",
+      "text": "以下按键以你的实际绑定为准，可在设置中修改：$(br2)$(li)$(k:jei.showRecipe) / $(k:jei.showUses)：指向物品查询配方 / 用途（JEI）$()$(br)$(li)$(k:jei.bookmark)：收藏物品到 JEI 书签$()$(br)$(li)$(k:journeymap.map_toggle_alt)：全屏地图（JourneyMap）$()$(br)$(li)$(k:journeymap.create_waypoint)：创建路径点$()$(br)$(li)$(k:corpse.death_history)：死亡记录（尸体模组）$()$(br)$(li)$(k:curios.open.desc)：饰品栏$()$(br)$(li)$(k:sophisticatedbackpacks.open_backpack)：直接打开身上的背包$()$(br)$(li)$(k:togglePerspective)：切换视角$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "JourneyMap 地图",
+      "text": "屏幕右上角的小地图来自 JourneyMap。$(br2)$(li)$(k:journeymap.map_toggle_alt) 打开全屏地图，$(k:journeymap.zoom_in)/$(k:journeymap.zoom_out) 缩放$()$(br)$(li)$(k:journeymap.create_waypoint) 在当前位置建立路径点，矿洞、矿脉表面露头都值得标一个$()$(br)$(li)死亡时会自动生成$(thing)死亡路径点$()，配合 $(k:corpse.death_history) 找回尸体$()$(br2)小地图快捷键与外观可在 JourneyMap 设置（全屏地图右上角）里调整。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "FTB Chunks 圈地",
+      "text": "领地保护由 FTB Chunks 提供。$(br2)$(li)先按 $(k:ftbteams.open_gui) 组建 FTB Teams 队伍，邀请同伴加入$()$(br)$(li)打开区块地图有两种方式：在 $(thing)JourneyMap 全屏地图$()中找到「认领区块」按钮，或按 $(k:inventory) 打开物品栏后点击$(thing)左上角$()的认领按钮$()$(br)$(li)在区块地图上：$(thing)左键$()认领区块，$(thing)Shift+左键$()设为强加载$()$(br2)认领后的区块内，箱子、机器与作物不会被其他玩家破坏。服务器上未认领的区域不受保护，安家后请第一时间圈地。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["kubejs:textures/fieldguide/journeymap.png"],
+      "title": "全屏地图与路径点",
+      "border": true,
+      "text": "矿脉露头、黏土坑、果树——都值得一个路径点。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "新手小贴士",
+      "text": "$(li)JEI 里搜不到的原版配方，多半是被整合包移除或改写了，以任务书与本书为准$()$(br)$(li)食物有保质期，腐烂的食物不能吃；早期用陶缸密封保存，后期交给地窖$()$(br)$(li)$(thing)0~40°C$() 是安全温度区间，超出会持续掉血；冬夏出门留意温度计$()$(br)$(li)木器时代的工具无法修，石刀先做一把防身$()$(br)$(li)卡关时先翻任务书，再翻本书——答案基本都在里面$()"
+    }
+  ]
+}

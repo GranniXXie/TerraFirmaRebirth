@@ -1,0 +1,42 @@
+{
+  "name": "欢迎来到群峦：重生",
+  "category": "tfc:tfcr",
+  "icon": "ftbquests:book",
+  "sortnum": 0,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "欢迎来到$(thing)群峦：重生$()（TerraFirma: Rebirth，简称 TFCR）！$(br2)这是一个以$(thing)群峦传说：次世代$()为核心，联动机械动力、沉浸工程、航空学与宇宙学等模组的轻量魔改整合包。我们尽量保留每个模组的原生玩法，并让它们真正长进群峦的世界里。游戏周期较长，请慢下来，享受从石器时代到登月的全过程。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "版本信息",
+      "text": "$(li)整合包版本：$(thing)4.1.21 Release$()$()$(br)$(li)游戏版本：Minecraft 1.21.1（NeoForge）$()$(br)$(li)群峦传说：次世代 4.2.8$()$(br2)本版为正式版，已趋于稳定，推荐用于长期生存游玩。遇到任何问题欢迎联系制作组——你的每一条反馈都在让这个包变得更好。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["kubejs:textures/fieldguide/welcome.png"],
+      "title": "群峦星欢迎你",
+      "border": true,
+      "text": "从第一块打制石器，到踏上月面的那一小步。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "找到我们",
+      "text": "$(li)国内玩家交流 QQ 群：一群 $(thing)807756188$()、二群 $(thing)454488438$()（进群请看公告）$()$(br)$(li)海外玩家社区与联机信息见下方 Discord 链接$()$(br)$(li)整合包教程与资料：在 mcmod 百科搜索 $(thing)TFCR$()$()"
+    },
+    {
+      "type": "patchouli:link",
+      "url": "https://discord.gg/Fc7v5EXmkK",
+      "link_text": "加入官方 Discord",
+      "text": "更新公告、国际服信息、bug 反馈都在这里。"
+    },
+    {
+      "type": "patchouli:link",
+      "url": "https://space.bilibili.com/13243373/channel/collectiondetail?sid=3399778",
+      "link_text": "B 站新手教程合集",
+      "text": "猪人喜欢朋友大佬的《群峦传说零基础攻略》保姆级全教程，大部分机制在 1.21.1 依然适用。"
+    }
+  ]
+}

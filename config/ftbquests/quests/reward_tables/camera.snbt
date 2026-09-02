@@ -1,0 +1,23 @@
+{
+	id: "5DE2F928DBE2406B"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ id: "696B06AC167103A4", item: { count: 1, id: "minecraft:spyglass" } }
+		{ id: "07818DD135E69ABE", item: { count: 1, id: "minecraft:redstone_lamp" } }
+		{ id: "4D2759B5D41F1ABB", item: { count: 1, id: "minecraft:light_gray_stained_glass_pane" } }
+		{ id: "0706D3F6002EF2E5", item: { count: 1, id: "minecraft:gray_stained_glass_pane" } }
+		{ id: "4253E62E50C2AB7B", item: { count: 1, id: "minecraft:brown_stained_glass_pane" } }
+		{ id: "4660F9FE9C971A7C", item: { count: 1, id: "minecraft:red_stained_glass_pane" } }
+		{ id: "7D0B8233972B60EA", item: { count: 1, id: "minecraft:orange_stained_glass_pane" } }
+		{ id: "04601A93FF976445", item: { count: 1, id: "minecraft:yellow_stained_glass_pane" } }
+		{ id: "246878978FCEDE41", item: { count: 1, id: "minecraft:lime_stained_glass_pane" } }
+		{ id: "699AA418DA0FAB9C", item: { count: 1, id: "minecraft:green_stained_glass_pane" } }
+		{ id: "78D59B8AD63EF37F", item: { count: 1, id: "minecraft:cyan_stained_glass_pane" } }
+		{ id: "45EE7D79676730E1", item: { count: 1, id: "minecraft:light_blue_stained_glass_pane" } }
+		{ id: "3A60C04724CACD8D", item: { count: 1, id: "minecraft:blue_stained_glass_pane" } }
+		{ id: "026F8B079E03AA19", item: { count: 1, id: "minecraft:purple_stained_glass_pane" } }
+		{ id: "64488E2B84A81E78", item: { count: 1, id: "minecraft:magenta_stained_glass_pane" } }
+		{ id: "24FE855456E6B8B2", item: { count: 1, id: "minecraft:pink_stained_glass_pane" } }
+	]
+}

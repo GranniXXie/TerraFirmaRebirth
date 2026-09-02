@@ -1,0 +1,69 @@
+{
+  "name": "灌溉",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:sprinkler",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)注意：$()本包的灌溉系统已由群峦生活硬核版改造——水泵站现在是真正的流体容器（基础 500mB，上方每个灌溉水箱再加 500mB，最多 3 个），洒水器每次喷水消耗 5mB 储水，能否供水由泵压决定。改动详情见硬核版分类下的$(l:firmalifehardcore/irrigation)《灌溉系统改造》$()。$(br2)$(thing)洒水器$()是一种以洒水器方块正下方为中心，对5x6x5区域进行灌溉的装置。当它周围有水的粒子效果时，表明它正在工作。面朝上放置的洒水器会对上方相同的5x6x5区域进行灌溉。"
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "firmalife:anvil/sprinkler",
+      "text": "洒水器由一块$(thing)铜板$()锻造而成。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "洒水器必须连接一个供水管道系统才能工作。这需要通过连接一系列$(thing)铜制管道$()来实现。它们被连接到$(thing)灌溉水箱$()或$(thing)水泵站$()上。"
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "firmalife:anvil/copper_pipe",
+      "text": "铜制管道是由铜板制成的。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "Y"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "firmalife:irrigation_tank",
+          "Y": "firmalife:pumping_station"
+        }
+      },
+      "name": "",
+      "text": "",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "水泵站必须放置在水源方块上方。连接机械动力可以加快储水速度；未接动力时，也能依靠高度差与水箱缓存继续供水。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/pumping_station",
+      "recipe2": "firmalife:crafting/irrigation_tank"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/oxidized_copper_pipe",
+      "text": "氧化管道与普通铜制管道功能相同，只是不能与另一种类型的管道连接。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/iron_greenhouse_port",
+      "text": "温室端口内部设有一根管道，可用于使水流贯通温室墙壁！"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 8
+}

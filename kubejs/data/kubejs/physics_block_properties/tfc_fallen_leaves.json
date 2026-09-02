@@ -1,0 +1,6 @@
+{
+  "selector": "#tfc:fallen_leaves",
+  "properties": {
+    "sable:mass": 0.25
+  }
+}

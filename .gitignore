@@ -1,0 +1,30 @@
+# ===== TFCR modpack repo ignore rules =====
+
+# Mod jars are NOT tracked here. They are resolved from manifest.json
+# (CurseForge) plus local-mods/README.md (self-hosted builds).
+mods/
+*.jar
+
+# Copyrighted / large media not distributable via GitHub
+ambience_music/
+shaderpacks/
+
+# Runtime / instance junk
+saves/
+logs/
+cache/
+downloads/
+*.log
+*.gz
+crash-reports/
+options.txt
+servers.dat
+usercache.json
+usernamecache.json
+command_history.txt
+
+# OS / editor
+Thumbs.db
+.DS_Store
+.idea/
+.vscode/

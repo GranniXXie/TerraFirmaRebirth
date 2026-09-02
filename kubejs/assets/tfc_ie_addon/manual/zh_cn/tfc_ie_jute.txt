@@ -1,0 +1,5 @@
+黄麻
+麻纤维的妙用
+工业大麻固然是一种了不起的植物，但今天我们要聊的是黄麻！黄麻种子不仅能用来生产<link;industrial_fluids;生物柴油;biodiesel>，黄麻纤维还可以织成粗麻布——它是<link;industrial_hemp;坚韧布料;fabric_recipe>的替代品。<br>
+种子可以通过收割野生黄麻获得。<np>
+和坚韧布料类似，粗麻布是由黄麻纤维织成的结实织物。它可以用来制作<link;kinetic_generators;改良风车叶片;sail_recipe>、<link;balloon;气球;start>，以及<link;industrial_hemp;气垫;cushion_recipe>和<link;strip_curtains;条形窗帘>。

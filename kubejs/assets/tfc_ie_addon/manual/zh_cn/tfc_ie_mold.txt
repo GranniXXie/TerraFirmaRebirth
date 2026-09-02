@@ -1,0 +1,4 @@
+新模具
+哦，薄板！
+<&sheet>薄板模具是在<link;engineers_workbench;工程师装配台>上使用<link;blueprints;工程师蓝图>制作的。<br>有了它，你就可以在<link;metal_press;金属冲压机>中冲压出所有金属的薄板。<br>
+<&block>方块模具的制作方法相同，可以用它压制钢块和铀块（本整合包未开放方块模具）。

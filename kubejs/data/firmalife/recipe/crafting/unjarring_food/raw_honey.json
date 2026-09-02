@@ -1,0 +1,28 @@
+{
+  "type": "tfc:advanced_shapeless_crafting",
+  "ingredients": [
+    {
+      "item": "firmalife:jar/honey"
+    }
+  ],
+  "primary_ingredient": {
+    "item": "firmalife:jar/honey"
+  },
+  "remainder": {
+    "modifiers": [
+      {
+        "type": "jammies:copy_lid"
+      }
+    ],
+    "stack": {
+      "count": 1,
+      "id": "tfc:empty_jar_with_lid"
+    }
+  },
+  "result": {
+    "stack": {
+      "count": 8,
+      "id": "firmalife:food/raw_honey"
+    }
+  }
+}

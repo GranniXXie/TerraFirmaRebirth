@@ -1,0 +1,9 @@
+[honeyWelder]
+	#Maximum fuel stored by one honey welder.
+	# Default: 1000
+	# Range: 1 ~ 1000000
+	capacity = 1000
+	#Fuel granted by one vanilla honey bottle.
+	# Default: 250
+	# Range: 1 ~ 1000000
+	fuelPerBottle = 250

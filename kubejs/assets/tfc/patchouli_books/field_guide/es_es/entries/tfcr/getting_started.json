@@ -1,0 +1,48 @@
+{
+  "name": "Primeros pasos",
+  "category": "tfc:tfcr",
+  "icon": "minecraft:stone_axe",
+  "sortnum": 1,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "El comienzo",
+      "text": "Al aparecer recibes un kit inicial: el $(thing)Libro de misiones$(), la $(thing)Guía de campo$() (este libro), el $(thing)Manual del ingeniero$(), un $(thing)Termómetro$(), una $(thing)Mochila sofisticada$() que se viste como armadura y unas $(thing)Perneras de lana$() abrigadas.$(br2)Tus primeros 20 minutos tienes un $(thing)periodo de gracia$() que te protege de la temperatura: úsalo para orientarte. Primer paso: abre el Libro de misiones y empieza el capítulo de la Edad de Piedra."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Un mundo real",
+      "text": "Este pack usa $(thing)TFC: Real World$(): el mundo no es aleatorio, es nuestro planeta — continentes, océanos, altitud y zonas climáticas de Köppen provienen de datos geográficos reales (proyección Equal Earth).$(br2)Por defecto apareces cerca de las coordenadas reales de $(thing)Pekín, China$() (39,9°N, 116,4°E). La temperatura y las precipitaciones varían de forma realista con la latitud: más frío hacia los polos, más calor hacia el ecuador, y la duración de las estaciones también depende de la latitud.$(br2)La Tierra es redonda — sigue hacia el norte y de verdad llegarás al Polo Norte. Marca puntos de ruta en JourneyMap antes de cada expedición."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Controles habituales",
+      "text": "Se muestran con tus teclas reales; reasígnalas en Controles si lo necesitas:$(br2)$(li)$(k:jei.showRecipe) / $(k:jei.showUses): ver recetas / usos del objeto señalado (JEI)$()$(br)$(li)$(k:jei.bookmark): guardar un objeto en marcadores de JEI$()$(br)$(li)$(k:journeymap.map_toggle_alt): mapa a pantalla completa (JourneyMap)$()$(br)$(li)$(k:journeymap.create_waypoint): crear un punto de interés$()$(br)$(li)$(k:corpse.death_history): historial de muertes (Corpse)$()$(br)$(li)$(k:curios.open.desc): accesorios$()$(br)$(li)$(k:sophisticatedbackpacks.open_backpack): abrir la mochila equipada$()$(br)$(li)$(k:togglePerspective): cambiar de cámara$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "JourneyMap",
+      "text": "El minimapa de la esquina es de JourneyMap.$(br2)$(li)$(k:journeymap.map_toggle_alt) abre el mapa completo; $(k:journeymap.zoom_in)/$(k:journeymap.zoom_out) para el zoom$()$(br)$(li)$(k:journeymap.create_waypoint) marca tu posición: pepitas de mineral en superficie y pozos de arcilla merecen un marcador$()$(br)$(li)Al morir se crea un $(thing)marcador de muerte$(); combínalo con $(k:corpse.death_history) para recuperar tu cuerpo$()$(br2)Los atajos y la apariencia se ajustan en las opciones de JourneyMap (arriba a la derecha del mapa completo)."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Protección con FTB Chunks",
+      "text": "La protección de terreno la gestiona FTB Chunks.$(br2)$(li)Pulsa $(k:ftbteams.open_gui) para crear o unirte a un equipo de FTB Teams$()$(br)$(li)Hay dos formas de abrir el mapa de chunks: el $(thing)botón de reclamación del mapa completo de JourneyMap$(), o pulsa $(k:inventory) y haz clic en el botón de reclamación de la $(thing)esquina superior izquierda$() del inventario$()$(br)$(li)En el mapa de chunks: $(thing)clic izquierdo$() reclama, $(thing)Mayús+clic izquierdo$() fuerza la carga$()$(br2)Cofres, máquinas y cultivos dentro de tus chunks están a salvo de otros jugadores. En servidores, lo no reclamado no está protegido: reclama tu base cuanto antes."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "kubejs:textures/fieldguide/journeymap.png"
+      ],
+      "title": "Mapa completo y marcadores",
+      "border": true,
+      "text": "Afloramientos de mineral, pozos de arcilla, frutales: todo merece un marcador."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Consejos para novatos",
+      "text": "$(li)Si una receta vanilla no aparece en JEI, el pack la eliminó o la reescribió: fíate del Libro de misiones y de esta guía$()$(br)$(li)La comida se pudre. Séllala en vasijas de cerámica al principio; construye una bodega más adelante$()$(br)$(li)$(thing)0–40 °C$() es la franja segura de temperatura; fuera de ella recibes daño: vigila el termómetro en verano e invierno$()$(br)$(li)Las herramientas de piedra no se reparan; talla primero un cuchillo de piedra$()$(br)$(li)¿Atascado? Primero el Libro de misiones, luego esta guía: la respuesta casi siempre está dentro$()"
+    }
+  ]
+}

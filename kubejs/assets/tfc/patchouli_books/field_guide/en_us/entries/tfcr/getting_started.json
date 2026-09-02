@@ -1,0 +1,48 @@
+{
+  "name": "Getting Started",
+  "category": "tfc:tfcr",
+  "icon": "minecraft:stone_axe",
+  "sortnum": 1,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "First Steps",
+      "text": "When you first spawn, you receive a starter kit: the $(thing)Quest Book$(), the $(thing)Field Guide$() (this book), the $(thing)Engineer's Manual$(), a $(thing)Thermometer$(), a wearable $(thing)Sophisticated Backpack$(), and warm $(thing)Wool Leggings$().$(br2)For your first 20 minutes a $(thing)grace period$() protects you from temperature damage — use it to get your bearings. Step one: open the Quest Book and begin the Stone Age chapter."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "A Real World",
+      "text": "This pack runs $(thing)TFC: Real World$(): the world is not random, it is our planet — continents, oceans, elevation and Köppen climate zones all come from real geographic data (Equal Earth projection).$(br2)By default you spawn near the real coordinates of $(thing)Beijing, China$() (39.9°N, 116.4°E). Temperature and rainfall vary realistically with latitude: colder toward the poles, hotter toward the equator, and season length follows latitude too.$(br2)The Earth is round — keep heading north and you really will reach the North Pole. Mark waypoints in JourneyMap before any long expedition."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Key Bindings",
+      "text": "Shown with your actual bindings; rebind in Controls if needed:$(br2)$(li)$(k:jei.showRecipe) / $(k:jei.showUses): view recipes / uses of the hovered item (JEI)$()$(br)$(li)$(k:jei.bookmark): bookmark an item in JEI$()$(br)$(li)$(k:journeymap.map_toggle_alt): fullscreen map (JourneyMap)$()$(br)$(li)$(k:journeymap.create_waypoint): create a waypoint$()$(br)$(li)$(k:corpse.death_history): death history (Corpse)$()$(br)$(li)$(k:curios.open.desc): curios/accessories$()$(br)$(li)$(k:sophisticatedbackpacks.open_backpack): open your worn backpack$()$(br)$(li)$(k:togglePerspective): toggle perspective$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "JourneyMap",
+      "text": "The minimap in the corner comes from JourneyMap.$(br2)$(li)$(k:journeymap.map_toggle_alt) opens the fullscreen map; $(k:journeymap.zoom_in)/$(k:journeymap.zoom_out) zoom$()$(br)$(li)$(k:journeymap.create_waypoint) marks your position — ore surface nuggets and clay pits are all worth a pin$()$(br)$(li)Dying creates a $(thing)death waypoint$() automatically; pair it with $(k:corpse.death_history) to recover your body$()$(br2)Hotkeys and appearance can be tuned in JourneyMap's options (top-right of the fullscreen map)."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "FTB Chunks Claiming",
+      "text": "Land protection is handled by FTB Chunks.$(br2)$(li)Press $(k:ftbteams.open_gui) to create or join an FTB Teams party first$()$(br)$(li)Two ways to open the chunk map: the $(thing)claim button inside JourneyMap's fullscreen map$(), or press $(k:inventory) and click the claim button in the $(thing)top-left corner$() of your inventory$()$(br)$(li)On the chunk map: $(thing)left-click$() to claim, $(thing)Shift+left-click$() to force-load$()$(br2)Chests, machines and crops inside claimed chunks are safe from other players. Unclaimed land is unprotected on servers — claim your base right away."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "kubejs:textures/fieldguide/journeymap.png"
+      ],
+      "title": "Fullscreen Map & Waypoints",
+      "border": true,
+      "text": "Ore outcrops, clay pits, fruit trees — all worth a waypoint."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Tips for New Players",
+      "text": "$(li)If a vanilla recipe is missing in JEI, the pack has removed or rewritten it — trust the Quest Book and this guide$()$(br)$(li)Food rots. Seal it in ceramic vessels early on; build a cellar later$()$(br)$(li)$(thing)0–40°C$() is the safe temperature band; outside it you slowly take damage — watch your thermometer in summer and winter$()$(br)$(li)Stone-age tools can't be repaired; knap a stone knife first$()$(br)$(li)Stuck? Quest Book first, then this guide — the answer is almost always inside$()"
+    }
+  ]
+}

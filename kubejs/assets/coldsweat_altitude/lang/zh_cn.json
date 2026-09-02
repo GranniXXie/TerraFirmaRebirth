@@ -1,0 +1,19 @@
+{
+  "coldsweat_altitude.band.extreme_sky.actionbar": "极端高空暴露",
+  "coldsweat_altitude.band.extreme_sky.on_enter": "空气变得稀薄而刺骨。",
+  "coldsweat_altitude.band.low_sky.actionbar": "高空寒冷",
+  "coldsweat_altitude.band.low_sky.on_enter": "这个高度的空气变得更冷了。",
+  "coldsweat_altitude.value.none": "无",
+  "coldsweat_altitude.value.not_applicable": "不适用",
+  "coldsweat_altitude.value.not_applicable_multiply": "不适用-乘算",
+  "coldsweat_altitude.value.open": "露天",
+  "commands.coldsweat_altitude.list.empty": "当前没有加载有效的高度区间。",
+  "commands.coldsweat_altitude.list.entry": "%s | 优先级=%s | 最小Y=%s | 最大Y=%s | 模式=%s | 温度=%s",
+  "commands.coldsweat_altitude.reload.success": "已重载冷汗：高空配置，共 %s 个有效区间。",
+  "commands.coldsweat_altitude.status.hearths.entry": "%s@%s 距离=%s 加热中=%s 制冷中=%s 热燃料=%s 冷燃料=%s 使用热燃料=%s 使用冷燃料=%s 加热等级=%s 制冷等级=%s 最大范围=%s 影响中=%s",
+  "commands.coldsweat_altitude.status.hearths.none": "无",
+  "commands.coldsweat_altitude.status.heat_sources.entry": "%s:%s@%s 距离=%s 热量=%s",
+  "commands.coldsweat_altitude.status.heat_sources.none": "无（扫描=%s）",
+  "commands.coldsweat_altitude.status.line1": "维度=%s, Y=%s, 区间=%s, 高度原始值=%s, 高度应用值=%s, 防护减免=%s, 遮蔽减免=%s, 遮蔽=%s%%, 世界遮蔽=%s, Sable遮蔽=%s, Sable=%s, 区间内刻数=%s",
+  "commands.coldsweat_altitude.status.line2": "热源扫描范围=%s, 总热量=%s, 净热量=%s, CS世界温度=%s, CS体温=%s, CS核心温度=%s, 热源数=%s, 壁炉数=%s"
+}

@@ -1,0 +1,23 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "tfcorewashing:dirty_dust_graphite"
+    }
+  ],
+  "results": [
+    {
+      "id": "tfc:powder/graphite"
+    },
+    {
+      "id": "tfcorewashing:pile_black_sand"
+    }
+  ],
+  "processingTime": 1200,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

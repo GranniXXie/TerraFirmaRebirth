@@ -1,0 +1,6 @@
+{
+  "selector": "#tfc:spreading_bushes",
+  "properties": {
+    "sable:mass": 0.25
+  }
+}

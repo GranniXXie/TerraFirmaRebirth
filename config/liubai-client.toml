@@ -1,0 +1,105 @@
+[general]
+	#Master switch. When false, render hooks take the vanilla path.
+	enabled = true
+	#Target used by the adaptive frame budget controller.
+	# Default: 60
+	# Range: 30 ~ 240
+	targetFps = 60
+	#Increase optimization pressure when render time stays over budget.
+	adaptiveMode = true
+
+[culling]
+	entities = true
+	blockEntities = true
+	#Cull objects only after repeated full-solid-block occlusion checks.
+	occlusion = true
+	#AUTO delegates generic occlusion to Entity Culling when it is installed.
+	#Allowed Values: AUTO, BUILTIN, EXTERNAL, OFF
+	occlusionMode = "AUTO"
+	# Default: 8.0
+	# Range: 0.0 ~ 64.0
+	safeDistance = 8.0
+	# Default: 4.0
+	# Range: 4.0 ~ 128.0
+	occlusionMinDistance = 4.0
+	#Hard cap for world-reading visibility checks per frame.
+	# Default: 32
+	# Range: 0 ~ 512
+	checksPerFrame = 32
+	#Client-thread time cap for built-in visibility checks per frame.
+	# Default: 900
+	# Range: 100 ~ 10000
+	budgetMicros = 900
+	# Default: 2
+	# Range: 1 ~ 8
+	occludedConfirmations = 2
+	# Default: 30
+	# Range: 2 ~ 600
+	cacheTtlFrames = 30
+	#Under load, low-priority objects smaller than this many pixels may be skipped. Set 0 to disable.
+	# Default: 1.25
+	# Range: 0.0 ~ 16.0
+	minimumProjectedRadius = 1.25
+
+[lod]
+	screenSpace = true
+	temporal = true
+	# Default: 8
+	# Range: 1 ~ 31
+	maxTemporalInterval = 8
+	#Apply a stable per-chunk render cap only to distant vanilla items and experience orbs under pressure.
+	denseVanillaEntities = true
+	# Default: 32.0
+	# Range: 16.0 ~ 128.0
+	denseEntityDistance = 32.0
+	# Default: 24
+	# Range: 1 ~ 256
+	denseEntityHighLimit = 24
+	# Default: 12
+	# Range: 1 ~ 256
+	denseEntityCriticalLimit = 12
+
+[effects]
+	reduceEntityShadows = true
+	# Default: 24.0
+	# Range: 0.0 ~ 128.0
+	shadowDistance = 24.0
+	reduceNameTags = true
+	# Default: 48.0
+	# Range: 8.0 ~ 256.0
+	nameTagDistance = 48.0
+	reduceParticles = true
+	# Default: 32.0
+	# Range: 4.0 ~ 256.0
+	particleDistance = 32.0
+	#Existing particles above this count make distant admission more aggressive.
+	# Default: 4096
+	# Range: 256 ~ 32768
+	particleSoftLimit = 4096
+	# Default: 256
+	# Range: 16 ~ 4096
+	particleHighBudget = 256
+	# Default: 128
+	# Range: 8 ~ 4096
+	particleCriticalBudget = 128
+
+[flywheel]
+	#Enhance Flywheel's own distance update limiter on explicitly supported versions.
+	adaptiveLimiter = true
+	# Default: 2
+	# Range: 1 ~ 8
+	highMultiplier = 2
+	# Default: 3
+	# Range: 1 ~ 12
+	criticalMultiplier = 3
+
+[compatibility]
+	#Entity type ids that Liubai must never hide.
+	entityAllowlist = ["minecraft:player", "minecraft:ender_dragon", "minecraft:wither", "minecraft:tnt", "minecraft:leash_knot", "minecraft:lightning_bolt"]
+	#Block entity type ids with visuals outside their block.
+	blockEntityAllowlist = ["minecraft:beacon", "minecraft:end_gateway", "minecraft:end_portal", "minecraft:structure_block", "minecraft:conduit"]
+	#Never cull content from these mod namespaces. Create is conservative until a versioned Flywheel adapter is installed.
+	disabledNamespaces = ["create", "flywheel"]
+
+[debug]
+	showHud = false

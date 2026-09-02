@@ -1,0 +1,16 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "count": 4,
+      "item": "firmalife:food/raw_honey"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "create:honey"
+    }
+  ]
+}

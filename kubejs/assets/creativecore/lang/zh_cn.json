@@ -1,0 +1,9 @@
+{
+  "gui.config.reset": "重置",
+  "gui.false": "否",
+  "gui.ingredient.latest": "最近使用的材料：",
+  "gui.play": "播放",
+  "gui.true": "是",
+  "minecraft.blocks": "方块",
+  "minecraft.blocks.counting": "%s 个方块"
+}

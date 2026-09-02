@@ -1,0 +1,6 @@
+{
+  "selector": "#tfc:dry_plants",
+  "properties": {
+    "sable:mass": 0.25
+  }
+}

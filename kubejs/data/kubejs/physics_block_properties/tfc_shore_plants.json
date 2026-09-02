@@ -1,0 +1,6 @@
+{
+  "selector": "#tfc:shore_plants",
+  "properties": {
+    "sable:mass": 0.25
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "create_pickywheels_tfc_wind.configuration.windmills.enabled": "启用 TFC 风力缩放",
+  "create_pickywheels_tfc_wind.configuration.windmills.referenceWind": "基准风力强度",
+  "create_pickywheels_tfc_wind.configuration.windmills.minimumMultiplier": "最小风力倍率",
+  "create_pickywheels_tfc_wind.configuration.windmills.maximumMultiplier": "最大风力倍率"
+}

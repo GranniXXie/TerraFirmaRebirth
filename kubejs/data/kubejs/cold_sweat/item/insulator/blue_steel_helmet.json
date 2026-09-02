@@ -1,0 +1,12 @@
+{
+  "type": "armor",
+  "insulation": {
+    "cold": 12,
+    "heat": 0
+  },
+  "item": {
+    "items": [
+      "tfc:metal/helmet/blue_steel"
+    ]
+  }
+}

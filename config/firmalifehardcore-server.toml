@@ -1,0 +1,89 @@
+#FirmaLife HardCore — Cellar & Greenhouse Thermal System
+[server]
+	#Maximum horizontal span (blocks) for cellar/greenhouse detection
+	# Default: 24
+	# Range: 3 ~ 64
+	maxHorizontalSpan = 24
+	#Maximum vertical span (blocks) for cellar/greenhouse detection
+	# Default: 8
+	# Range: 2 ~ 32
+	maxVerticalSpan = 8
+	#Maximum spaces to recheck per tick
+	# Default: 20
+	# Range: 1 ~ 1000
+	maxSpacesPerTick = 20
+	#Multiplier applied to double doors for thermal resistance
+	# Default: 4.0
+	# Range: 1.0 ~ 10.0
+	doubleDoorMultiplier = 4.0
+
+	[server.resistance]
+		# Default: 0.75
+		# Range: 0.0 ~ 1.0
+		high = 0.75
+		# Default: 0.55
+		# Range: 0.0 ~ 1.0
+		medium = 0.55
+		# Default: 0.25
+		# Range: 0.0 ~ 1.0
+		low = 0.25
+
+	[server.preservationTiers]
+		#Tier 1 preservation threshold (≤ this = SHELVED). Above = no preservation
+		# Default: 16.0
+		# Range: -50.0 ~ 50.0
+		tier1 = 16.0
+		#Tier 2 preservation threshold (≤ this = SHELVED_2)
+		# Default: 8.0
+		# Range: -50.0 ~ 50.0
+		tier2 = 8.0
+		#Tier 3 preservation threshold (≤ this = SHELVED_3)
+		# Default: 0.0
+		# Range: -50.0 ~ 50.0
+		tier3 = 0.0
+
+	[server.greenhouse]
+		#Greenhouse canopy temperature multiplier. Base temp = 4 + this × canopyRatio (default 40 → 44°C at 100% canopy)
+		# Default: 40.0
+		# Range: 0.0 ~ 100.0
+		canopyMultiplier = 40.0
+		#Minimum glass roof ratio required for greenhouse detection (glass_roof / total_roof)
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		glassRatio = 0.5
+
+	[server.reinforcedSoil]
+		#Maximum depth for reinforced soil downward placement
+		# Default: 3
+		# Range: 1 ~ 10
+		maxDepth = 3
+		#Hammer durability cost per use on reinforced soil
+		# Default: 1
+		# Range: 1 ~ 50
+		hammerDurabilityCost = 1
+
+	[server.irrigation]
+		#Pumping station base water capacity (mB)
+		# Default: 500
+		# Range: 100 ~ 10000
+		pumpBaseCapacity = 500
+		#Extra capacity per irrigation tank stacked above the pump (mB)
+		# Default: 500
+		# Range: 100 ~ 5000
+		tankCapacityBonus = 500
+		#Maximum number of tanks above the pump that count for capacity boost
+		# Default: 3
+		# Range: 0 ~ 10
+		maxTankBonus = 3
+		#Water consumed by a sprinkler per cycle (mB per ~80 ticks)
+		# Default: 5
+		# Range: 1 ~ 100
+		sprinklerWaterUse = 5
+		#Multiplier for rotation speed → water fill rate. 15 RPM with factor 4.0 ≈ 25 mB/80tick
+		# Default: 4.0
+		# Range: 0.1 ~ 100.0
+		pumpRateFactor = 4.0
+		#Maximum BFS search distance for sprinkler pipe network (was 32)
+		# Default: 64
+		# Range: 16 ~ 256
+		pipeMaxCost = 64

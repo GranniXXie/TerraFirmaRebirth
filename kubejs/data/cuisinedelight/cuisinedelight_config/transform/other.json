@@ -1,0 +1,25 @@
+{
+  "fluidTransform": {},
+  "itemTransform": {
+    "minecraft:egg": {
+      "next": "cuisinedelight:fried_egg",
+      "stage": "RAW"
+    },
+    "tfc:plant/laminaria": {
+      "next": "tfc:food/dried_kelp",
+      "stage": "COOKED"
+    },
+    "tfc:plant/winged_kelp": {
+      "next": "tfc:food/dried_kelp",
+      "stage": "COOKED"
+    },
+    "tfc:plant/leafy_kelp": {
+      "next": "tfc:food/dried_kelp",
+      "stage": "COOKED"
+    },
+    "minecraft:potato": {
+      "next": "minecraft:baked_potato",
+      "stage": "COOKED"
+    }
+  }
+}

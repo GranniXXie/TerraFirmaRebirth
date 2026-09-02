@@ -1,0 +1,9 @@
+{
+    "ingredient": {
+        "tag": "tfc:alcohols"
+    },
+    "water": 5.0,
+    "intoxication": 4000,
+    "consume_chance": 0.2,
+    "may_drink_when_full": true
+}

@@ -1,0 +1,14 @@
+#A floater force. Set is CAREFULLY
+# Default: 1.0
+# Range: 0.0 ~ 1.7976931348623157E308
+floaterForce = 1.0
+#A floater's max value of load
+# Default: 10.0
+# Range: 0.0 ~ 1.7976931348623157E308
+floaterMaxLoad = 10.0
+#logging(for debug only)
+logging = false
+#A offset for calculation depth of block
+# Default: 0.0
+# Range: -0.5 ~ 0.5
+depthOffset = 0.0

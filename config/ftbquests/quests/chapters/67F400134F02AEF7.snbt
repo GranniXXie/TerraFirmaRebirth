@@ -1,0 +1,226 @@
+{
+	default_hide_dependency_lines: false
+	default_min_width: 1
+	default_quest_shape: ""
+	filename: "67F400134F02AEF7"
+	group: ""
+	hide_quest_details_until_startable: true
+	icon: {
+		components: {
+			"ftbquests:icon": "minecraft:textures/gui/sprites/icon/info.png"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "67F400134F02AEF7"
+	images: [ ]
+	order_index: 0
+	quest_enhance_chapter_background: "minecraft:textures/gui/sprites/container/cartography_table/map.png"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				components: {
+					"patchouli:book": "tfc:field_guide"
+				}
+				id: "patchouli:guide_book"
+			}
+			id: "219E58F012A1322A"
+			rewards: [{
+				id: "4A01C1A77585B174"
+				type: "xp"
+				xp: 10
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "0E6195DCA3BD21B9"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["219E58F012A1322A"]
+			icon: {
+				components: {
+					"ftbquests:icon": "e33chat:textures/gui/dark/chat_icon.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "54149DFBE04F9DCE"
+			rewards: [{
+				id: "2105AC567728C8CF"
+				type: "xp"
+				xp: 10
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "7D4E17F648F573E9"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["54149DFBE04F9DCE"]
+			icon: {
+				components: {
+					"ftbquests:icon": "nochatreports:textures/gui/sprites/safety_state/undefined_hovered.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "764432C063391A2C"
+			rewards: [{
+				id: "338EC0F7C584875E"
+				type: "xp"
+				xp: 10
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "34735DFB51698CEC"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4AF0C372CFFE8D7C"]
+			icon: {
+				id: "ftbquests:book"
+			}
+			id: "17B4BC82A921F900"
+			rewards: [{
+				id: "1691B0942A864C60"
+				type: "xp"
+				xp: 10
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "331AE25B65ED5A9C"
+				type: "checkmark"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3334A1823AF502AF"]
+			icon: {
+				components: {
+					"ftbquests:icon": "tfc:block/wood/trapdoor/kapok"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "4525DB7844975EC1"
+			rewards: [
+				{
+					id: "6E6E203FF54E0E6D"
+					item: {
+						count: 1
+						id: "tfc:gem/ruby"
+					}
+					type: "item"
+				}
+				{
+					id: "1097E21A822FD602"
+					type: "xp"
+					xp: 20
+				}
+				{
+					id: "40506398C15813C4"
+					type: "xp"
+					xp: 10
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				id: "2BA2E58B43FE1B8D"
+				type: "checkmark"
+			}]
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["764432C063391A2C"]
+			icon: {
+				components: {
+					"ftbquests:icon": "jei:textures/jei/atlas/gui/icons/info.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "4AF0C372CFFE8D7C"
+			rewards: [{
+				id: "78DF13465D773D39"
+				type: "xp"
+				xp: 10
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "0DFD74ED8AC40B01"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17B4BC82A921F900"]
+			icon: {
+				components: {
+					"ftbquests:icon": "ldlib2:textures/gui/icon/information.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "3334A1823AF502AF"
+			rewards: [{
+				id: "6ECE477913A1F153"
+				type: "xp"
+				xp: 10
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "1A24007C506F734C"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["219E58F012A1322A"]
+			icon: {
+				id: "create:cogwheel"
+			}
+			id: "1DFA57F00DCEED01"
+			rewards: [{
+				id: "1DFA57F00DCEED03"
+				type: "xp"
+				xp: 10
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "1DFA57F00DCEED02"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["219E58F012A1322A"]
+			icon: {
+				id: "minecraft:filled_map"
+			}
+			id: "7D3E4A5B6C7D8E9F"
+			rewards: [{
+				id: "7D3E4A5B6C7D8EA1"
+				type: "xp"
+				xp: 10
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "7D3E4A5B6C7D8EA0"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+	]
+}

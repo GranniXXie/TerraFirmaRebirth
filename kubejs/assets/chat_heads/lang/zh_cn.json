@@ -1,0 +1,5 @@
+{
+  "text.autoconfig.chat_heads.option.drawShadow": "渲染阴影",
+  "text.autoconfig.chat_heads.option.threeDeeNess": "立体程度",
+  "text.autoconfig.chat_heads.option.threeDeeNess.@Tooltip": "将帽子层渲染得稍大，\n让聊天头像看起来不那么扁平。\n可能会导致一些渲染问题。"
+}

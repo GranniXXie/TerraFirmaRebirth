@@ -1,0 +1,32 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "tfcorewashing:rocky_chunks_limonite"
+    }
+  ],
+  "results": [
+    {
+      "id": "tfcorewashing:chunks_limonite"
+    },
+    {
+      "chance": 0.6,
+      "id": "tfc:rock/loose/andesite"
+    },
+    {
+      "chance": 0.3,
+      "id": "tfc:rock/loose/dolomite"
+    },
+    {
+      "chance": 0.001,
+      "id": "tfc:ore/topaz"
+    }
+  ],
+  "processingTime": 1200,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

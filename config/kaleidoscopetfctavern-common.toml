@@ -1,0 +1,9 @@
+[growth]
+	#葡萄作物每随机刻生长的概率 (0.0 - 1.0)
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	grapeCropGrowthChance = 0.25
+	#葡萄藤每随机刻生长的概率 (0.0 - 1.0)
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	grapevineGrowthChance = 0.25

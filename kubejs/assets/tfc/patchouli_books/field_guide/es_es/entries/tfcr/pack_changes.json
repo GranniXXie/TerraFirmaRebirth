@@ -1,0 +1,58 @@
+{
+  "name": "Qué cambia el pack",
+  "category": "tfc:tfcr",
+  "icon": "create:cogwheel",
+  "sortnum": 2,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "TerraFirma: Rebirth respeta el estilo de cada mod mientras conecta sus sistemas entre sí. Esta entrada es un recorrido global por las diferencias del pack frente a «TFC vanilla más mods por defecto»: no un registro de cambios, sino un mapa de sistemas que refleja los capítulos del Libro de misiones.$(br2)Las recetas exactas están en JEI y en el Libro de misiones."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Mundo y supervivencia",
+      "text": "$(li)Curvatura del mundo (Eratosthenes): el mundo es redondo y el terreno se curva con la distancia. Para evitar cuelgues al teletransportarse, la vuelta del Nether se limita a $(thing)±19 500$()$()$(br)$(li)Temperatura (Cold Sweat): $(thing)0–40 °C$() es la franja segura; fuera recibes daño. Los jugadores nuevos tienen 20 minutos de gracia$()$(br)$(li)Al morir dejas un cadáver (Corpse) con marcador de muerte automático$()$(br)$(li)Las abejas no consumen miel ni mueren en invierno (comportamiento de Firmalife mantenido)$()$(br)$(li)$(thing)Carros Astikor$() (con compatibilidad TFC) para transporte y viajes por tierra$()$(br)$(li)Compatible con $(thing)Voxy$(): contempla el mundo curvo al completo$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Procesado de minerales",
+      "text": "$(li)La prospección nativa de TFC y las pepitas en superficie se mantienen intactas$()$(br)$(li)La cadena de beneficio triturar → moler → lavar está totalmente mecanizada: molino de mano, piedra de moler, ruedas trituradoras y machacadoras se relevan por niveles$()$(br)$(li)Las canales de lavado y el lavado mecanizado coexisten, con doble producción de pepitas y gemas$()$(br)$(li)La $(thing)perforadora mineral$() de Immersive Engineering cubre el sistema de vetas de TFC: las vetas profundas se automatizan en el tramo final$()$(br)$(li)Los minerales procesados alimentan el horno de arco y las máquinas de Electro Energetics: el procesado es la espina dorsal de recursos del pack$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Metales y forja",
+      "text": "$(li)Aleaciones ampliadas: la $(thing)aleación de andesita$() es una aleación auténtica que exige mezclar en proporción y colar$()$(br)$(li)El horno de arco se encarga de la aleación industrial; si la proporción falla pero el metal dominante es ≥75%, se obtiene $(thing)aleación inferior$(): sirve para herramientas marcadas, pero no entra en los hornos industriales$()$(br)$(li)Las piezas básicas de transmisión de Create se integran en la forja de TFC con yunques rebajados: la $(thing)era del hierro colado$() puede mecanizarse$()$(br)$(li)Los consumibles industriales, como los electrodos de grafito, se prensan directamente desde polvos, sin lingotes intermedios$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Progresión energética",
+      "text": "$(li)Tres eras de energía: $(thing)potencia rotacional$() (Create) → $(thing)biocombustible$() (Immersive Engineering) → $(thing)electricidad$() (Electro Energetics)$()$(br)$(li)Los motores portátiles queman biocombustible; los supermotores beben la mezcla de alta potencia$()$(br)$(li)Los calentadores eléctricos sustituyen al combustible: incluso las aleaciones supercalentadas funcionan con pura electricidad$()$(br)$(li)Electro Energetics ofrece generación, transmisión y maquinaria eléctrica completas: la base industrial tras la era del acero$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Integración de Create",
+      "text": "$(li)La piedra de moler sucede al molino de mano: totalmente automática con energía$()$(br)$(li)Los subproductos del ensamblaje secuenciado se convierten en $(thing)chatarra de TFC$(): incluso los fallos devuelven algo$()$(br)$(li)El ensamblador mecánico funciona con una mesa de trabajo de roble: construible desde el principio$()$(br)$(li)Los ventiladores se ocupan de procesos por lotes como el secado de adobe, llueva o truene$()$(br)$(li)Los trenes y las redes logísticas transportan a distancias de escala TFC$()$(br)$(li)El capítulo de artilugios cubre elevación, cuerdas y estructuras móviles$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Aeronáutica y espacio",
+      "text": "$(li)$(thing)Aeronautics$() empieza en la era del hierro colado: globos, dirigibles y luego aviones$()$(br)$(li)TFC Aeronautics hace que los materiales de TFC y las aeronaves sean plenamente interoperables; los ríos empujan de verdad los cascos$()$(br)$(li)Los bloques con gravedad (tierra, grava…) $(thing)no pueden fisicalizarse$() ni colocarse en estructuras voladoras: recibirás un aviso$()$(br)$(li)$(thing)Cosmonautics$() es el final del juego: el titanio aparece en vetas raras estilo TFC y su aleación requiere netherita — la meta es la Luna$()$(br)$(li)La levitita sigue la $(thing)ruta de la roca lunar$(), desbloqueada tras alunizar$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Agricultura y conserva",
+      "text": "$(li)Las bodegas y los invernaderos se autodetectan, $(thing)sin estación climática$(); tres niveles de aislamiento dan conserva a ≤16 °C / ≤8 °C / ≤0 °C$()$(br)$(li)Los invernaderos compensan las estaciones para cultivar fuera de temporada; el queso madura solo en la bodega$()$(br)$(li)La cadena de conserva: vasijas selladas → salado y ahumado → bodega → mejoras de nevera$()$(br)$(li)La comida podrida ya no puede cocinarse ni cortarse$()$(br)$(li)Cuisine Delight trae una cocina china de salteados completa$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Ganadería, abejas y elaboración",
+      "text": "$(li)Apicultura de Firmalife: colmenas, panales y procesado de la miel$()$(br)$(li)El capítulo de ganadería cubre cría, cuidados y productos animales$()$(br)$(li)Las espitas recogen savia: sirope de arce y látex$()$(br)$(li)Compatibilidad con $(thing)Kaleidoscope Tavern$() (propia): cuatro variedades de uva, cultivo en espaldera y una cadena vitivinícola completa — pisado, fermentación, prensado, embotellado y crianza$()$(br)$(li)El capítulo de elaboración cubre tanto las bebidas nativas de TFC como los vinos de la taberna$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Contenido y comodidad",
+      "text": "$(li)$(thing)AFC$(): un conjunto completo de árboles y carpintería estilo TFC$()$(br)$(li)$(thing)The Beneath$(): un nether «terrafirmado» para expediciones$()$(br)$(li)Sophisticated Backpacks, Storage Drawers y otros mods de calidad de vida adaptados a TFC$()$(br)$(li)Equipos y reclamaciones FTB, el «$(thing)Guardián 360 de TerraFirma$()» que limpia objetos y las copias automáticas de FTB Backups$()$(br)$(li)$(thing)28 pistas originales$() y una localización hecha por la comunidad$()$(br)$(li)Kit inicial al entrar: libro de misiones, guía, termómetro, mochila y perneras de lana$()"
+    }
+  ]
+}

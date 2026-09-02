@@ -1,0 +1,5 @@
+{
+  "electroenergetics.gui.goggles.current_generation": "当前发电功率：",
+  "electroenergetics.nodes.carry_in": "进位输入",
+  "electroenergetics.nodes.carry_out": "进位输出"
+}

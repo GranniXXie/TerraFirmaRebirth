@@ -1,0 +1,23 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "tfcorewashing:dirty_dust_cinnabar"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:redstone"
+    },
+    {
+      "id": "tfcorewashing:pile_red_sand"
+    }
+  ],
+  "processingTime": 1200,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

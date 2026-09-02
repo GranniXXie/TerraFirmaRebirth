@@ -1,0 +1,44 @@
+{
+  "block.cccbridge.source_block": "源方块",
+  "block.cccbridge.target_block": "目标方块",
+  "block.cccbridge.redrouter_block": "红石路由方块",
+  "block.cccbridge.scroller_block": "滚动屏",
+  "block.cccbridge.animatronic_block": "电子人偶",
+
+  "block.cccbridge.source_block.description": "§6可通过§e显示链接§6把文字镜像到其他§o目标方块§r§6上。\n\n§7当灯闪烁时\n §6将当前缓冲的文字发送给§o目标方块§r§6。\n§7当分辨率改变时\n §6向所有连接的§e电脑§6推送一条§o事件§r§6。",
+  "block.cccbridge.target_block.description": "§6充当其他§o源方块§r§6的§o目标§r§6。§e电脑§6可以借此读取§e机械动力§6装置的各种信息。",
+  "block.cccbridge.redrouter_block.description": "§6可通过§o红石 API§r§6 控制§e红石§6信号。",
+  "block.cccbridge.scroller_block.description": "§6提供一个选择数字的交互界面，可用§e电脑§6读取、控制与操纵。",
+  "block.cccbridge.animatronic_block.description": "§6它的面部表情和整个身体的姿态都可以用§e电脑§6调整。\n\n§7推动时\n §6将缓冲的§o旋转角度§r§6应用到§e电子人偶§6上。",
+
+  "cccbridge.tooltip.holdForDescription": "§8按住 [{0}Shift§8] 查看详情",
+  "cccbridge.tooltip.peripheral": "外设 v{0}",
+  "cccbridge.tooltip.no_peripheral": "&o未连接外设",
+
+  "cccbridge.display_source.source_block_display_source": "来自电脑的数据",
+
+  "cccbridge.general.unit.scroller": "Lua 数值",
+  "cccbridge.general.unit.scroller.positive": "Lua 数值 +",
+  "cccbridge.general.unit.scroller.negative": "Lua 数值 -",
+
+  "subtitles.cccbridge.cage_lock": "滚动屏锁定",
+  "subtitles.cccbridge.cage_unlock": "滚动屏解锁",
+
+  "itemGroup.cccbridge.cccbridge_group": "外设（CC:C Bridge）",
+
+  "advancements.cccbridge.placed_animatronic.title": "Minecraft 的五夜后宫",
+  "advancements.cccbridge.placed_animatronic.description": "一个平平无奇的电子人偶，能出什么事呢！",
+  "advancements.cccbridge.placed_redrouter.title": "情绪伤害",
+  "advancements.cccbridge.placed_redrouter.description": "造一个阴晴不定的小伙伴吧。",
+
+  "painting.cccbridge.funny_redrouters.title": "滑稽红石路由",
+  "painting.cccbridge.funny_redrouters.author": "Sammy L. Koch",
+
+  "cccbridge.screen.config_screen": "CC:C Bridge 配置",
+  "cccbridge.options.button.save": "保存配置",
+  "cccbridge.options.button.saved": "配置已保存",
+  "cccbridge.options.button.close": "关闭",
+
+  "cccbridge.options.option.flickering": "灯光闪烁",
+  "cccbridge.options.tooltip.flickering": "决定红石路由方块或电子人偶的脸在黑暗处是否闪烁。"
+}

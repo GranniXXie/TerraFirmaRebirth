@@ -1,0 +1,573 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "05B5D2183DDEE205"
+	group: "7230BCDFA3557B8C"
+	hide_quest_details_until_startable: true
+	icon: {
+		components: {
+			"tfc:heat": { }
+		}
+		id: "tfc:metal/ingot/copper"
+	}
+	id: "05B5D2183DDEE205"
+	images: [ ]
+	order_index: 2
+	quest_enhance_chapter_background: "dynamic_fps:textures/battery/toast/background.png"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7FE1A1E9B7570F36"
+			rewards: [{
+				id: "126E9479946AF449"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				icon: {
+					components: {
+						"tfc:heat": { }
+					}
+					id: "tfc:metal/ingot/copper"
+				}
+				id: "1B48E861C345E1D5"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(c:ingots/copper) item_tag(c:sheets/copper) item_tag(c:double_ingots/copper) item_tag(tfc:tools/copper))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7FE1A1E9B7570F36"]
+			hide_until_deps_visible: false
+			icon: {
+				components: {
+					"ftbquests:icon": "journeymap:textures/waypoint/icon/00_markers/jwi00circle_empty.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "7F5295A9A2EBF122"
+			rewards: [{
+				id: "030F0E6A3627D1DF"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "39AD44B577B8FBF4"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7F5295A9A2EBF122"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/pickaxe/copper"
+			}
+			id: "48E61577434BAE55"
+			rewards: [
+				{
+					id: "5C4774002F6DD0F8"
+					type: "xp"
+					xp: 15
+				}
+				{
+					id: "2C2322AED2A65A7A"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "07C1AD8468B93C1F"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/pickaxe/copper" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7F5295A9A2EBF122"]
+			id: "7A6BEFCF3EC358AC"
+			rewards: [{
+				id: "7D4C21312B659539"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "20177DD1E02024FB"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/saw/copper" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A6BEFCF3EC358AC"]
+			id: "14B52DDE8430672C"
+			rewards: [{
+				id: "70F373AF842F38C9"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "54240DA183D227F5"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(tfc:lumber)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3B2B3B973F81A152"]
+			id: "76A888D663A57A86"
+			rewards: [
+				{
+					id: "7C77AC37691D6F57"
+					type: "xp"
+					xp: 15
+				}
+				{
+					id: "7EC21ACA172CE829"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "39A51AB5E8F25AB1"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(tfc:workbenches)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0FF8890123C28762"]
+			id: "5D6BE2A315BFBD2A"
+			rewards: [
+				{
+					id: "6236D882667BBCC8"
+					type: "xp"
+					xp: 15
+				}
+				{
+					id: "2AE8F073F877B417"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "62B6805EFB0147E0"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(tfc:support_beams)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["69A8552ABEA84FCD"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/ingot/bronze"
+			}
+			id: "5DFBD6CE29081618"
+			rewards: [
+				{
+					id: "4CCBDF957E0BFC0B"
+					type: "xp"
+					xp: 15
+				}
+				{
+					id: "1EB9BE3EE572A61C"
+					type: "xp"
+					xp: 30
+				}
+				{
+					id: "0E69B8692B0E6150"
+					item: {
+						count: 1
+						id: "tfc:gem/ruby"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5C81BF1885C8D6EE"
+					table_id: 6123558642180893114L
+					type: "choice"
+				}
+			]
+			shape: "octagon"
+			tasks: [{
+				icon: {
+					components: {
+						"tfc:heat": { }
+					}
+					id: "tfc:metal/ingot/bronze"
+				}
+				id: "3F6B7D443F20C468"
+				item: { components: { "ftbfiltersystem:filter": "or(or(item_tag(c:ingots/bismuth_bronze) item_tag(c:sheets/bismuth_bronze) item_tag(c:double_ingots/bismuth_bronze) item_tag(tfc:tools/bismuth_bronze)) or(item_tag(c:ingots/bronze) item_tag(c:sheets/bronze) item_tag(c:double_ingots/bronze) item_tag(tfc:tools/bronze)) or(item_tag(c:ingots/black_bronze) item_tag(c:sheets/black_bronze) item_tag(c:double_ingots/black_bronze) item_tag(tfc:tools/black_bronze)))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7F5295A9A2EBF122"]
+			icon: {
+				components: {
+					"ftbquests:icon": "tfcsbu:textures/gui/welding.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "4BFBFADA2F05761D"
+			rewards: [{
+				id: "182083C4DC434B0A"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "46DEC53B87E75845"
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:powder/flux" }
+					type: "item"
+				}
+				{
+					id: "5E643AB6197DA2EA"
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/double_ingot/copper" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4BFBFADA2F05761D"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/anvil/copper"
+			}
+			id: "52AAAE7D38BCC11B"
+			rewards: [
+				{
+					id: "2A9B5529839A75DD"
+					type: "xp"
+					xp: 15
+				}
+				{
+					id: "525418F7C2AE96E7"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "0B04873EC9E93A0A"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/anvil/copper" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["48E61577434BAE55"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/propick/copper"
+			}
+			id: "0FF8890123C28762"
+			rewards: [{
+				id: "16479E8AFA68966B"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "56E6D12CB6B38A84"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/propick/copper" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7F5295A9A2EBF122"]
+			id: "2FD8C89C38B920CE"
+			rewards: [{
+				id: "653415C56858EB85"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "571AD27AF814A4A5"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/chisel/copper" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["52E9C7D0D7DD3379"]
+			id: "5EE8F779D4D53AC8"
+			rewards: [{
+				id: "6FFED15B996410AB"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "6086F5DB54CF4A66"
+				item: { components: { "ftbfiltersystem:filter": "or(item(tfc:rock/smooth/andesite) item(tfc:rock/smooth/basalt) item(tfc:rock/smooth/chalk) item(tfc:rock/smooth/chert) item(tfc:rock/smooth/claystone) item(tfc:rock/smooth/conglomerate) item(tfc:rock/smooth/dacite) item(tfc:rock/smooth/diorite) item(tfc:rock/smooth/dolomite) item(tfc:rock/smooth/gabbro) item(tfc:rock/smooth/gneiss) item(tfc:rock/smooth/granite) item(tfc:rock/smooth/limestone) item(tfc:rock/smooth/marble) item(tfc:rock/smooth/phyllite) item(tfc:rock/smooth/quartzite) item(tfc:rock/smooth/rhyolite) item(tfc:rock/smooth/schist) item(tfc:rock/smooth/shale) item(tfc:rock/smooth/slate) item(tfc:rock/smooth/tuff))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5EE8F779D4D53AC8"]
+			id: "0E65B41C92E17572"
+			rewards: [
+				{
+					id: "19A42D4DD5532951"
+					type: "xp"
+					xp: 15
+				}
+				{
+					id: "6B9D4845E25CBD8D"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "4E48CF62A0123D92"
+					item: { count: 1, id: "tfc:quern" }
+					type: "item"
+				}
+				{
+					id: "54CD4ED3B38575AF"
+					item: { count: 1, id: "tfc:handstone" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2FD8C89C38B920CE"]
+			id: "52E9C7D0D7DD3379"
+			rewards: [{
+				id: "41E028584F0F9FB1"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "201D320CBB61C622"
+				item: { components: { "ftbfiltersystem:filter": "or(item(tfc:rock/raw/andesite) item(tfc:rock/raw/basalt) item(tfc:rock/raw/chalk) item(tfc:rock/raw/chert) item(tfc:rock/raw/claystone) item(tfc:rock/raw/conglomerate) item(tfc:rock/raw/dacite) item(tfc:rock/raw/diorite) item(tfc:rock/raw/dolomite) item(tfc:rock/raw/gabbro) item(tfc:rock/raw/gneiss) item(tfc:rock/raw/granite) item(tfc:rock/raw/limestone) item(tfc:rock/raw/marble) item(tfc:rock/raw/phyllite) item(tfc:rock/raw/quartzite) item(tfc:rock/raw/rhyolite) item(tfc:rock/raw/schist) item(tfc:rock/raw/shale) item(tfc:rock/raw/slate) item(tfc:rock/raw/tuff))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["14B52DDE8430672C"]
+			id: "3B2B3B973F81A152"
+			rewards: [{
+				id: "0D4955BAB509F59A"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "734570B3185BA11A"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(minecraft:planks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5D6BE2A315BFBD2A"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:ore/rich_sphalerite"
+			}
+			id: "3501024A6D495590"
+			rewards: [{
+				id: "7E61329B10713CA8"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					icon: {
+						components: {
+							"tfc:heat": { }
+						}
+						id: "tfc:ore/rich_sphalerite"
+					}
+					id: "2A20B0D39AAA8952"
+					item: { components: { "ftbfiltersystem:filter": "or(item(tfc:ore/small_sphalerite) item(tfc:ore/poor_sphalerite) item(tfc:ore/normal_sphalerite) item(tfc:ore/rich_sphalerite))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: {
+						components: {
+							"tfc:heat": { }
+						}
+						id: "tfc:ore/rich_bismuthinite"
+					}
+					id: "11D57E478B305644"
+					item: { components: { "ftbfiltersystem:filter": "or(item(tfc:ore/small_bismuthinite) item(tfc:ore/poor_bismuthinite) item(tfc:ore/normal_bismuthinite) item(tfc:ore/rich_bismuthinite))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: {
+						components: {
+							"tfc:heat": { }
+						}
+						id: "tfc:ore/rich_native_silver"
+					}
+					id: "74DC32B510E37B59"
+					item: { components: { "ftbfiltersystem:filter": "or(item(tfc:ore/poor_native_silver) item(tfc:ore/normal_native_silver) item(tfc:ore/rich_native_silver) item(tfc:ore/small_native_silver))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: {
+						components: {
+							"tfc:heat": { }
+						}
+						id: "tfc:ore/rich_native_gold"
+					}
+					id: "5B84E3ACBC5E51C7"
+					item: { components: { "ftbfiltersystem:filter": "or(item(tfc:ore/poor_native_gold) item(tfc:ore/normal_native_gold) item(tfc:ore/rich_native_gold) item(tfc:ore/small_native_gold))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: {
+						components: {
+							"tfc:heat": { }
+						}
+						id: "tfc:ore/rich_cassiterite"
+					}
+					id: "79DF713E612E4D6C"
+					item: { components: { "ftbfiltersystem:filter": "or(item(tfc:ore/small_cassiterite) item(tfc:ore/poor_cassiterite) item(tfc:ore/normal_cassiterite) item(tfc:ore/rich_cassiterite))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "071E6E42C1F4228C"
+					type: "checkmark"
+				}
+			]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7F5295A9A2EBF122"]
+			id: "7BC7AB9444785C70"
+			rewards: [{
+				id: "037D1C15C8A83DBB"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "2B1B4A5D29BB8DE8"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/scythe/copper" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7BC7AB9444785C70"]
+			id: "45C78FC9FC33C382"
+			rewards: [{
+				id: "7C97C261CB9FB6BC"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "5AF629D8279F0214"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(minecraft:saplings)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3501024A6D495590"]
+			icon: {
+				components: {
+					"ftbquests:icon": "tfcorewashing:item/briquet_bauxite"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "4D54513E21ADC4B6"
+			rewards: [
+				{
+					id: "0250EF58DF2076F6"
+					type: "xp"
+					xp: 15
+				}
+				{
+					id: "6B7C365FB637C467"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "13797519A0AF370F"
+				type: "checkmark"
+			}]
+			x: 11.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3501024A6D495590"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/ingot/unknown"
+			}
+			id: "69A8552ABEA84FCD"
+			rewards: [{
+				id: "749275F936887477"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "4DCB7051DDE414DE"
+				type: "checkmark"
+			}]
+			x: 11.0d
+			y: 0.5d
+		}
+	]
+}

@@ -1,0 +1,6 @@
+{
+  "selector": "#tfc:shrubs",
+  "properties": {
+    "sable:mass": 0.25
+  }
+}

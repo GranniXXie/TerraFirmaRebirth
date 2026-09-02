@@ -1,0 +1,304 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "763725A3E967AF9C"
+	group: "47652EC60BA7B927"
+	hide_quest_details_until_startable: true
+	id: "763725A3E967AF9C"
+	images: [ ]
+	order_index: 7
+	quest_enhance_chapter_background: "simulated:block/symmetric_sail/side_cyan"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4A494F83E795394C"]
+			id: "0436DD294285DBC9"
+			rewards: [{
+				id: "563C3BADCE1D9250"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				icon: {
+					components: {
+						"tfc:heat": { }
+					}
+					id: "tfc:metal/shears/wrought_iron"
+				}
+				id: "19E2E653781E8BEA"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:tools/shear)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D9E434665E86F03"]
+			icon: {
+				components: {
+					"tfc:food": {
+						creation_date: -2L
+					}
+				}
+				id: "farmersdelight:milk_bottle"
+			}
+			id: "425D15D6FDA4B24F"
+			rewards: [{
+				id: "2F727C7044E3FA4A"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "3F863B66741F2532"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7089417845BA2E11"]
+			id: "743AA1D336A9629C"
+			rewards: [{
+				id: "57030B82B4C74DF9"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "15E49C1455ECA7DC"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(minecraft:wooden_fences)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2BD6562746D0B990"]
+			id: "1F55F5EE7E3CA276"
+			rewards: [{
+				id: "418730289EDD5DD8"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "2917022A4F1F3420"
+				item: { count: 1, id: "tfc:nest_box" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0CFD282963A88F95"]
+			hide_details_until_startable: false
+			icon: {
+				components: {
+					"minecraft:custom_data": {
+						quest_enhance_entity_model: "tfc:pig"
+					}
+				}
+				id: "tfc:spawn_egg/pig"
+			}
+			id: "7089417845BA2E11"
+			rewards: [{
+				id: "30C86F24A8449B50"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "4A8A1D411F0E7556"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["743AA1D336A9629C"]
+			icon: {
+				components: {
+					"tfc:food": {
+						creation_date: -2L
+					}
+				}
+				id: "tfc:food/barley"
+			}
+			id: "14B2CA889CED1685"
+			rewards: [{
+				id: "63F751352754E148"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "17D272245F524EE3"
+					type: "checkmark"
+				}
+				{
+					id: "2415A42D8862DC1F"
+					item: { count: 1, id: "tfctrough:feeding_trough" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["14B2CA889CED1685"]
+			icon: {
+				id: "firmalife:bucket/yak_milk"
+			}
+			id: "3C11714A5B52041C"
+			rewards: [{
+				id: "77BF57A370FCDC09"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "688D27484134BC05"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C11714A5B52041C"]
+			icon: {
+				components: {
+					"minecraft:custom_data": {
+						quest_enhance_entity_model: "tfc:musk_ox"
+					}
+				}
+				id: "tfc:spawn_egg/musk_ox"
+			}
+			id: "4A494F83E795394C"
+			rewards: [{
+				id: "0990CC9E7A41FC3E"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "4956B964E25127A5"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C11714A5B52041C"]
+			icon: {
+				components: {
+					"minecraft:custom_data": {
+						quest_enhance_entity_model: "tfc:goat"
+					}
+				}
+				id: "tfc:spawn_egg/goat"
+			}
+			id: "7D9E434665E86F03"
+			rewards: [{
+				id: "1AD95B9AC1658FBA"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "1FCD1192A5AED1C4"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3C11714A5B52041C"]
+			icon: {
+				components: {
+					"tfc:food": {
+						creation_date: -2L
+					}
+					"tfc:heat": { }
+				}
+				id: "minecraft:egg"
+			}
+			id: "2BD6562746D0B990"
+			rewards: [{
+				id: "38C1EC94169E2A59"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "0B52835048B4377E"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3C11714A5B52041C"]
+			icon: {
+				components: {
+					"minecraft:custom_data": {
+						quest_enhance_entity_model: "tfc:horse"
+					}
+				}
+				id: "tfc:spawn_egg/horse"
+			}
+			id: "1B4770643123E26F"
+			rewards: [{
+				id: "1476EAC1AF894AA6"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "64058C1800E2AE5A"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3C11714A5B52041C"]
+			icon: {
+				components: {
+					"minecraft:custom_data": {
+						quest_enhance_entity_model: "tfc:dog"
+					}
+				}
+				id: "tfc:spawn_egg/dog"
+			}
+			id: "0BD0439BCE9C2B81"
+			rewards: [{
+				id: "08407131C54F3C1C"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "764DBB3E91DCC25F"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0BD0439BCE9C2B81"]
+			icon: {
+				components: {
+					"minecraft:custom_data": {
+						quest_enhance_entity_model: "tfc:ocelot"
+					}
+				}
+				id: "tfc:spawn_egg/ocelot"
+			}
+			id: "5CA2336EA00F02B0"
+			rewards: [{
+				id: "375744835C1C733C"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "55B7AE59E093AC9D"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 2.0d
+		}
+	]
+}

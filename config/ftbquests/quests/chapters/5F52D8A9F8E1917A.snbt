@@ -1,0 +1,611 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5F52D8A9F8E1917A"
+	group: "47652EC60BA7B927"
+	hide_quest_details_until_startable: true
+	icon: {
+		components: {
+			"tfc:heat": { }
+		}
+		id: "tfc:metal/pickaxe/wrought_iron"
+	}
+	id: "5F52D8A9F8E1917A"
+	images: [ ]
+	order_index: 4
+	quest_enhance_chapter_background: "dynamic_fps:textures/battery/toast/background.png"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["73D9CB8C59B7F6A6"]
+			hide_dependent_lines: true
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:ore/normal_limonite"
+			}
+			id: "6072E13DC350724C"
+			rewards: [{
+				id: "12BF7CBBD688CE09"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "46709C7BBCB034A7"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["48E61577434BAE55"]
+			hide_details_until_startable: false
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/pickaxe/wrought_iron"
+			}
+			id: "73D9CB8C59B7F6A6"
+			rewards: [{
+				id: "38939C5F9A2A62DD"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "28C158C50C09E926"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["73D9CB8C59B7F6A6"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/propick/wrought_iron"
+			}
+			id: "72843FF131D446B7"
+			rewards: [{
+				id: "7C737AA8A56339A4"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "5A09490697C8C5C9"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:ore/normal_native_copper"
+			}
+			id: "70DFA9BB33B8B524"
+			tasks: [{
+				id: "156DE8DD136A6A3F"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:ore/normal_tetrahedrite"
+			}
+			id: "334C1658B421E704"
+			tasks: [{
+				id: "4D34B4D79C698207"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:ore/normal_malachite"
+			}
+			id: "1A8A48BED6032904"
+			tasks: [{
+				id: "60199870E9A976CE"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:ore/normal_hematite"
+			}
+			id: "7E07F5E0C5A3983A"
+			tasks: [{
+				id: "77F9B20FD42024FD"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:ore/normal_magnetite"
+			}
+			id: "014E3312B13E7457"
+			tasks: [{
+				id: "13C88AE89493A85B"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:ore/normal_limonite"
+			}
+			id: "4644474B31278A94"
+			tasks: [{
+				id: "53BA76CE8BA2B618"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:ore/normal_native_silver"
+			}
+			id: "63D803AB50F9247D"
+			tasks: [{
+				id: "693989D612460363"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:ore/normal_native_gold"
+			}
+			id: "5375F4D5C6207816"
+			tasks: [{
+				id: "687B9CC64AE968AB"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:ore/normal_cassiterite"
+			}
+			id: "4E73C5BC16FA0E74"
+			tasks: [{
+				id: "0FF2DF478389DD54"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:ore/normal_sphalerite"
+			}
+			id: "1E9D624342B76DEE"
+			tasks: [{
+				id: "7CCE16DCC7876AF7"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:ore/normal_bismuthinite"
+			}
+			id: "16AC8D3CB8FA3933"
+			tasks: [{
+				id: "7DD1F41AA29A812D"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:ore/normal_garnierite"
+			}
+			id: "08F44649495B615A"
+			tasks: [{
+				id: "1C4ADF76986470E1"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc_ie_addon:ore/normal_bauxite"
+			}
+			id: "7B91F6170388E9D8"
+			tasks: [{
+				id: "3F44B991E67CA3E3"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc_ie_addon:ore/normal_uraninite"
+			}
+			id: "478AAC782ABD463B"
+			tasks: [{
+				id: "72C7DB585FD4E5C9"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc_ie_addon:ore/normal_galena"
+			}
+			id: "5E2ABBBF1C21DBB3"
+			tasks: [{
+				id: "7D74B90D4B08E13D"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "firmalife:ore/normal_chromite"
+			}
+			id: "1DFE9CB59336AF65"
+			tasks: [{
+				id: "1C96A5178D4B4CBC"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				id: "tfc:ore/lignite"
+			}
+			id: "4EF8B05F318CA79E"
+			tasks: [{
+				id: "2134E746B5BFF0DB"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				id: "tfc:ore/bituminous_coal"
+			}
+			id: "4D4464605DAA18DC"
+			tasks: [{
+				id: "54D44E454265B863"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:kaolin_clay"
+			}
+			id: "75A03C25A18922C3"
+			tasks: [{
+				id: "4BCC611A0A18E650"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				id: "tfc:ore/graphite"
+			}
+			id: "0A5B42FDCB46B18B"
+			tasks: [{
+				id: "42060EDDCF4FDB79"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				id: "tfc:ore/cinnabar"
+			}
+			id: "58FC62BF4D2DF3B1"
+			tasks: [{
+				id: "36E2C80D8CC19429"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				id: "tfc:ore/cryolite"
+			}
+			id: "6B327EF0395DA47B"
+			tasks: [{
+				id: "1D8C3A53A8CC9D95"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				id: "tfc:ore/saltpeter"
+			}
+			id: "1A4ACE662911DA36"
+			tasks: [{
+				id: "7EFD543240539B2E"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				id: "tfc:ore/sulfur"
+			}
+			id: "32CCA4DFDD85BD46"
+			tasks: [{
+				id: "23569FADD223F795"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				id: "tfc:ore/sylvite"
+			}
+			id: "5F30596BED8AEA3E"
+			tasks: [{
+				id: "1BDAAF2F79B4A9E7"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				id: "tfc:ore/halite"
+			}
+			id: "1499D994BE32EB6D"
+			tasks: [{
+				id: "2C44C7E767BD9DAC"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				id: "tfc:ore/borax"
+			}
+			id: "0079DF1195F93142"
+			tasks: [{
+				id: "17B7136747434F9F"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				id: "tfc:ore/lapis_lazuli"
+			}
+			id: "4C79708B45817652"
+			tasks: [{
+				id: "370DCC7845DAF3CE"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				id: "tfc:ore/diamond"
+			}
+			id: "3148DC2DBA3849AE"
+			tasks: [{
+				id: "598F1C670B451EEB"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				id: "tfc:ore/emerald"
+			}
+			id: "4826595E2F983E4D"
+			tasks: [{
+				id: "2451ED66D66FF0B9"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				id: "tfc:ore/opal"
+			}
+			id: "0BC70390C3F82272"
+			tasks: [{
+				id: "43C3349F7C31923A"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				id: "tfc:ore/amethyst"
+			}
+			id: "5635F6BCFB5B4838"
+			tasks: [{
+				id: "6ECD8E0AB6A78FAA"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6072E13DC350724C"]
+			icon: {
+				id: "rocketnautics:titanium_ingot"
+			}
+			id: "7C09A11E0000ED01"
+			tasks: [{
+				id: "1C09A11E0000ED02"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["73D9CB8C59B7F6A6"]
+			id: "5262E6B3F0A4C72F"
+			rewards: [{
+				id: "724FDD68FF33D660"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				icon: {
+					components: {
+						"tfc:heat": { }
+					}
+					id: "tfcsuperhammer:metal/supershovel/wrought_iron"
+				}
+				id: "14C79DDE3155505E"
+				item: { components: { "ftbfiltersystem:filter": "mod(tfcsuperhammer.metal.supershovel)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["73D9CB8C59B7F6A6"]
+			id: "3BD5B18C86A48A8F"
+			rewards: [{
+				id: "3A88A2FD22F4EC8F"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				icon: {
+					components: {
+						"tfc:heat": { }
+					}
+					id: "tfcsuperhammer:metal/superhammer/wrought_iron"
+				}
+				id: "485DA4F1CA0F35A1"
+				item: { components: { "ftbfiltersystem:filter": "mod(tfcsuperhammer.metal.superhammer)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -0.5d
+		}
+	]
+}

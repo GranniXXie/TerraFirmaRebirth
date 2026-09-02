@@ -1,0 +1,458 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "36A3BF356D26BFC5"
+	group: "47652EC60BA7B927"
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_visible: true
+	id: "36A3BF356D26BFC5"
+	images: [ ]
+	order_index: 17
+	quest_enhance_chapter_background: "minecraft:textures/map/map_background.png"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4525DB7844975EC1"]
+			id: "5A304CBBF873084F"
+			tasks: [
+				{
+					id: "772B785289C95BFF"
+					item: { count: 1, id: "create:schematic_and_quill" }
+					type: "item"
+				}
+				{
+					id: "55832BFD16072C52"
+					item: { count: 1, id: "create:schematic_table" }
+					type: "item"
+				}
+				{
+					id: "3F20C81A6FD95E18"
+					item: { count: 1, id: "create:schematicannon" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4525DB7844975EC1"]
+			id: "5A60D485AF132B1A"
+			tasks: [{
+				id: "5A378742EAE10C0A"
+				item: { count: 1, id: "create:crafting_blueprint" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4525DB7844975EC1"]
+			id: "0ABF6F581A681D48"
+			tasks: [{
+				id: "3C332018BBF8C3A6"
+				item: { count: 1, id: "create:tree_fertilizer" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4525DB7844975EC1"]
+			id: "71DE0C4DC2E26005"
+			tasks: [
+				{
+					id: "5E1DDC9131736B67"
+					item: { count: 1, id: "create:white_postbox" }
+					type: "item"
+				}
+				{
+					id: "0A78D06C05E3555B"
+					item: { count: 1, id: "create:red_postbox" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4525DB7844975EC1"]
+			icon: {
+				id: "xercamusic:music_sheet"
+			}
+			id: "7B2E000000000026"
+			rewards: [{
+				id: "7B2E000000000111"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "7B2E000000000101"
+					item: { count: 1, id: "xercamusic:music_sheet" }
+					type: "item"
+				}
+				{
+					id: "7B2E000000000102"
+					type: "checkmark"
+				}
+			]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7B2E000000000026"]
+			icon: {
+				id: "xercamusic:guitar"
+			}
+			id: "7B2E000000000027"
+			rewards: [{
+				id: "7B2E000000000112"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "7B2E000000000103"
+				item: { components: { "ftbfiltersystem:filter": "or(item(xercamusic:guitar) item(xercamusic:flute) item(xercamusic:banjo) item(xercamusic:drum) item(xercamusic:lyre) item(xercamusic:cello) item(xercamusic:saxophone) item(xercamusic:sansula) item(xercamusic:tubular_bell) item(xercamusic:violin) item(xercamusic:xylophone) item(xercamusic:cymbal) item(xercamusic:oboe) item(xercamusic:redstone_guitar) item(xercamusic:french_horn) item(xercamusic:bass_guitar) item(xercamusic:trumpet) item(xercamusic:god))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7B2E000000000027"]
+			icon: {
+				id: "xercamusic:music_box"
+			}
+			id: "7B2E000000000028"
+			rewards: [{
+				id: "7B2E000000000113"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "7B2E000000000104"
+					item: { count: 1, id: "xercamusic:music_box" }
+					type: "item"
+				}
+				{
+					id: "7B2E000000000105"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4525DB7844975EC1"]
+			icon: {
+				id: "tfc:plant/goldenrod"
+			}
+			id: "7B2E000000000030"
+			optional: true
+			rewards: [{
+				id: "7B2E000000000121"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "heart"
+			tasks: [
+				{
+					id: "7B2E000000000131"
+					type: "checkmark"
+				}
+				{
+					id: "7B2E000000000132"
+					type: "checkmark"
+				}
+			]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4525DB7844975EC1"]
+			icon: {
+				id: "computercraft:computer_normal"
+			}
+			id: "7B2E000000000040"
+			rewards: [{
+				id: "7B2E000000000240"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "7B2E000000000140"
+				item: { count: 1, id: "computercraft:computer_normal" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7B2E000000000040"]
+			icon: {
+				id: "computercraft:disk_drive"
+			}
+			id: "7B2E000000000041"
+			rewards: [{
+				id: "7B2E000000000241"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "7B2E000000000141"
+					item: { count: 1, id: "computercraft:disk_drive" }
+					type: "item"
+				}
+				{
+					id: "7B2E000000000142"
+					item: { count: 1, id: "computercraft:disk" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7B2E000000000040"]
+			icon: {
+				id: "computercraft:monitor_normal"
+			}
+			id: "7B2E000000000042"
+			rewards: [{
+				id: "7B2E000000000242"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "7B2E000000000143"
+					item: { count: 1, id: "computercraft:monitor_normal" }
+					type: "item"
+				}
+				{
+					id: "7B2E000000000144"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7B2E000000000041"]
+			icon: {
+				id: "computercraft:printer"
+			}
+			id: "7B2E000000000043"
+			rewards: [{
+				id: "7B2E000000000243"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "7B2E000000000145"
+				item: { count: 1, id: "computercraft:printer" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7B2E000000000040"]
+			icon: {
+				id: "computercraft:pocket_computer_normal"
+			}
+			id: "7B2E000000000044"
+			rewards: [{
+				id: "7B2E000000000244"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "7B2E000000000146"
+				item: { count: 1, id: "computercraft:pocket_computer_normal" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7B2E000000000044"]
+			icon: {
+				id: "computercraft:turtle_normal"
+			}
+			id: "7B2E000000000045"
+			rewards: [{
+				id: "7B2E000000000245"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "7B2E000000000147"
+					item: { count: 1, id: "computercraft:turtle_normal" }
+					type: "item"
+				}
+				{
+					id: "7B2E000000000148"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7B2E000000000042"]
+			icon: {
+				id: "computercraft:cable"
+			}
+			id: "7B2E000000000046"
+			rewards: [{
+				id: "7B2E000000000246"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "7B2E000000000149"
+					item: { count: 1, id: "computercraft:cable" }
+					type: "item"
+				}
+				{
+					id: "7B2E00000000014A"
+					item: { count: 1, id: "computercraft:wired_modem" }
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7B2E000000000046"]
+			icon: {
+				id: "computercraft:wireless_modem_normal"
+			}
+			id: "7B2E000000000047"
+			rewards: [{
+				id: "7B2E000000000247"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "7B2E00000000014B"
+				item: { count: 1, id: "computercraft:wireless_modem_normal" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7B2E000000000046"]
+			icon: {
+				id: "cccbridge:source_block"
+			}
+			id: "7B2E000000000048"
+			rewards: [{
+				id: "7B2E000000000248"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "7B2E00000000014C"
+					item: { count: 1, id: "cccbridge:source_block" }
+					type: "item"
+				}
+				{
+					id: "7B2E00000000014D"
+					item: { count: 1, id: "cccbridge:target_block" }
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7B2E000000000048"]
+			icon: {
+				id: "cccbridge:animatronic_block"
+			}
+			id: "7B2E000000000049"
+			optional: true
+			rewards: [{
+				id: "7B2E000000000249"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "heart"
+			tasks: [
+				{
+					id: "7B2E00000000014E"
+					item: { count: 1, id: "cccbridge:redrouter_block" }
+					type: "item"
+				}
+				{
+					id: "7B2E00000000014F"
+					item: { count: 1, id: "cccbridge:scroller_block" }
+					type: "item"
+				}
+				{
+					id: "7B2E000000000150"
+					item: { count: 1, id: "cccbridge:animatronic_block" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7B2E000000000047"]
+			icon: {
+				id: "computercraft:computer_advanced"
+			}
+			id: "7B2E00000000004A"
+			optional: true
+			rewards: [{
+				id: "7B2E00000000024A"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "7B2E000000000153"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4525DB7844975EC1"]
+			icon: {
+				id: "minecraft:enchanting_table"
+			}
+			id: "7B2E000000000050"
+			rewards: [{
+				id: "7B2E000000000260"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "7B2E000000000161"
+					item: { count: 1, id: "minecraft:enchanting_table" }
+					type: "item"
+				}
+				{
+					id: "7B2E000000000162"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: -3.5d
+		}
+	]
+}

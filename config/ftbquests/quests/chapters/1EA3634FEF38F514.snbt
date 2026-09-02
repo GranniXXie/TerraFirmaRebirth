@@ -1,0 +1,864 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1EA3634FEF38F514"
+	group: "7230BCDFA3557B8C"
+	hide_quest_details_until_startable: true
+	icon: {
+		id: "tfc:ceramic/vessel"
+	}
+	id: "1EA3634FEF38F514"
+	images: [ ]
+	order_index: 1
+	quest_enhance_chapter_background: "dynamic_fps:textures/battery/toast/background.png"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6095779F2D508420"]
+			hide_until_deps_visible: false
+			icon: {
+				components: {
+					"ftbquests:icon": "journeymap:textures/waypoint/icon/00_markers/jwi00circle_empty.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "5034E5C35DD76F0F"
+			rewards: [{
+				id: "17D60897E7D45F64"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6EB7E468939E1240"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5034E5C35DD76F0F"]
+			id: "33E80491FC2DC2C8"
+			rewards: [{
+				id: "7E849833F9C007E3"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				icon: {
+					id: "tfc:stone/hoe/igneous_extrusive"
+				}
+				id: "0EC0F6E8AFAFEAAA"
+				item: { components: { "ftbfiltersystem:filter": "or(item(tfc:stone/hoe/igneous_extrusive) item(tfc:stone/hoe/igneous_intrusive) item(tfc:stone/hoe/metamorphic) item(tfc:stone/hoe/sedimentary))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5034E5C35DD76F0F"]
+			id: "6151CB58369CF50C"
+			rewards: [
+				{
+					id: "321435D0213533D8"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 5
+					id: "479F32A77A33A101"
+					item: {
+						count: 1
+						id: "tfc:rock/raw/basalt"
+					}
+					type: "item"
+				}
+				{
+					id: "4B3AB3A66B7617B5"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				icon: {
+					id: "tfc:stone/hammer/igneous_intrusive"
+				}
+				id: "5EA5954CF8CE4890"
+				item: { components: { "ftbfiltersystem:filter": "or(item(tfc:stone/hammer/igneous_extrusive) item(tfc:stone/hammer/igneous_intrusive) item(tfc:stone/hammer/metamorphic) item(tfc:stone/hammer/sedimentary))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5034E5C35DD76F0F"]
+			icon: {
+				components: {
+					"ftbquests:icon": "tfc:textures/gui/book/icons/pit_kiln.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "763725046017AABA"
+			rewards: [{
+				id: "3319A3BE9D797141"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					count: 8L
+					id: "0455277A546EDAAB"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(tfc:log_pile_logs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6AE8FC47531FACDB"
+					item: { count: 1, id: "tfc:straw" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["52A78A36C47026C0"]
+			id: "0F9D093B94BB5654"
+			rewards: [
+				{
+					id: "73245C1C3180DB68"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 32
+					id: "3E2FC62FB678DAB7"
+					item: {
+						count: 1
+						id: "minecraft:clay_ball"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "62FB2E67D99B1D00"
+				item: { count: 1, id: "minecraft:clay_ball" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["10C0DBCBA961CB05"]
+			id: "50CACCF2DA505DBE"
+			rewards: [
+				{
+					id: "09A999EAA8C24F37"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 16
+					id: "5FD53913809E2564"
+					item: {
+						count: 1
+						id: "minecraft:charcoal"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "27A9F040166BE2B8"
+				item: { count: 1, id: "minecraft:charcoal" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["50CACCF2DA505DBE"]
+			icon: {
+				components: {
+					"ftbquests:icon": "tfc:block/devices/charcoal_forge/5"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "566687685C6612A2"
+			rewards: [
+				{
+					id: "7F639DA108554786"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "4E37C359016E2B15"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				advancement: "tfc:story/forge"
+				criterion: ""
+				id: "19CD757B899FBC4F"
+				type: "advancement"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0F9D093B94BB5654"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:ceramic/unfired_large_vessel"
+			}
+			id: "0209E651F7F5A346"
+			rewards: [{
+				id: "57D1DABF52819459"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "4963480F012A34C0"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:ceramic/unfired_large_vessel" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"61B12BA8F0C66BF5"
+				"0209E651F7F5A346"
+			]
+			icon: {
+				components: {
+					"ftbquests:icon": "tfc:textures/gui/book/tutorial/pit_kiln_5.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "469CA7D075645A48"
+			rewards: [{
+				id: "65F730E8FE84125A"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "0E9597AFC38B38C8"
+				item: { count: 1, id: "tfc:ceramic/large_vessel" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3A42F619D5B43142"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:ceramic/unfired_ingot_mold"
+			}
+			id: "1D8A3B061E9F7EA8"
+			rewards: [{
+				id: "1E692595974BA51E"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				icon: {
+					components: {
+						"tfc:heat": { }
+					}
+					id: "tfc:ceramic/unfired_ingot_mold"
+				}
+				id: "4D43A0432C16E173"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(tfc:unfired_molds)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3A42F619D5B43142"]
+			id: "6B58C0FBF30A5BFD"
+			rewards: [{
+				id: "3B57040CF9187F99"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "16BEAC6832339819"
+				item: { count: 1, id: "tfc:pan/empty" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6B58C0FBF30A5BFD"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:powder/native_copper"
+			}
+			id: "5088AD0665847EE1"
+			rewards: [{
+				id: "5D16FBA82325E13C"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				count: 20L
+				icon: {
+					components: {
+						"tfc:heat": { }
+					}
+					id: "tfc:powder/native_copper"
+				}
+				id: "11E618C89692FAE1"
+				item: { components: { "ftbfiltersystem:filter": "or(item(tfc:powder/native_copper) item(tfc:ore/small_tetrahedrite) item(tfc:ore/small_native_copper) item(tfc:ore/small_malachite))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["469CA7D075645A48"]
+			icon: {
+				id: "tfc:ceramic/ingot_mold"
+			}
+			id: "1226BC6DFC7C7CF5"
+			rewards: [
+				{
+					id: "210B581236E6440E"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "7C0479234FF99387"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [{
+				id: "4291854D79F534E8"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1D8A3B061E9F7EA8"]
+			icon: {
+				id: "tfc:ceramic/ingot_mold"
+			}
+			id: "5497D68A7D7C8F81"
+			rewards: [
+				{
+					id: "460881F17411010F"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "4EDAA376E1FDE330"
+					item: {
+						count: 1
+						id: "tfc:ceramic/ingot_mold"
+					}
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				icon: {
+					id: "tfc:ceramic/ingot_mold"
+				}
+				id: "0B6E1FD2C747115B"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(tfc:fired_molds)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5088AD0665847EE1"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfcorewashing:pellet_copper"
+			}
+			id: "13FE245B80FF492C"
+			rewards: [{
+				id: "02A8F035B737DCCF"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "5F62CFEB483E47C1"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfcorewashing:pellet_copper" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5034E5C35DD76F0F"]
+			id: "10C0DBCBA961CB05"
+			rewards: [{
+				id: "07AE2AF65E282540"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3E98CB0B45E59B1A"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["314A4FFC942A2557"]
+			id: "753C2B6BEDE760E6"
+			rewards: [
+				{
+					id: "3D5B7220B7B253BE"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "18C873C7EEC1150E"
+					type: "xp"
+					xp: 30
+				}
+				{
+					id: "03AE8CE30D93F652"
+					item: {
+						count: 1
+						id: "tfc:gem/ruby"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "7DDAA7084063D51D"
+					item: {
+						components: {
+							"tfc:heat": { }
+						}
+						count: 1
+						id: "tfc:metal/ingot/copper"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: {
+					components: {
+						"tfc:heat": { }
+					}
+					id: "tfc:metal/ingot/copper"
+				}
+				id: "75F90780E2F05ED6"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(c:ingots/copper) item_tag(c:sheets/copper) item_tag(c:double_ingots/copper) item_tag(tfc:tools/copper))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1226BC6DFC7C7CF5"]
+			id: "2D90F91942AE919A"
+			rewards: [
+				{
+					id: "3E6E89229C33A617"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "1DB5BE93ACCC8B16"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "4B35623B385B0054"
+				item: { count: 1, id: "tfc:ceramic/pot" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["51119806AB5BC1FB"]
+			icon: {
+				id: "tfc:bone_needle"
+			}
+			id: "7E8A3623D862BC62"
+			rewards: [{
+				id: "58BAA7029F3D9A22"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2B27B43AB93D303B"
+				item: { count: 1, id: "tfc:bone_needle" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"51119806AB5BC1FB"
+				"6151CB58369CF50C"
+			]
+			icon: {
+				id: "minecraft:bow"
+			}
+			id: "2D12A78196D788A3"
+			rewards: [
+				{
+					id: "263B4FE39E8FC7C1"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 16
+					id: "37B8EE21EF5EAA33"
+					item: {
+						count: 1
+						id: "minecraft:arrow"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7AB961A5F54D92FB"
+					item: { count: 1, id: "minecraft:bow" }
+					type: "item"
+				}
+				{
+					id: "390DBD0E3B296DDC"
+					item: { count: 1, id: "minecraft:arrow" }
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"51119806AB5BC1FB"
+				"683B5321229074F6"
+			]
+			icon: {
+				components: {
+					"!ftbquests:icon": { }
+					"ftbquests:entity_face": "minecraft:cow"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "0CFD282963A88F95"
+			rewards: [
+				{
+					id: "1DB104E25B7CD138"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "7C772E17E39DCE36"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "33E9B03F1847729F"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["33E80491FC2DC2C8"]
+			id: "683B5321229074F6"
+			rewards: [{
+				id: "1A54E2FBC5316825"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "75BB3B93F34D1F5B"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:seeds)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0319BFEDA67C819B"]
+			id: "51119806AB5BC1FB"
+			optional: true
+			rewards: [{
+				id: "7648F5F012DF6D7F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				advancement: "tfc:world/hunter"
+				criterion: ""
+				id: "5F4072A2E32DCA1F"
+				type: "advancement"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F9D093B94BB5654"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:kaolin_clay"
+			}
+			id: "0881C669347BC338"
+			rewards: [{
+				id: "3A630E5DEB91E780"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "0A2B681CDDE82E91"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1226BC6DFC7C7CF5"]
+			id: "5CE11F6803ECFC83"
+			rewards: [{
+				id: "18044F46F14B3542"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "484513CF51EAE816"
+				item: { count: 1, id: "tfc:ceramic/jug" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1226BC6DFC7C7CF5"]
+			id: "7433FA5BE0DC68F5"
+			rewards: [{
+				id: "2F51A2F6DF548142"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6BA492B46EB9F4E4"
+				item: { count: 1, id: "tfc:ceramic/bowl" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1226BC6DFC7C7CF5"]
+			id: "33D468009A3EC3C0"
+			rewards: [{
+				id: "7258DFD901064378"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "43B8515ABA054215"
+				item: { count: 1, id: "tfc:ceramic/vessel" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1226BC6DFC7C7CF5"]
+			id: "7EEC0AB8CE8326C4"
+			rewards: [{
+				id: "7BB9A2434C9E27AE"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "460CAC47F9B04BAC"
+				item: { count: 1, id: "tfc:spindle" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1226BC6DFC7C7CF5"]
+			id: "54A6F21FD436B7A2"
+			rewards: [
+				{
+					id: "2BC73D8291801455"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "02BC59874E390219"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "074691616E6D37E2"
+				item: { count: 1, id: "tfc:ceramic/large_vessel" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["763725046017AABA"]
+			icon: {
+				components: {
+					"ftbquests:icon": "tfc:textures/gui/book/tutorial/pit_kiln_4.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "61B12BA8F0C66BF5"
+			rewards: [{
+				id: "6EDD480198955576"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "1E05E0F725A5DCA9"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5034E5C35DD76F0F"]
+			id: "52A78A36C47026C0"
+			rewards: [{
+				id: "106F6266DAE4366A"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				icon: {
+					id: "tfc:stone/shovel/igneous_extrusive"
+				}
+				id: "0A988046524873A5"
+				item: { components: { "ftbfiltersystem:filter": "or(item(tfc:stone/shovel/igneous_extrusive) item(tfc:stone/shovel/igneous_intrusive) item(tfc:stone/shovel/metamorphic) item(tfc:stone/shovel/sedimentary))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5034E5C35DD76F0F"]
+			id: "0319BFEDA67C819B"
+			optional: true
+			rewards: [{
+				id: "249CB1EBBD8A8C2C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				icon: {
+					id: "tfc:stone/javelin/igneous_extrusive"
+				}
+				id: "4BAAAC8FF459A3B6"
+				item: { components: { "ftbfiltersystem:filter": "or(item(tfc:stone/javelin/igneous_extrusive) item(tfc:stone/javelin/igneous_intrusive) item(tfc:stone/javelin/metamorphic) item(tfc:stone/javelin/sedimentary))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33D468009A3EC3C0"]
+			icon: {
+				components: {
+					"ftbquests:icon": "minecraft:item/clay_ball"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "3A42F619D5B43142"
+			rewards: [{
+				id: "0808B08DAA4D013F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "33E00BAF120D0326"
+				type: "checkmark"
+			}]
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5088AD0665847EE1"
+				"5497D68A7D7C8F81"
+			]
+			icon: {
+				id: "tfc:ceramic/vessel"
+			}
+			id: "314A4FFC942A2557"
+			rewards: [{
+				id: "54DC8B7EE155FBF2"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "0A458100D1C70382"
+				type: "checkmark"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5034E5C35DD76F0F"]
+			icon: {
+				components: {
+					"ftbquests:icon": "tfc_coldsweat:item/silk_chestplate"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "00EBCE85242695EF"
+			rewards: [
+				{
+					id: "0B17E50DF8C3CCB0"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "5BD85355B00FDD65"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [{
+				id: "6F85EA1321CACE88"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+	]
+}

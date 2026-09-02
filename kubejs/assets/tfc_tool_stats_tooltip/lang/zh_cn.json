@@ -1,0 +1,10 @@
+{
+  "tooltip.tfc_tool_stats_tooltip.damage_bonus": "攻击伤害倍率：%s",
+  "tooltip.tfc_tool_stats_tooltip.durability": "耐久：%s / %s",
+  "tooltip.tfc_tool_stats_tooltip.durability_bonus": "耐久保留概率：%s",
+  "tooltip.tfc_tool_stats_tooltip.forging_bonus": "锻造加成：%s",
+  "tooltip.tfc_tool_stats_tooltip.header": "工具属性",
+  "tooltip.tfc_tool_stats_tooltip.mining_speed": "工具速度：%s",
+  "tooltip.tfc_tool_stats_tooltip.mining_speed_bonus": "工具速度：%s → %s",
+  "tooltip.tfc_tool_stats_tooltip.tier": "等级：%s"
+}

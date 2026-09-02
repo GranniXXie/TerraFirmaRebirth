@@ -1,0 +1,18 @@
+{
+  "name": "地窖",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:sealed_bricks",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)【本条目的旧版机制已失效】$()$(br2)本整合包中，地窖系统已被$(thing)群峦生活硬核版$()完全重写：不再需要气象站，系统会自动检测符合条件的封闭空间。$(br2)地窖的原理是用$(thing)高热阻$()方块（密封砖、泥砖）围成封闭空间来压低室内温度，温度越低，保鲜效果越强。$(br2)完整的温度公式与保鲜等级请查阅硬核版分类下的$(l:firmalifehardcore/cellar)《地窖（新版）》$()。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "速查",
+      "text": "$(li)16°C 以下基础防腐，8°C 以下中等，0°C 以下最佳；高于 16°C 没有保鲜效果。$()$(br)$(li)门按中等热阻计算，双门有 4 倍加成。$()$(br)$(li)建好后放入食品架、风干架或大缸即可自动获得保鲜效果，也可用于$(l:firmalife/cheese#aging)奶酪熟化$()。$()"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 3
+}

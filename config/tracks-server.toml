@@ -1,0 +1,5 @@
+[server]
+	#Allows operators to open the in-game tracks render tuning menu with J. Disabled by default.
+	enableRenderTuningCheats = false
+	#Shows debug particles for drive wheel centers, terrain raycasts and terrain hit results. Disabled by default.
+	enableTerrainDebugVisualization = false

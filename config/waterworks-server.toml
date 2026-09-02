@@ -1,0 +1,168 @@
+[physicsApi]
+	#Master switch for Waterworks physics API.
+	enabled = true
+	#Enable current sampling and current motion.
+	currentsEnabled = true
+	#Allow currents to push players in water.
+	currentsAffectPlayers = true
+	#Allow currents to push item entities in water.
+	currentsAffectItems = true
+	#Allow currents to push non-player, non-item entities in water.
+	currentsAffectEntities = true
+	#Allow currents to push guardians. Disabled by default so ocean mobs keep normal movement.
+	currentsAffectGuardians = false
+	#Enable wind sampling and wind motion.
+	windEnabled = true
+	#Enable water pressure sampling.
+	pressureEnabled = true
+	#Enable dry-interior occlusion API checks.
+	waterOcclusionEnabled = true
+	#Give sealed air compartments a slight buoyancy assist.
+	compartmentBuoyancyEnabled = true
+	#Allow over-pressured sealed compartments to fail catastrophically.
+	compartmentFailureEnabled = true
+	#Enable deterministic Waterworks wave sampling.
+	wavesEnabled = false
+	#Enable displacement-based buoyancy for Sable ships. This samples submerged hull volume and applies buoyant force at the centre of buoyancy.
+	waterDisplacementEnabled = true
+	#Enable ship bow waves, widening wakes, foam/spray particles, wave roll/pitch coupling, and lateral water displacement forces.
+	shipHydrodynamicsEnabled = true
+	#Base current speed in blocks/sec.
+	# Default: 0.18
+	# Range: 0.0 ~ 8.0
+	currentsBaseSpeed = 0.18
+	#Base wind speed in blocks/sec. Higher values make full arcade sails target higher ship speeds.
+	# Default: 6.0
+	# Range: 0.0 ~ 64.0
+	windBaseSpeed = 6.0
+	#How aggressively arcade sails accelerate ships toward wind speed. Higher values reach target speed faster.
+	# Default: 1.6
+	# Range: 0.05 ~ 16.0
+	arcadeSailAcceleration = 1.6
+	#Sailing force model. SIMULATION uses apparent wind and boom trim. ARCADE uses true wind and sail hoist only.
+	#Allowed Values: SIMULATION, ARCADE
+	sailingMode = "ARCADE"
+	#Extra pressure per block below sea level.
+	# Default: 0.08
+	# Range: 0.0 ~ 2.0
+	pressureDepthScale = 0.08
+	#Maximum upward boost from sealed air compartments.
+	# Default: 0.052
+	# Range: 0.0 ~ 0.18
+	compartmentBuoyancyLift = 0.052
+	#Buoyancy multiplier for sealed air pockets in submarines and ships.
+	# Default: 28.0
+	# Range: 0.0 ~ 96.0
+	airPocketBuoyancyScale = 28.0
+	#How much ballast strength affects submarine sinking and dive responsiveness.
+	# Default: 2.0
+	# Range: 0.0 ~ 10.0
+	ballastSinkScale = 2.0
+	#Horizontal drag applied to Sable vehicles touching water. Higher values slow ships faster.
+	# Default: 0.018
+	# Range: 0.0 ~ 0.2
+	waterDragCoefficient = 0.018
+	#Scales bow wave, wake, foam, and spray particle emission. Particles are still capped per ship tick.
+	# Default: 1.0
+	# Range: 0.0 ~ 4.0
+	shipWakeParticleScale = 1.0
+	#Forward hydrodynamic resistance from bow-wave formation. Scales with speed and displaced volume.
+	# Default: 0.055
+	# Range: 0.0 ~ 1.0
+	shipBowWaveForce = 0.055
+	#Side force used to push water outward around moving hulls and make broad ships disturb more water.
+	# Default: 0.03
+	# Range: 0.0 ~ 1.0
+	shipWaterPushForce = 0.03
+	#How strongly sampled waves roll and pitch Sable ships. Larger values make vessels move more with swell.
+	# Default: 0.06
+	# Range: 0.0 ~ 1.0
+	shipWaveRollForce = 0.06
+	#Mass exponent for hydrodynamic drag. Values below 1 make heavy ships accelerate/stop slower than light craft.
+	# Default: 0.72
+	# Range: 0.35 ~ 1.0
+	shipInertiaExponent = 0.72
+	#Upward force contributed by each fully submerged solid hull block sampled by displacement buoyancy.
+	# Default: 72.0
+	# Range: 0.0 ~ 500.0
+	displacementForcePerBlock = 72.0
+	#Caps total displacement force as a multiplier of Sable ship mass to keep physics stable.
+	# Default: 1.65
+	# Range: 0.0 ~ 12.0
+	displacementMaxForcePerMass = 1.65
+	#Vertical damping applied through displacement buoyancy. Higher values reduce bobbing.
+	# Default: 0.42
+	# Range: 0.0 ~ 4.0
+	displacementVerticalDamping = 0.42
+	#Multiplier applied to currents and waves in beach/coastal biomes.
+	# Default: 0.2
+	# Range: 0.0 ~ 8.0
+	coastalBiomeSurfaceMultiplier = 0.2
+	#Multiplier applied to currents and waves in river biomes.
+	# Default: 0.18
+	# Range: 0.0 ~ 8.0
+	riverBiomeSurfaceMultiplier = 0.18
+	#Multiplier applied to currents, waves, and pressure in ocean biomes.
+	# Default: 1.25
+	# Range: 0.0 ~ 8.0
+	oceanBiomePhysicsMultiplier = 1.25
+	#Multiplier applied to currents, waves, and pressure in deep ocean biomes.
+	# Default: 1.75
+	# Range: 0.0 ~ 8.0
+	deepOceanBiomePhysicsMultiplier = 1.75
+	#Pressure threshold where sealed compartments start failing.
+	# Default: 1.95
+	# Range: 1.0 ~ 16.0
+	compartmentFailurePressure = 1.95
+	#Base blast strength for compartment implosions.
+	# Default: 3.75
+	# Range: 0.0 ~ 16.0
+	compartmentFailureExplosionPower = 3.75
+	#Base visual/sample wave height in blocks.
+	# Default: 0.85
+	# Range: 0.0 ~ 8.0
+	waveHeight = 0.85
+	#Horizontal wave scale. Higher values make waves broader.
+	# Default: 1.0
+	# Range: 0.1 ~ 12.0
+	waveHorizontalScale = 1.0
+	#Wave animation speed multiplier.
+	# Default: 1.0
+	# Range: 0.0 ~ 8.0
+	waveSpeed = 1.0
+	#Number of deterministic wave octaves to sample.
+	# Default: 13
+	# Range: 1 ~ 24
+	waveIterations = 13
+	#Minimum sealed compartment volume before pressure failures are considered.
+	# Default: 24
+	# Range: 1 ~ 4096
+	compartmentFailureMinVolume = 24
+	#Cooldown between pressure failures in the same compartment.
+	# Default: 120
+	# Range: 20 ~ 24000
+	compartmentFailureCooldownTicks = 120
+	#Deterministic wave seed. Clients with the same seed see the same waves.
+	# Default: 1337
+	# Range: > -2147483648
+	waveSeed = 1337
+	#Ticks between Sable ship compartment rescans. Lower values detect breaches faster but cost more CPU.
+	# Default: 5
+	# Range: 1 ~ 100
+	compartmentScanIntervalTicks = 5
+	#Maximum local blocks inspected per ship during a compartment scan. Lower values reduce lag but may miss very large interiors.
+	# Default: 16000
+	# Range: 1024 ~ 96000
+	compartmentScanMaxBlocks = 16000
+	#Maximum local hull cells sampled per Sable ship for displacement buoyancy each physics tick.
+	# Default: 4096
+	# Range: 128 ~ 32000
+	displacementSampleBudget = 4096
+	#Minimum ticks between ship wake/foam/spray particle emissions per vessel.
+	# Default: 4
+	# Range: 1 ~ 40
+	shipEffectIntervalTicks = 4
+	#Maximum wake/foam/spray particles emitted per ship effect tick.
+	# Default: 18
+	# Range: 0 ~ 96
+	shipMaxParticlesPerTick = 18

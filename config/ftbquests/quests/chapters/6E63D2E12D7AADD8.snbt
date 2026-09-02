@@ -1,0 +1,333 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6E63D2E12D7AADD8"
+	group: "787619235D44E5B6"
+	hide_quest_details_until_startable: true
+	icon: {
+		components: {
+			"ftbquests:icon": "create:textures/gui/logo.png"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "6E63D2E12D7AADD8"
+	images: [ ]
+	order_index: 0
+	quest_enhance_chapter_background: "create_connected:block/bamboo_window"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5ED9F15870E8BD9F"]
+			hide_details_until_startable: false
+			icon: {
+				components: {
+					"ftbquests:icon": "create:textures/gui/logo.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "648DA94A24E63FD6"
+			rewards: [{
+				id: "12C1A082B023E00F"
+				type: "xp"
+				xp: 20
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "159FACF19571B602"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4AC4D0ABB02B7448"]
+			id: "2C8CA898AC4C8DFE"
+			rewards: [{
+				id: "1696179358579C67"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "08D9B34863AA05D7"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["648DA94A24E63FD6"]
+			icon: {
+				id: "create:wrench"
+			}
+			id: "1E988359FD5A5E6A"
+			rewards: [
+				{
+					id: "1EED39D8352CC81C"
+					type: "xp"
+					xp: 20
+				}
+				{
+					id: "259F0022F463CF83"
+					item: {
+						count: 1
+						id: "create:goggles"
+					}
+					type: "item"
+				}
+				{
+					id: "60DE03256496F343"
+					item: {
+						count: 1
+						id: "create:wrench"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2CB3CF4831DD5636"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["648DA94A24E63FD6"]
+			id: "4AC4D0ABB02B7448"
+			rewards: [{
+				id: "21F2095BF3869150"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "673E5F8C3C0056EB"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["648DA94A24E63FD6"]
+			icon: {
+				id: "create:goggles"
+			}
+			id: "5979F68E21EE3E30"
+			rewards: [{
+				id: "4801F55ED74F2A81"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "009CB287F083F41A"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2C8CA898AC4C8DFE"]
+			icon: {
+				id: "create:super_glue"
+			}
+			id: "3AC8BBC5D8A18D03"
+			rewards: [{
+				id: "2C3CFD291CBBE2F4"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "0F847F7DC02C8761"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2C8CA898AC4C8DFE"]
+			icon: {
+				components: {
+					"ftbquests:icon": "create:fluid/chocolate_flow"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "4C395797A48CBFFF"
+			rewards: [{
+				id: "4FD5EF895787BC8C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "2030EF6435F8F261"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2C8CA898AC4C8DFE"]
+			icon: {
+				id: "create:large_cogwheel"
+			}
+			id: "7E4A47E018C581AD"
+			rewards: [{
+				id: "770D3407944C54E2"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "2922A5B2F8532ADD"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2C8CA898AC4C8DFE"]
+			icon: {
+				id: "create:steam_engine"
+			}
+			id: "26F1F343873FDBD3"
+			rewards: [{
+				id: "56CA27B5CEDC2050"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "1CFAF7974F7DD58D"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2C8CA898AC4C8DFE"]
+			icon: {
+				id: "electroenergetics:electric_shock_sign"
+			}
+			id: "5105F3A8FA8B8991"
+			rewards: [{
+				id: "0FBC215F9370A097"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "055A81A22A513D74"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2C8CA898AC4C8DFE"]
+			icon: {
+				id: "create:smart_fluid_pipe"
+			}
+			id: "49545DEE6C45E26B"
+			rewards: [{
+				id: "65FF777F229FDF8D"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "692A708CCD3239A7"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["648DA94A24E63FD6"]
+			id: "18F6E5DCEAF82F45"
+			rewards: [{
+				id: "14E4350A34A64C6D"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "183E34E8BD9ADF6B"
+				item: { count: 1, id: "create:clipboard" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["648DA94A24E63FD6"]
+			id: "207021C554EEE032"
+			rewards: [{
+				id: "1D2CB619EDF78F15"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "34AB1E1E14CC9009"
+				item: { count: 1, id: "create:brown_toolbox" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2C8CA898AC4C8DFE"]
+			icon: {
+				components: {
+					"ftbquests:icon": "tfc:textures/colormap/sky.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "3426F71FFE26FC02"
+			rewards: [{
+				id: "6E15F2B5E9F7C367"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "7BC5FC6F3DA1110F"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["648DA94A24E63FD6"]
+			id: "3868F993DA506EFB"
+			rewards: [
+				{
+					id: "5C8F0B0243C74EE3"
+					item: {
+						count: 1
+						id: "create:schematic_table"
+					}
+					type: "item"
+				}
+				{
+					id: "563D6FCABFDC1BDC"
+					item: {
+						count: 1
+						id: "create:schematic_and_quill"
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "61FE95EAEE918808"
+					item: {
+						count: 1
+						id: "create:empty_schematic"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0559560BC6E333BB"
+				item: { count: 1, id: "create:schematicannon" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+	]
+}

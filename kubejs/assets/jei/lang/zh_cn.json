@@ -1,0 +1,19 @@
+{
+  "gui.jei.search": "物品筛选",
+  "jei.config.client.appearance.toastReflowEnabled": "通知重排",
+  "jei.config.client.appearance.toastReflowEnabled.description": "为通知弹窗预留空间，避免与 JEI 界面重叠。",
+  "jei.config.client.bookmarkList.navigationMode": "导航模式",
+  "jei.config.client.bookmarkList.navigationMode.description": "PAGED 为翻页按钮，SCROLLING 为逐行滚动条，SMOOTH_SCROLLING 为平滑滚动条。",
+  "jei.config.client.ingredientList.navigationMode": "导航模式",
+  "jei.config.client.ingredientList.navigationMode.description": "PAGED 为翻页按钮，SCROLLING 为逐行滚动条，SMOOTH_SCROLLING 为平滑滚动条。",
+  "jei.config.debug.debug.debugIngredientsEnabled": "调试物品",
+  "jei.config.debug.debug.debugIngredientsEnabled.description": "在日志中记录 JEI 物品筛选器中添加和更新的物品。",
+  "jei.message.server.recipe.sync.error": "该服务器向 JEI 发送了配方，但全部不可用。JEI 无法显示该服务器的配方。请检查服务器的 JEI 设置、数据包和配方类模组。",
+  "jei.message.server.recipe.sync.jei.missing": "该 %s 服务器未安装 JEI。JEI 正在显示客户端的默认配方，可能与服务器不一致。请在服务器上安装 JEI 以正确显示服务器配方。",
+  "jei.message.server.recipe.sync.unavailable": "该 %s 服务器未向 JEI 提供配方。JEI 正在显示客户端的默认配方，可能与服务器不一致。",
+  "jei.message.server.recipe.sync.vanilla": "这是一个原版服务器。JEI 正在显示客户端的默认配方；若服务器使用数据包，配方可能不同。请在服务器上安装 Forge、NeoForge 或 Fabric 以及 JEI，以正确显示服务器配方。",
+  "key.jei.pauseRecipeCycling": "暂停配方材料轮换",
+  "key.jei.quickMove": "快速移动虚影物品",
+  "key.jei.shareToChat": "分享物品到聊天栏",
+  "key.jei.showBookmarkTooltipFeatures": "显示书签详情"
+}

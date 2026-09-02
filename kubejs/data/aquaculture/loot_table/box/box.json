@@ -1,0 +1,130 @@
+{
+  "pools": [
+    {
+      "name": "aquaculture:box_loot",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:coal",
+          "entryName": "coal",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:charcoal",
+          "entryName": "charcoal",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stick",
+          "entryName": "stick",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bowl",
+          "entryName": "bowl",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_helmet",
+          "entryName": "leather_helmet",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_chestplate",
+          "entryName": "leather_chestplate",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_leggings",
+          "entryName": "leather_leggings",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_boots",
+          "entryName": "leather_boots",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint",
+          "entryName": "flint",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:clay_ball",
+          "entryName": "clay_ball",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather",
+          "entryName": "leather",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:slime_ball",
+          "entryName": "slime_ball",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "entryName": "bone",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:rotten_flesh",
+          "entryName": "rotten_flesh",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:glass_bottle",
+          "entryName": "glass_bottle",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:carrot",
+          "entryName": "carrot",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potato",
+          "entryName": "potato",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "entryName": "string",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:feather",
+          "entryName": "feather",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:apple",
+          "entryName": "apple",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,359 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4F8BDDA81B610A6E"
+	group: "47652EC60BA7B927"
+	hide_quest_details_until_startable: true
+	id: "4F8BDDA81B610A6E"
+	images: [ ]
+	order_index: 13
+	quest_enhance_chapter_background: "simulated:block/symmetric_sail/side_light_gray"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1658AD7F89A9C484"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "rnr:metal/mattock/copper"
+			}
+			id: "14A11CD892C4F1F3"
+			rewards: [{
+				id: "3F56A882CC6FC2E6"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				icon: {
+					components: {
+						"tfc:heat": { }
+					}
+					id: "rnr:metal/mattock/copper"
+				}
+				id: "2021310B7FB7BA06"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(rnr:tools_mattocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["14A11CD892C4F1F3"]
+			id: "7824ECE738C254DA"
+			rewards: [{
+				id: "70726EDF599702FC"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "25D3A49A6C7BFA6C"
+				item: { count: 1, id: "rnr:roof_frame" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["14A11CD892C4F1F3"]
+			id: "55A61A306BAB68A8"
+			rewards: [{
+				id: "0A4CD7B6BBE792C0"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "6BC7C821E1615CCF"
+					item: { count: 1, id: "rnr:crushed_base_course" }
+					type: "item"
+				}
+				{
+					id: "6F0053AEEC9A79A7"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(rnr:gravel_road_items)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4B07CACD30C510C8"
+					item: { count: 1, id: "rnr:hoggin_mix" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["55A61A306BAB68A8"]
+			id: "426E11D4D6257FD2"
+			rewards: [{
+				id: "68810C621C9824BA"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "5D2E03F3790B1001"
+					item: { components: { "ftbfiltersystem:filter": "or(item(rnr:brick_road) item(rnr:brick_road_slab) item(rnr:brick_road_stairs))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "231920BF7ED9DCE8"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(rnr:flagstone_road_items)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "6A8B851E088706C9"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(rnr:cobble_road_items)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["426E11D4D6257FD2"]
+			icon: {
+				components: {
+					"tfc:fluid": {
+						amount: 1000
+						id: "rnr:concrete"
+					}
+				}
+				id: "tfc:wooden_bucket"
+			}
+			id: "33A7DF6877E1156F"
+			rewards: [{
+				id: "5533B184A264CCED"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "7FD46996AEE1CF0A"
+				item: { components: { "tfc:fluid": { amount: 1000, id: "rnr:concrete" } }, count: 1, id: "tfc:wooden_bucket" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["29868E685B95DCE5"]
+			id: "059C1DB7E27EF2BE"
+			rewards: [{
+				id: "7E158211E65058C3"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "2065C30B09E75A3D"
+				item: { count: 1, id: "tfc:mortar" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["059C1DB7E27EF2BE"]
+			id: "354C40286C33986F"
+			rewards: [{
+				id: "59B0E3D00E5FB6EA"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "2D68FC14A54D978E"
+				item: { components: { "ftbfiltersystem:filter": "or(item(tfc:rock/bricks/andesite) item(tfc:rock/bricks/basalt) item(tfc:rock/bricks/chalk) item(tfc:rock/bricks/chert) item(tfc:rock/bricks/claystone) item(tfc:rock/bricks/conglomerate) item(tfc:rock/bricks/dacite) item(tfc:rock/bricks/diorite) item(tfc:rock/bricks/dolomite) item(tfc:rock/bricks/gabbro) item(tfc:rock/bricks/gneiss) item(tfc:rock/bricks/granite) item(tfc:rock/bricks/limestone) item(tfc:rock/bricks/marble) item(tfc:rock/bricks/phyllite) item(tfc:rock/bricks/quartzite) item(tfc:rock/bricks/rhyolite) item(tfc:rock/bricks/schist) item(tfc:rock/bricks/shale) item(tfc:rock/bricks/slate) item(tfc:rock/bricks/tuff))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1658AD7F89A9C484"]
+			id: "29868E685B95DCE5"
+			rewards: [{
+				id: "48F69F8416E8225B"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "1698D2BBBF1D52E9"
+				item: { count: 1, id: "tfc:powder/lime" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0AFC300FD356CFA5"]
+			hide_dependent_lines: true
+			hide_details_until_startable: false
+			id: "1658AD7F89A9C484"
+			rewards: [{
+				id: "53D3E0A4EB3B2545"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "2FFC3B735F48DBC2"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["29868E685B95DCE5"]
+			id: "3EDEBC9A4690B413"
+			rewards: [{
+				id: "1E28B5E9837D364C"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "368A0DF30D45CA26"
+				item: { count: 1, id: "tfc:aggregate" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3EDEBC9A4690B413"]
+			id: "53EBC57A2404CC13"
+			rewards: [{
+				id: "5F817DA5BF58713F"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "6E4718F804168039"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(tfc:colored_concrete_powder)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1658AD7F89A9C484"]
+			id: "3F0784CD76D70976"
+			rewards: [{
+				id: "241D5B26EDAAE0B7"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "7C2572ACB02E54D0"
+				item: { count: 1, id: "tfc:wattle" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1658AD7F89A9C484"]
+			id: "4F69388DB45DEB39"
+			rewards: [{
+				id: "64008522FA087015"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				icon: {
+					id: "tfc:mud_bricks/entisol"
+				}
+				id: "32CE649B88C52E5A"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(tfc:mud_bricks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1658AD7F89A9C484"]
+			id: "7781AB49727EB18C"
+			rewards: [{
+				id: "5F32F6A261AF7149"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "1AC0F8D0ACF60815"
+				item: { components: { "ftbfiltersystem:filter": "or(item(tfc:rock/raw/andesite) item(tfc:rock/raw/basalt) item(tfc:rock/raw/chalk) item(tfc:rock/raw/chert) item(tfc:rock/raw/claystone) item(tfc:rock/raw/conglomerate) item(tfc:rock/raw/dacite) item(tfc:rock/raw/diorite) item(tfc:rock/raw/dolomite) item(tfc:rock/raw/gabbro) item(tfc:rock/raw/gneiss) item(tfc:rock/raw/granite) item(tfc:rock/raw/limestone) item(tfc:rock/raw/marble) item(tfc:rock/raw/phyllite) item(tfc:rock/raw/quartzite) item(tfc:rock/raw/rhyolite) item(tfc:rock/raw/schist) item(tfc:rock/raw/shale) item(tfc:rock/raw/slate) item(tfc:rock/raw/tuff))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1658AD7F89A9C484"]
+			id: "4A3E47C3873C7F23"
+			rewards: [{
+				id: "09AF54B489D8194E"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "34D4491A56E9CEBB"
+				item: { components: { "ftbfiltersystem:filter": "or(item(tfc:rock/smooth/andesite) item(tfc:rock/smooth/basalt) item(tfc:rock/smooth/chalk) item(tfc:rock/smooth/chert) item(tfc:rock/smooth/claystone) item(tfc:rock/smooth/conglomerate) item(tfc:rock/smooth/dacite) item(tfc:rock/smooth/diorite) item(tfc:rock/smooth/dolomite) item(tfc:rock/smooth/gabbro) item(tfc:rock/smooth/gneiss) item(tfc:rock/smooth/granite) item(tfc:rock/smooth/limestone) item(tfc:rock/smooth/marble) item(tfc:rock/smooth/phyllite) item(tfc:rock/smooth/quartzite) item(tfc:rock/smooth/rhyolite) item(tfc:rock/smooth/schist) item(tfc:rock/smooth/shale) item(tfc:rock/smooth/slate) item(tfc:rock/smooth/tuff))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1658AD7F89A9C484"]
+			id: "020B7513E972F64E"
+			rewards: [{
+				id: "6DD4D193AEE30257"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "0902EC3BD3B57B97"
+				item: { count: 1, id: "tfc:alabaster/raw" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7824ECE738C254DA"]
+			icon: {
+				id: "rnr:wood/shingles/cypress_stairs"
+			}
+			id: "3A01FA1E3321994A"
+			rewards: [{
+				id: "146A2FF2E0612173"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "24AA2FBD8284EEDE"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3A01FA1E3321994A"]
+			icon: {
+				id: "copycats:copycat_block"
+			}
+			id: "7B2E00000000002C"
+			rewards: [{
+				id: "7B2E000000000117"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7B2E000000000110"
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: -0.5d
+		}
+	]
+}

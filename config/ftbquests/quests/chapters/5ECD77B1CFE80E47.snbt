@@ -1,0 +1,437 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5ECD77B1CFE80E47"
+	group: "7230BCDFA3557B8C"
+	hide_quest_details_until_startable: true
+	icon: {
+		components: {
+			"tfc:heat": { }
+		}
+		id: "tfc:metal/ingot/steel"
+	}
+	id: "5ECD77B1CFE80E47"
+	images: [ ]
+	order_index: 5
+	quest_enhance_chapter_background: "dynamic_fps:textures/battery/toast/background.png"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["78CC31E2A5D6CC74"]
+			hide_dependency_lines: false
+			icon: {
+				components: {
+					"ftbquests:icon": "journeymap:textures/waypoint/icon/00_markers/jwi00circle_empty.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "077A6316F3122567"
+			rewards: [{
+				id: "526D9ADF70C186CB"
+				type: "xp"
+				xp: 30
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "18A811C7AE515D36"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["077A6316F3122567"]
+			id: "58CA9F3CFFBF9F48"
+			rewards: [{
+				id: "23389EA93D0F2086"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "64279573F3C4E159"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/anvil/steel" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["58CA9F3CFFBF9F48"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/ingot/nickel"
+			}
+			id: "19D7E7F1F554DB6E"
+			rewards: [{
+				id: "2D8315794B9ED31F"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "091567F9D0C85F64"
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/nickel" }
+					type: "item"
+				}
+				{
+					id: "6C3EE0131E2C22E8"
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/black_bronze" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["58CA9F3CFFBF9F48"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "firmalife:metal/ingot/chromium"
+			}
+			id: "4DECDC947436829D"
+			rewards: [{
+				id: "6D914068F69B80F3"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				id: "73A8B76EF3C44587"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "firmalife:metal/ingot/chromium" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["19D7E7F1F554DB6E"]
+			id: "073A1A75F3452258"
+			rewards: [{
+				id: "1E936FFB4559E068"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "5919FD5640F0C01D"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/weak_steel" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["073A1A75F3452258"]
+			id: "17A717AD41AEB01E"
+			rewards: [
+				{
+					id: "29AFBF1B5FD1F9FF"
+					type: "xp"
+					xp: 30
+				}
+				{
+					id: "7E05F0740EC68DBA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 8
+					id: "00FA25D3FFE1120F"
+					item: {
+						components: {
+							"tfc:heat": { }
+						}
+						count: 1
+						id: "tfc:metal/ingot/black_steel"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				id: "00B7F81ED1CCFE16"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/black_steel" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4DECDC947436829D"]
+			id: "0BF37DE9318ADB2A"
+			rewards: [
+				{
+					id: "31AB9EFC92A59E25"
+					type: "xp"
+					xp: 30
+				}
+				{
+					id: "7AEA2D32EC162C47"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [{
+				id: "44CEAD78CA12DD19"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "firmalife:metal/ingot/stainless_steel" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["17A717AD41AEB01E"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/ingot/sterling_silver"
+			}
+			id: "2121C8FA109E1C34"
+			rewards: [{
+				id: "7AE3291EF2440FDA"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "7AD3D6885F0C88B6"
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/bismuth_bronze" }
+					type: "item"
+				}
+				{
+					id: "3B9AC961AD71886B"
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/sterling_silver" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["17A717AD41AEB01E"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/ingot/rose_gold"
+			}
+			id: "3B59AE17DFC0A2FD"
+			rewards: [{
+				id: "4EB8AD9147271B34"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "61D670B128CEEF81"
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/brass" }
+					type: "item"
+				}
+				{
+					id: "00C7C69E8710C7A0"
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/rose_gold" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2121C8FA109E1C34"]
+			id: "551595D5332986B2"
+			rewards: [{
+				id: "6C7A07A81FC8490D"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "71A3C55F77B25E0A"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/weak_blue_steel" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3B59AE17DFC0A2FD"]
+			id: "208B4424B11148AF"
+			rewards: [{
+				id: "7F9B64350920F899"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "4BAAEDE0146D9AA2"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/weak_red_steel" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["551595D5332986B2"]
+			id: "65EA9C50849C6157"
+			rewards: [
+				{
+					id: "7DC6855E7452890F"
+					type: "xp"
+					xp: 30
+				}
+				{
+					id: "33C426EF71314E2A"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 8
+					id: "34DBBE4357724A0B"
+					item: {
+						components: {
+							"tfc:heat": { }
+						}
+						count: 1
+						id: "tfc:metal/ingot/blue_steel"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				id: "04D4FF54FD7D2D67"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/blue_steel" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["208B4424B11148AF"]
+			id: "3DA307C6BE5C30E9"
+			rewards: [
+				{
+					id: "57934E1265822144"
+					type: "xp"
+					xp: 30
+				}
+				{
+					id: "3701B1F134BE4A23"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 8
+					id: "3D2636A12ABEBD92"
+					item: {
+						components: {
+							"tfc:heat": { }
+						}
+						count: 1
+						id: "tfc:metal/ingot/red_steel"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				id: "457EE1564F64E868"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/red_steel" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.0d
+		}
+		{
+			id: "78CC31E2A5D6CC74"
+			rewards: [{
+				id: "5BC282F0DB386A39"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				id: "5E91A29E79BEDA3C"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/steel" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3DA307C6BE5C30E9"
+				"65EA9C50849C6157"
+			]
+			id: "6A6C0FDCD2335D38"
+			rewards: [
+				{
+					id: "0353600B55BBD7F1"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 8
+					id: "121606933C18D910"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "623398887786CD51"
+				item: { count: 1, id: "minecraft:netherite_ingot" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["58CA9F3CFFBF9F48"]
+			id: "47893AFAA75E6084"
+			rewards: [{
+				id: "4C1DC9E5137255A9"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				id: "02481796BE7D984D"
+				item: { count: 1, id: "tfcsbu:steel_backpack" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"3DA307C6BE5C30E9"
+				"65EA9C50849C6157"
+			]
+			icon: {
+				components: {
+					"ftbquests:icon": "ftblibrary:icons/globe"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "75307F48C0278496"
+			shape: "heart"
+			tasks: [{
+				id: "5856F0B9008514CC"
+				type: "checkmark"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
+	]
+}

@@ -1,0 +1,12 @@
+{
+  "block.burningblocktfc.charred_grass.alfisol": "烧焦的淋溶土草方块",
+  "block.burningblocktfc.charred_grass.andisol": "烧焦的火山灰土草方块",
+  "block.burningblocktfc.charred_grass.aridisol": "烧焦的干旱土草方块",
+  "block.burningblocktfc.charred_grass.entisol": "烧焦的新成土草方块",
+  "block.burningblocktfc.charred_grass.fluvisol": "烧焦的冲积土草方块",
+  "block.burningblocktfc.charred_grass.mollisol": "烧焦的软土草方块",
+  "block.burningblocktfc.charred_grass.oxisol": "烧焦的氧化土草方块",
+  "block.burningblocktfc.charred_grass.podzol": "烧焦的灰化土草方块",
+  "item.burningblocktfc.wood.lumber.burnt": "烧焦的木材",
+  "item_group.burningblocktfc": "燃烧方块（群峦）"
+}

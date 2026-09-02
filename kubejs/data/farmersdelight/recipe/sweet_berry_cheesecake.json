@@ -1,0 +1,43 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"result": {
+		"id": "farmersdelight:sweet_berry_cheesecake",
+		"count": 1
+	},
+	"pattern": [
+		"a",
+		"b",
+		"c"
+	],
+	"key": {
+		"a": {
+			"fluid": {
+				"tag": "kubejs:milks",
+				"amount": 100
+			},
+			"type": "tfc:fluid_content"
+		},
+		"b": {
+			"children": [
+				{
+					"type": "tfc:not_rotten"
+				},
+				{
+					"tag": "farmerstfc:berry"
+				}
+			],
+			"type": "neoforge:intersection"
+		},
+		"c": {
+			"children": [
+				{
+					"type": "tfc:not_rotten"
+				},
+				{
+					"item": "farmersdelight:pie_crust"
+				}
+			],
+			"type": "neoforge:intersection"
+		}
+	}
+}

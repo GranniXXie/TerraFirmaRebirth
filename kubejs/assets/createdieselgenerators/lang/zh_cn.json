@@ -1,0 +1,8 @@
+{
+  "block.createdieselgenerators.andesite_girder_strut": "安山梁支杆",
+  "createdieselgenerators.actionbar.distillation_controller.too_short": "蒸馏塔太矮了！最小高度：%s",
+  "createdieselgenerators.hint.distiller_full": "这座_蒸馏塔_的输出储罐似乎满了。请确保每个_储罐_都有足够空间容纳产物。",
+  "createdieselgenerators.hint.distiller_full.title": "输出储罐已满",
+  "item.createdieselgenerators.lighter.tooltip.behaviour3": "更换打火机_皮肤_。",
+  "item.createdieselgenerators.lighter.tooltip.condition3": "当被重命名时。"
+}

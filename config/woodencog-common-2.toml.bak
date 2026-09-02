@@ -1,0 +1,100 @@
+[woodencog]
+	#Change netherite divingGear to look like red steel armor. (wearing netherite pants disables re-skin)
+	netherite_reskin = false
+
+	[woodencog.temperature]
+		#Should create handle temperature ?
+		handle_temperature = true
+		#Should deploying copy input item temperature (ignored if handle temperature disabled)
+		deployer_copy_temperature = true
+		#Blaze Burner Temperature
+		blaze_burner_none = 0.0
+		blaze_burner_smouldering = 80.0
+		blaze_burner_fading = 750.0
+		blaze_burner_kindled = 1350.0
+		blaze_burner_seething = 2000.0
+
+	[woodencog.stress]
+		#Stress impact of the transformer
+		ct_transformer_impact = 64
+		#Stress generation factors, this values are multiplied
+		wooden_generator_base_su = 64
+		wooden_generator_wind_factor = 4
+		wooden_generator_speed_factor = 16
+
+	#Density [kg/m3] - HeatCapacity [J/(kg∙K)]
+	[woodencog.materials]
+		allthemodium = [20000, 1500]
+		aluminium = [2700, 897]
+		aluminum = [2700, 897]
+		americium = [13670, 116]
+		annealed_copper = [8940, 385]
+		antimony = [6697, 210]
+		beryllium = [1848, 1825]
+		bisalloy_400 = [7850, 466]
+		blasted_iron = [7870, 449]
+		blue_alloy = [4000, 300]
+		borosilicate_glass = [2230, 830]
+		chrome = [7140, 450]
+		chromium = [7140, 450]
+		cobalt = [8900, 420]
+		cobalt_brass = [8900, 420]
+		conductive_alloy = [2900, 600]
+		constantan = [8900, 377]
+		copper_alloy = [8800, 385]
+		cupronickel = [8900, 385]
+		damascus_steel = [7850, 466]
+		dark_chocolate = [1325, 2600]
+		dark_steel = [7850, 466]
+		darmstadtium = [26500, 130]
+		duranium = [2800, 897]
+		electrum = [2900, 700]
+		end_steel = [6700, 530]
+		enderium = [3000, 100]
+		energetic_alloy = [2700, 500]
+		enriched_naquadah = [32400, 400]
+		enriched_naquadah_trinium_europium_duranide = [34000, 200]
+		epoxy = [1250, 1100]
+		europium = [5244, 180]
+		fiberglass = [2600, 787]
+		fluorite = [3180, 867]
+		gallium = [5904, 371]
+		gallium_arsenide = [5317, 330]
+		graphene = [1800, 710]
+		graphite = [1600, 710]
+		hastelloy_c_276 = [8890, 380]
+		hastelloy_x = [8220, 380]
+		incoloy_ma_956 = [7250, 460]
+		indium = [7290, 234]
+		indium_gallium_phosphide = [4810, 430]
+		indium_tin_barium_titanium_cuprate = [5500, 500]
+		infinity_matter = [82000, 3400]
+		invar = [8050, 280]
+		iridium = [22562, 130]
+		iron = [7870, 449]
+		kanthal = [7100, 460]
+		lead = [11300, 127]
+		lumium = [4300, 129]
+		magnalium = [1900, 962]
+		manganese = [7430, 480]
+		molybdenum = [10280, 250]
+		naquadah = [32500, 450]
+		naquadah_alloy = [32100, 390]
+		nickel = [8900, 445]
+		niobium = [8570, 265]
+		nitinol = [6450, 322]
+		osmium = [22587, 130]
+		palladium = [12023, 244]
+		platinum = [21400, 130]
+		plutonium = [19816, 35]
+		red_alloy = [4000, 300]
+		silicon = [2330, 700]
+		stainless_steel = [8000, 466]
+		tantalum = [16650, 140]
+		tin = [7400, 228]
+		titanium = [4500, 520]
+		tungsten = [19250, 130]
+		wolframium = [19250, 130]
+		uranium = [19050, 120]
+		vibranium = [2566, 1600]
+		wrought_iron = [7870, 449]

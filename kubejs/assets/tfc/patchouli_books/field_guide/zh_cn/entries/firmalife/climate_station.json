@@ -1,0 +1,13 @@
+{
+  "name": "气象站",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:climate_station",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)气象站已从本整合包中移除，无法合成。$()$(br2)新版机制下，温室与地窖都不再需要任何控制方块——系统会自动扫描并判定封闭空间，无需人工激活。$(br2)请查阅硬核版分类下的$(l:firmalifehardcore/greenhouse)《温室（新版）》$()与$(l:firmalifehardcore/cellar)《地窖（新版）》$()。$(br2)调试指令：$(thing)/flhc cellar info$() 可查看当前位置的空间判定详情。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 2
+}

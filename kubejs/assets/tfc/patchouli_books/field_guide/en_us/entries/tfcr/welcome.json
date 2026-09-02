@@ -1,0 +1,42 @@
+{
+  "name": "Welcome to TerraFirma: Rebirth",
+  "category": "tfc:tfcr",
+  "icon": "ftbquests:book",
+  "sortnum": 0,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Welcome to $(thing)TerraFirma: Rebirth$() (TFCR)!$(br2)A lightly-modded pack built around $(thing)TerraFirmaCraft: TNG$(), woven together with Create, Immersive Engineering, Aeronautics and Cosmonautics. We keep each mod's native gameplay intact and let it truly grow into the TFC world. Runs are long — slow down and enjoy the journey from the Stone Age to the Moon."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Version Info",
+      "text": "$(li)Pack version: $(thing)4.1.21 Release$()$()$(br)$(li)Game: Minecraft 1.21.1 (NeoForge)$()$(br)$(li)TerraFirmaCraft: TNG 4.2.8$()$(br2)A stable release, recommended for long-term survival worlds. Found something odd? Tell the dev team — every report makes the pack better."
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["kubejs:textures/fieldguide/welcome.png"],
+      "title": "TerraFirma Awaits",
+      "border": true,
+      "text": "From the first knapped stone to one small step on the Moon."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Find Us",
+      "text": "$(li)International community & server info: Discord (link below)$()$(br)$(li)Chinese community QQ groups: $(thing)807756188$() / $(thing)454488438$()$()$(br)$(li)Guides & downloads: search $(thing)TFCR$() on mcmod.cn, or find us on CurseForge$()"
+    },
+    {
+      "type": "patchouli:link",
+      "url": "https://discord.gg/Fc7v5EXmkK",
+      "link_text": "Join the Official Discord",
+      "text": "Update announcements, international server info and bug reports."
+    },
+    {
+      "type": "patchouli:link",
+      "url": "https://www.curseforge.com/minecraft/modpacks/terrafirma-rebirth",
+      "link_text": "CurseForge Page",
+      "text": "Pack page, files and changelog."
+    }
+  ]
+}

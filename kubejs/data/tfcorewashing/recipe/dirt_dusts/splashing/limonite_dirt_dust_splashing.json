@@ -1,0 +1,23 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "tfcorewashing:dirty_dust_limonite"
+    }
+  ],
+  "results": [
+    {
+      "id": "tfc:powder/limonite"
+    },
+    {
+      "id": "tfcorewashing:pile_yellow_sand"
+    }
+  ],
+  "processingTime": 1200,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

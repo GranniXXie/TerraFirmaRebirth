@@ -1,0 +1,74 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"result": {
+		"id": "farmersdelight:roast_chicken_block",
+		"count": 1
+	},
+	"ingredients": [
+		{
+			"children": [
+				{
+					"type": "tfc:not_rotten"
+				},
+				{
+					"item": "tfc:food/onion"
+				}
+			],
+			"type": "neoforge:intersection"
+		},
+		{
+			"children": [
+				{
+					"type": "tfc:not_rotten"
+				},
+				{
+					"item": "minecraft:egg"
+				}
+			],
+			"type": "neoforge:intersection"
+		},
+		{
+			"children": [
+				{
+					"type": "tfc:not_rotten"
+				},
+				{
+					"tag": "c:foods/bread"
+				}
+			],
+			"type": "neoforge:intersection"
+		},
+		{
+			"children": [
+				{
+					"type": "tfc:not_rotten"
+				},
+				{
+					"item": "tfc:food/carrot"
+				}
+			],
+			"type": "neoforge:intersection"
+		},
+		{
+			"children": [
+				{
+					"type": "tfc:not_rotten"
+				},
+				{
+					"tag": "farmerstfc:foods/cooked_chicken_type"
+				}
+			],
+			"type": "neoforge:intersection"
+		},
+		{
+			"fluid": {
+				"tag": "kubejs:milks",
+				"amount": 100
+			},
+			"type": "tfc:fluid_content"
+		},
+		{
+			"item": "minecraft:bowl"
+		}
+	]
+}

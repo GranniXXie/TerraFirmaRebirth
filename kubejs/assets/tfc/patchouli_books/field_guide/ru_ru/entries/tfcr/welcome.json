@@ -1,0 +1,42 @@
+{
+  "name": "Добро пожаловать в TerraFirma: Rebirth",
+  "category": "tfc:tfcr",
+  "icon": "ftbquests:book",
+  "sortnum": 0,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Добро пожаловать в $(thing)TerraFirma: Rebirth$() (TFCR)!$(br2)Лёгкая модифицированная сборка вокруг $(thing)TerraFirmaCraft: TNG$(), сплетённая с Create, Immersive Engineering, Aeronautics и Cosmonautics. Мы бережно сохраняем авторский геймплей каждого мода и органично вписываем его в мир TFC. Игра надолго — не спешите и наслаждайтесь путём от каменного века до Луны."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Информация о версии",
+      "text": "$(li)Версия сборки: $(thing)4.1.21 Release$()$()$(br)$(li)Игра: Minecraft 1.21.1 (NeoForge)$()$(br)$(li)TerraFirmaCraft: TNG 4.2.8$()$(br2)Стабильный релиз, рекомендованный для долгого выживания. Нашли что-то странное? Сообщите команде — каждый отчёт делает сборку лучше."
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["kubejs:textures/fieldguide/welcome.png"],
+      "title": "TerraFirma ждёт",
+      "border": true,
+      "text": "От первого сколотого камня — до маленького шага по Луне."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Где нас найти",
+      "text": "$(li)Международное сообщество и серверы: Discord (ссылка ниже)$()$(br)$(li)Китайское сообщество (QQ): $(thing)807756188$() / $(thing)454488438$()$()$(br)$(li)Гайды и загрузки: ищите $(thing)TFCR$() на mcmod.cn или на CurseForge$()"
+    },
+    {
+      "type": "patchouli:link",
+      "url": "https://discord.gg/Fc7v5EXmkK",
+      "link_text": "Официальный Discord",
+      "text": "Анонсы обновлений, международные серверы и отчёты об ошибках."
+    },
+    {
+      "type": "patchouli:link",
+      "url": "https://www.curseforge.com/minecraft/modpacks/terrafirma-rebirth",
+      "link_text": "Страница на CurseForge",
+      "text": "Файлы и список изменений."
+    }
+  ]
+}

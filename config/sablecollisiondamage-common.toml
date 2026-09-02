@@ -1,0 +1,52 @@
+#Если выключенно, хрупкие блоки sable обрабатываются в этом аддоне 
+overrideSableFragileBlocks = false
+#Минимальная скорость
+# Default: 15.0
+# Range: 0.0 ~ 1.7976931348623157E308
+minBreakSpeed = 15.0
+#
+#
+#статическое замедление от разрушения блоков
+# Default: 3.0
+# Range: 0.0 ~ 1.7976931348623157E308
+staticSlowdownPerBlock = 3.0
+#
+#
+#блок партиклов: базовое количество
+# Default: 4.0
+# Range: 0.0 ~ 1.7976931348623157E308
+blockBurstCountBase = 4.0
+#блок партиклов: добавка количества на 1 м/с
+# Default: 0.1
+# Range: 0.0 ~ 1.7976931348623157E308
+blockBurstCountPerSpeed = 0.1
+#блок партиклов: базовая скорость разлета
+# Default: 0.4
+# Range: 0.0 ~ 1.7976931348623157E308
+blockBurstSpeedBase = 0.4
+#блок партиклов: добавка скорости на 1 м/с
+# Default: 0.01
+# Range: 0.0 ~ 1.7976931348623157E308
+blockBurstSpeedPerSpeed = 0.01
+#Макс. блок партиклов за одно столкновение
+# Default: 200.0
+# Range: 1.0 ~ 1.7976931348623157E308
+maxBlockParticlesPerCollision = 200.0
+#
+#
+#искры: базовое количество
+# Default: 1.0
+# Range: 0.0 ~ 1.7976931348623157E308
+uckCountBase = 1.0
+#искры: добавка количества на 1 м/с
+# Default: 0.04
+# Range: 0.0 ~ 1.7976931348623157E308
+uckCountPerSpeed = 0.04
+#искры: статическая скорость разлета
+# Default: 0.23
+# Range: 0.0 ~ 1.7976931348623157E308
+uckSpeed = 0.23
+#Макс. искр за один удар
+# Default: 200.0
+# Range: 1.0 ~ 1.7976931348623157E308
+maxUckParticlesPerCollision = 200.0

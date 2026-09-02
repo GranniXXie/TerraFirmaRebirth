@@ -1,0 +1,6 @@
+{
+  "text.nowheel.category.general": "通用",
+  "text.nowheel.overrideEntityCulling": "覆盖实体剔除限制",
+  "text.nowheel.overrideEntityCulling.tooltip": "覆盖实体剔除的配置，剔除默认不会被剔除的动力机械装置。需要重启",
+  "text.nowheel.title": "Nowheel"
+}

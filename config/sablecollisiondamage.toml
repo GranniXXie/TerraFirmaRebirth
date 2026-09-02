@@ -1,0 +1,20 @@
+# Sable 碰撞伤害配置（TFCR 调校）
+# 核心机制：物理结构以 >= minBreakSpeed(m/s) 的速度撞上方块时，方块被撞碎且碰撞被吸收，
+# 防止"人被推挤卡进地里掉出世界"（高处坠落踩坐垫场景的兜底）。
+# false = 不接管 sable 原生易碎方块逻辑（默认，安全）
+overrideSableFragileBlocks = false
+# 触发碎裂的最低碰撞速度：默认15（11格坠落）。TFCR 调到 12（约7.5格坠落），
+# 扩大"防卡死"覆盖面；低于此速度的推挤仍走 sable 原生解算。
+minBreakSpeed = 12.0
+# 每碎一个方块对结构施加的静态减速（保持默认）
+staticSlowdownPerBlock = 3.0
+# 以下为粒子效果（仅客户端视觉），上限从200降到100保护帧率
+blockBurstCountBase = 4.0
+blockBurstCountPerSpeed = 0.1
+blockBurstSpeedBase = 0.4
+blockBurstSpeedPerSpeed = 0.01
+maxBlockParticlesPerCollision = 100.0
+uckCountBase = 1.0
+uckCountPerSpeed = 0.04
+uckSpeed = 0.23
+maxUckParticlesPerCollision = 100.0

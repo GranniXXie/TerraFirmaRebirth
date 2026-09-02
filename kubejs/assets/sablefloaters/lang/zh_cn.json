@@ -1,0 +1,19 @@
+{
+  "item.sablefloaters.wooden_floater": "木质浮子",
+  "block.sablefloaters.wooden_floater": "木质浮子",
+  "item.sablefloaters.wooden_floater_bundle": "木质浮子捆",
+  "block.sablefloaters.wooden_floater_bundle": "木质浮子捆",
+  "item.sablefloaters.reinforced_wooden_floater": "强化木质浮子",
+  "block.sablefloaters.reinforced_wooden_floater": "强化木质浮子",
+  "sablefloaters.config.general_floater_force": "通用浮子浮力倍率",
+  "sablefloaters.config.general_floater_force.tooltip": "通用浮子浮力倍率。请谨慎调整",
+  "sablefloaters.config.floater_damping_force": "浮子阻尼力",
+  "sablefloaters.config.floater_damping_force.tooltip": "浮子阻尼力（开发中）",
+  "sablefloaters.config.floater_max_load": "单浮子最大载重",
+  "sablefloaters.config.floater_max_load.tooltip": "单个浮子的最大载重（kpg）",
+  "sablefloaters.config.logging": "日志",
+  "sablefloaters.config.logging.tooltip": "日志（仅开发用）",
+  "sablefloaters.config.depthOffset": "深度偏移",
+  "sablefloaters.config.depthOffset.tooltip": "用于浮力计算的深度偏移。请谨慎调整",
+  "creativetab.sablefloaters.floaters_creative_tab": "Sable：浮子"
+}

@@ -1,0 +1,12 @@
+{
+  "tooltip.kubejs.unknown_ingot.0": "Origen: el producto de castigo por meter lingotes de calidad inferior en una fundición de aleaciones industrial",
+  "tooltip.kubejs.unknown_ingot.1": "Este lote está arruinado — solo sirve como 20 mB de metal de desecho",
+  "item.kubejs.unfinished_collector_upgrade": "Mejora de colector sin terminar",
+  "item.kubejs.unfinished_puller_upgrade": "Mejora de extractor sin terminar",
+  "item.kubejs.unfinished_pusher_upgrade": "Mejora de empujador sin terminar",
+  "item.kubejs.unfinished_paper": "Papel sin terminar",
+  "item.kubejs.unfinished_raw_kaolin_clay": "Arcilla de caolín cruda sin terminar",
+  "item.kubejs.unfinished_steel": "Lingote de acero sin terminar",
+  "item.kubejs.unfinished_wrought_iron": "Lingote de hierro forjado sin terminar",
+  "item.kubejs.unfinished_pulp": "Pulpa sin terminar"
+}

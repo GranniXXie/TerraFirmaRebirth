@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:wires/iron"
+      }
+    }
+  ],
+  "type": "immersiveengineering:metal_press",
+  "energy": 2400,
+  "input": {
+    "tag": "c:ingots/iron"
+  },
+  "mold": "immersiveengineering:mold_wire",
+  "result": {
+    "count": 6,
+    "id": "electroenergetics:iron_wire"
+  }
+}

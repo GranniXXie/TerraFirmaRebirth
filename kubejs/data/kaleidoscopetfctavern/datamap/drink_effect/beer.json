@@ -1,0 +1,61 @@
+{
+  "item": "kaleidoscopetfctavern:beer",
+  "effects": [
+    [
+      {
+        "effect": "minecraft:strength",
+        "duration": 30,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:strength",
+        "duration": 120,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:strength",
+        "duration": 180,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:strength",
+        "duration": 180,
+        "amplifier": 1,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:strength",
+        "duration": 240,
+        "amplifier": 1,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:strength",
+        "duration": 240,
+        "amplifier": 2,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:strength",
+        "duration": 320,
+        "amplifier": 2,
+        "probability": 1.0
+      }
+    ]
+  ]
+}

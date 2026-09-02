@@ -1,0 +1,6 @@
+{
+  "selector": "#tfc:seasonal_leaves",
+  "properties": {
+    "sable:mass": 0.25
+  }
+}

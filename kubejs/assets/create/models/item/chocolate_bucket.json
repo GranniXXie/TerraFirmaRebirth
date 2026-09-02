@@ -1,0 +1,1 @@
+{"parent":"minecraft:item/generated","textures":{"layer0":"tfc:item/bucket/wooden_bucket_empty","layer1":"kubejs:item/bucket_overlay/create_chocolate_bucket"}}

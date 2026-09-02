@@ -1,0 +1,6 @@
+{
+  "selector": "#tfc:fresh_underwater_plants",
+  "properties": {
+    "sable:mass": 0.25
+  }
+}

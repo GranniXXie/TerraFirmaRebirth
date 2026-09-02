@@ -1,0 +1,38 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"result": {
+		"id": "farmersdelight:stuffed_potato",
+		"count": 1
+	},
+	"ingredients": [
+		{
+			"children": [
+				{
+					"type": "tfc:not_rotten"
+				},
+				{
+					"item": "tfc:food/baked_potato"
+				}
+			],
+			"type": "neoforge:intersection"
+		},
+		{
+			"children": [
+				{
+					"type": "tfc:not_rotten"
+				},
+				{
+					"tag": "c:foods/cooked_beef"
+				}
+			],
+			"type": "neoforge:intersection"
+		},
+		{
+			"fluid": {
+				"tag": "kubejs:milks",
+				"amount": 100
+			},
+			"type": "tfc:fluid_content"
+		}
+	]
+}

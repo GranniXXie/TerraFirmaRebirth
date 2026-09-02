@@ -1,0 +1,351 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1DB0103735EB5676"
+	group: "47652EC60BA7B927"
+	hide_quest_details_until_startable: true
+	id: "1DB0103735EB5676"
+	images: [ ]
+	order_index: 10
+	quest_enhance_chapter_background: "simulated:block/symmetric_sail/side_black"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4B9C11A6C3097BD9"]
+			icon: {
+				id: "firmalife:wood/food_shelf/acacia"
+			}
+			id: "5D2476EFA33AE63A"
+			rewards: [{
+				id: "39BC13E63895BD8A"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "2B5EECF80649BDFC"
+					item: { count: 1, id: "firmalife:sealed_bricks" }
+					type: "item"
+				}
+				{
+					id: "182E1B7191309D07"
+					item: { count: 1, id: "firmalife:sealed_brick_door" }
+					type: "item"
+				}
+				{
+					id: "6890DA0AA3B7CA7B"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(firmalife:shelves)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "77A113D116A793AA"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(firmalife:hangers)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["54A6F21FD436B7A2"]
+			hide_dependent_lines: true
+			hide_details_until_startable: false
+			icon: {
+				components: {
+					"ftbquests:icon": "minecraft:textures/gui/sprites/hud/food_empty_hunger.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "4B9C11A6C3097BD9"
+			rewards: [{
+				id: "6E9CF6580E1F9130"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "05BABC861D96A9B6"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4B9C11A6C3097BD9"]
+			icon: {
+				components: {
+					"tfc:food": {
+						creation_date: 144000L
+					}
+				}
+				id: "firmalife:food/gouda"
+			}
+			id: "3D4A2683955E9A3E"
+			rewards: [{
+				id: "1CF60333D6A1C7F9"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "7AB18A742D5AC3E8"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4B9C11A6C3097BD9"]
+			icon: {
+				components: {
+					"tfc:food": {
+						creation_date: -2L
+					}
+				}
+				id: "tfc:food/garlic"
+			}
+			id: "149844B06EC2B2F0"
+			rewards: [{
+				id: "258449C336780497"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "799EA3FDC5F0FFE8"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4B9C11A6C3097BD9"]
+			icon: {
+				components: {
+					"tfc:food": {
+						creation_date: -2L
+					}
+				}
+				id: "minecraft:apple"
+			}
+			id: "7C0FA3B0CBA1DA56"
+			rewards: [{
+				id: "162818E50C14D111"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "3304C6033C4A0CD6"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4B9C11A6C3097BD9"]
+			icon: {
+				components: {
+					"tfc:food": {
+						creation_date: -2L
+					}
+					"tfc:heat": { }
+				}
+				id: "tfc:food/cooked_beef"
+			}
+			id: "54A3AD0FC2415D1E"
+			rewards: [{
+				id: "042EE16972C162C0"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "3DB06002FD0ED151"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4B9C11A6C3097BD9"]
+			icon: {
+				components: {
+					"tfc:food": {
+						creation_date: -2L
+					}
+				}
+				id: "tfc:food/barley_grain"
+			}
+			id: "26DEEFF8A5942B26"
+			rewards: [{
+				id: "4F9092597966CEC6"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "445F6D39655C765C"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4B9C11A6C3097BD9"]
+			id: "2F4813E06F69E1A2"
+			rewards: [{
+				id: "0EE63AD63A492B8C"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "1ED56DE150AF30AD"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(tfc:fired_large_vessels)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					icon: {
+						id: "tfc:ceramic/vessel"
+					}
+					id: "06FC67B82FA151A3"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(tfc:fired_vessels)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4B9C11A6C3097BD9"]
+			icon: {
+				components: {
+					"ftbquests:icon": "minecraft:block/fire_1"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "3A55B82F4CB9279F"
+			rewards: [{
+				id: "55ED9EC76B6D17D6"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "36E431D5B63B85AC"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4B9C11A6C3097BD9"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:wrought_iron_grill"
+			}
+			id: "63743588B8A5D119"
+			rewards: [{
+				id: "08FCC1B3AF8A3BF8"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "3DFCA80203735733"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4B9C11A6C3097BD9"]
+			icon: {
+				id: "firmalife:brick_oven_bottom"
+			}
+			id: "11FCBEA058E78F53"
+			rewards: [{
+				id: "1AE1BE99CBFB8542"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "22DBB48A1D0509E0"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4B9C11A6C3097BD9"]
+			id: "144A45B3C280CA58"
+			rewards: [{
+				id: "65EAA41F7275CBF8"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "729FF3A05284429F"
+				item: { components: { "tfc:fluid": { amount: 1000, id: "tfc:brine" } }, count: 1, id: "tfc:wooden_bucket" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4B9C11A6C3097BD9"]
+			icon: {
+				components: {
+					"tfc:fluid": {
+						amount: 1000
+						id: "tfc:vinegar"
+					}
+				}
+				id: "tfc:wooden_bucket"
+			}
+			id: "02079461CB4F1A98"
+			rewards: [{
+				id: "50221CC7C38CDE60"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "5054D80BA900A613"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4B9C11A6C3097BD9"]
+			id: "0D2A81C985754D33"
+			rewards: [{
+				id: "50D733F742CEBF8A"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "7064B7AECA5A5DF4"
+				item: { components: { "tfc:fluid": { amount: 1000, id: "tfc:vinegar" } }, count: 1, id: "tfc:wooden_bucket" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5D2476EFA33AE63A"]
+			icon: {
+				id: "tfc:mud_bricks/entisol"
+			}
+			id: "5E1A2B3C4D5E6F70"
+			rewards: [{
+				id: "5E1A2B3C4D5E6F72"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "5E1A2B3C4D5E6F71"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+	]
+}

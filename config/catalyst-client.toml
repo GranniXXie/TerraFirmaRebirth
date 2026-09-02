@@ -1,0 +1,49 @@
+[sounds]
+	soundGate = true
+	# Default: 12
+	# Range: 1 ~ 100
+	soundBudget = 12
+	# Default: 2
+	# Range: 0 ~ 32
+	soundDedupLimit = 2
+	gateRepeatingSounds = true
+	soundScapesEarlyExit = true
+	# Default: 2
+	# Range: 0 ~ 64
+	blazeBurnerSoundBudget = 2
+
+[rendering]
+	fluidVertexFix = true
+	# Default: 48
+	# Range: 0 ~ 256
+	blockEntityRenderDistance = 48
+	# Default: 20
+	# Range: 0 ~ 128
+	valueBoxRenderDistance = 20
+	# Default: 32
+	# Range: 0 ~ 256
+	beltItemRenderDistance = 32
+	# Default: 8
+	# Range: 0 ~ 64
+	beltItemStackLodDistance = 8
+	beltItemLightCache = true
+	# Default: 32
+	# Range: 0 ~ 256
+	machineItemRenderDistance = 32
+	# Default: 24
+	# Range: 0 ~ 256
+	fluidLodDistance = 24
+	tankSegmentCollectionFix = true
+	cacheVisualizationCheck = true
+	blazeBurnerSmokeCulling = true
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	blazeBurnerSmokeDensity = 0.5
+
+[misc]
+	# Default: 8
+	# Range: 1 ~ 40
+	crafterRedstonePollInterval = 8
+	sableLightEngineFix = true
+	sableScalableLuxOverride = true
+	gogglesCache = true

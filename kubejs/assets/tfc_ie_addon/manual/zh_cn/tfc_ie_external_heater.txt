@@ -1,0 +1,4 @@
+电坩埚？
+甚至比那还强！
+本模组并没有电坩埚，但外置加热器可以像木炭炉一样加热坩埚。<br>
+以<config;i;crucibleExternalHeaterFEPerTick>IF/t的能耗，它能把坩埚一路加热到<config;i;crucibleExternalHeaterTemperature>°C。

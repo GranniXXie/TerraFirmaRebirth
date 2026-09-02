@@ -1,0 +1,9 @@
+{
+	"friendList": [],
+	"onlyShowFriendsWaypoints": false,
+	"onlyShowFriendsIconWaypoints": false,
+	"alwaysShowFriendsWaypoints": true,
+	"alwaysShowFriendsIconWaypoints": true,
+	"overwriteFriendWaypointColor": false,
+	"friendWaypointColor": "Black"
+}

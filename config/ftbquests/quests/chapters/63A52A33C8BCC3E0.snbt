@@ -1,0 +1,170 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "63A52A33C8BCC3E0"
+	group: "47652EC60BA7B927"
+	hide_quest_details_until_startable: true
+	id: "63A52A33C8BCC3E0"
+	images: [ ]
+	order_index: 16
+	quest_enhance_chapter_background: "simulated:block/symmetric_sail/side_magenta"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["68FAF5722D9330E6"]
+			hide_dependent_lines: true
+			hide_details_until_startable: false
+			id: "665E4D6991D4423F"
+			tasks: [{
+				id: "5648B7D3DA0C66FE"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["665E4D6991D4423F"]
+			icon: {
+				id: "tfc:wood/chest/blackwood"
+			}
+			id: "2544550FCC093678"
+			tasks: [{
+				id: "5A0EC547336BF3C5"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["665E4D6991D4423F"]
+			id: "78F298F669A621AE"
+			tasks: [{
+				id: "01F0BFC6E0F2968B"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(tfc:tool_racks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["665E4D6991D4423F"]
+			id: "2A8A8C83490EFD87"
+			tasks: [{
+				id: "527CA7978E95DEA7"
+				item: { count: 1, id: "immersiveengineering:crate" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["665E4D6991D4423F"]
+			id: "683C3DDCD3FC40C5"
+			tasks: [{
+				id: "160BCEF11971CD82"
+				item: { count: 1, id: "sophisticatedbackpacks:backpack" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["665E4D6991D4423F"]
+			id: "55B61AF8ADD0794C"
+			tasks: [{
+				id: "2EB0B9F81F70C7DC"
+				item: { count: 1, id: "minecraft:chest" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["665E4D6991D4423F"]
+			id: "2703BCA3E265C338"
+			tasks: [{
+				id: "4C84B19B236A0C05"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(functionalstorage:drawer)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["665E4D6991D4423F"]
+			id: "7A4DA3A53A991C89"
+			tasks: [
+				{
+					id: "072A5AD771324A85"
+					item: { count: 1, id: "functionalstorage:storage_controller" }
+					type: "item"
+				}
+				{
+					id: "6BB277798058A6EB"
+					item: { count: 1, id: "functionalstorage:controller_extension" }
+					type: "item"
+				}
+				{
+					id: "60F87FA5074754BB"
+					item: { count: 1, id: "functionalstorage:linking_tool" }
+					type: "item"
+				}
+				{
+					id: "1F2C6DD6A43F63B5"
+					item: { count: 1, id: "functionalstorage:configuration_tool" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["665E4D6991D4423F"]
+			icon: {
+				id: "create:chute"
+			}
+			id: "00DDF32FC3452477"
+			tasks: [{
+				id: "22F3F903C7DD57B6"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["665E4D6991D4423F"]
+			id: "756262F78A02A4B8"
+			tasks: [{
+				id: "16D09CAE2F5D0A12"
+				item: { count: 1, id: "farmersdelight:wooden_basket" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["665E4D6991D4423F"]
+			id: "66E91517B379FE16"
+			tasks: [{
+				id: "1BEBD56F14F99507"
+				item: { count: 1, id: "minecraft:hopper" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["665E4D6991D4423F"]
+			id: "105AB4CF8D7237F4"
+			tasks: [{
+				id: "0658BD65A88EA7AB"
+				item: { count: 1, id: "immersiveengineering:conveyor_basic" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+	]
+}

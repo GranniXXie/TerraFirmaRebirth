@@ -1,0 +1,363 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "78A071BB4504038C"
+	group: "7230BCDFA3557B8C"
+	hide_quest_details_until_startable: true
+	icon: {
+		components: {
+			"tfc:heat": { }
+		}
+		id: "tfc:metal/ingot/bronze"
+	}
+	id: "78A071BB4504038C"
+	images: [ ]
+	order_index: 3
+	quest_enhance_chapter_background: "dynamic_fps:textures/battery/toast/background.png"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/ingot/bronze"
+			}
+			id: "0F66B28732EAA8C5"
+			require_sequential_tasks: true
+			rewards: [{
+				id: "5959340163ECC70A"
+				type: "xp"
+				xp: 20
+			}]
+			size: 1.0d
+			tasks: [{
+				icon: {
+					components: {
+						"tfc:heat": { }
+					}
+					id: "tfc:metal/ingot/bronze"
+				}
+				id: "210920420609923F"
+				item: { components: { "ftbfiltersystem:filter": "or(or(item_tag(c:ingots/bismuth_bronze) item_tag(c:sheets/bismuth_bronze) item_tag(c:double_ingots/bismuth_bronze) item_tag(tfc:tools/bismuth_bronze)) or(item_tag(c:ingots/bronze) item_tag(c:sheets/bronze) item_tag(c:double_ingots/bronze) item_tag(tfc:tools/bronze)) or(item_tag(c:ingots/black_bronze) item_tag(c:sheets/black_bronze) item_tag(c:double_ingots/black_bronze) item_tag(tfc:tools/black_bronze)))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17DCD1E10495ABA7"]
+			id: "1061F636FD641E92"
+			rewards: [
+				{
+					id: "572EA930B8F82A74"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 32
+					id: "420B39A6857BF5FA"
+					item: {
+						count: 1
+						id: "minecraft:charcoal"
+					}
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				count: 64L
+				id: "4226B3509DC29959"
+				item: { count: 1, id: "minecraft:charcoal" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["13D0A02DCEA6CD13"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/anvil/bronze"
+			}
+			id: "450A080198B48675"
+			rewards: [{
+				id: "25585F78A3D7CDC1"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "2DFC7DECC338069A"
+				item: { components: { "ftbfiltersystem:filter": "or(item(tfc:metal/anvil/bronze) item(tfc:metal/anvil/black_bronze) item(tfc:metal/anvil/bismuth_bronze))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["450A080198B48675"]
+			icon: {
+				id: "tfc:firebox"
+			}
+			id: "436FA5779CCC1FE4"
+			rewards: [{
+				id: "16CE0519D8447E5B"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					id: "5D0D2D36B4B64F8F"
+					item: { count: 1, id: "tfc:firebox" }
+					type: "item"
+				}
+				{
+					id: "455B3B995FE65295"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1061F636FD641E92"
+				"450A080198B48675"
+			]
+			icon: {
+				components: {
+					"ftbquests:icon": "tfc:block/devices/bloomery/on"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "5F07780C19DAB647"
+			rewards: [
+				{
+					id: "5DBDE8C5B60D15BC"
+					type: "xp"
+					xp: 20
+				}
+				{
+					id: "78B815DEED6D8B57"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "5E7820833EEE8022"
+				item: { count: 1, id: "tfc:bloomery" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F07780C19DAB647"]
+			icon: {
+				components: {
+					"ftbquests:icon": "tfc:block/devices/bloomery/off"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "07A894FCB5BD3AFC"
+			rewards: [
+				{
+					id: "479602CD9C6F94E6"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 8
+					id: "6B84754A08EF1556"
+					item: {
+						components: {
+							"tfc:heat": { }
+						}
+						count: 1
+						id: "tfc:metal/ingot/cast_iron"
+					}
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "2FD61247CB8D3B16"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["07A894FCB5BD3AFC"]
+			id: "273C77FEE01501F3"
+			rewards: [{
+				id: "4375EE6C1D7F6B30"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "40446B41D3F4DA8A"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:raw_iron_bloom" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["273C77FEE01501F3"]
+			id: "19007A8B1BC8381F"
+			rewards: [{
+				id: "3F7EE283F3F7CEFC"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "07443D20B2AACB02"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:refined_iron_bloom" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["19007A8B1BC8381F"]
+			id: "51D48CEFF7CABA0D"
+			rewards: [
+				{
+					id: "45AE1E4F9603CD4F"
+					type: "xp"
+					xp: 20
+				}
+				{
+					id: "6AE9C624A8290735"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 8
+					id: "748F15E070D53DC2"
+					item: {
+						components: {
+							"tfc:heat": { }
+						}
+						count: 1
+						id: "tfc:metal/ingot/wrought_iron"
+					}
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			tasks: [{
+				id: "2B38DF974BF9A9B3"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/wrought_iron" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["47B95BC50C5BF469"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/ingot/cast_iron"
+			}
+			id: "17DCD1E10495ABA7"
+			rewards: [{
+				id: "7559A38E959EFF8A"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "036773D6B6CA16FD"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["47B95BC50C5BF469"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/double_ingot/bronze"
+			}
+			id: "13D0A02DCEA6CD13"
+			rewards: [{
+				id: "41B8C2E75C21AB7C"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "rsquare"
+			tasks: [{
+				icon: {
+					components: {
+						"tfc:heat": { }
+					}
+					id: "tfc:metal/double_ingot/bronze"
+				}
+				id: "6D0275C3F7FE72FC"
+				item: { components: { "ftbfiltersystem:filter": "or(item(tfc:metal/double_ingot/bismuth_bronze) item(tfc:metal/double_ingot/black_bronze) item(tfc:metal/double_ingot/bronze))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0F66B28732EAA8C5"]
+			hide_until_deps_visible: false
+			icon: {
+				components: {
+					"ftbquests:icon": "journeymap:textures/waypoint/icon/00_markers/jwi00circle_empty.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "47B95BC50C5BF469"
+			rewards: [
+				{
+					id: "426DE7EC10364FD6"
+					type: "xp"
+					xp: 20
+				}
+				{
+					id: "15FD1A6659CE99F3"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "571B6E772C045F53"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["47B95BC50C5BF469"]
+			id: "276F1852697AE589"
+			rewards: [{
+				id: "75A213203A99544B"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "3DDF48B0DDB2D625"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/brass" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+	]
+}

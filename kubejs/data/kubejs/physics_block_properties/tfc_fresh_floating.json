@@ -1,0 +1,6 @@
+{
+  "selector": "#tfc:fresh_floating_plants",
+  "properties": {
+    "sable:mass": 0.25
+  }
+}

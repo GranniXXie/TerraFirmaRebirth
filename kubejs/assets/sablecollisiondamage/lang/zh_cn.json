@@ -1,0 +1,5 @@
+{
+  "text.autoconfig.sablecollisiondamage.title": "Sable 碰撞伤害",
+  "text.autoconfig.sablecollisiondamage.option.minBreakSpeed": "最小破坏速度",
+  "text.autoconfig.sablecollisiondamage.option.staticSlowdownPerBlock": "每方块静态减速"
+}

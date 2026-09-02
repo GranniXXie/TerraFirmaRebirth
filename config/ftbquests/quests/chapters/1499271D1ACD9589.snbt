@@ -1,0 +1,268 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1499271D1ACD9589"
+	group: "7230BCDFA3557B8C"
+	icon: {
+		components: {
+			"ftbquests:icon": "fancymenu:textures/contextmenu/icons/anchor.png"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "1499271D1ACD9589"
+	images: [ ]
+	order_index: 6
+	quest_enhance_chapter_background: "dynamic_fps:textures/battery/toast/background.png"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "5B1F744DC1832782"
+			invisible: true
+			rewards: [{
+				id: "2A1D3CE4F4F500A5"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			tasks: [{
+				advancement: "tfc:world/full_nutrition"
+				criterion: ""
+				id: "517CE886C6BB6B21"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			id: "3C2EB8929EB21826"
+			invisible: true
+			rewards: [
+				{
+					id: "073290602503F089"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "30B2FBD31CE7DFA0"
+					item: {
+						count: 1
+						id: "minecraft:elytra"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				advancement: "tfc:world/adventuring_time"
+				criterion: ""
+				id: "15E92D6F2995483B"
+				type: "advancement"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			id: "69D9F9E88DEDCC2E"
+			invisible: true
+			rewards: [{
+				id: "10F6B22D3E9C4047"
+				type: "xp"
+				xp: 1000
+			}]
+			shape: "gear"
+			tasks: [{
+				advancement: "tfc:story/glass_colors"
+				criterion: ""
+				id: "6CD2B1CA931CE0DB"
+				type: "advancement"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			id: "1F390509695E4AA4"
+			invisible: true
+			rewards: [{
+				id: "768689FFED16E95B"
+				type: "xp"
+				xp: 1000
+			}]
+			shape: "gear"
+			tasks: [{
+				advancement: "tfc:world/all_crops"
+				criterion: ""
+				id: "77D1E810BA8408FD"
+				type: "advancement"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			id: "681C9D47F39B91A0"
+			invisible: true
+			rewards: [{
+				id: "56D3428974E2D328"
+				type: "xp"
+				xp: 1000
+			}]
+			shape: "gear"
+			tasks: [{
+				advancement: "tfc:world/globe_trotter"
+				criterion: ""
+				id: "191EC1577F839E92"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			id: "075F00263E56C723"
+			invisible: true
+			rewards: [
+				{
+					id: "14FAAB316342610E"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 16
+					id: "7A8C92690AF06E7C"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "14CE4936782D910F"
+					item: {
+						count: 1
+						id: "minecraft:netherite_upgrade_smithing_template"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					advancement: "tfc:world/gemologist"
+					criterion: ""
+					id: "170B7DE7EBB4CA93"
+					type: "advancement"
+				}
+				{
+					advancement: "tfc:world/metallurgist"
+					criterion: ""
+					id: "04C3666A4A72E6B0"
+					type: "advancement"
+				}
+				{
+					advancement: "tfc:world/minerologist"
+					criterion: ""
+					id: "093C785827DF8609"
+					type: "advancement"
+				}
+			]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			id: "673484CC693D61F0"
+			invisible: true
+			rewards: [
+				{
+					id: "6D28CAA4E463BB0B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "13F5FC15FF09BED3"
+					item: {
+						components: {
+							"minecraft:stored_enchantments": {
+								levels: {
+									"minecraft:mending": 1
+								}
+							}
+						}
+						count: 1
+						id: "minecraft:enchanted_book"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				entity: "minecraft:wither"
+				id: "5E518C810DF5FD97"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["52AAAE7D38BCC11B"]
+			id: "0FE8624158DB509E"
+			invisible: true
+			rewards: [
+				{
+					id: "3A464502AF1A177C"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "3E894E930143344E"
+					item: {
+						components: {
+							"tfc:heat": { }
+						}
+						count: 1
+						id: "tfc:metal/pickaxe_head/bronze"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				advancement: "tfc:story/perfectly_forged"
+				criterion: ""
+				id: "33F633E92914203C"
+				type: "advancement"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["75307F48C0278496"]
+			icon: {
+				components: {
+					"ftbquests:icon": "fancymenu:textures/back_icon.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "3A78004CF696FED3"
+			tasks: [{
+				id: "1160C45EE4DFAC91"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			id: "258B0BB6F1CA1F1B"
+			invisible: true
+			rewards: [{
+				id: "15F7ADE3F2699922"
+				type: "xp"
+				xp: 1000
+			}]
+			shape: "gear"
+			x: -0.5d
+			y: 1.5d
+		}
+	]
+}

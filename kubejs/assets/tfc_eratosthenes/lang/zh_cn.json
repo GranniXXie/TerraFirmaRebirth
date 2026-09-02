@@ -1,0 +1,12 @@
+{
+  "tfc_eratosthenes.configuration.crossing180MeridianTeleport": "跨越 180° 经线时将玩家传送至世界另一侧。",
+  "tfc_eratosthenes.configuration.keepIslandsAndHotspotVolcanoesInside": "限制岛屿与热点火山生成",
+  "tfc_eratosthenes.configuration.limitWorldGenerationOutsideMapProjection": "限制地图投影外的世界生成",
+  "tfc_eratosthenes.configuration.mapProjection": "地图投影",
+  "tfc_eratosthenes.configuration.meridianCrossingGraceDistance": "经线跨越缓冲距离",
+  "tfc_eratosthenes.configuration.polarAreaSize": "极地区域大小",
+  "tfc_eratosthenes.configuration.section.tfc_eratosthenes.common.toml": "TFC 埃拉托色尼配置",
+  "tfc_eratosthenes.configuration.section.tfc_eratosthenes.common.toml.title": "TFC 埃拉托色尼配置",
+  "tfc_eratosthenes.configuration.showCoordinates": "显示当前坐标",
+  "tfc_eratosthenes.configuration.title": "TFC 埃拉托色尼配置"
+}

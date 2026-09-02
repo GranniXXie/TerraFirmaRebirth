@@ -1,0 +1,22 @@
+# 
+#Nutrients calculation is (score / 100) * nutrient / foodSize.
+#营养值计算是 (分数 / 100) * 营养 / 食物份量)
+comment = true
+# 
+#Food size.  (defaultValue 3)
+#食物份量.  (默认数值 3)
+# Default: 3
+# Range: 1 ~ 54
+foodSize = 3
+# 
+#The max nutrient.  (defaultValue 6)
+#最大营养值.  (默认数值 6)
+# Default: 6
+# Range: > 1
+maxNutrient = 6
+# 
+#The nutrient factor of Suspicious Mix.  (defaultValue 0.8)
+#大乱炖的营养系数.  (默认数值 0.8)
+# Default: 0.8
+# Range: 0.0 ~ 1.0
+suspiciousMixFactor = 0.8

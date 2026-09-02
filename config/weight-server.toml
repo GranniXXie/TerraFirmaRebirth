@@ -1,0 +1,74 @@
+#Master switch for the whole mass mechanic.
+enabled = true
+#Mass of one player, in Sable block units.
+# Default: 0.75
+# Range: 0.0 ~ 1000.0
+playerMass = 0.75
+#Strength of jump and landing impulses on the deck.
+# Default: 4.0
+# Range: 0.0 ~ 100.0
+jumpImpulseMultiplier = 4.0
+#Mass scale for non-player living entities. 0 disables their weight.
+# Default: 1.0
+# Range: 0.0 ~ 10.0
+entityMassScale = 1.0
+#Cap on a single entity's mass.
+# Default: 10.0
+# Range: 0.1 ~ 1000.0
+entityMaxMass = 10.0
+#Whether worn armor changes the wearer's mass.
+gearWeightEnabled = true
+#Whether ordinary armor weighs, from the armor points it grants.
+vanillaArmorWeightEnabled = false
+#Mass added per armor point of worn armor.
+# Default: 0.025
+# Range: 0.0 ~ 10.0
+armorPointMass = 0.025
+#Whether armor worn by mobs adds to their mass.
+mobEquipmentWeightEnabled = false
+#Mass multiplier per armor piece tagged #weight:light_gear.
+# Default: 0.5
+# Range: 0.0 ~ 1.0
+lightGearMassMultiplier = 0.5
+#Mass multiplier per armor piece tagged #weight:heavy_gear.
+# Default: 2.0
+# Range: 1.0 ~ 10.0
+heavyGearMassMultiplier = 2.0
+#Whether carried items add to a player's mass.
+inventoryWeightEnabled = false
+#Whether items in containers aboard add to a structure's mass.
+containerWeightEnabled = false
+#Whether fluid held in blocks tagged #weight:tanks adds mass.
+tankWeightEnabled = false
+#Mass added per bucket of fluid held in a tank.
+# Default: 0.1
+# Range: 0.0 ~ 100.0
+fluidBucketMass = 0.1
+#Cap on the mass one tank block can contribute.
+# Default: 20.0
+# Range: 0.0 ~ 10000.0
+tankMaxMassPerBlock = 20.0
+#Mass of one item, in Sable block units.
+# Default: 2.5E-4
+# Range: 0.0 ~ 100.0
+baseItemWeight = 2.5E-4
+#Mass multiplier for items tagged #weight:light_item.
+# Default: 0.5
+# Range: 0.0 ~ 1.0
+lightItemMassMultiplier = 0.5
+#Mass multiplier for items tagged #weight:heavy_item.
+# Default: 3.0
+# Range: 1.0 ~ 20.0
+heavyItemMassMultiplier = 3.0
+#Mass multiplier for items tagged #weight:very_heavy_item.
+# Default: 9.0
+# Range: 1.0 ~ 100.0
+veryHeavyItemMassMultiplier = 9.0
+#Mass multiplier for items stored in containers.
+# Default: 1.4
+# Range: 0.0 ~ 100.0
+containerContentsMultiplier = 1.4
+#Cap on the mass one container can contribute.
+# Default: 20.0
+# Range: 0.0 ~ 10000.0
+containerMaxMassPerContainer = 20.0

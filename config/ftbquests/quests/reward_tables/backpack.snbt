@@ -1,0 +1,35 @@
+{
+	id: "4E6B79F519E6F96B"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{
+			id: "077DD80A9941752E"
+			item: {
+				count: 1
+				id: "sophisticatedbackpacks:advanced_void_upgrade"
+			}
+			weight: 0.2f
+		}
+		{ id: "657BFF5EF8E6932C", item: { count: 1, id: "sophisticatedbackpacks:void_upgrade" } }
+		{
+			id: "1B43ACA0584E071A"
+			item: {
+				count: 1
+				id: "sophisticatedbackpacks:advanced_magnet_upgrade"
+			}
+			weight: 0.2f
+		}
+		{ id: "668D07FFE2BB7910", item: { count: 1, id: "sophisticatedbackpacks:magnet_upgrade" } }
+		{ id: "4890F083E3032BA9", item: { count: 1, id: "sophisticatedbackpacks:filter_upgrade" } }
+		{
+			id: "20B90B689D47AAE9"
+			item: {
+				count: 1
+				id: "sophisticatedbackpacks:advanced_pickup_upgrade"
+			}
+			weight: 0.2f
+		}
+		{ id: "2E87EE08D2C13D9D", item: { count: 1, id: "sophisticatedbackpacks:pickup_upgrade" } }
+	]
+}

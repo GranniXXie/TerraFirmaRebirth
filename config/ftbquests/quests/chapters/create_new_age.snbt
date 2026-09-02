@@ -1,0 +1,458 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_new_age"
+	group: "787619235D44E5B6"
+	hide_quest_details_until_startable: true
+	icon: {
+		components: {
+			"ftbquests:icon": "jade:textures/gui/sprites/energy.png"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "44EFB1B8F12A772D"
+	images: [ ]
+	order_index: 5
+	quest_enhance_chapter_background: "dynamic_fps:textures/battery/toast/background.png"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5105F3A8FA8B8991"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"ftbquests:icon": "jade:textures/gui/sprites/energy.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "075AE6BBAE11F698"
+			rewards: [{
+				id: "3A636FA7E28CC879"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "7FC5162E3BED094B"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["075AE6BBAE11F698"]
+			id: "3234CA6489B308BF"
+			rewards: [{
+				id: "5BAAE82431130A08"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "079FB3E924EDEC46"
+					item: { count: 1, id: "electroenergetics:copper_wire" }
+					type: "item"
+				}
+				{
+					id: "6D6FAFEB3D6FDDBC"
+					item: { count: 1, id: "electroenergetics:copper_wire_spool" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3234CA6489B308BF"]
+			id: "63B0A375259D2711"
+			rewards: [{
+				id: "1F1EF3B0D0F5DE72"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "45815286EAFE196B"
+					item: { count: 1, id: "electroenergetics:connector" }
+					type: "item"
+				}
+				{
+					id: "256535CA2C0C0CF7"
+					item: { count: 1, id: "electroenergetics:double_connector" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"63B0A375259D2711"
+				"5B932369EEB60656"
+			]
+			id: "7932CF2B21C63A6A"
+			rewards: [{
+				id: "7D94A474E82FFE2A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "74F85B8966EFC49A"
+					item: { count: 1, id: "electroenergetics:alternator_rotor" }
+					type: "item"
+				}
+				{
+					id: "3CC5A9219F265B54"
+					item: { count: 1, id: "electroenergetics:stator" }
+					type: "item"
+				}
+				{
+					id: "4452C048EB982562"
+					item: { count: 1, id: "electroenergetics:alternator_brushes" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"7932CF2B21C63A6A"
+				"5B932369EEB60656"
+			]
+			id: "15E83F8A71435163"
+			rewards: [{
+				id: "2843994F8777DE63"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "2AD5184869AAFF17"
+					item: { count: 1, id: "electroenergetics:bulb" }
+					type: "item"
+				}
+				{
+					id: "647A16EF55F5979B"
+					item: { count: 1, id: "electroenergetics:cut_off_switch" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["15E83F8A71435163"]
+			id: "03376277C54B5225"
+			rewards: [{
+				id: "1FE3CE72D3C3EECD"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "18DCA22E040FF8D9"
+				item: { count: 1, id: "electroenergetics:white_electric_motor" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["03376277C54B5225"]
+			id: "181DCB33CD39146A"
+			rewards: [{
+				id: "6F876BC8C4B03BE2"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "072767C4C507F4A5"
+				item: { count: 1, id: "electroenergetics:accumulator" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["181DCB33CD39146A"]
+			id: "7F53EF08F17732CE"
+			rewards: [{
+				id: "49830D9E538210BE"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "1B2D0EDD155A50E1"
+					item: { count: 1, id: "electroenergetics:transformer_core" }
+					type: "item"
+				}
+				{
+					id: "61E3A7696B74E9C5"
+					item: { count: 1, id: "electroenergetics:transformer" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7F53EF08F17732CE"]
+			id: "4EC0DE11FE000001"
+			rewards: [{
+				id: "4EC0DE11FE000011"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "4EC0DE11FE000021"
+				item: { count: 1, id: "electroenergetics:converter" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["4EC0DE11FE000001"]
+			id: "632844FAC1275EE7"
+			rewards: [{
+				id: "32EF2570D4678DB9"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "5B7C1F652774E00E"
+					item: { count: 1, id: "electroenergetics:concrete_pole" }
+					type: "item"
+				}
+				{
+					id: "43D2B5A808EA922E"
+					item: { count: 1, id: "electroenergetics:pole_mount" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["632844FAC1275EE7"]
+			id: "7BE07429076DD5A5"
+			rewards: [{
+				id: "330D01A9E13A1496"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			tasks: [
+				{
+					id: "78122AF9E444379E"
+					item: { count: 1, id: "electroenergetics:catenary_holder" }
+					type: "item"
+				}
+				{
+					id: "72D44491697AF9EC"
+					item: { count: 1, id: "electroenergetics:pantograph" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["7BE07429076DD5A5"]
+			icon: {
+				id: "electroenergetics:pantograph"
+			}
+			id: "29B14AB2FFDAE7FC"
+			rewards: [{
+				id: "6A8CE4FDA825BF18"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "470733337596D4D4"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["15E83F8A71435163"]
+			id: "549EF07E17716D0C"
+			rewards: [{
+				id: "37C28B18C72927B1"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "4232281CD74EFE06"
+					item: { count: 1, id: "electroenergetics:fuse" }
+					type: "item"
+				}
+				{
+					id: "1DC83F23DD787AC8"
+					item: { count: 1, id: "electroenergetics:fuse_holder" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"5B932369EEB60656"
+				"549EF07E17716D0C"
+			]
+			id: "3C820C87C5A199E7"
+			rewards: [{
+				id: "1B8548A439EA52E4"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "1112E02727D808A0"
+				item: { count: 1, id: "electroenergetics:ground_rod" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7F53EF08F17732CE"]
+			id: "6A4F03F6CAE9D73E"
+			rewards: [{
+				id: "4741C6A61C887974"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "0190B2AE2976D96A"
+					item: { count: 1, id: "electroenergetics:high_voltage_switch" }
+					type: "item"
+				}
+				{
+					id: "7051B5633A894F4A"
+					item: { count: 1, id: "electroenergetics:sulfur_hexafluoride_breaker" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 8.0d
+		}
+		{
+			id: "457F36F33E087936"
+			rewards: [{
+				id: "3D032983F33D0E45"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "29367F5B2A3D786A"
+				item: { count: 1, id: "electroenergetics:voltage_regulator" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5B932369EEB60656"
+				"15E83F8A71435163"
+			]
+			id: "7B2F1F1B385A6B97"
+			rewards: [{
+				id: "2F2089B5C147671A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "1FA91587606E32D6"
+					item: { count: 1, id: "electroenergetics:ammeter" }
+					type: "item"
+				}
+				{
+					id: "6FF18103077BBF89"
+					item: { count: 1, id: "electroenergetics:voltmeter" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7B2F1F1B385A6B97"]
+			id: "3010455F84F0E7AA"
+			rewards: [{
+				id: "5A1189D3EB9D3589"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "0D9E6F37AEDF58D3"
+					item: { count: 1, id: "electroenergetics:energy_meter" }
+					type: "item"
+				}
+				{
+					id: "25B1CA0E3FAB806F"
+					item: { count: 1, id: "electroenergetics:frequency_meter" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["03376277C54B5225"]
+			id: "3DFC64CF4AB70D66"
+			rewards: [{
+				id: "343C26AAE34AD4DC"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "476B25AB83B84D4F"
+					item: { count: 1, id: "electroenergetics:electric_pump" }
+					type: "item"
+				}
+				{
+					id: "6990A6A84139E4F1"
+					item: { count: 1, id: "electroenergetics:resistive_heater" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["29B14AB2FFDAE7FC"]
+			id: "3EC674D6F7C27E47"
+			rewards: [{
+				id: "5EC6B57A74822E74"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					id: "6E4547673EB84F21"
+					item: { count: 1, id: "electroenergetics:rail_contact_shoe" }
+					type: "item"
+				}
+				{
+					id: "25F92B1D449ED321"
+					item: { count: 1, id: "electroenergetics:iron_rail_spool" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 11.0d
+		}
+	]
+}

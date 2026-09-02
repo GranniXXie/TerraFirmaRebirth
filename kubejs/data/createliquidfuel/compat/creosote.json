@@ -1,0 +1,6 @@
+{
+  "fluid": "immersiveengineering:creosote",
+  "burnTime": 12,
+  "superHeat": false,
+  "amountConsumedPerTick": 1
+}

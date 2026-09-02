@@ -1,0 +1,27 @@
+{
+	"type": "farmersdelight:cutting",
+	"ingredients": [
+		{
+			"children": [
+				{
+					"type": "tfc:not_rotten"
+				},
+				{
+					"item": "tfc:melon"
+				}
+			],
+			"type": "neoforge:intersection"
+		}
+	],
+	"result": [
+		{
+			"item": {
+				"id": "tfc:food/melon_slice",
+				"count": 6
+			}
+		}
+	],
+	"tool": {
+		"tag": "c:tools/knife"
+	}
+}

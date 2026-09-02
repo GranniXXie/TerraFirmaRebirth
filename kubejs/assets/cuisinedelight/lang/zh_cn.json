@@ -1,0 +1,10 @@
+{
+  "cuisinedelight.configuration.uiXAnchor": "烹饪界面水平锚点",
+  "cuisinedelight.configuration.uiXAnchor.tooltip": " 默认值：-1\n 范围：-1 ~ 1",
+  "cuisinedelight.configuration.uiXOffset": "烹饪界面水平偏移",
+  "cuisinedelight.configuration.uiXOffset.tooltip": " 默认值：8\n 范围：-1000 ~ 1000",
+  "cuisinedelight.configuration.uiYAnchor": "烹饪界面垂直锚点",
+  "cuisinedelight.configuration.uiYAnchor.tooltip": " 默认值：0\n 范围：-1 ~ 1",
+  "cuisinedelight.configuration.uiYOffset": "烹饪界面垂直偏移",
+  "cuisinedelight.configuration.uiYOffset.tooltip": " 默认值：0\n 范围：-1000 ~ 1000"
+}

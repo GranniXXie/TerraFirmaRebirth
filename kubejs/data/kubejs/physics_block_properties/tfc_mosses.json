@@ -1,0 +1,6 @@
+{
+  "selector": "#tfc:mosses",
+  "properties": {
+    "sable:mass": 0.25
+  }
+}

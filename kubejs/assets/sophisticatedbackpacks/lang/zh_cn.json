@@ -1,0 +1,12 @@
+{
+  "item.sophisticatedbackpacks.stack_upgrade_starter_tier_to_tier_1_conversion": "堆叠升级转换：初始级 → 一级",
+  "item.sophisticatedbackpacks.stack_upgrade_starter_tier_to_tier_2_conversion": "堆叠升级转换：初始级 → 二级",
+  "item.sophisticatedbackpacks.stack_upgrade_starter_tier_to_tier_3_conversion": "堆叠升级转换：初始级 → 三级",
+  "item.sophisticatedbackpacks.stack_upgrade_starter_tier_to_tier_4_conversion": "堆叠升级转换：初始级 → 四级",
+  "item.sophisticatedbackpacks.stack_upgrade_tier_1_to_tier_2_conversion": "堆叠升级转换：一级 → 二级",
+  "item.sophisticatedbackpacks.stack_upgrade_tier_1_to_tier_3_conversion": "堆叠升级转换：一级 → 三级",
+  "item.sophisticatedbackpacks.stack_upgrade_tier_1_to_tier_4_conversion": "堆叠升级转换：一级 → 四级",
+  "item.sophisticatedbackpacks.stack_upgrade_tier_2_to_tier_3_conversion": "堆叠升级转换：二级 → 三级",
+  "item.sophisticatedbackpacks.stack_upgrade_tier_2_to_tier_4_conversion": "堆叠升级转换：二级 → 四级",
+  "item.sophisticatedbackpacks.stack_upgrade_tier_3_to_tier_4_conversion": "堆叠升级转换：三级 → 四级"
+}

@@ -1,0 +1,5 @@
+[filmPrinter]
+	#Film printer manufacturing work units completed per server tick.
+	# Default: 64
+	# Range: 1 ~ 4096
+	blocksPerTick = 64

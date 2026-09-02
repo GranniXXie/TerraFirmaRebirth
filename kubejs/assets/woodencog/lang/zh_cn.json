@@ -1,0 +1,40 @@
+{
+  "sealed_on": "密封于",
+  "barrel_crafting": "合成中",
+
+  "block.woodencog.ct_transformer": "木质传动转换器",
+  "block.woodencog.ct_transformer.tooltip.summary": "木质传动转换器是群峦传动与机械动力之间的桥梁，可将机械动力的旋转转换为群峦传动，输入与输出的转速保持一致。",
+
+  "block.woodencog.wooden_generator": "木质发电机",
+
+  "woodencog.recipe.heated_mixing": "加热搅拌",
+  "woodencog.recipe.heated_pressing": "加热冲压",
+  "woodencog.recipe.heated_compacting": "加热压制",
+
+  "woodencog.ponder.wooden_generator.water_wheel.header": "从群峦动力源获取旋转",
+  "woodencog.ponder.wooden_generator.water_wheel.text_1": "发电机需要紧挨着群峦的动力源放置",
+  "woodencog.ponder.wooden_generator.water_wheel.text_2": "产生的应力取决于动力源的转速",
+  "woodencog.ponder.wooden_generator.water_wheel.text_3": "1,024 应力",
+
+  "woodencog.ponder.wooden_generator.windmill.header": "其他动力源",
+  "woodencog.ponder.wooden_generator.windmill.text_1": "4,096 应力",
+
+  "woodencog.ponder.wooden_generator.windmill_rustic.header": "其他动力源",
+  "woodencog.ponder.wooden_generator.windmill_rustic.text_1": "田园风车可以产生双倍应力",
+
+  "woodencog.ponder.wooden_transformer.header": "转换旋转动力",
+  "woodencog.ponder.wooden_transformer.text_1": "将机械动力的旋转转换为群峦传动，转速保持不变",
+
+  "woodencog.ponder.heat.header": "加热物品",
+  "woodencog.ponder.heat.text_1": "可受热加工的物品会被岩浆加热，最高可达 1700°。",
+  "woodencog.ponder.heat.text_2": "火焰同样可以加热，但上限只有 200°，拿来烹饪正合适！",
+  "woodencog.ponder.cool.header": "冷却物品",
+  "woodencog.ponder.cool.text_1": "加热后的物品可以用水冷却。",
+
+  "woodencog.basin.selection_mode.normal": "",
+  "woodencog.basin.selection_mode.auto_feed": "将输出流体用作输入流体",
+  "woodencog.recipes.chain": "模式",
+
+  "recipe.assembly.pressing": "组装冲压",
+  "creativetab.woodencog": "木质齿轮"
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": {
+    "immersiveengineering:high_power_biodiesel": {
+      "burn_time": 40000
+    }
+  }
+}

@@ -1,0 +1,62 @@
+#Create: Cold Sweat settings
+[General]
+	#Should blaze burners apply heat?
+	"Blaze burner" = true
+	#Blaze burner smouldering temperature (MC UNITS)
+	# Default: 0.04291845493562232
+	# Range: 0.0 ~ 1.0
+	Smouldering = 0.04291845493562232
+	#Blaze burner fading temperature (MC UNITS)
+	# Default: 0.12875536480686695
+	# Range: 0.0 ~ 1.0
+	Fading = 0.12875536480686695
+	#Blaze burner kindled temperature (MC UNITS)
+	# Default: 0.2145922746781116
+	# Range: 0.0 ~ 1.0
+	Kindled = 0.2145922746781116
+	#Blaze burner seething temperature (MC UNITS)
+	# Default: 0.4291845493562232
+	# Range: 0.0 ~ 1.0
+	Seething = 0.4291845493562232
+	#The maximum distance a blaze burner affects players
+	# Default: 8
+	# Range: 1 ~ 16
+	"Max Blaze Burner" = 8
+	#Should Boilers apply heat?
+	Boiler = true
+	#The amount of MC UNITS to increase per heat level (max heat level is 18) (per block)
+	# Default: 0.004768717215069146
+	# Range: 0.0 ~ 1.0
+	"Boiler Increment" = 0.004768717215069146
+	#The maximum distance a boiler affects players
+	# Default: 8
+	# Range: 1 ~ 16
+	"Max Boiler" = 8
+	#Should Liquids apply heat while in containers?
+	Liquids = true
+	#The temperature dampening on all default calculated liquids (calculated temperature / dampening)
+	# Default: 5.391630902
+	# Range: -16.0 ~ 16.0
+	"Liquid temperature dampening" = 5.391630902
+	#The maximum distance a fluid container affects players
+	# Default: 8
+	# Range: 1 ~ 16
+	"Max Fluid Container" = 8
+	#Should fans affect player temperature?
+	Fans = true
+	#The maximum angle fans are allowed to affect the player (Degrees)
+	# Default: 110.0
+	# Range: 90.0 ~ 180.0
+	"Fan Angle" = 110.0
+	#Should fans use the block directly in front of them to set a temperature
+	"Fan Temperature Interaction" = false
+	#The maximum distance a fan affects players
+	# Default: 8
+	# Range: 1 ~ 16
+	"Max Fan" = 8
+	#Whether the default fluid temperature should be calculated based off internal temperature values
+	"Default Liquid Temperature" = false
+	#The maximum distance a steam engine affects players
+	# Default: 8
+	# Range: 1 ~ 16
+	"Max Steam Engine" = 8

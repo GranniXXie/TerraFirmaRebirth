@@ -1,0 +1,210 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "003439A5722F1919"
+	group: "47652EC60BA7B927"
+	hide_quest_details_until_startable: true
+	id: "003439A5722F1919"
+	images: [ ]
+	order_index: 5
+	quest_enhance_chapter_background: "simulated:block/symmetric_sail/side_blue"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["534302DF25F41154"]
+			id: "7825FFB55A09E054"
+			rewards: [{
+				id: "7420635906957C64"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "443C2F52F4F5B3D9"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:ores/rocky_chunks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["46C06C69F3E01563"]
+			id: "3270EADED45FCD0F"
+			rewards: [{
+				id: "2AB3F85E80B31AC8"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "15F788FC04D5B5A8"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:ores/dirty_dusts)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3270EADED45FCD0F"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:powder/limonite"
+			}
+			id: "3E20E2E7B5C1A827"
+			rewards: [{
+				id: "591B6123D5D39037"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "circle"
+			tasks: [{
+				icon: {
+					components: {
+						"tfc:heat": { }
+					}
+					id: "tfc:powder/limonite"
+				}
+				id: "26C8EAF54132A7F4"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:ores/clean_dusts)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["346251D17EE4D23C"]
+			id: "55949E9ACBE9E133"
+			rewards: [{
+				id: "0709B3616B8748EF"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "circle"
+			tasks: [{
+				icon: {
+					components: {
+						"tfc:heat": { }
+					}
+					id: "tfcorewashing:briquet_limonite"
+				}
+				id: "3F8C79609858F241"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:metal/briquet)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3270EADED45FCD0F"]
+			id: "03840B3A92A037A3"
+			rewards: [{
+				id: "0814EE56C62643CD"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "618FE7478CE4FD4B"
+				item: { count: 1, id: "create:millstone" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4D54513E21ADC4B6"]
+			hide_details_until_startable: false
+			id: "534302DF25F41154"
+			rewards: [{
+				id: "7D46D0F64967E5E3"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "0964623C00058675"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7825FFB55A09E054"]
+			id: "46C06C69F3E01563"
+			rewards: [{
+				id: "48034738E06C0E33"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "7128F44BEF98A572"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:ores/chunks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3E20E2E7B5C1A827"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfcorewashing:pellet_limonite"
+			}
+			id: "346251D17EE4D23C"
+			rewards: [{
+				id: "5C9C01425367E3E6"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				icon: {
+					components: {
+						"tfc:heat": { }
+					}
+					id: "tfcorewashing:pellet_limonite"
+				}
+				id: "2929DC3F621AD0B3"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:metal/pellet)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7825FFB55A09E054"]
+			id: "623B724AD16ACB18"
+			rewards: [{
+				id: "24B5107A26578799"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "49AC982421A57383"
+				item: { count: 1, id: "create:mechanical_press" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["46C06C69F3E01563"]
+			id: "7501D3AEC6E52B13"
+			rewards: [{
+				id: "1506A16A310526CD"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "644B38764296CA4D"
+				item: { count: 1, id: "create:encased_fan" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+	]
+}

@@ -1,0 +1,20 @@
+{
+  "ftbteams.click_show_info": "点击显示队伍信息",
+  "ftbteams.disbanded_no_lives": "你的小队因生命数和玩家数耗尽而被解散！",
+  "ftbteams.gui.toggle_chat": "点击切换",
+  "ftbteams.kicked_no_lives": "玩家 %s 因死亡且小队生命数耗尽而被移出小队！",
+  "ftbteams.lost_a_life": "你的小队失去了一条生命！剩余生命：%s / %s！",
+  "ftbteams.message.added_stage": "已添加队伍阶段：%s",
+  "ftbteams.message.chat_redirected.off": "聊天消息将发送至原版聊天",
+  "ftbteams.message.chat_redirected.on": "聊天消息将重定向至队伍聊天",
+  "ftbteams.message.limited_lives": "你的小队剩余生命：%s / %s！",
+  "ftbteams.message.limited_lives.warn": "如果你死亡，将被移出小队！",
+  "ftbteams.message.no_team_stages": "该队伍没有队伍阶段",
+  "ftbteams.message.parse_failed": "无法解析数值：%s",
+  "ftbteams.message.property_not_editable": "属性 %s 不可编辑！",
+  "ftbteams.message.removed_stage": "已移除队伍阶段：%s",
+  "ftbteams.message.set_property": "已将属性 %s 设为 %s",
+  "ftbteams.message.team_stages_header": "该队伍共有 %s 个队伍阶段：",
+  "ftbteams.out_of_lives": "你的小队生命数已耗尽！无法邀请新成员！",
+  "ftbteams.team_already_exists": "队伍 %s 已存在！"
+}

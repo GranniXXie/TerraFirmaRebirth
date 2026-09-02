@@ -1,0 +1,34 @@
+{
+  "name": "Multiplayer Notes",
+  "category": "tfc:tfcr",
+  "icon": "minecraft:player_head",
+  "sortnum": 3,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Official Servers",
+      "text": "The dev team runs $(thing)two official servers, in China and North America$(), always on the latest pack version.$(br2)Addresses are posted in the QQ group announcements (807756188 / 454488438) and on the official Discord.$(br2)Bring your friends — the world of TFC is big enough for everyone's town."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Teams & Claims",
+      "text": "$(li)Press $(k:ftbteams.open_gui) to create or join an FTB Teams party; members share quest progress and claim permissions$()$(br)$(li)Open the chunk map from $(thing)JourneyMap's fullscreen map$() or the claim button in the $(thing)top-left$() of your inventory: $(thing)left-click$() claims, $(thing)Shift+left-click$() force-loads$()$(br)$(li)Force-loaded chunks are capped — save them for machines and farms that truly need to run$()$(br2)Anyone can alter unclaimed land. Claim your important builds."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Server Rules",
+      "text": "$(li)Ground items are swept every $(thing)30 minutes$() (the \"TerraFirma 360 Guard\"), with broadcasts 60s and 30s ahead$()$(br)$(li)Crushing-wheel-style auto-mining contraptions are banned; Mineral Drill bits are capped at $(thing)32$()$(br)$(li)Griefing losses outside claims are not refunded — claim your base$()$(br2)Full rules are in the server announcements."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Online Tips",
+      "text": "$(li)Clients carrying extra display-only mods (shaders, sounds) is normal and won't break joining$()$(br)$(li)Returning from the Nether beyond $(thing)±19,500$() clamps you to the border — don't build your base out there$()$(br)$(li)Beehives don't consume honey in winter on servers either — relax$()$(br)$(li)Suspect a bug? Reproduce it in singleplayer first, then report it with logs in the community$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Sponsor: Wabbanode",
+      "text": "Our official $(thing)North America server$() is proudly hosted by $(thing)Wabbanode$().$(br2)Want your own server to play TFCR with friends? Use the code $(thing)TFCR$() for $(thing)20% OFF$() any hosting plan:$(br2)$(l:https://wabbanode.com/affiliate/terrafirmarebirth)wabbanode.com/affiliate/terrafirmarebirth$()"
+    }
+  ]
+}

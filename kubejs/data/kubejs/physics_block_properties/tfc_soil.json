@@ -1,0 +1,6 @@
+{
+  "selector": "#minecraft:dirt",
+  "properties": {
+    "sable:mass": 1.0
+  }
+}

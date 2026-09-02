@@ -1,0 +1,12 @@
+{
+  "enchantment.enchanting_with_tfc.piercing_protection": "Защита от пронзания",
+  "enchantment.enchanting_with_tfc.piercing_protection.desc": "Снижает пронзающий урон.",
+  "enchantment.enchanting_with_tfc.crushing_protection": "Защита от дробления",
+  "enchantment.enchanting_with_tfc.crushing_protection.desc": "Снижает дробящий урон.",
+  "enchantment.enchanting_with_tfc.slashing_protection": "Защита от рубящих ударов",
+  "enchantment.enchanting_with_tfc.slashing_protection.desc": "Снижает рубящий урон.",
+  "enchantment.enchanting_with_tfc.slow_aspect": "Замедляющий аспект",
+  "enchantment.enchanting_with_tfc.slow_aspect.desc": "Замедляет цель при ударе.",
+  "enchantment.enchanting_with_tfc.hunting": "Охота",
+  "enchantment.enchanting_with_tfc.hunting.desc": "Увеличивает урон по хищникам."
+}

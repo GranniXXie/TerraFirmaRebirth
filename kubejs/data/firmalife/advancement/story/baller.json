@@ -1,0 +1,28 @@
+{
+  "parent": "firmalife:story/root",
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "tfc:seeds/wheat"
+    },
+    "title": {
+      "translate": "firmalife.advancements.story.baller.title"
+    },
+    "description": {
+      "translate": "firmalife.advancements.story.baller.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "requirements": [
+    [
+      "never"
+    ]
+  ]
+}

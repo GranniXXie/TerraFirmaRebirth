@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "tfcastikorcarts:item/hand_cart/rauli_beech"
+  }
+}

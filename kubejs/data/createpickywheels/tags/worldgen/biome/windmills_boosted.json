@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "#c:is_mountain",
+    "#c:is_plains",
+    "#c:is_plateau",
+    "#c:is_hill",
+    "#c:is_badlands",
+    "#c:is_windswept",
+    "#c:is_ocean",
+    "#c:is_deep_ocean",
+    "#c:is_shallow_ocean"
+  ]
+}
