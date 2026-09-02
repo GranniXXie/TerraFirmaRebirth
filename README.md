@@ -52,7 +52,15 @@ balance feedback, and bug reports. Please read
 | Mod | Repository |
 |---|---|
 | tfcr-fixes (bugfix mixin mod) | https://github.com/GranniXXie/tfcr-fixes |
-| woodencog TFCR fork | https://github.com/GranniXXie/woodencog-TFCR |
+| woodencog TFCR fork (TFC × Create compat) | https://github.com/GranniXXie/woodencog-TFCR |
+| electroenergetics TFCR build | https://github.com/GranniXXie/electroenergetics-TFCR |
+| TFCBetterBlastFurnace TFCR build | https://github.com/GranniXXie/tfcbetterbf-TFCR |
+| kaleidoscopetfctavern TFCR port | https://github.com/GranniXXie/kaleidoscopetfctavern-TFCR |
+| Firmalife TFCR build | https://github.com/GranniXXie/firmalife-TFCR |
+| tfc-ability-fix | https://github.com/GranniXXie/tfc-ability-fix |
+| cosmo-return-clamp | https://github.com/GranniXXie/cosmo-return-clamp |
+
+Each repository has a GitHub Release with the ready-to-use jar.
 
 ## License
 
