@@ -23,7 +23,6 @@ dropped into `mods/` manually.
 | `friendship-*.jar` | Modrinth: https://modrinth.com/mod/friendship-breezeth |
 | `Opticores-*.jar` | Bundled in the CF release package; ask on Discord |
 | `sable_fix_mod-*.jar` | Bundled in the CF release package; ask on Discord |
-| `sablecollisiondamage-*.jar` | Bundled in the CF release package; ask on Discord |
 | `sableexplosionfix-*.jar` | Bundled in the CF release package; ask on Discord |
 
 The easiest all-in-one source is the latest release zip from our CurseForge
