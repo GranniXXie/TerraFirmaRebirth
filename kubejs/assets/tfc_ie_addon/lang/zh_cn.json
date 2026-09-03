@@ -22,6 +22,15 @@
   "block.tfc_ie_addon.wild_crop.hemp": "野生大麻",
   "glass_operation.tfc_ie_addon.lead": "铅粉",
   "glass_operation.tfc_ie_addon.uranium": "铀粉",
+  "item.tfc_ie_addon.drillhead_black_steel": "黑钢钻头",
+  "item.tfc_ie_addon.drillhead_blue_steel": "蓝钢钻头",
+  "item.tfc_ie_addon.drillhead_red_steel": "红钢钻头",
+  "item.tfc_ie_addon.mold_sheet": "金属冲压模具：薄板",
+  "item.tfc_ie_addon.mold_block": "金属冲压模具：金属块",
+  "item.tfc_ie_addon.tool_head.wirecutter": "剪线钳头",
+  "item.tfc_ie_addon.tool_head.ie_hammer": "工程师锤头",
+  "item.tfc_ie_addon.treated_wood_lumber": "防腐木板材",
+  "tfc_ie_addon.creative_tab.main": "TFC + IE 兼容",
   "manual.tfc_ie_addon.tfc_ie_changes": "群峦世界中的变化",
   "tfc.recipe.barrel.tfc_ie_addon.barrel.treated_wood_lumber": "防腐木板材"
 }

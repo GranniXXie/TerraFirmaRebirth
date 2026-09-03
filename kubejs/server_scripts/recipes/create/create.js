@@ -313,6 +313,16 @@ ServerEvents.recipes(event => {
     drilling([Item.of('2x minecraft:ancient_debris')], 'create:vein/ancient_debris', 1000)
         .id('create:drilling/ancient_debris')
 
+    // —— 下界专属：石英（玩家反馈石英没有增产手段，只能手挖下界石英矿）——
+    // 石英是玫瑰石英→电子管产业链的上游，需求量大，给到银矿级稀有度；
+    // 远低于远古残骸（512/256/1000），避免和毕业材料抢定位
+    vein(Text.of('石英矿脉'), 'minecraft:quartz')
+        .placement(320, 160, 64825185 + 27 * 7919)
+        .biomeWhitelist('minecraft:is_nether')
+        .id('create:vein/quartz')
+    drilling([Item.of('2x minecraft:quartz')], 'create:vein/quartz', 600)
+        .id('create:drilling/quartz')
+
     milling('4x tfc:powder/salt','tfc:ore/halite').id('create:milling/salt')
 
     mixing('tfc:jute_fiber', ['tfc:jute', Fluid.water(200)])

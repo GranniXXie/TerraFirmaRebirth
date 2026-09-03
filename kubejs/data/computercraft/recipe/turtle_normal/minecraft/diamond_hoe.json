@@ -1,0 +1,25 @@
+{
+  "type": "computercraft:impostor_shaped",
+  "category": "redstone",
+  "group": "computercraft:turtle_normal",
+  "key": {
+    "#": {
+      "item": "tfc:metal/hoe/red_steel"
+    },
+    "T": {
+      "item": "computercraft:turtle_normal"
+    }
+  },
+  "pattern": [
+    "#T"
+  ],
+  "result": {
+    "components": {
+      "computercraft:right_turtle_upgrade": {
+        "id": "kubejs:red_steel_hoe"
+      }
+    },
+    "count": 1,
+    "id": "computercraft:turtle_normal"
+  }
+}

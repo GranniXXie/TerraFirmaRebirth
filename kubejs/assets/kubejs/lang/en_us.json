@@ -25,5 +25,7 @@
   "item.kubejs.unfinished_raw_kaolin_clay": "Unfinished Raw Kaolin Clay",
   "item.kubejs.unfinished_steel": "Unfinished Steel Ingot",
   "item.kubejs.unfinished_wrought_iron": "Unfinished Wrought Iron Ingot",
-  "item.kubejs.unfinished_pulp": "Unfinished Pulp"
+  "item.kubejs.unfinished_pulp": "Unfinished Pulp",
+  "upgrade.kubejs.red_steel.adjective": "Red Steel",
+  "upgrade.kubejs.blue_steel.adjective": "Blue Steel"
 }

@@ -25,5 +25,7 @@
   "item.kubejs.unfinished_raw_kaolin_clay": "未完成的高岭土坯",
   "item.kubejs.unfinished_steel": "未完成的钢锭",
   "item.kubejs.unfinished_wrought_iron": "未完成的锻铁锭",
-  "item.kubejs.unfinished_pulp": "未完成的纸浆"
+  "item.kubejs.unfinished_pulp": "未完成的纸浆",
+  "upgrade.kubejs.red_steel.adjective": "红钢",
+  "upgrade.kubejs.blue_steel.adjective": "蓝钢"
 }

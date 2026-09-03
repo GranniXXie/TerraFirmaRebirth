@@ -1,0 +1,7 @@
+{
+  "type": "computercraft:tool",
+  "adjective": {
+    "translate": "upgrade.kubejs.blue_steel.adjective"
+  },
+  "item": "tfc:metal/sword/blue_steel"
+}

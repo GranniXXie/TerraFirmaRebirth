@@ -19,7 +19,9 @@ ServerEvents.tags('fluid', event => {
         'immersiveengineering:creosote',
         // 电力学油类：变压器油/植物油 允许木桶盛装、大桶储存（玩家反馈装不了）
         'electroenergetics:transformer_oil',
-        'electroenergetics:plant_oil'
+        'electroenergetics:plant_oil',
+        // 浮空石混合液：结晶前要倒在地上靠近热源催化，没桶根本倒不出来（玩家反馈）
+        'aeronautics:levitite_blend'
     ])
     event.add('tfc:usable_in_barrel', [
         'electroenergetics:transformer_oil',

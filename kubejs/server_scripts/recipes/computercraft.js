@@ -18,8 +18,8 @@ ServerEvents.recipes(event => {
     swap({ mod: 'computercraft' }, 'minecraft:note_block', '#minecraft:planks')
     // 末影之眼（高级无线调制解调器）
     swap({ mod: 'computercraft' }, 'minecraft:ender_eye', 'minecraft:ghast_tear')
-    // 海龟底座：c:ingots/iron 标签里只有原版铁锭，直接钉成群峦锻铁锭
-    swap({ id: 'computercraft:turtle_normal' }, '#c:ingots/iron', 'tfc:metal/ingot/wrought_iron')
+    // 海龟底座：c:ingots/iron 已由 tags/item.js 补入群峦锻铁锭，无需此处替换。
+    // c:ingots/gold 同理（TFC 自带 + tags/item.js 双保险），不再重复替换。
 
     // 金苹果（普通/高级掌上电脑的"魔法核心"）→ 群峦金薄板
     // TFC 删除了金苹果合成（仅战利品箱极少产出），导致掌上电脑全链路断裂：
@@ -27,14 +27,24 @@ ServerEvents.recipes(event => {
     // 金薄板=砧上锻打的镀金基板，成本与"高级电子产品核心"定位匹配。
     swap({ mod: 'computercraft' }, 'minecraft:golden_apple', 'tfc:metal/sheet/gold')
 
-    // ---- 海龟工具：钻石 → 红钢（普通）/ 蓝钢（高级）----
-    const tools = ['axe', 'hoe', 'pickaxe', 'shovel', 'sword']
-    tools.forEach(t => {
-        swap({ id: `computercraft:turtle_normal/minecraft/diamond_${t}` },
-            `minecraft:diamond_${t}`, `tfc:metal/${t}/red_steel`)
-        swap({ id: `computercraft:turtle_advanced/minecraft/diamond_${t}` },
-            `minecraft:diamond_${t}`, `tfc:metal/${t}/blue_steel`)
-    })
+    // ---- 玻璃板：CC 全链路（电脑/显示器/便携电脑）的地基 ----
+    // TFC 用 neoforge:false 彻底禁用了原版玻璃板配方，而 NeoForge 的 c:glass_panes
+    // 标签只认原版玻璃板 → 包内没有任何可获得的玻璃板 → CC 一台电脑都造不出来。
+    // 原版玻璃可由电弧炉（玻璃批次）量产，恢复原版比例：6 玻璃 → 16 玻璃板。
+    event.shaped('16x minecraft:glass_pane', ['GGG', 'GGG'], { G: 'minecraft:glass' })
+        .id('kubejs:crafting/glass_pane')
+
+    // ---- 海龟工具升级：钻石 → 红钢（普通）/ 蓝钢（高级）----
+    // CC 的升级装配由特殊配方（turtle_upgrade）+ 数据文件（computercraft/turtle_upgrade/*.json）
+    // 驱动，EMI 里的组合配方只是展示（impostor 类型永远不可合成，CC 官方设计）。
+    // 原数据文件只认拿不到的钻石工具 → 海龟永远装不上工具。
+    // 现由 kubejs/data/kubejs/computercraft/turtle_upgrade/red|blue_steel_*.json 注册
+    // 群峦红/蓝钢工具，显示配方由 data/computercraft/recipe/turtle_* 覆盖同步。
+    // 巧匠海龟（工作台升级）：原版工作台被 TFC 禁用，无法注册为升级项，直接隐藏展示配方。
+    ;[
+        'computercraft:turtle_normal/minecraft/crafting_table',
+        'computercraft:turtle_advanced/minecraft/crafting_table'
+    ].forEach(id => event.remove({ id: id }))
 
     // ---- CC:C Bridge ----
     // 幻翼人偶：皮革胸甲 → 皮革（皮革甲被TFC禁用）
