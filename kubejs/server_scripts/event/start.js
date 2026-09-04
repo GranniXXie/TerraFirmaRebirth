@@ -10,8 +10,8 @@ PlayerEvents.loggedIn(event => {
         player.tell(Text.of("Welcome to TerraFirma: Rebirth!"))
         player.tell(Text.of("本整合包是以1.21.1的群峦传说为主题的轻量魔改整合包。"))
         player.tell(Text.of("A lightly-modded modpack built around TerraFirmaCraft on 1.21.1."))
-        player.tell(Text.of("当前为4.1.21 Release正式版本，已趋于稳定，推荐长期生存游玩，如遇bug烦请联系制作组。"))
-        player.tell(Text.of("This is the 4.1.21 Release — stable and ready for long-term survival. Please report any bugs to the dev team."))
+        player.tell(Text.of("当前为群峦重生2 · 1.0.0-release正式版本，已趋于稳定，推荐长期生存游玩，如遇bug烦请联系制作组。"))
+        player.tell(Text.of("This is TerraFirma Rebirth 2 · 1.0.0-release — stable and ready for long-term survival. Please report any bugs to the dev team."))
         player.tell(Text.aqua("----------------------------------------"))
         // 鸣谢名单
         player.tell(Text.gold("——————— 鸣谢 Credits ———————"))

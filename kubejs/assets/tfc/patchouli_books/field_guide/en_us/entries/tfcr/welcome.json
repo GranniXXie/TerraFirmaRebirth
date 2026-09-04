@@ -12,7 +12,7 @@
     {
       "type": "patchouli:text",
       "title": "Version Info",
-      "text": "$(li)Pack version: $(thing)4.1.21 Release$()$()$(br)$(li)Game: Minecraft 1.21.1 (NeoForge)$()$(br)$(li)TerraFirmaCraft: TNG 4.2.8$()$(br2)A stable release, recommended for long-term survival worlds. Found something odd? Tell the dev team — every report makes the pack better."
+      "text": "$(li)Pack version: $(thing)TFCR2 1.0.0-release$()$()$(br)$(li)Game: Minecraft 1.21.1 (NeoForge)$()$(br)$(li)TerraFirmaCraft: TNG 4.2.8$()$(br2)A stable release, recommended for long-term survival worlds. Found something odd? Tell the dev team — every report makes the pack better."
     },
     {
       "type": "patchouli:image",

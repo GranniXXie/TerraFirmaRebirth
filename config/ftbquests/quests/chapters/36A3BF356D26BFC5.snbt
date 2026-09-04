@@ -148,32 +148,6 @@
 		{
 			dependencies: ["4525DB7844975EC1"]
 			icon: {
-				id: "tfc:plant/goldenrod"
-			}
-			id: "7B2E000000000030"
-			optional: true
-			rewards: [{
-				id: "7B2E000000000121"
-				type: "xp"
-				xp: 15
-			}]
-			shape: "heart"
-			tasks: [
-				{
-					id: "7B2E000000000131"
-					type: "checkmark"
-				}
-				{
-					id: "7B2E000000000132"
-					type: "checkmark"
-				}
-			]
-			x: 3.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["4525DB7844975EC1"]
-			icon: {
 				id: "computercraft:computer_normal"
 			}
 			id: "7B2E000000000040"

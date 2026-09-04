@@ -1024,13 +1024,13 @@
 		""
 		"&e&lOtros consejos"
 		"Asigna unos 6 GB de RAM; asignar más empeora el rendimiento (las iGPU comparten la memoria del sistema)."
-		"No uses shaders ni instales Voxy u otros mods de terreno lejano."
+		"No uses shaders. Voxy viene integrado y activado por defecto: asegúrate de desactivarlo en los ajustes de vídeo."
 	]
 	quest.1DFA57F00DCEED01.quest_subtitle: "El secreto para ganar FPS"
 	quest.1DFA57F00DCEED01.title: "Guía de optimización para PC de gama baja"
 	quest.219E58F012A1322A.quest_desc: [
 		"¡Bienvenido a TerraFirma: Rebirth (TFCR)!"
-		"Estás jugando la versión: 1.21.1-4.1.24 Release"
+		"Estás jugando: TerraFirma Rebirth 2 · 1.0.0-release"
 		""
 		"&l&aEsta es la build Release — estable y recomendada para partidas largas de supervivencia. Si encuentras errores, ¡infórmalos al equipo del pack!"
 		""
@@ -1569,7 +1569,7 @@
 		"Minimapa de Xaero etc.: si JourneyMap (incluido, con integración TFC) no te convence, cámbialo por el mod de mapas que prefieras."
 		"&8Por favor, borra/desactiva también:"
 		"&8jmi-neoforge-1.21.1-1.9.jar"
-		"&8journeymaptfcintegration-neoforge-1.0.2.jar"
+		"&8journeymaptfcintegration-neoforge-1.0.3.jar"
 		"&8journeymap-neoforge-1.21.1-6.0.3.jar"
 		""
 		"Carry On: integrado desde esta versión — Shift+clic derecho para cargar cofres, ganado y más. Está desactivado cargar criaturas hostiles o agresivas, bloques de Create/Aeronautics/Immersive Engineering y cualquier estructura multibloque."
@@ -1903,7 +1903,7 @@
 		"{\\\"text\\\":\\\"Complementary Shaders - Unbound\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"open_url\\\",\\\"value\\\":\\\"https://modrinth.com/shader/complementary-unbound/version/r5.8.1\\\"},\\\"underlined\\\":true,\\\"color\\\":\\\"aqua\\\"}"
 		""
 		"¿FPS bajos con shaders? Ve a Opciones de vídeo → Paquetes de shaders → Configuración del paquete y baja el perfil de calidad (arriba a la izquierda) a Medium o Low: las sombras, los reflejos del agua y las nubes volumétricas son lo que más cuesta."
-		"Si el contador marca FPS altos pero el juego da tirones, asegúrate de estar en la última versión: 4.1.24 corrigió dos picos del hilo de renderizado que causaban tirones periódicos."
+		"Si el contador marca FPS altos pero el juego da tirones, asegúrate de estar en la última versión: 1.0.0-release corrigió dos picos del hilo de renderizado que causaban tirones periódicos."
 	]
 	quest.3BE8BA6DBF8C0672.quest_subtitle: "El aroma de una tarjeta gráfica"
 	quest.3BE8BA6DBF8C0672.title: "Compatibilidad de shaders"
@@ -2055,17 +2055,13 @@
 		"La tubería de fluido inteligente filtra qué fluido puede pasar: su ranura de filtro acepta cubos llenos de fluido o filtros para controlar la admisión."
 	]
 	quest.4097F05E5EEADD26.quest_desc: [
-		"¡Atención! Debido a un error de un mod, ¡no puedes crear un mundo superplano por defecto!"
-		"Solución: desactiva journeymaptfcintegration-neoforge-1.0.2.jar"
-		"Recomendamos NO borrar este mod, ¡ya que es muy útil en el juego normal!"
-		""
-		"Esta versión soporta Voxy en supervivencia. Considerando el hardware variado de los jugadores, el renderizado LOD de Voxy está desactivado por defecto. Para activarlo, consulta la guía en nuestro Discord:"
-		"{\\\"text\\\":\\\"Únete a nuestro Discord\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"open_url\\\",\\\"value\\\":\\\"https://discord.gg/Fc7v5EXmkK\\\"},\\\"underlined\\\":true,\\\"color\\\":\\\"aqua\\\"}"
+		"El renderizado de terreno lejano Voxy ahora viene integrado (funciona en NeoForge mediante la capa de traducción Roxy) y activado por defecto: listo para usar."
+		"En equipos modestos, desactiva Voxy en Ajustes > Vídeo para ganar FPS. Con Voxy activado, asigna 8 GB o más de RAM; desactivado, 6 GB bastan."
 		""
 		"Abajo: una demo en vivo de Voxy activado en esta versión:"
 		"{image:kubejs:textures/quest/voxypic.png width:199 height:105 align:center fit:true}"
 	]
-	quest.4097F05E5EEADD26.quest_subtitle: "Mundos superplanos \\& VOXY"
+	quest.4097F05E5EEADD26.quest_subtitle: "Terreno lejano con VOXY"
 	quest.4097F05E5EEADD26.title: "¡Información importante!"
 	quest.40DF0E9B77C38D92.quest_desc: [
 		"TerraFirmaCraft tiene un sistema de energía rotacional integrado — incompatible con el de Create, y solo capaz de impulsar ciertos bloques de TFC. En este pack, lo usarás para el procesado de minerales inicial."
@@ -4851,19 +4847,6 @@
 	task.7B2E000000000105.title: "Lee lo siguiente y luego pulsa Confirmar"
 	task.7B2E000000000108.title: "Lee lo siguiente y luego pulsa Confirmar"
 	task.7B2E000000000110.title: "Lee lo siguiente y luego pulsa Confirmar"
-	quest.7B2E000000000030.quest_desc: [
-		"[Contenido multijugador: en solitario puedes omitir esta misión]"
-		"Sostén cualquier flor de TFC y haz clic derecho sobre un amigo cercano para regalársela y formar una amistad. Haz clic derecho con la mano vacía para acariciarle la cabeza, o con comida para alimentarle."
-		"Pulsa Z para abrir el Panel de amistad: nivel de chispa, días de amistad, interacciones del día y recuerdos permanentes. Jugar juntos a menos de 30 bloques hace crecer el vínculo poco a poco (con límite diario)."
-		"Los niveles de chispa desbloquean más interacciones: Nv.1 inmunidad al fuego amigo; Nv.2 Teletransporte — mantén Shift+X tres segundos para llegar junto a tu amigo, sin límite de distancia ni dimensión; Nv.3 Vínculo de almas — pulsa X para compartir la salud e incluso cambiar de perspectiva; Nv.4 Rescate mortal — un golpe letal con un amigo a menos de 30 bloques te traslada a su lado con un hilo de vida."
-		"Las bromas también cuentan: pulsa Z mirando a un amigo para patearlo, Shift+Z para cargarlo, y X mientras lo cargas para lanzarlo."
-		"En el panel puedes poner a cada amigo un apodo personal (máx. 4 caracteres) que solo tú verás."
-	]
-	quest.7B2E000000000030.quest_subtitle: "Regala una flor, haz un amigo"
-	quest.7B2E000000000030.title: "Chispas de amistad"
-	task.7B2E000000000131.title: "Regala tu primera flor a un amigo (clic derecho con una flor)"
-	task.7B2E000000000132.title: "Abre el Panel de amistad una vez con Z"
-
 	quest.7B2E000000000040.title: "Computadora doméstica"
 	quest.7B2E000000000040.quest_subtitle: "Chasis de piedra, alma de Lua"
 	quest.7B2E000000000040.quest_desc: [

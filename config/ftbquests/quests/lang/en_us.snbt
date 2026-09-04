@@ -1024,13 +1024,13 @@
 		""
 		"&e&lOther tips"
 		"Allocate about 6 GB of RAM - more is actually worse (iGPUs share system memory)."
-		"Do not use shaders, and do not install Voxy or similar distant-terrain mods."
+		"Do not use shaders. Voxy is built in and enabled by default — make sure to disable it in Video Settings."
 	]
 	quest.1DFA57F00DCEED01.quest_subtitle: "The secret to big FPS gains"
 	quest.1DFA57F00DCEED01.title: "Low-End PC Optimization Guide"
 	quest.219E58F012A1322A.quest_desc: [
 		"Welcome to TerraFirma: Rebirth (TFCR)!"
-		"You are playing version: 1.21.1-4.1.24 Release"
+		"You are playing: TerraFirma Rebirth 2 · 1.0.0-release"
 		""
 		"&l&aThis is the Release build — stable and recommended for long-term survival. If you run into any bugs, please report them to the pack team!"
 		""
@@ -1569,7 +1569,7 @@
 		"Xaero's minimap etc.: if JourneyMap (bundled, with TFC integration) doesn't suit you, swap in whichever map mod you prefer."
 		"&8Please also delete/disable:"
 		"&8jmi-neoforge-1.21.1-1.9.jar"
-		"&8journeymaptfcintegration-neoforge-1.0.2.jar"
+		"&8journeymaptfcintegration-neoforge-1.0.3.jar"
 		"&8journeymap-neoforge-1.21.1-6.0.3.jar"
 		""
 		"Carry On: built in since this version — Shift+right-click to carry chests, livestock and more. Carrying hostile or aggressive creatures, Create/Aeronautics/Immersive Engineering blocks, and any multiblock structure is disabled."
@@ -1903,7 +1903,7 @@
 		"{\\\"text\\\":\\\"Complementary Shaders - Unbound\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"open_url\\\",\\\"value\\\":\\\"https://modrinth.com/shader/complementary-unbound/version/r5.8.1\\\"},\\\"underlined\\\":true,\\\"color\\\":\\\"aqua\\\"}"
 		""
 		"Low FPS with shaders on? Go to Video Settings → Shader Packs → Shader Pack Settings and drop the quality profile (top-left) to Medium or Low — shadow quality, water reflections and volumetric clouds are the heavy hitters."
-		"If the counter shows high FPS but the game still hitches, make sure you're on the latest version: 4.1.24 fixed two render-thread spikes that caused periodic stutter."
+		"If the counter shows high FPS but the game still hitches, make sure you're on the latest version: 1.0.0-release fixed two render-thread spikes that caused periodic stutter."
 	]
 	quest.3BE8BA6DBF8C0672.quest_subtitle: "The fragrance of a graphics card"
 	quest.3BE8BA6DBF8C0672.title: "Shader Compatibility"
@@ -2055,17 +2055,13 @@
 		"The smart fluid pipe filters what fluid may pass: its filter slot accepts fluid-filled buckets or filters to control intake."
 	]
 	quest.4097F05E5EEADD26.quest_desc: [
-		"Attention! Due to a mod bug, you cannot create a superflat world by default!"
-		"Fix: disable journeymaptfcintegration-neoforge-1.0.2.jar"
-		"We recommend NOT deleting this mod, as it's very helpful in normal play!"
-		""
-		"This version supports Voxy in survival. Considering players' varied hardware, Voxy's LOD rendering is off by default. To enable it, see the guide on our Discord:"
-		"{\\\"text\\\":\\\"Join our Discord\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"open_url\\\",\\\"value\\\":\\\"https://discord.gg/Fc7v5EXmkK\\\"},\\\"underlined\\\":true,\\\"color\\\":\\\"aqua\\\"}"
+		"Voxy distant-terrain rendering is now built in (running on NeoForge through the Roxy translation layer) and enabled by default — it just works out of the box."
+		"On weaker hardware, disable Voxy in Settings > Video Settings for better FPS. With Voxy on, allocate 8 GB or more RAM; with it off, 6 GB is enough."
 		""
 		"Below: a live demo of Voxy enabled in this version:"
 		"{image:kubejs:textures/quest/voxypic.png width:199 height:105 align:center fit:true}"
 	]
-	quest.4097F05E5EEADD26.quest_subtitle: "Superflat worlds \\& VOXY"
+	quest.4097F05E5EEADD26.quest_subtitle: "VOXY Distant Terrain"
 	quest.4097F05E5EEADD26.title: "Important Info!"
 	quest.40DF0E9B77C38D92.quest_desc: [
 		"TerraFirmaCraft has a built-in rotational power system — incompatible with Create's, and only able to drive certain TFC blocks. In this pack, you'll use it for early-game ore processing."
@@ -4851,19 +4847,6 @@
 	task.7B2E000000000105.title: "Please read the following, then click Confirm"
 	task.7B2E000000000108.title: "Please read the following, then click Confirm"
 	task.7B2E000000000110.title: "Please read the following, then click Confirm"
-	quest.7B2E000000000030.quest_desc: [
-		"[Multiplayer content — solo players may skip this quest]"
-		"Hold any TFC flower and right-click a friend nearby to give it to them and spark a friendship. Right-click with an empty hand to pat their head, or hold food to feed them."
-		"Press Z to open the Friendship Panel: spark level, days known, today's interactions and permanent memories all live there. Simply playing within 30 blocks of each other slowly grows your bond (with a daily cap — slow and steady)."
-		"Higher spark levels unlock more: Lv.1 friendly-fire immunity; Lv.2 Teleport — hold Shift+X for three seconds to reach your friend, ignoring distance and dimension; Lv.3 Soul Link — press X to bind your health and even switch perspectives; Lv.4 Help You Up — a fatal blow while a friend is within 30 blocks pulls you to their side with a sliver of health."
-		"Pranks included: press Z at a friend to kick them flying, Shift+Z to carry them, and X while carrying to throw them."
-		"You can also set a personal nickname (up to 4 characters) for each friend — visible only to you."
-	]
-	quest.7B2E000000000030.quest_subtitle: "Give a flower, make a friend"
-	quest.7B2E000000000030.title: "Sparks of Friendship"
-	task.7B2E000000000131.title: "Give your first flower to a friend (right-click them with a flower)"
-	task.7B2E000000000132.title: "Open the Friendship Panel once with Z"
-
 	quest.7B2E000000000040.title: "Home Computer"
 	quest.7B2E000000000040.quest_subtitle: "A stone chassis with a Lua soul"
 	quest.7B2E000000000040.quest_desc: [

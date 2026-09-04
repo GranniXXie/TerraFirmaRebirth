@@ -20,7 +20,8 @@ dropped into `mods/` manually.
 | Jar | Where to get it |
 |---|---|
 | `tracks_plus-*.jar` | CurseForge: https://www.curseforge.com/minecraft/mc-mods/create-track |
-| `friendship-*.jar` | Modrinth: https://modrinth.com/mod/friendship-breezeth |
+| `voxy-*.jar` | Modrinth: https://modrinth.com/mod/voxy (bundled with the author's modpack permission) |
+| `lod-server-support-*.jar` | Modrinth: https://modrinth.com/mod/lod-server-support |
 | `Opticores-*.jar` | Bundled in the CF release package; ask on Discord |
 | `sable_fix_mod-*.jar` | Bundled in the CF release package; ask on Discord |
 | `sableexplosionfix-*.jar` | Bundled in the CF release package; ask on Discord |

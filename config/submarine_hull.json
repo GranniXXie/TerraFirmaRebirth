@@ -8773,10 +8773,6 @@
     "maxWaterDepth": 105,
     "implosionChance": 0.37
   },
-  "create_aeronautics_ftb_chunks:contraption_claim_block": {
-    "maxWaterDepth": 105,
-    "implosionChance": 0.37
-  },
   "create_aeronautics_throwable_rope_connector:mounted_rope_launcher": {
     "maxWaterDepth": 73,
     "implosionChance": 0.56

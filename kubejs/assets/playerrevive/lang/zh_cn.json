@@ -1,7 +1,11 @@
 {
-  "argument.entity.options.bleeding.description": "按实体是否处于流血状态进行筛选",
-  "config.playerrevive.bleeding.bleedingMessageTrackingOnly.comment": "只有处于伤员渲染距离内的玩家才会收到流血消息。",
-  "playerrevive.gui.give_up.hold": "等待救援，或按住“%s”%s 秒以放弃",
-  "playerrevive.gui.self_revive.hold": "使用 %s 个“%s”来自救",
-  "playerrevive.revive.other_team": "你们不在同一个队伍中。"
+    "playerrevive.chat.bleeding": "%s 倒地流血了，需要你的帮助！",
+    "playerrevive.gui.label.time_left": "剩余时间：%s",
+    "playerrevive.gui.give_up.hold": "等待队友救援，或长按「%s」%s 秒放弃",
+    "playerrevive.gui.self_revive.hold": "使用 %s 个「%s」可以自行苏醒",
+    "playerrevive.revive.item": "你需要 %s 个 %s",
+    "playerrevive.revive.other_team": "你们不在同一个队伍中。",
+    "playerrevive.chat.no_commands": "倒地流血时无法使用指令",
+    "config.playerrevive.bleeding.bleedingMessageTrackingOnly.comment": "开启后，只有处于伤者渲染距离内的玩家才会收到倒地提示消息。",
+    "argument.entity.options.bleeding.description": "按实体是否处于倒地流血状态进行过滤"
 }

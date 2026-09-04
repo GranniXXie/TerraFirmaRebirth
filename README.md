@@ -1,8 +1,13 @@
-# TerraFirma Rebirth (TFCR)
+# TerraFirma Rebirth 2 (TFCR2)
 
 A hardcore, progression-driven **TerraFirmaCraft** total-conversion modpack for
 **Minecraft 1.21.1 · NeoForge**, extended all the way from the stone age to
 **aeronautics and a crewed Moon landing**.
+
+> **TerraFirma Rebirth 2** is the 1.21.1 NeoForge branch, current release
+> **1.0.0-release** (direct, save-compatible successor of TFCR 4.1.24-hotfix2).
+> The 1.20.1 line continues separately as **TerraFirma Rebirth Classic**
+> (3.2-release / community DLC 3.4.2-release).
 
 This repository contains the **development layer** of the pack — everything we
 actually write and maintain by hand:

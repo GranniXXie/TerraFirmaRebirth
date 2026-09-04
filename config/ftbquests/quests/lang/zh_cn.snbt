@@ -861,13 +861,13 @@
 		""
 		"&e&l其他要点"
 		"内存分配 6G 左右即可，分太多反而更卡（集显与内存是共享的）。"
-		"不要开光影，不要安装 Voxy 一类的远景模组。"
+		"不要开光影；Voxy 已内置且默认开启，请务必在视频设置中将其关闭。"
 	]
 	quest.1DFA57F00DCEED01.quest_subtitle: "帧数暴涨的秘诀"
 	quest.1DFA57F00DCEED01.title: "低配/集显电脑优化指南"
 	quest.219E58F012A1322A.quest_desc: [
 		"欢迎您游玩群峦:重生(简称TFCR) !"
-		"您正在游玩的版本为：1.21.1-4.1.24 Release"
+		"您正在游玩的版本为：群峦重生2 · 1.0.0-release"
 		""
 		"&l&a当前为Release正式版本，已趋于稳定，推荐用于长期生存游玩。如遇任何BUG，请及时联系整合包制作组！"
 		""
@@ -1346,7 +1346,7 @@
 		"xaero小地图等：如果你不适应本整合包加入的旅行地图（Journeymap，自带群峦集成），可以将其替换为你用的顺手的地图。"
 		"&8请同时删除/禁用："
 		"&8jmi-neoforge-1.21.1-1.9.jar"
-		"&8journeymaptfcintegration-neoforge-1.0.2.jar"
+		"&8journeymaptfcintegration-neoforge-1.0.3.jar"
 		"&8[旅行地图] journeymap-neoforge-1.21.1-6.0.3.jar"
 		""
 		"Carryon（搬运）：当前版本已内置该模组，shift+右键即可搬运箱子、家畜等。禁止玩家搬运敌对生物、具有攻击性的生物，机械动力、航空学、沉浸工程的物品，以及任何多方块结构。"
@@ -1633,7 +1633,7 @@
 		"{\"text\":\"打开网页\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://modrinth.com/shader/complementary-unbound/version/r5.8.1\"},\"underlined\":true,\"color\":\"aqua\"}"
 		""
 		"开光影后帧数偏低？进入 视频设置→光影包→光影包设置，把左上角的画质档位（Profile）调低到 Medium 或 Low 即可明显提帧——阴影精度、水面反射和体积云是开销大头。"
-		"如果帧数显示很高但玩着一卡一卡，请确认你玩的是最新版本：4.1.24 修复了两处会造成周期性掉帧的渲染线程开销。"
+		"如果帧数显示很高但玩着一卡一卡，请确认你玩的是最新版本：1.0.0-release 修复了两处会造成周期性掉帧的渲染线程开销。"
 	]
 	quest.3BE8BA6DBF8C0672.quest_subtitle: "显卡的香气"
 	quest.3BE8BA6DBF8C0672.title: "光影的适配与兼容"
@@ -1759,16 +1759,12 @@
 	quest.4073B1CE55962375.title: "桨和羊毛布"
 	quest.408992F05F89C9EC.quest_desc: ["智能流体管道能筛选能通过它的流体，其带有一个过滤槽，可以向其中放入装有流体的桶或过滤器以控制流体的流入。"]
 	quest.4097F05E5EEADD26.quest_desc: [
-		"请注意！由于模组BUG，默认情况下你无法创建超平坦世界！"
-		"修复方式：禁用journeymaptfcintegration-neoforge-1.0.2.jar"
-		"我们建议您不要删除该模组，因为它在游戏过程中很有帮助！"
-		""
-		"当前版本支持Voxy，也可以在生存模式下游玩。考虑到所有玩家配置差异较大，默认不启用Voxy的LOD渲染。如想使用，请阅读使用教程："
-		"{\"text\":\"打开网页\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://docs.qq.com/doc/DYmxJeGpNWE5mQk55\"},\"underlined\":true,\"color\":\"aqua\"}"
+		"当前版本已内置 Voxy 远景渲染（通过 Roxy 转译层在 NeoForge 上运行），默认开启，开箱即用。群山万壑，一览无余。"
+		"如果配置较低，可在 设置→视频设置 中关闭 Voxy 提升帧数。开启 Voxy 建议内存分配 8G 以上；关闭则 6G 足够。"
 		"下图为当前版本Voxy启用后的实机演示："
 		"{image:kubejs:textures/quest/voxypic.png width:199 height:105 align:center fit:true}"
 	]
-	quest.4097F05E5EEADD26.quest_subtitle: "超平坦世界与VOXY"
+	quest.4097F05E5EEADD26.quest_subtitle: "VOXY 远景渲染"
 	quest.4097F05E5EEADD26.title: "重要信息！"
 	quest.40DF0E9B77C38D92.quest_desc: [
 		"群峦传说内置了一套机械动力系统，这套系统和机械动力的并不兼容，且只能用来驱动群峦传说的一些方块。在本整合包中，你将使用它来辅助进行前期的矿物处理工序。"
@@ -3616,16 +3612,6 @@
 	]
 	quest.7B2E00000000002C.quest_subtitle: "一砖千面"
 	quest.7B2E00000000002C.title: "仿制方块"
-	quest.7B2E000000000030.quest_desc: [
-		"【多人游戏内容，单人玩家可跳过】"
-		"手持任意一朵群峦的花，右键身边的好朋友，就能把花送给TA，结成一段友谊。空手右键朋友可以摸摸头，手持食物右键可以投喂。"
-		"按 Z 打开友谊面板：火花等级、相识天数、今日互动与永久回忆都在里面。只要待在彼此 30 格以内一起玩，友谊就会慢慢成长（每日有上限，细水长流）。"
-		"火花等级越高，解锁的互动越多：1 级友军免伤；2 级传送——Shift+X 读条三秒飞到朋友身边，不限距离与维度；3 级灵魂互通——按 X 共享生命、还能切换到对方视角；4 级濒死救援——受到致命伤时，若朋友在 30 格内，你会被拉回 TA 身边并保住一口气。"
-		"恶作剧也别有风味：对准朋友按 Z 一脚踹飞，Shift+Z 把 TA 扛起来，扛着时按 X 甩出去。"
-		"面板里还能给每位好友设置不超过 4 个字的备注名，只有你自己看得到。"
-	]
-	quest.7B2E000000000030.quest_subtitle: "送朵花，交个朋友"
-	quest.7B2E000000000030.title: "友谊的火花"
 	quest.7B2E000000000040.quest_desc: [
 		"用平滑岩石做机箱、红石做电路、玻璃板做屏幕——你的第一台电脑诞生了。"
 		"右击打开电脑，进入 CraftOS 系统。输入 help 查看帮助，输入 programs 看看自带的程序。"
@@ -4339,8 +4325,6 @@
 	task.7B2E000000000105.title: "请在阅读以下内容后点击确认"
 	task.7B2E000000000108.title: "请在阅读以下内容后点击确认"
 	task.7B2E000000000110.title: "请在阅读以下内容后点击确认"
-	task.7B2E000000000131.title: "手持花朵右键朋友，送出第一朵花"
-	task.7B2E000000000132.title: "按 Z 打开一次友谊面板"
 	task.7B2E000000000140.title: "合成一台电脑"
 	task.7B2E000000000141.title: "磁盘驱动器"
 	task.7B2E000000000142.title: "任意一张软盘"

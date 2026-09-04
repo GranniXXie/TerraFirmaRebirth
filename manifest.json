@@ -10,9 +10,9 @@
   },
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
-  "name": "TerraFirma Rebirth",
-  "version": "1.21.1-4.1.23release",
-  "author": "MerMerrr",
+  "name": "TerraFirma Rebirth 2",
+  "version": "1.21.1-1.0.0-release",
+  "author": "TFCR Dev Team",
   "overrides": "overrides",
   "files": [
     {
@@ -378,11 +378,6 @@
     {
       "projectID": 662156,
       "fileID": 7255234,
-      "required": true
-    },
-    {
-      "projectID": 676721,
-      "fileID": 8666959,
       "required": true
     },
     {
@@ -771,11 +766,6 @@
       "required": true
     },
     {
-      "projectID": 1475663,
-      "fileID": 8081540,
-      "required": true
-    },
-    {
       "projectID": 1475772,
       "fileID": 8774996,
       "required": true
@@ -826,11 +816,6 @@
       "required": true
     },
     {
-      "projectID": 1521697,
-      "fileID": 8253180,
-      "required": true
-    },
-    {
       "projectID": 1522473,
       "fileID": 8593014,
       "required": true
@@ -838,11 +823,6 @@
     {
       "projectID": 1526434,
       "fileID": 8000659,
-      "required": true
-    },
-    {
-      "projectID": 1526820,
-      "fileID": 8549361,
       "required": true
     },
     {
@@ -861,18 +841,8 @@
       "required": true
     },
     {
-      "projectID": 1528764,
-      "fileID": 8464450,
-      "required": true
-    },
-    {
       "projectID": 1529882,
       "fileID": 8618590,
-      "required": true
-    },
-    {
-      "projectID": 1530014,
-      "fileID": 8420412,
       "required": true
     },
     {
@@ -938,11 +908,6 @@
     {
       "projectID": 1582882,
       "fileID": 8291711,
-      "required": true
-    },
-    {
-      "projectID": 1584370,
-      "fileID": 8301001,
       "required": true
     },
     {
@@ -1021,11 +986,6 @@
       "required": true
     },
     {
-      "projectID": 1633376,
-      "fileID": 8654146,
-      "required": true
-    },
-    {
       "projectID": 1636971,
       "fileID": 8576814,
       "required": true
@@ -1056,13 +1016,48 @@
       "required": true
     },
     {
-      "projectID": 1674208,
-      "fileID": 8766369,
+      "projectID": 1676502,
+      "fileID": 8778582,
       "required": true
     },
     {
-      "projectID": 1676502,
-      "fileID": 8778582,
+      "projectID": 1475663,
+      "fileID": 8081540,
+      "required": true
+    },
+    {
+      "projectID": 676721,
+      "fileID": 8666959,
+      "required": true
+    },
+    {
+      "projectID": 1526820,
+      "fileID": 8549361,
+      "required": true
+    },
+    {
+      "projectID": 1528764,
+      "fileID": 8464450,
+      "required": true
+    },
+    {
+      "projectID": 1584370,
+      "fileID": 8301001,
+      "required": true
+    },
+    {
+      "projectID": 1633376,
+      "fileID": 8654146,
+      "required": true
+    },
+    {
+      "projectID": 266890,
+      "fileID": 8057637,
+      "required": true
+    },
+    {
+      "projectID": 1626949,
+      "fileID": 8732886,
       "required": true
     }
   ]
